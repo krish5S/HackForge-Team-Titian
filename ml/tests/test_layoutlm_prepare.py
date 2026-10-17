@@ -6,9 +6,13 @@ import unittest
 from PIL import Image
 
 from ml.layoutlm.prepare import normalize_box, prepare
+from ml.layoutlm.train import spans
 
 
 class LayoutPreparationTests(unittest.TestCase):
+    def test_adjacent_boxes_remain_separate_entities(self):
+        self.assertEqual(spans([1, 1, 0, 2]), {(1, 0, 1), (1, 1, 2), (2, 3, 4)})
+
     def test_polygon_boxes_and_field_mapping(self):
         self.assertEqual(normalize_box([20, 40, 80, 40, 80, 60, 20, 60], 100, 100),
                          [200, 400, 800, 600])

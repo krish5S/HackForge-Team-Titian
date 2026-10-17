@@ -34,14 +34,10 @@ class ReceiptBoxes(Dataset):
 
 
 def spans(labels: list[int]) -> set[tuple[int, int, int]]:
-    result = set()
-    active, start = 0, 0
-    for position, label in enumerate([*labels, 0]):
-        if label != active:
-            if active:
-                result.add((active, start, position))
-            active, start = label, position
-    return result
+    # WildReceipt labels individual text boxes, so adjacent same-class boxes
+    # are separate entities rather than one BIO span.
+    return {(label, position, position + 1) for position, label in enumerate(labels)
+            if label > 0}
 
 
 def evaluate(model, loader, device, fields):
@@ -100,6 +96,8 @@ def main():
         label2id={field: index for index, field in enumerate(fields)},
         ignore_mismatched_sizes=True)
     device = torch.device(args.device)
+    if device.type == "cuda":
+        model.gradient_checkpointing_enable()
     model.to(device)
     loaders = {name: DataLoader(ReceiptBoxes(read_jsonl(args.data / f"{name}.jsonl"), processor),
                                 batch_size=4, shuffle=name == "train", num_workers=0)
