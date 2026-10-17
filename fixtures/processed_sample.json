@@ -1,0 +1,70 @@
+{
+  "receipt_id": "r_042",
+  "file_sha256": "sample_sha256_placeholder",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "Lous Deep Dish",
+    "receipt_number": "A-20931",
+    "card_last4": "4417",
+    "transaction_date": "2026-09-12",
+    "transaction_time": "19:42",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "45.00",
+    "tax": "4.66",
+    "tip": "9.00",
+    "other_charges": "0.00",
+    "total": "58.66",
+    "line_items": [
+      {
+        "description": "IPA draft x2",
+        "amount": "17.00",
+        "item_class": "ALCOHOL"
+      }
+    ],
+    "itemization": "FULL",
+    "category": "MEALS",
+    "guest_count": 2,
+    "confidence": {
+      "total": 0.93,
+      "transaction_date": 0.95
+    },
+    "boxes": {
+      "total": [412, 1630, 560, 1668]
+    },
+    "readers": {
+      "layoutlm": {
+        "total": "58.66"
+      },
+      "llm": {
+        "total": "58.66"
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "components_vs_total",
+        "expected": "58.66",
+        "printed": "58.66",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "58.66"
+  },
+  "fingerprints": {
+    "phash": "c3a1f0e29b4d7781",
+    "merchant_norm": "lous deep dish"
+  },
+  "forensics": {
+    "score": 15,
+    "cnn_fake_probability": 0.04,
+    "signals": []
+  }
+}

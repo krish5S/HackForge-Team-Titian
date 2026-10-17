@@ -10,3 +10,16 @@ __pycache__/
 *.db-shm
 *.db-wal
 .DS_Store
+
+# Local datasets and downloaded data
+/datasets/
+/data/
+ml/datasets/data/
+ml/datasets/downloads/
+
+# Model checkpoints and generated artifacts
+*.pt
+*.pth
+*.onnx
+*.safetensors
+checkpoints/
