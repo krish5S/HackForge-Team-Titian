@@ -1,0 +1,437 @@
+{
+  "seed": 42,
+  "status": "candidate_only",
+  "real": [
+    {
+      "record_id": "sroie:train/images/X51006555784.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006555784.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:test/images/X51005757292.jpg",
+      "source": "sroie",
+      "source_id": "test/images/X51005757292.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51005719856.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51005719856.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:test/images/X51005230621.jpg",
+      "source": "sroie",
+      "source_id": "test/images/X51005230621.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006557508.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006557508.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006466065.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006466065.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:test/images/X51006502534.jpg",
+      "source": "sroie",
+      "source_id": "test/images/X51006502534.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:test/images/X51007846400.jpg",
+      "source": "sroie",
+      "source_id": "test/images/X51007846400.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51005712039.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51005712039.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51005447860.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51005447860.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006311758.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006311758.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006387847.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006387847.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006620414.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006620414.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:test/images/X51006857540.jpg",
+      "source": "sroie",
+      "source_id": "test/images/X51006857540.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006556831.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006556831.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006619697.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006619697.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51005806685.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51005806685.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006882603.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006882603.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006857265.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006857265.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "sroie:train/images/X51006387953.jpg",
+      "source": "sroie",
+      "source_id": "train/images/X51006387953.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000004",
+      "source": "cord_v2",
+      "source_id": "000004",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000476",
+      "source": "cord_v2",
+      "source_id": "000476",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000124",
+      "source": "cord_v2",
+      "source_id": "000124",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000328",
+      "source": "cord_v2",
+      "source_id": "000328",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000121",
+      "source": "cord_v2",
+      "source_id": "000121",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000273",
+      "source": "cord_v2",
+      "source_id": "000273",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000533",
+      "source": "cord_v2",
+      "source_id": "000533",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000283",
+      "source": "cord_v2",
+      "source_id": "000283",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000542",
+      "source": "cord_v2",
+      "source_id": "000542",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000155",
+      "source": "cord_v2",
+      "source_id": "000155",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000569",
+      "source": "cord_v2",
+      "source_id": "000569",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000215",
+      "source": "cord_v2",
+      "source_id": "000215",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000197",
+      "source": "cord_v2",
+      "source_id": "000197",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000030",
+      "source": "cord_v2",
+      "source_id": "000030",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000120",
+      "source": "cord_v2",
+      "source_id": "000120",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000115",
+      "source": "cord_v2",
+      "source_id": "000115",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000394",
+      "source": "cord_v2",
+      "source_id": "000394",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000070",
+      "source": "cord_v2",
+      "source_id": "000070",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000172",
+      "source": "cord_v2",
+      "source_id": "000172",
+      "field_verified": false
+    },
+    {
+      "record_id": "cord_v2:000571",
+      "source": "cord_v2",
+      "source_id": "000571",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1174-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1174-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1102-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1102-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1047-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1047-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1073-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1073-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1112-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1112-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1118-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1118-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1090-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1090-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1099-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1099-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1149-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1149-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1093-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1093-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1190-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1190-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1022-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1022-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1134-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1134-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1177-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1177-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1078-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1078-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1110-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1110-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1028-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1028-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1086-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1086-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1044-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1044-receipt.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "express_expense:1101-receipt.jpg",
+      "source": "express_expense",
+      "source_id": "1101-receipt.jpg",
+      "field_verified": false
+    }
+  ],
+  "forged": [
+    {
+      "record_id": "find_it_again:test/X51007846357.png",
+      "source": "find_it_again",
+      "source_id": "test/X51007846357.png",
+      "parent_record_id": "sroie:train/images/X51007846357.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "find_it_again:val/X51005711404.png",
+      "source": "find_it_again",
+      "source_id": "val/X51005711404.png",
+      "parent_record_id": "sroie:train/images/X51005711404.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "find_it_again:val/X51006393377.png",
+      "source": "find_it_again",
+      "source_id": "val/X51006393377.png",
+      "parent_record_id": "sroie:train/images/X51006393377.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "find_it_again:val/X51006414636.png",
+      "source": "find_it_again",
+      "source_id": "val/X51006414636.png",
+      "parent_record_id": "sroie:train/images/X51006414636.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "find_it_again:val/X51007135247.png",
+      "source": "find_it_again",
+      "source_id": "val/X51007135247.png",
+      "parent_record_id": "sroie:train/images/X51007135247.jpg",
+      "field_verified": false
+    },
+    {
+      "record_id": "find_it_again:train/X51005447850.png",
+      "source": "find_it_again",
+      "source_id": "train/X51005447850.png",
+      "parent_record_id": "sroie:train/images/X51005447850.jpg",
+      "field_verified": false
+    }
+  ],
+  "ai_generated": [
+    {
+      "record_id": "gpt4o-receipt:receipt_rite_aid_0138.png",
+      "source": "gpt4o-receipt",
+      "source_id": "receipt_rite_aid_0138.png",
+      "field_verified": false
+    },
+    {
+      "record_id": "gpt4o-receipt:receipt_winco_foods_0670.png",
+      "source": "gpt4o-receipt",
+      "source_id": "receipt_winco_foods_0670.png",
+      "field_verified": false
+    },
+    {
+      "record_id": "gpt4o-receipt:receipt_dairy_queen_0019.png",
+      "source": "gpt4o-receipt",
+      "source_id": "receipt_dairy_queen_0019.png",
+      "field_verified": false
+    },
+    {
+      "record_id": "gpt4o-receipt:receipt_pet_supplies_plus_0616.png",
+      "source": "gpt4o-receipt",
+      "source_id": "receipt_pet_supplies_plus_0616.png",
+      "field_verified": false
+    }
+  ],
+  "note": "Match and verify printed merchant/date/total against scenarios before copying images."
+}
