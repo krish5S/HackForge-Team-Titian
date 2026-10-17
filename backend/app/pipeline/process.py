@@ -8,6 +8,7 @@ from typing import Any
 
 from backend.app.contracts.receipt import ProcessedReceipt
 from backend.app.pipeline.fingerprints import normalize_merchant, perceptual_hash, sha256_file
+from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.forensics import score_receipt
 from backend.app.pipeline.fx import convert_total, load_rates
 from backend.app.pipeline.normalize import save_normalized
@@ -94,7 +95,8 @@ def process_receipt(
                          "merchant_norm": normalize_merchant(extraction["merchant_name"])},
         "forensics": {"score": 0, "cnn_fake_probability": 0.0, "signals": []},
     }
-    result["forensics"] = score_receipt(result)
+    probability, enabled = predict_fake_probability(normalized_path)
+    result["forensics"] = score_receipt(result, probability, enabled)
     return result
 
 

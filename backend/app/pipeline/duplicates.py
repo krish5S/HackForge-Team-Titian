@@ -2,6 +2,7 @@
 
 from datetime import datetime
 from decimal import Decimal, InvalidOperation
+import re
 from typing import Any
 
 import imagehash
@@ -47,6 +48,8 @@ def find_duplicates(receipts: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 continue
             left = first.get("fingerprints", {}).get("merchant_norm", "")
             right = second.get("fingerprints", {}).get("merchant_norm", "")
+            if set(re.findall(r"\b\d+\b", left)) != set(re.findall(r"\b\d+\b", right)):
+                continue
             if not left or not right or ratio(left, right) < 90:
                 continue
             total_a, total_b = _base_total(first), _base_total(second)

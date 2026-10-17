@@ -3,15 +3,27 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
+import os
 
 from PIL import Image, ImageDraw
 
 from backend.app.pipeline.duplicates import find_duplicates
+from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.normalize import load_image
 from backend.app.pipeline.process import process_receipt
 
 
 class ReaderPipelineTests(unittest.TestCase):
+    def test_cnn_gate_rejects_unqualified_metrics(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            metrics = root / "metrics.json"
+            (root / "unused.pt").write_bytes(b"unused")
+            metrics.write_text('{"auc": 0.74, "cnn_weight_enabled": true}', encoding="utf-8")
+            with patch.dict(os.environ, {"RECEIPT_CNN_METRICS": str(metrics),
+                                      "RECEIPT_CNN_MODEL": str(root / "unused.pt")}):
+                self.assertEqual(predict_fake_probability(root / "receipt.jpg"), (0.0, False))
+
     def test_pdf_first_page_is_readable_image(self):
         import pypdfium2 as pdfium
 
@@ -65,6 +77,15 @@ class ReaderPipelineTests(unittest.TestCase):
         self.assertIn({"receipt_id": "b", "duplicate_of": "a", "reason": "exact_file"}, pairs)
         self.assertIn({"receipt_id": "e", "duplicate_of": "a", "reason": "transaction"}, pairs)
         self.assertFalse(any(pair["receipt_id"] in ("c", "d") for pair in pairs))
+
+    def test_numeric_merchant_names_do_not_merge(self):
+        base = {"extraction": {"transaction_date": "2026-09-01", "transaction_time": "12:00"},
+                "fx": {"total_base": "20.00"}}
+        receipts = [{**base, "receipt_id": "a", "file_sha256": "one",
+                     "fingerprints": {"merchant_norm": "merchant 1", "phash": "0000000000000000"}},
+                    {**base, "receipt_id": "b", "file_sha256": "two",
+                     "fingerprints": {"merchant_norm": "merchant 3", "phash": "0000000000000000"}}]
+        self.assertEqual(find_duplicates(receipts), [])
 
 
 if __name__ == "__main__":
