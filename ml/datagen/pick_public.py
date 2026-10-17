@@ -62,6 +62,7 @@ def copy_public(scenarios: list[dict], assignments: list[dict], split_manifest: 
         source = record["source"]
         index["images"].append({"image_id": scenario_id, "file": target.name,
                                 "source": source, "source_id": record["source_id"],
+                                "verified_fields": True,
                                 "scenario_id": scenario_id,
                                 "planted_problem": scenario.get("planted_issue"),
                                 "related_ids": scenario.get("related_ids", [])})

@@ -49,6 +49,14 @@ class MonthImageTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "not held out"):
                 copy_public(scenarios, [assignment], {"rows": [row]},
                             root / "other_images", root / "other_index.json")
+            forged = {**row, "record_id": "find_it_again:test/fake.png", "source": "find_it_again",
+                      "source_id": "test/fake.png", "split": "test", "label": "forged"}
+            forged_scenario = [{"scenario_id": "r_011", "scenario_type": "forged", "planted_issue": "forged"}]
+            copied = copy_public(forged_scenario,
+                                 [{"scenario_id": "r_011", "record_id": forged["record_id"],
+                                   "verified_fields": True}], {"rows": [forged]},
+                                 root / "forged_images", root / "forged_index.json")
+            self.assertEqual(copied["images"][0]["source"], "find_it_again")
 
 
 if __name__ == "__main__":

@@ -15,18 +15,19 @@ _PROCESSOR = None
 _DEVICE = None
 
 
-def read_fields(image_path: str | Path, ocr: dict[str, Any]) -> dict[str, Any]:
+def read_fields(image_path: str | Path, ocr: dict[str, Any], force: bool = False) -> dict[str, Any]:
     global _MODEL, _PROCESSOR, _DEVICE
     repository = Path(__file__).resolve().parents[3]
     metrics_path = Path(os.environ.get("RECEIPT_LAYOUTLM_METRICS",
                                str(repository / "data" / "models" / "layoutlm_metrics.json")))
     checkpoint = Path(os.environ.get("RECEIPT_LAYOUTLM_MODEL",
                           str(Path.home() / "datasets" / "layoutlm_artifacts" / "best")))
-    if not metrics_path.is_file() or not checkpoint.is_dir():
+    if not checkpoint.is_dir() or (not force and not metrics_path.is_file()):
         return {}
-    metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-    if not metrics.get("model_switch_enabled"):
-        return {}
+    if not force:
+        metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+        if not metrics.get("model_switch_enabled"):
+            return {}
 
     import torch
     from transformers import AutoProcessor, LayoutLMv3ForTokenClassification

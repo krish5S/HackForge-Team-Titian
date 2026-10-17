@@ -12,9 +12,21 @@ from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.normalize import load_image
 from backend.app.pipeline.process import process_receipt
 from backend.app.pipeline.reader_a import read_fields as read_patterns
+from scripts.compare_month_readers import compare
 
 
 class ReaderPipelineTests(unittest.TestCase):
+    def test_reader_switch_rejects_incomplete_month(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            index = root / "images_index.json"
+            scenarios = root / "scenarios.json"
+            index.write_text('{"images": [], "pending_public_scenarios": ["r_001"]}',
+                             encoding="utf-8")
+            scenarios.write_text('{"scenarios": []}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "finalized 100"):
+                compare(index, root, scenarios, root / "metrics.json")
+
     def test_item_lines_support_auditable_alcohol_exclusion(self):
         texts = ["Cafe", "SUBTOTAL", "20.00 USD", "Food", "15.00", "Beer", "5.00", "TOTAL", "20.00 USD"]
         result = read_patterns({"lines": [{"text": value, "confidence": .95, "box": []}
