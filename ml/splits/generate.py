@@ -154,6 +154,8 @@ def real_rows_from_prepared(path: Path) -> list[dict]:
         if item["status"] != "ok":
             continue
         source = item["source"].lower()
+        if source == "gpt4o_receipt":
+            continue
         if source not in {"sroie", "cord_v2", "express_expense"}:
             raise ValueError(f"Prepared source is not approved for real-only import: {source}")
         rows.append({"source": source, "source_id": item["source_id"],
