@@ -1,0 +1,11 @@
+opencv-python
+paddleocr
+paddlepaddle
+transformers
+datasets
+timm
+imagehash
+rapidfuzz
+Pillow
+pandas
+numpy
