@@ -1,0 +1,8 @@
+{
+  "receipt_id": "r_042", "verdict": "NEEDS_REVIEW", "claimed": "58.66",
+  "proposed": "36.50", "reimbursable": null, "amount_at_risk": "36.50", "risk_score": 15,
+  "reasons": [{"code": "MISSING_REQUIRED_FIELD", "effect": "REVIEW", "clause_id": "5.1", "message": "§5.1 requires attendee names for meals with guests."}],
+  "counterfactuals": [{"fix": "Add attendee names", "verdict_if_fixed": "APPROVE", "amount_if_fixed": "36.50"}],
+  "ledger_refs": [{"label": "Chicago trip meals, 12 Sep", "cap": "75.00", "used_before": "0.00", "used_after": "36.50"}],
+  "duplicate_of": null
+}
