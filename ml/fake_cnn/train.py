@@ -197,7 +197,7 @@ def main() -> None:
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
     scaler = torch.amp.GradScaler("cuda", enabled=device.type == "cuda")
     output.mkdir(parents=True, exist_ok=True)
-    history, best_accuracy = [], -1.0
+    history, best_auc, best_val_accuracy = [], -1.0, -1.0
     for epoch in range(args.epochs):
         model.train()
         running_loss = 0.0
@@ -215,8 +215,8 @@ def main() -> None:
         metrics = {"epoch": epoch + 1, "train_loss": running_loss / len(splits["train"]), "val": val}
         history.append(metrics)
         print(json.dumps(metrics))
-        if val["auc"] > best_accuracy:
-            best_accuracy = val["auc"]
+        if (val["auc"], val["accuracy"]) > (best_auc, best_val_accuracy):
+            best_auc, best_val_accuracy = val["auc"], val["accuracy"]
             torch.save({"model_state_dict": model.state_dict(), "class_to_index": LABELS,
                         "image_size": IMAGE_SIZE, "epoch": epoch + 1,
                         "model_name": "efficientnet_b0", "pretrained": True,
@@ -228,7 +228,11 @@ def main() -> None:
     test = evaluate(model, DataLoader(ReceiptDataset(test_rows), batch_size=args.batch_size), device)
     express = evaluate(model, loaders["unseen_real"], device)
     test["express_expense_false_positive_rate"] = express["false_positive_rate"]
-    test["cnn_weight_enabled"] = test["auc"] >= 0.75
+    test["cnn_weight_enabled"] = (test["auc"] >= 0.75 and
+                                  express["false_positive_rate"] <= 0.10)
+    test["cnn_gate"] = {"minimum_auc": 0.75, "maximum_unseen_real_fpr": 0.10,
+                        "reason": ("enabled" if test["cnn_weight_enabled"] else
+                                   "held-out AUC or unseen-source false-positive rate failed")}
     (output / "training_history.json").write_text(json.dumps(history, indent=2), encoding="utf-8")
     (output / "test_metrics.json").write_text(json.dumps(test, indent=2), encoding="utf-8")
     args.metrics_output.parent.mkdir(parents=True, exist_ok=True)

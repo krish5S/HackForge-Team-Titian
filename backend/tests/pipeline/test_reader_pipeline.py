@@ -23,6 +23,9 @@ class ReaderPipelineTests(unittest.TestCase):
             with patch.dict(os.environ, {"RECEIPT_CNN_METRICS": str(metrics),
                                       "RECEIPT_CNN_MODEL": str(root / "unused.pt")}):
                 self.assertEqual(predict_fake_probability(root / "receipt.jpg"), (0.0, False))
+                metrics.write_text('{"auc": 0.99, "cnn_weight_enabled": true, '
+                                   '"express_expense_false_positive_rate": 0.35}', encoding="utf-8")
+                self.assertEqual(predict_fake_probability(root / "receipt.jpg"), (0.0, False))
 
     def test_pdf_first_page_is_readable_image(self):
         import pypdfium2 as pdfium

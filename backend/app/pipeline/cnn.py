@@ -18,7 +18,8 @@ def predict_fake_probability(image_path: str | Path) -> tuple[float, bool]:
     if not metrics_path.is_file() or not checkpoint_path.is_file():
         return 0.0, False
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-    if not metrics.get("cnn_weight_enabled") or (metrics.get("auc") or 0) < .75:
+    if (not metrics.get("cnn_weight_enabled") or (metrics.get("auc") or 0) < .75 or
+            (metrics.get("express_expense_false_positive_rate") or 0) > .10):
         return 0.0, False
     import timm
     import torch
