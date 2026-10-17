@@ -49,7 +49,8 @@ def select(split_list: Path, findit_root: Path, seed: int = 42) -> dict:
                     continue
                 forged.append({"record_id": f"find_it_again:{split}/{name}",
                                "source": "find_it_again", "source_id": f"{split}/{name}",
-                               "parent_record_id": parent, "field_verified": False})
+                               "parent_record_id": parent, "parent_model_split": "test",
+                               "field_verified": False})
     selected_forged = forged[:6]
     if len(selected_forged) != 6:
         raise ValueError("Need six forged images whose SROIE originals are held out")

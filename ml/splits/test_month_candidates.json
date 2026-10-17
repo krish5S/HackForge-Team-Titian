@@ -369,6 +369,7 @@
       "source": "find_it_again",
       "source_id": "test/X51007846357.png",
       "parent_record_id": "sroie:train/images/X51007846357.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     },
     {
@@ -376,6 +377,7 @@
       "source": "find_it_again",
       "source_id": "val/X51005711404.png",
       "parent_record_id": "sroie:train/images/X51005711404.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     },
     {
@@ -383,6 +385,7 @@
       "source": "find_it_again",
       "source_id": "val/X51006393377.png",
       "parent_record_id": "sroie:train/images/X51006393377.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     },
     {
@@ -390,6 +393,7 @@
       "source": "find_it_again",
       "source_id": "val/X51006414636.png",
       "parent_record_id": "sroie:train/images/X51006414636.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     },
     {
@@ -397,6 +401,7 @@
       "source": "find_it_again",
       "source_id": "val/X51007135247.png",
       "parent_record_id": "sroie:train/images/X51007135247.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     },
     {
@@ -404,6 +409,7 @@
       "source": "find_it_again",
       "source_id": "train/X51005447850.png",
       "parent_record_id": "sroie:train/images/X51005447850.jpg",
+      "parent_model_split": "test",
       "field_verified": false
     }
   ],
