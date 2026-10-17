@@ -7,6 +7,8 @@ from app.api.health import router as health_router
 from app.db.database import engine
 from app.db.models import Base
 
+from app.api.decisions import router as decisions_router
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -33,3 +35,4 @@ app.add_middleware(
 )
 
 app.include_router(health_router, prefix="/api")
+app.include_router(decisions_router, prefix="/api")
