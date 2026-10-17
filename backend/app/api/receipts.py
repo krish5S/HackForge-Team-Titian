@@ -1,9 +1,12 @@
+from typing import Literal
+
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.responses import FileResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.contracts.api import ReceiptDetail
-from app.db.database import get_db
+from app.db.database import PROJECT_ROOT, get_db
 from app.db.models import (
     Decision,
     Employee,
@@ -14,6 +17,19 @@ from app.db.models import (
 
 
 router = APIRouter()
+
+RECEIPT_FILES_ROOT = (
+    PROJECT_ROOT / "data" / "month" / "images"
+).resolve()
+
+SUPPORTED_FILE_TYPES = {
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".png": "image/png",
+    ".webp": "image/webp",
+    ".gif": "image/gif",
+    ".pdf": "application/pdf",
+}
 
 
 @router.get(
@@ -104,4 +120,73 @@ def get_receipt(
             if latest_run is not None
             else None
         ),
+    )
+
+
+@router.get(
+    "/receipts/{receipt_id}/image",
+    response_class=FileResponse,
+    tags=["Receipts"],
+)
+def get_receipt_image(
+    receipt_id: str,
+    variant: Literal["original", "clean"] = "original",
+    db: Session = Depends(get_db),
+):
+    statement = (
+        select(Submission.file_path)
+        .select_from(Receipt)
+        .join(
+            Submission,
+            Receipt.submission_id == Submission.id,
+        )
+        .where(Receipt.id == receipt_id)
+    )
+
+    stored_path = db.scalar(statement)
+
+    if stored_path is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No receipt {receipt_id}",
+        )
+
+    # Cleaned-file paths still need to be agreed with Dev 1.
+    if variant == "clean":
+        raise HTTPException(
+            status_code=404,
+            detail="Cleaned image is not available for this receipt.",
+        )
+
+    # The loader will store project-relative paths.
+    file_path = (PROJECT_ROOT / stored_path).resolve()
+
+    if not file_path.is_relative_to(RECEIPT_FILES_ROOT):
+        raise HTTPException(
+            status_code=404,
+            detail="Receipt file is outside the receipt directory.",
+        )
+
+    if not file_path.is_file():
+        raise HTTPException(
+            status_code=404,
+            detail="Receipt file is missing.",
+        )
+
+    media_type = SUPPORTED_FILE_TYPES.get(
+        file_path.suffix.lower()
+    )
+
+    if media_type is None:
+        raise HTTPException(
+            status_code=415,
+            detail="Unsupported receipt file type.",
+        )
+
+    return FileResponse(
+        path=str(file_path),
+        media_type=media_type,
+        headers={
+            "X-Content-Type-Options": "nosniff",
+        },
     )
