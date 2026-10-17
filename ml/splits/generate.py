@@ -12,6 +12,7 @@ import hashlib
 import json
 from pathlib import Path
 import random
+import re
 
 import numpy as np
 from PIL import Image, ImageOps
@@ -161,6 +162,24 @@ def real_rows_from_prepared(path: Path) -> list[dict]:
     return rows
 
 
+def gpt_rows_from_prepared(path: Path) -> list[dict]:
+    """Use only files matching the dataset card's documented fake filename rule."""
+    rows = []
+    for item in json.loads(path.read_text(encoding="utf-8")):
+        if item.get("source") != "gpt4o_receipt" or item.get("status") != "ok":
+            continue
+        filename = Path(item["source_id"]).name
+        match = re.fullmatch(r"receipt_(.+)_([0-9]+)\.png", filename, re.I)
+        if not match:
+            continue
+        category = match.group(1).lower()
+        rows.append({"source": "gpt4o-receipt", "source_id": item["source_id"],
+                     "image_path": item["prepared_path"], "group_id": category,
+                     "merchant_category": category, "label": "fake",
+                     "label_provenance": "Scam-AI/gpt4o-receipt README filename rule"})
+    return rows
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     inputs = parser.add_mutually_exclusive_group(required=True)
@@ -170,6 +189,8 @@ def main() -> None:
     parser.add_argument("--split-list", type=Path,
                         help="Portable split list under ml/splits for Git")
     parser.add_argument("--heldout-ids", type=Path, help="JSON array of source:source_id keys for test month")
+    parser.add_argument("--prepared-fake", type=Path,
+                        help="GPT4o preparation manifest; combine with the selected real input")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
     repository = Path(__file__).resolve().parents[2]
@@ -187,6 +208,8 @@ def main() -> None:
             parser.error("Split list must be under ml/splits")
     rows = (json.loads(args.input.read_text(encoding="utf-8")) if args.input
             else real_rows_from_prepared(args.prepared_real))
+    if args.prepared_fake:
+        rows.extend(gpt_rows_from_prepared(args.prepared_fake))
     heldout = set(json.loads(args.heldout_ids.read_text(encoding="utf-8"))) if args.heldout_ids else set()
     result = generate(rows, heldout, args.seed)
     output.parent.mkdir(parents=True, exist_ok=True)

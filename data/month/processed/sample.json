@@ -1,0 +1,172 @@
+{
+  "receipt_id": "r_001",
+  "file_sha256": "fabea95979f7adcb3d5a5990c4d21830d7aa25f41ce1cec1ebdde7b16aa30a93",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Merchant 1",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2026-09-01",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "20.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "20.00",
+    "itemization": "",
+    "category": "TRAVEL",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9848113656044006,
+      "subtotal": 0.9992161989212036,
+      "tax": 0.998531699180603,
+      "tip": 0.9988285303115845,
+      "other_charges": 0.9985772967338562,
+      "total": 0.9994238615036011
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        335,
+        311
+      ],
+      "subtotal": [
+        542,
+        548,
+        681,
+        575
+      ],
+      "tax": [
+        558,
+        609,
+        681,
+        634
+      ],
+      "tip": [
+        558,
+        669,
+        680,
+        695
+      ],
+      "other_charges": [
+        558,
+        729,
+        680,
+        754
+      ],
+      "total": [
+        640,
+        790,
+        804,
+        817
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9848113656044006,
+          "subtotal": 0.9992161989212036,
+          "tax": 0.998531699180603,
+          "tip": 0.9988285303115845,
+          "other_charges": 0.9985772967338562,
+          "total": 0.9994238615036011
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            542,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            558,
+            609,
+            681,
+            634
+          ],
+          "tip": [
+            558,
+            669,
+            680,
+            695
+          ],
+          "other_charges": [
+            558,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            640,
+            790,
+            804,
+            817
+          ]
+        },
+        "merchant_name": "Merchant 1",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-01",
+        "transaction_time": "12:00",
+        "subtotal": "20.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "20.00",
+        "category": "TRAVEL"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-01",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "20.00"
+  },
+  "fingerprints": {
+    "phash": "8f1e964de41e8cb4",
+    "merchant_norm": "merchant 1"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}
