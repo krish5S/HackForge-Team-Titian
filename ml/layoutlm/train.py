@@ -96,8 +96,6 @@ def main():
         label2id={field: index for index, field in enumerate(fields)},
         ignore_mismatched_sizes=True)
     device = torch.device(args.device)
-    if device.type == "cuda":
-        model.gradient_checkpointing_enable()
     model.to(device)
     loaders = {name: DataLoader(ReceiptBoxes(read_jsonl(args.data / f"{name}.jsonl"), processor),
                                 batch_size=4, shuffle=name == "train", num_workers=0)

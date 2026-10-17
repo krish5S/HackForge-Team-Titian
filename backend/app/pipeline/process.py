@@ -59,9 +59,8 @@ def process_receipt(
         value = pattern.get(field) or model.get(field)
         if value is not None:
             extraction[field] = str(value)
-    for field in ("line_items", "guest_count"):
-        if field in model:
-            extraction[field] = model[field]
+    extraction["line_items"] = model.get("line_items", pattern.get("line_items", []))
+    extraction["guest_count"] = model.get("guest_count", pattern.get("guest_count", 0))
     extraction["confidence"] = pattern.get("confidence", {})
     extraction["boxes"] = pattern.get("boxes", {})
     if model_error:
@@ -79,7 +78,7 @@ def process_receipt(
             validation["checks"].append({"name": f"reader_disagreement_{field}",
                                           "expected": str(pattern[field]),
                                           "printed": str(model[field]), "passed": False})
-    fx = convert_total(extraction["total"], extraction["currency"] or "USD", rates)
+    fx = convert_total(extraction["total"], extraction["currency"], rates)
     line_count = len(ocr.get("lines") or [])
     is_receipt = line_count > 0 and bool(extraction["merchant_name"] or extraction["total"])
     status = "unreadable" if not line_count else ("ok" if extraction["total"] else "partial")

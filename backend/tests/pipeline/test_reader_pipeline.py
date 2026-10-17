@@ -11,9 +11,19 @@ from backend.app.pipeline.duplicates import find_duplicates
 from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.normalize import load_image
 from backend.app.pipeline.process import process_receipt
+from backend.app.pipeline.reader_a import read_fields as read_patterns
 
 
 class ReaderPipelineTests(unittest.TestCase):
+    def test_item_lines_support_auditable_alcohol_exclusion(self):
+        texts = ["Cafe", "SUBTOTAL", "20.00 USD", "Food", "15.00", "Beer", "5.00", "TOTAL", "20.00 USD"]
+        result = read_patterns({"lines": [{"text": value, "confidence": .95, "box": []}
+                                          for value in texts]})
+        self.assertEqual(result["line_items"], [
+            {"description": "Food", "amount": "15.00", "item_class": "FOOD"},
+            {"description": "Beer", "amount": "5.00", "item_class": "ALCOHOL"}])
+        self.assertEqual(result["itemization"], "FULL")
+
     def test_cnn_gate_rejects_unqualified_metrics(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
@@ -64,6 +74,11 @@ class ReaderPipelineTests(unittest.TestCase):
             self.assertEqual(len(result["file_sha256"]), 64)
             self.assertEqual(len(result["fingerprints"]["phash"]), 16)
             json.dumps(result)
+            with (patch("backend.app.pipeline.process.extract_text", return_value=ocr),
+                  patch("backend.app.pipeline.process.read_model", return_value={"total": "30.00"})):
+                disputed = process_receipt(source, {"receipt_id": "r_001"}, root / "out")
+            self.assertIn("reader_disagreement_total", disputed["forensics"]["signals"])
+            self.assertLess(disputed["extraction"]["confidence"]["total"], .5)
 
     def test_duplicate_guards_and_exact_copy(self):
         def receipt(identifier, digest, number="123", time="12:00"):

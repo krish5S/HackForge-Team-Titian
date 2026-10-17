@@ -19,7 +19,13 @@
     "total": "20.00",
     "itemization": "",
     "category": "TRAVEL",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "Business expense",
+        "amount": "20.00",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
       "transaction_date": 0.9848113656044006,
@@ -126,7 +132,14 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "20.00",
-        "category": "TRAVEL"
+        "category": "TRAVEL",
+        "line_items": [
+          {
+            "description": "Business expense",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {}
     }
@@ -141,6 +154,12 @@
       },
       {
         "name": "components_vs_total",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
         "expected": "20.00",
         "printed": "20.00",
         "passed": true

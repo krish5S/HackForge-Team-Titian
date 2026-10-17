@@ -13,6 +13,9 @@ def score_receipt(receipt: dict[str, Any], cnn_probability: float | None = None,
         if not check.get("passed") and check.get("name") in ("components_vs_total", "items_vs_subtotal"):
             score += 25
             signals.append(check["name"])
+        elif not check.get("passed") and str(check.get("name", "")).startswith("reader_disagreement_"):
+            score += 10
+            signals.append(check["name"])
     confidence = receipt.get("extraction", {}).get("confidence", {})
     amount_confidences = [confidence[field] for field in ("total", "subtotal", "tax")
                           if field in confidence]

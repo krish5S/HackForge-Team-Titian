@@ -1,0 +1,23 @@
+{
+  "auc": 0.9985839972812748,
+  "accuracy": 0.9572815533980582,
+  "false_positive_rate": 0.058981233243967826,
+  "confusion_matrix": [
+    [
+      351,
+      22
+    ],
+    [
+      0,
+      142
+    ]
+  ],
+  "count": 515,
+  "express_expense_false_positive_rate": 0.1111111111111111,
+  "cnn_weight_enabled": false,
+  "cnn_gate": {
+    "minimum_auc": 0.75,
+    "maximum_unseen_real_fpr": 0.1,
+    "reason": "held-out AUC or unseen-source false-positive rate failed"
+  }
+}

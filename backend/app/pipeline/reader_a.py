@@ -1,6 +1,7 @@
 """Conservative pattern reader for PaddleOCR text and boxes."""
 
 from datetime import datetime
+from decimal import Decimal, InvalidOperation
 import re
 from typing import Any
 
@@ -111,4 +112,40 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
         result["category"] = "TRAVEL"
     elif any(word in all_text for word in ("restaurant", "bistro", "cafe", "meal", "dinner", "lunch")):
         result["category"] = "MEALS"
+    items = []
+    for index, line in enumerate(lines):
+        description = str(line.get("text", "")).strip()
+        lower = description.lower()
+        if (not re.search(r"[a-zA-Z]", description) or
+                any(re.search(r"\b" + word + r"\b", lower) for word in
+                    ("merchant", "receipt", "invoice", "date", "time", "subtotal",
+                     "tax", "tip", "total", "other", "balance", "card", "thank"))):
+            continue
+        amount_match = MONEY.search(description)
+        if amount_match:
+            prefix = description[:amount_match.start()].strip(" -:.")
+            if not prefix:
+                continue
+            description = prefix
+            amount = _amount(amount_match.group(0))
+        elif index + 1 < len(lines):
+            next_text = str(lines[index + 1].get("text", "")).strip()
+            if not re.fullmatch(r"(?:[$€£₹]\s*)?\d[\d,.]*\s*(?:USD|EUR|GBP|INR|IDR|MYR)?", next_text, re.I):
+                continue
+            amount = _amount(next_text)
+        else:
+            continue
+        if amount is None:
+            continue
+        item_class = ("ALCOHOL" if re.search(r"\b(beer|wine|vodka|whisky|whiskey|gin|rum|cocktail)\b", lower)
+                      else "FOOD" if re.search(r"\b(food|meal|lunch|dinner|breakfast)\b", lower)
+                      else "OTHER")
+        items.append({"description": description, "amount": amount, "item_class": item_class})
+    if items:
+        result["line_items"] = items
+        try:
+            if len(items) >= 2 and sum(Decimal(item["amount"]) for item in items) == Decimal(result["subtotal"]):
+                result["itemization"] = "FULL"
+        except (InvalidOperation, KeyError):
+            pass
     return result
