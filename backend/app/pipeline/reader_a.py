@@ -90,7 +90,7 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
             if match:
                 result["card_last4"] = match.group(1)
         if "receipt_number" not in result:
-            match = re.search(r"\b(?:receipt|invoice|bill)\s*(?:no\.?|#|number|:)?\s*([a-z0-9-]{3,})", lower)
+            match = re.search(r"\b(?:receipt|invoice|bill)\s*(?:no\.?|#|number|:)?\s*([a-z0-9_-]{3,})", lower)
             if match:
                 result["receipt_number"] = match.group(1).upper()
         if "currency" not in result:

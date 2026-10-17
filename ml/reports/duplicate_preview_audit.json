@@ -1,0 +1,8 @@
+{
+  "images": 90,
+  "expected_pairs": 13,
+  "found_expected_pairs": 13,
+  "missed_pairs": [],
+  "extra_candidates": [],
+  "candidate_count": 13
+}

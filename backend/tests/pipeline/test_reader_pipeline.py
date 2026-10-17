@@ -28,13 +28,14 @@ class ReaderPipelineTests(unittest.TestCase):
                 compare(index, root, scenarios, root / "metrics.json")
 
     def test_item_lines_support_auditable_alcohol_exclusion(self):
-        texts = ["Cafe", "SUBTOTAL", "20.00 USD", "Food", "15.00", "Beer", "5.00", "TOTAL", "20.00 USD"]
+        texts = ["Cafe", "Receipt: r_050", "SUBTOTAL", "20.00 USD", "Food", "15.00", "Beer", "5.00", "TOTAL", "20.00 USD"]
         result = read_patterns({"lines": [{"text": value, "confidence": .95, "box": []}
                                           for value in texts]})
         self.assertEqual(result["line_items"], [
             {"description": "Food", "amount": "15.00", "item_class": "FOOD"},
             {"description": "Beer", "amount": "5.00", "item_class": "ALCOHOL"}])
         self.assertEqual(result["itemization"], "FULL")
+        self.assertEqual(result["receipt_number"], "R_050")
 
     def test_cnn_gate_rejects_unqualified_metrics(self):
         with tempfile.TemporaryDirectory() as folder:
