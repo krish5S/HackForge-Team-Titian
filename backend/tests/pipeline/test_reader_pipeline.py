@@ -1,4 +1,5 @@
 import json
+import io
 from pathlib import Path
 import tempfile
 import unittest
@@ -12,10 +13,23 @@ from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.normalize import load_image
 from backend.app.pipeline.process import process_receipt
 from backend.app.pipeline.reader_a import read_fields as read_patterns
+from backend.app.llm.client import extract_receipt_fields
 from scripts.compare_month_readers import compare
 
 
 class ReaderPipelineTests(unittest.TestCase):
+    def test_text_model_answer_is_cached_by_file_hash(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with (patch.dict(os.environ, {"RECEIPT_LLM_ENDPOINT": "https://example.invalid/receipt"}),
+                  patch("backend.app.llm.client.urlopen", return_value=io.BytesIO(b'{"category":"MEALS"}')) as post):
+                first = extract_receipt_fields("OCR text", "a" * 64, Path(folder))
+                second = extract_receipt_fields("OCR text", "a" * 64, Path(folder))
+            self.assertEqual(first, {"category": "MEALS"})
+            self.assertEqual(second, first)
+            self.assertEqual(post.call_count, 1)
+            sent = json.loads(post.call_args[0][0].data)
+            self.assertEqual(sent["ocr_text"], "OCR text")
+
     def test_reader_switch_rejects_incomplete_month(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
