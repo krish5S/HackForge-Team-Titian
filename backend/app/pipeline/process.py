@@ -10,6 +10,7 @@ from backend.app.contracts.receipt import ProcessedReceipt
 from backend.app.pipeline.fingerprints import normalize_merchant, perceptual_hash, sha256_file
 from backend.app.pipeline.cnn import predict_fake_probability
 from backend.app.pipeline.forensics import score_receipt
+from backend.app.pipeline.layoutlm_reader import read_fields as read_layoutlm
 from backend.app.pipeline.fx import convert_total, load_rates
 from backend.app.pipeline.normalize import save_normalized
 from backend.app.pipeline.ocr import extract_text
@@ -43,6 +44,17 @@ def process_receipt(
     save_normalized(source, normalized_path)
     ocr = extract_text(normalized_path)
     pattern = read_patterns(ocr)
+    layout: dict[str, Any] = {}
+    layout_error = ""
+    try:
+        layout = read_layoutlm(normalized_path, ocr)
+    except (OSError, ValueError, RuntimeError, json.JSONDecodeError) as exc:
+        layout_error = str(exc)
+        LOG.warning("Layout reader unavailable for %s: %s", source, exc)
+    reader_a = {**pattern, **{key: value for key, value in layout.items()
+                            if key not in ("confidence", "boxes")}}
+    reader_a["confidence"] = {**pattern.get("confidence", {}), **layout.get("confidence", {})}
+    reader_a["boxes"] = {**pattern.get("boxes", {}), **layout.get("boxes", {})}
     model: dict[str, Any] = {}
     model_error = ""
     try:
@@ -53,21 +65,26 @@ def process_receipt(
 
     extraction: dict[str, Any] = {field: "" for field in STRING_FIELDS}
     extraction.update({"line_items": [], "guest_count": 0,
-                       "confidence": {}, "boxes": {}, "readers": {"reader_a": pattern,
+                       "confidence": {}, "boxes": {}, "readers": {"reader_a": reader_a,
                                                                    "reader_b": model}})
+    if layout:
+        extraction["readers"]["reader_a_pattern"] = pattern
+        extraction["readers"]["reader_a_layoutlm"] = layout
+    if layout_error:
+        extraction["readers"]["reader_a_layoutlm_error"] = {"message": layout_error}
     for field in STRING_FIELDS:
-        value = pattern.get(field) or model.get(field)
+        value = reader_a.get(field) or model.get(field)
         if value is not None:
             extraction[field] = str(value)
-    extraction["line_items"] = model.get("line_items", pattern.get("line_items", []))
-    extraction["guest_count"] = model.get("guest_count", pattern.get("guest_count", 0))
-    extraction["confidence"] = pattern.get("confidence", {})
-    extraction["boxes"] = pattern.get("boxes", {})
+    extraction["line_items"] = model.get("line_items", reader_a.get("line_items", []))
+    extraction["guest_count"] = model.get("guest_count", reader_a.get("guest_count", 0))
+    extraction["confidence"] = reader_a.get("confidence", {})
+    extraction["boxes"] = reader_a.get("boxes", {})
     if model_error:
         extraction["readers"]["reader_b_error"] = {"message": model_error}
     disagreement = []
     for field in ("total", "transaction_date"):
-        if pattern.get(field) and model.get(field) and str(pattern[field]) != str(model[field]):
+        if reader_a.get(field) and model.get(field) and str(reader_a[field]) != str(model[field]):
             disagreement.append(field)
             extraction["confidence"][field] = min(extraction["confidence"].get(field, 1.0), 0.49)
 
@@ -76,7 +93,7 @@ def process_receipt(
     if disagreement:
         for field in disagreement:
             validation["checks"].append({"name": f"reader_disagreement_{field}",
-                                          "expected": str(pattern[field]),
+                                          "expected": str(reader_a[field]),
                                           "printed": str(model[field]), "passed": False})
     fx = convert_total(extraction["total"], extraction["currency"], rates)
     line_count = len(ocr.get("lines") or [])

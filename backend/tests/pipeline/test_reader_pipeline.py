@@ -79,6 +79,18 @@ class ReaderPipelineTests(unittest.TestCase):
                 disputed = process_receipt(source, {"receipt_id": "r_001"}, root / "out")
             self.assertIn("reader_disagreement_total", disputed["forensics"]["signals"])
             self.assertLess(disputed["extraction"]["confidence"]["total"], .5)
+            with (patch("backend.app.pipeline.process.extract_text", return_value=ocr),
+                  patch("backend.app.pipeline.process.read_layoutlm", return_value={
+                      "total": "26.00", "confidence": {"total": .99},
+                      "boxes": {"total": [0, 0, 100, 20]}})):
+                switched = process_receipt(source, {"receipt_id": "r_001"}, root / "out")
+            self.assertEqual(switched["extraction"]["total"], "26.00")
+            self.assertIn("reader_a_layoutlm", switched["extraction"]["readers"])
+            with (patch("backend.app.pipeline.process.extract_text", return_value=ocr),
+                  patch("backend.app.pipeline.process.read_layoutlm", side_effect=RuntimeError("model unavailable"))):
+                fallback = process_receipt(source, {"receipt_id": "r_001"}, root / "out")
+            self.assertEqual(fallback["extraction"]["total"], "25.00")
+            self.assertIn("reader_a_layoutlm_error", fallback["extraction"]["readers"])
 
     def test_duplicate_guards_and_exact_copy(self):
         def receipt(identifier, digest, number="123", time="12:00"):
