@@ -2,6 +2,7 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel
 
+
 Verdict = Literal["APPROVE", "NEEDS_REVIEW", "REJECT"]
 
 
@@ -18,3 +19,13 @@ class DecisionRow(BaseModel):
     amount_at_risk: Optional[str] = None
     risk_score: Optional[int] = None
     top_reason: Optional[str] = None
+
+
+class ReceiptDetail(BaseModel):
+    receipt_id: str
+    employee_id: str
+    employee_name: str
+    submission: dict
+    processed_receipt: dict
+    decision: Optional[dict] = None
+    evaluation_run_id: Optional[str] = None
