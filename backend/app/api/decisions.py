@@ -87,6 +87,7 @@ def list_decisions(
                 proposed=amounts.get("proposed"),
                 reimbursable=amounts.get("reimbursable"),
                 amount_at_risk=amounts.get("amount_at_risk"),
+                currency=amounts.get("currency"),
                 risk_score=decision.risk_score,
                 top_reason=(
                     reasons[0].get("message") if reasons else None

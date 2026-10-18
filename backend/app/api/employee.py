@@ -97,7 +97,7 @@ async def submit(request: Request, user: AuthUser = Depends(require_employee), d
     raw_key = key
     key = hashlib.sha256(f'{user.id}:{raw_key}'.encode()).hexdigest()
     async with request.form(max_files=1, max_fields=6, max_part_size=16 * 1024) as form:
-        allowed = {'file', 'purpose', 'client_name', 'attendee_names', 'attendee_count', 'notes'}
+        allowed = {'file', 'purpose', 'client_name', 'attendee_names', 'attendee_count', 'notes', 'client_meal'}
         if set(form) - allowed or len(form.multi_items()) != len(form):
             raise HTTPException(422, 'Unexpected or repeated submission fields.')
         file = form.get('file')
@@ -111,6 +111,11 @@ async def submit(request: Request, user: AuthUser = Depends(require_employee), d
             fields[name] = value.strip()
         if not fields['purpose']:
             raise HTTPException(422, 'Expense purpose is required.')
+        client_meal = form.get('client_meal')
+        if client_meal is not None:
+            if client_meal not in ('true', 'false'):
+                raise HTTPException(422, 'Client meal must be true or false.')
+            fields['client_meal'] = client_meal == 'true'
         count = form.get('attendee_count', '')
         if not isinstance(count, str) or (count and (not re.fullmatch(r'\d{1,5}', count) or int(count) > 10000)):
             raise HTTPException(422, 'Attendee count must be a whole number from 0 to 10000.')

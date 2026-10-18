@@ -5,3 +5,5 @@ argon2-cffi>=23.1,<26
 python-multipart>=0.0.20
 Pillow>=11
 pypdf>=6
+pydantic>=2.12,<3
+PyYAML>=6,<7

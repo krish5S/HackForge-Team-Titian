@@ -162,3 +162,34 @@ class SubmissionUpload(Base):
     file_sha256 = Column(String(64), nullable=True)
     processing_status = Column(String, nullable=False, default="UPLOADED", server_default="UPLOADED")
     processing_error = Column(Text, nullable=True)
+
+
+class EvaluationArtifact(Base):
+    __tablename__ = "evaluation_artifacts"
+    run_id = Column(String, ForeignKey("evaluation_runs.id"), primary_key=True)
+    input_digest = Column(String(64), unique=True, nullable=False)
+    input_json = Column(JSON, nullable=False)
+    timeline_json = Column(JSON, nullable=False)
+
+
+class ReceiptAsset(Base):
+    __tablename__ = "receipt_assets"
+    receipt_id = Column(String, ForeignKey("receipts.id"), primary_key=True)
+    clean_path = Column(Text, nullable=True)
+
+
+class PolicyCompilation(Base):
+    __tablename__ = "policy_compilations"
+    id = Column(String, primary_key=True, default=lambda: uuid4().hex)
+    policy_id = Column(String, ForeignKey("policies.id"), nullable=False)
+    created_at = Column(String, nullable=False, default=lambda: datetime.now(timezone.utc).isoformat())
+    result_json = Column(JSON, nullable=False)
+
+
+class ProcessingJob(Base):
+    __tablename__ = "processing_jobs"
+    id = Column(String, primary_key=True, default=lambda: uuid4().hex)
+    submission_id = Column(String, ForeignKey("submissions.id"), nullable=False, unique=True)
+    file_sha256 = Column(String(64), nullable=False)
+    status = Column(String, nullable=False, default="QUEUED")
+    error = Column(Text, nullable=True)

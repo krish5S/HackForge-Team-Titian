@@ -4,6 +4,9 @@ from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.auth import ALLOWED_ORIGINS, require_reviewer
+from app.api.reviewer import router as reviewer_router
+from app.policy import configure_compiler
+from app.llm.client import compile_policy_text
 from app.api.employee import router as employee_router
 from app.upload_limit import UploadLimitMiddleware
 from app.api.auth import router as auth_router
@@ -20,6 +23,7 @@ from app.errors import register_error_handlers
 async def lifespan(app: FastAPI):
     Base.metadata.create_all(bind=engine)
     migrate_uploads(engine)
+    configure_compiler(compile_policy_text)
 
     try:
         yield
@@ -51,3 +55,5 @@ app.include_router(auth_router, prefix="/api")
 app.include_router(decisions_router, prefix="/api", dependencies=[Depends(require_reviewer)])
 app.include_router(receipts_router, prefix="/api", dependencies=[Depends(require_reviewer)])
 app.include_router(employee_router, prefix="/api")
+
+app.include_router(reviewer_router, prefix="/api", dependencies=[Depends(require_reviewer)])

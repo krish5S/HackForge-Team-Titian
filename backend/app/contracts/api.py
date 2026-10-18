@@ -17,6 +17,7 @@ class DecisionRow(BaseModel):
     proposed: Optional[str] = None
     reimbursable: Optional[str] = None
     amount_at_risk: Optional[str] = None
+    currency: Optional[str] = None
     risk_score: Optional[int] = None
     top_reason: Optional[str] = None
 
@@ -29,3 +30,4 @@ class ReceiptDetail(BaseModel):
     processed_receipt: dict
     decision: Optional[dict] = None
     evaluation_run_id: Optional[str] = None
+    available_variants: list[str] = ["original"]

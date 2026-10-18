@@ -12,6 +12,7 @@ from app.db.models import (
     Employee,
     EvaluationRun,
     Receipt,
+    ReceiptAsset,
     Submission,
 )
 
@@ -92,6 +93,7 @@ def get_receipt(
                 "proposed": amounts.get("proposed"),
                 "reimbursable": amounts.get("reimbursable"),
                 "amount_at_risk": amounts.get("amount_at_risk"),
+                "currency": amounts.get("currency"),
                 "risk_score": decision.risk_score,
                 "reasons": decision.reasons_json or [],
                 "counterfactuals": (
@@ -101,7 +103,14 @@ def get_receipt(
                 "duplicate_of": decision.duplicate_of,
             }
 
+    asset = db.get(ReceiptAsset, receipt_id)
+    variants = ["original"]
+    if asset and asset.clean_path:
+        clean = (PROJECT_ROOT / asset.clean_path).resolve()
+        if clean.is_relative_to(RECEIPT_FILES_ROOT) and clean.is_file():
+            variants.append("clean")
     return ReceiptDetail(
+        available_variants=variants,
         receipt_id=receipt.id,
         employee_id=employee.id,
         employee_name=employee.name,
@@ -151,12 +160,11 @@ def get_receipt_image(
             detail=f"No receipt {receipt_id}",
         )
 
-    # Cleaned-file paths still need to be agreed with Dev 1.
     if variant == "clean":
-        raise HTTPException(
-            status_code=404,
-            detail="Cleaned image is not available for this receipt.",
-        )
+        asset = db.get(ReceiptAsset, receipt_id)
+        if not asset or not asset.clean_path:
+            raise HTTPException(404, 'Cleaned image is not available for this receipt.')
+        stored_path = asset.clean_path
 
     # The loader will store project-relative paths.
     file_path = (PROJECT_ROOT / stored_path).resolve()
@@ -188,5 +196,6 @@ def get_receipt_image(
         media_type=media_type,
         headers={
             "X-Content-Type-Options": "nosniff",
+            "Cache-Control": "no-store",
         },
     )
