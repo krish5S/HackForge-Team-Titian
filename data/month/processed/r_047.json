@@ -1,0 +1,192 @@
+{
+  "receipt_id": "r_047",
+  "file_sha256": "9515e8aed4a67d527c04506385918d683ba9d2c57fcc56e3adf94d6d4bcbd89c",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Merchant 47",
+    "receipt_number": "R_047",
+    "card_last4": "",
+    "transaction_date": "2026-09-01",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "150.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "150.00",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Business expense",
+        "amount": "150.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9867557883262634,
+      "subtotal": 0.9990771412849426,
+      "tax": 0.998487114906311,
+      "tip": 0.9988387227058411,
+      "other_charges": 0.9985650181770325,
+      "total": 0.999078094959259
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        335,
+        311
+      ],
+      "subtotal": [
+        527,
+        548,
+        680,
+        575
+      ],
+      "tax": [
+        558,
+        609,
+        681,
+        634
+      ],
+      "tip": [
+        558,
+        669,
+        680,
+        695
+      ],
+      "other_charges": [
+        558,
+        729,
+        680,
+        754
+      ],
+      "total": [
+        622,
+        790,
+        804,
+        817
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9867557883262634,
+          "subtotal": 0.9990771412849426,
+          "tax": 0.998487114906311,
+          "tip": 0.9988387227058411,
+          "other_charges": 0.9985650181770325,
+          "total": 0.999078094959259
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            527,
+            548,
+            680,
+            575
+          ],
+          "tax": [
+            558,
+            609,
+            681,
+            634
+          ],
+          "tip": [
+            558,
+            669,
+            680,
+            695
+          ],
+          "other_charges": [
+            558,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            622,
+            790,
+            804,
+            817
+          ]
+        },
+        "merchant_name": "Merchant 47",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-01",
+        "transaction_time": "12:00",
+        "receipt_number": "R_047",
+        "subtotal": "150.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "150.00",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Business expense",
+            "amount": "150.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "150.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "150.00",
+        "printed": "150.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "150.00",
+        "printed": "150.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-01",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "150.00"
+  },
+  "fingerprints": {
+    "phash": "8f1e9649e41ad8b5",
+    "merchant_norm": "merchant 47"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

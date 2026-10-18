@@ -1,0 +1,234 @@
+{
+  "receipt_id": "r_070",
+  "file_sha256": "36b005aa17a425ea8a990626856fb39ff77675f46de3392edc9dfc5c62706e82",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Mexican Restaurant & Bar",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2017-12-29",
+    "transaction_time": "1:17",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "5.46",
+    "tax": "55.51",
+    "tip": "18.00",
+    "other_charges": "",
+    "total": "64.52",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Reprint #: 1",
+        "amount": "3.25",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Coffee",
+        "amount": "14.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "pollo",
+        "amount": "5.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Chicken Tenders",
+        "amount": "9.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Flautas Chicken",
+        "amount": "15.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "M",
+        "amount": "50.05",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Gratuity",
+        "amount": "18.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9999980926513672,
+      "subtotal": 0.9999963045120239,
+      "tax": 0.9999977350234985,
+      "total": 0.9999966621398926,
+      "tip": 0.9994314908981323
+    },
+    "boxes": {
+      "transaction_date": [
+        420,
+        146,
+        540,
+        181
+      ],
+      "subtotal": [
+        505,
+        520,
+        563,
+        555
+      ],
+      "tax": [
+        497,
+        578,
+        567,
+        616
+      ],
+      "total": [
+        445,
+        733,
+        577,
+        775
+      ],
+      "tip": [
+        40,
+        626,
+        239,
+        669
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9999980926513672,
+          "subtotal": 0.9999963045120239,
+          "tax": 0.9999977350234985,
+          "total": 0.9999966621398926,
+          "tip": 0.9994314908981323
+        },
+        "boxes": {
+          "transaction_date": [
+            420,
+            146,
+            540,
+            181
+          ],
+          "subtotal": [
+            505,
+            520,
+            563,
+            555
+          ],
+          "tax": [
+            497,
+            578,
+            567,
+            616
+          ],
+          "total": [
+            445,
+            733,
+            577,
+            775
+          ],
+          "tip": [
+            40,
+            626,
+            239,
+            669
+          ]
+        },
+        "merchant_name": "Mexican Restaurant & Bar",
+        "transaction_date": "2017-12-29",
+        "transaction_time": "1:17",
+        "subtotal": "5.46",
+        "tax": "55.51",
+        "total": "64.52",
+        "tip": "18.00",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Reprint #: 1",
+            "amount": "3.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Coffee",
+            "amount": "14.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "pollo",
+            "amount": "5.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Chicken Tenders",
+            "amount": "9.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Flautas Chicken",
+            "amount": "15.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "M",
+            "amount": "50.05",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "18.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "64.52",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "78.97",
+        "printed": "64.52",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "118.10",
+        "printed": "5.46",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-12-29",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d2ea29fb2ab028b6",
+    "merchant_norm": "mexican restaurant bar"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

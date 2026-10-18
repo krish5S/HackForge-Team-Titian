@@ -1,0 +1,228 @@
+{
+  "receipt_id": "r_097",
+  "file_sha256": "e978332d016259b6ee88cda163e81dd3f89edeede30a0f3a1fc75e3f66eaade5",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "OLD ASIA",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2016-02-13",
+    "transaction_time": "02:29",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "RM",
+        "amount": "13.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "11.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "7.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "15.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "16.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "7.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "5.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "3.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "8.25",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "90.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "5.45",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "96.20",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "100.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "3.80",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9783010482788086
+    },
+    "boxes": {
+      "transaction_date": [
+        184,
+        765,
+        885,
+        812
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9783010482788086
+        },
+        "boxes": {
+          "transaction_date": [
+            184,
+            765,
+            885,
+            812
+          ]
+        },
+        "merchant_name": "OLD ASIA",
+        "transaction_date": "2016-02-13",
+        "transaction_time": "02:29",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "13.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "11.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "15.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "8.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "90.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "96.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2016-02-13",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "f1e72508d708d5f2",
+    "merchant_norm": "old asia"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

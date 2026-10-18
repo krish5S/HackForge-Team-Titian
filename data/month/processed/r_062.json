@@ -1,0 +1,222 @@
+{
+  "receipt_id": "r_062",
+  "file_sha256": "0a46baab3fa5f88f22848fea2b61659d55635c40fbe8c380a03b7a5dafe6aeda",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "DOUGLAS BURGERS #15",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2019-02-09",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "2.97",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "T BURGER COMBO",
+        "amount": "9.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "*american ch*",
+        "amount": "0.70",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 **add bacon**",
+        "amount": "1.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "*gril onions*",
+        "amount": "2.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Raspberry Ice Te",
+        "amount": "5.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1**add bacon**",
+        "amount": "1.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "**add avocado**",
+        "amount": "1.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "* onions rings *",
+        "amount": "2.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "* lemonade *",
+        "amount": "0.61",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Sub/Tt1",
+        "amount": "31.24",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "THRU",
+        "amount": "34.21",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "34.21",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9998165965080261,
+      "tax": 0.9994910359382629
+    },
+    "boxes": {
+      "transaction_date": [
+        123,
+        111,
+        159,
+        123
+      ],
+      "tax": [
+        192,
+        343,
+        220,
+        358
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9998165965080261,
+          "tax": 0.9994910359382629
+        },
+        "boxes": {
+          "transaction_date": [
+            123,
+            111,
+            159,
+            123
+          ],
+          "tax": [
+            192,
+            343,
+            220,
+            358
+          ]
+        },
+        "merchant_name": "DOUGLAS BURGERS #15",
+        "transaction_date": "2019-02-09",
+        "tax": "2.97",
+        "line_items": [
+          {
+            "description": "T BURGER COMBO",
+            "amount": "9.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "*american ch*",
+            "amount": "0.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 **add bacon**",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "*gril onions*",
+            "amount": "2.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Raspberry Ice Te",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1**add bacon**",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "**add avocado**",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "* onions rings *",
+            "amount": "2.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "* lemonade *",
+            "amount": "0.61",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Sub/Tt1",
+            "amount": "31.24",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "THRU",
+            "amount": "34.21",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "34.21",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2019-02-09",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d08367986e9d692b",
+    "merchant_norm": "douglas burgers 15"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

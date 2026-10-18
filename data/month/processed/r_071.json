@@ -1,0 +1,175 @@
+{
+  "receipt_id": "r_071",
+  "file_sha256": "d71119c1fe21cbcb755cdd08e50ea61dbde66530b8cac8a1a814a74a1468425b",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "KAZ RAMEN",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "9:07",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "13.05",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "14.06",
+    "itemization": "FULL",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Guest 1",
+        "amount": "9.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Tofu",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Egg",
+        "amount": "1.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Corn",
+        "amount": "0.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Bamboo shoots",
+        "amount": "1.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Naruto",
+        "amount": "0.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Spicy",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.999975860118866,
+      "total": 0.9999887943267822
+    },
+    "boxes": {
+      "subtotal": [
+        504,
+        691,
+        577,
+        720
+      ],
+      "total": [
+        511,
+        768,
+        582,
+        794
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.999975860118866,
+          "total": 0.9999887943267822
+        },
+        "boxes": {
+          "subtotal": [
+            504,
+            691,
+            577,
+            720
+          ],
+          "total": [
+            511,
+            768,
+            582,
+            794
+          ]
+        },
+        "merchant_name": "KAZ RAMEN",
+        "transaction_time": "9:07",
+        "currency": "USD",
+        "subtotal": "13.05",
+        "total": "14.06",
+        "line_items": [
+          {
+            "description": "Guest 1",
+            "amount": "9.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tofu",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Egg",
+            "amount": "1.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Corn",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bamboo shoots",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Naruto",
+            "amount": "0.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spicy",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "14.06",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "13.05",
+        "printed": "13.05",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "14.06"
+  },
+  "fingerprints": {
+    "phash": "d3292d8c7883f2c7",
+    "merchant_norm": "kaz ramen"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

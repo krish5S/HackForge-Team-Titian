@@ -1,0 +1,183 @@
+{
+  "receipt_id": "r_073",
+  "file_sha256": "df88fa05e6930aceabee30559f31e203925702ee255ea072444daf4e48159e8c",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Chelokababi",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "6:35",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "146.85",
+    "tax": "13.22",
+    "tip": "22.40",
+    "other_charges": "",
+    "total": "160.07",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Koobideh × 7",
+        "amount": "115.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "(",
+        "amount": "16.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Very well done",
+        "amount": "8.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "18% Gratuity",
+        "amount": "22.40",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "tip": 0.9999935030937195,
+      "subtotal": 0.9999970197677612,
+      "tax": 0.9999814033508301,
+      "total": 0.9999809265136719
+    },
+    "boxes": {
+      "tip": [
+        467,
+        579,
+        534,
+        607
+      ],
+      "subtotal": [
+        461,
+        628,
+        537,
+        655
+      ],
+      "tax": [
+        476,
+        656,
+        539,
+        681
+      ],
+      "total": [
+        458,
+        715,
+        542,
+        740
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tip": 0.9999935030937195,
+          "subtotal": 0.9999970197677612,
+          "tax": 0.9999814033508301,
+          "total": 0.9999809265136719
+        },
+        "boxes": {
+          "tip": [
+            467,
+            579,
+            534,
+            607
+          ],
+          "subtotal": [
+            461,
+            628,
+            537,
+            655
+          ],
+          "tax": [
+            476,
+            656,
+            539,
+            681
+          ],
+          "total": [
+            458,
+            715,
+            542,
+            740
+          ]
+        },
+        "merchant_name": "Chelokababi",
+        "transaction_time": "6:35",
+        "currency": "USD",
+        "tip": "22.40",
+        "subtotal": "146.85",
+        "tax": "13.22",
+        "total": "160.07",
+        "line_items": [
+          {
+            "description": "Koobideh × 7",
+            "amount": "115.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Very well done",
+            "amount": "8.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "18% Gratuity",
+            "amount": "22.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "160.07",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "182.47",
+        "printed": "160.07",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "163.35",
+        "printed": "146.85",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "160.07"
+  },
+  "fingerprints": {
+    "phash": "d28827a73fe26c68",
+    "merchant_norm": "chelokababi"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

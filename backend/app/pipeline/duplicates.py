@@ -28,6 +28,16 @@ def _time_gap_minutes(a: str, b: str) -> float | None:
         return None
 
 
+def _identical_image(first: dict[str, Any], second: dict[str, Any]) -> bool:
+    phash_a = first.get("fingerprints", {}).get("phash")
+    phash_b = second.get("fingerprints", {}).get("phash")
+    try:
+        return bool(phash_a and phash_b and
+                    imagehash.hex_to_hash(phash_a) - imagehash.hex_to_hash(phash_b) <= 2)
+    except ValueError:
+        return False
+
+
 def find_duplicates(receipts: list[dict[str, Any]]) -> list[dict[str, Any]]:
     candidates = []
     for index, first in enumerate(receipts):
@@ -50,7 +60,12 @@ def find_duplicates(receipts: list[dict[str, Any]]) -> list[dict[str, Any]]:
             right = second.get("fingerprints", {}).get("merchant_norm", "")
             if set(re.findall(r"\b\d+\b", left)) != set(re.findall(r"\b\d+\b", right)):
                 continue
-            if not left or not right or ratio(left, right) < 90:
+            if left and right:
+                if ratio(left, right) < 90:
+                    continue
+            elif not _identical_image(first, second):
+                # An unreadable merchant only passes when the image itself is
+                # an almost exact copy.
                 continue
             total_a, total_b = _base_total(first), _base_total(second)
             same_transaction = (a.get("transaction_date") and

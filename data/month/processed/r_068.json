@@ -1,0 +1,278 @@
+{
+  "receipt_id": "r_068",
+  "file_sha256": "5f6f454ca153e917635b3e6833219199c8e7c05a45e66b500bae885b5e63310d",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "FIVE GUYS",
+    "receipt_number": "DATE",
+    "card_last4": "",
+    "transaction_date": "2017-05-25",
+    "transaction_time": "1:00:",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "30.31",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "2.35",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "1 Little Hamburger",
+        "amount": "5.19",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Lettuce",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pickles",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Tomatoes",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Grilled Onions",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Grilled Mushrooms",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Mustard",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Ketchup",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Jalapeno Peppers",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2 Large Fry (@",
+        "amount": "5.79",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Mayo",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Lettuce",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "BBQ Sauce",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Regular Soda",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "MasterCard",
+        "amount": "32.66",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9999921321868896,
+      "subtotal": 0.9998500943183899,
+      "total": 0.999838650226593
+    },
+    "boxes": {
+      "transaction_date": [
+        268,
+        119,
+        320,
+        133
+      ],
+      "subtotal": [
+        459,
+        465,
+        500,
+        486
+      ],
+      "total": [
+        467,
+        496,
+        500,
+        511
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9999921321868896,
+          "subtotal": 0.9998500943183899,
+          "total": 0.999838650226593
+        },
+        "boxes": {
+          "transaction_date": [
+            268,
+            119,
+            320,
+            133
+          ],
+          "subtotal": [
+            459,
+            465,
+            500,
+            486
+          ],
+          "total": [
+            467,
+            496,
+            500,
+            511
+          ]
+        },
+        "merchant_name": "FIVE GUYS",
+        "transaction_date": "2017-05-25",
+        "transaction_time": "1:00:",
+        "currency": "USD",
+        "subtotal": "30.31",
+        "total": "2.35",
+        "receipt_number": "DATE",
+        "line_items": [
+          {
+            "description": "1 Little Hamburger",
+            "amount": "5.19",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Lettuce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pickles",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tomatoes",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Grilled Onions",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Grilled Mushrooms",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Mustard",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ketchup",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Jalapeno Peppers",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Large Fry (@",
+            "amount": "5.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Mayo",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Lettuce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "BBQ Sauce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Regular Soda",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MasterCard",
+            "amount": "32.66",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "2.35",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "43.64",
+        "printed": "30.31",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-05-25",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "2.35"
+  },
+  "fingerprints": {
+    "phash": "9acc4a3ec13fe017",
+    "merchant_norm": "five guys"
+  },
+  "forensics": {
+    "score": 25,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "items_vs_subtotal"
+    ]
+  }
+}

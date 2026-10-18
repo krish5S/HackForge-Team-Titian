@@ -1,0 +1,59 @@
+{
+  "receipt_id": "r_017",
+  "file_sha256": "9a4ef875194aba3f276399807c6210f165420757d926f48ca569029a20090de9",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "培物华对动带计验信营音会",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "培物华对动带计验信营音会"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "c55a7ab93e81855a",
+    "merchant_norm": ""
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

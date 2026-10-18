@@ -32,6 +32,16 @@ def _same(field: str, actual: str, expected: str) -> bool:
     return str(actual) == str(expected)
 
 
+def switch_reason(pattern: dict, layout: dict, enabled: bool) -> str:
+    if enabled:
+        return "LayoutLM improves total/date without regression"
+    worse = [field for field in pattern if layout[field] is None or
+             (pattern[field] is not None and layout[field] < pattern[field])]
+    if worse:
+        return "LayoutLM regresses on " + ", ".join(worse) + "; pattern reader kept"
+    return "LayoutLM does not improve total/date; pattern reader kept"
+
+
 def compare(index_path: Path, images_dir: Path, scenarios_path: Path, metrics_path: Path) -> dict:
     index = json.loads(index_path.read_text(encoding="utf-8"))
     images = index["images"]
@@ -71,8 +81,7 @@ def compare(index_path: Path, images_dir: Path, scenarios_path: Path, metrics_pa
                    layout[field] >= pattern[field] for field in pattern) and
                any(layout[field] > pattern[field] for field in pattern))
     result = {"counts": counts, "accuracy": accuracy, "model_switch_enabled": enabled,
-              "model_switch_reason": "LayoutLM improves total/date without regression" if enabled else
-                                     "Pattern reader matches or exceeds LayoutLM on total/date"}
+              "model_switch_reason": switch_reason(pattern, layout, enabled)}
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
     metrics.update({"test_month_comparison": result, "model_switch_enabled": enabled,
                     "model_switch_reason": result["model_switch_reason"]})

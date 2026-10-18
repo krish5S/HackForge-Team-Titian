@@ -1,0 +1,159 @@
+{
+  "receipt_id": "r_094",
+  "file_sha256": "230b359446e12fc1fe307b90f1fe27590d0fa8ab8ea28c212a3a5f1c46a423be",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2017-08-30",
+    "transaction_time": "10:51",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "13.74",
+    "tip": "",
+    "other_charges": "",
+    "total": "53.14",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "O.C. WHITE",
+        "amount": "2.13",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "WHOLEMEAL",
+        "amount": "2.78",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "O.C JUMBO",
+        "amount": "2.97",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "GST:",
+        "amount": "0.78",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9968887567520142,
+      "total": 0.9999876022338867,
+      "tax": 0.999798595905304
+    },
+    "boxes": {
+      "transaction_date": [
+        323,
+        304,
+        517,
+        328
+      ],
+      "total": [
+        447,
+        885,
+        517,
+        927
+      ],
+      "tax": [
+        449,
+        788,
+        516,
+        828
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9968887567520142,
+          "total": 0.9999876022338867,
+          "tax": 0.999798595905304
+        },
+        "boxes": {
+          "transaction_date": [
+            323,
+            304,
+            517,
+            328
+          ],
+          "total": [
+            447,
+            885,
+            517,
+            927
+          ],
+          "tax": [
+            449,
+            788,
+            516,
+            828
+          ]
+        },
+        "merchant_name": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)",
+        "transaction_date": "2017-08-30",
+        "transaction_time": "10:51",
+        "total": "53.14",
+        "tax": "13.74",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "O.C. WHITE",
+            "amount": "2.13",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "WHOLEMEAL",
+            "amount": "2.78",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "O.C JUMBO",
+            "amount": "2.97",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "GST:",
+            "amount": "0.78",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "53.14",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-08-30",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "f73074ea559a168a",
+    "merchant_norm": "gardenia bakertes kl sdn bhd 139386 x"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

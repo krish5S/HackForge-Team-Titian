@@ -1,0 +1,191 @@
+{
+  "receipt_id": "r_072",
+  "file_sha256": "6bb736948875f4a79f3c6fcbecc429e5c8bd5e2bda2dc4c107215570d8253fea",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "OM INDIAN FOOD",
+    "receipt_number": "2143",
+    "card_last4": "",
+    "transaction_date": "2016-04-15",
+    "transaction_time": "12:03",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "29.85",
+    "tax": "1.32",
+    "tip": "",
+    "other_charges": "",
+    "total": "16.24",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Vegetable Biryani",
+        "amount": "12.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Malai Kofta",
+        "amount": "12.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Onion Naan",
+        "amount": "3.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "You have saved",
+        "amount": "14.93",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9952566027641296,
+      "subtotal": 0.9999699592590332,
+      "tax": 0.9995796084403992,
+      "total": 0.9999765753746033
+    },
+    "boxes": {
+      "transaction_date": [
+        422,
+        511,
+        566,
+        535
+      ],
+      "subtotal": [
+        499,
+        692,
+        578,
+        725
+      ],
+      "tax": [
+        521,
+        759,
+        582,
+        793
+      ],
+      "total": [
+        500,
+        794,
+        584,
+        831
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9952566027641296,
+          "subtotal": 0.9999699592590332,
+          "tax": 0.9995796084403992,
+          "total": 0.9999765753746033
+        },
+        "boxes": {
+          "transaction_date": [
+            422,
+            511,
+            566,
+            535
+          ],
+          "subtotal": [
+            499,
+            692,
+            578,
+            725
+          ],
+          "tax": [
+            521,
+            759,
+            582,
+            793
+          ],
+          "total": [
+            500,
+            794,
+            584,
+            831
+          ]
+        },
+        "merchant_name": "OM INDIAN FOOD",
+        "receipt_number": "2143",
+        "transaction_date": "2016-04-15",
+        "transaction_time": "12:03",
+        "currency": "USD",
+        "subtotal": "29.85",
+        "tax": "1.32",
+        "total": "16.24",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Vegetable Biryani",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Malai Kofta",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Onion Naan",
+            "amount": "3.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "You have saved",
+            "amount": "14.93",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "16.24",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "31.17",
+        "printed": "16.24",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "44.78",
+        "printed": "29.85",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2016-04-15",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "16.24"
+  },
+  "fingerprints": {
+    "phash": "d253e1dc8dc78c8c",
+    "merchant_norm": "om indian food"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

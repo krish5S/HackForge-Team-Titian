@@ -1,0 +1,224 @@
+{
+  "receipt_id": "r_080",
+  "file_sha256": "9912be248dc4a8715c39a2b95534ff633183a43771b6c5d5051636e0f513ff02",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Exullut",
+    "receipt_number": "",
+    "card_last4": "0148",
+    "transaction_date": "",
+    "transaction_time": "10:36",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "9.66",
+    "tax": "118.46",
+    "tip": "154.00",
+    "other_charges": "",
+    "total": "118.46",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Onion Bhajia",
+        "amount": "5.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Lamb Vindaloo",
+        "amount": "14.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "medium",
+        "amount": "16.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "medium",
+        "amount": "16.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "medium",
+        "amount": "4.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Garlic Naan",
+        "amount": "50.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Hess Cabernet",
+        "amount": "108.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "MASTERCARD 0148",
+        "amount": "35.54",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.9999557733535767,
+      "tax": 0.9999819397926331,
+      "total": 0.9997976422309875,
+      "tip": 0.9800681471824646
+    },
+    "boxes": {
+      "subtotal": [
+        498,
+        650,
+        559,
+        678
+      ],
+      "tax": [
+        479,
+        694,
+        562,
+        723
+      ],
+      "total": [
+        482,
+        727,
+        565,
+        757
+      ],
+      "tip": [
+        462,
+        832,
+        560,
+        874
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.9999557733535767,
+          "tax": 0.9999819397926331,
+          "total": 0.9997976422309875,
+          "tip": 0.9800681471824646
+        },
+        "boxes": {
+          "subtotal": [
+            498,
+            650,
+            559,
+            678
+          ],
+          "tax": [
+            479,
+            694,
+            562,
+            723
+          ],
+          "total": [
+            482,
+            727,
+            565,
+            757
+          ],
+          "tip": [
+            462,
+            832,
+            560,
+            874
+          ]
+        },
+        "merchant_name": "Exullut",
+        "transaction_time": "10:36",
+        "currency": "USD",
+        "subtotal": "9.66",
+        "tax": "118.46",
+        "total": "118.46",
+        "card_last4": "0148",
+        "tip": "154.00",
+        "line_items": [
+          {
+            "description": "Onion Bhajia",
+            "amount": "5.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Lamb Vindaloo",
+            "amount": "14.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "medium",
+            "amount": "16.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "medium",
+            "amount": "16.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "medium",
+            "amount": "4.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Garlic Naan",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Hess Cabernet",
+            "amount": "108.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MASTERCARD 0148",
+            "amount": "35.54",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "118.46",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "282.12",
+        "printed": "118.46",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "253.14",
+        "printed": "9.66",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "118.46"
+  },
+  "fingerprints": {
+    "phash": "c32b753b750c4ccc",
+    "merchant_norm": "exullut"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

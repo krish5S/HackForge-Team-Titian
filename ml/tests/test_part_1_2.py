@@ -3,6 +3,7 @@ import hashlib
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from ml.datagen.render import render_month
 from ml.datagen.pick_public import copy_public
@@ -57,6 +58,27 @@ class MonthImageTests(unittest.TestCase):
                                    "verified_fields": True}], {"rows": [forged]},
                                  root / "forged_images", root / "forged_index.json")
             self.assertEqual(copied["images"][0]["source"], "find_it_again")
+
+
+class PublicMonthTests(unittest.TestCase):
+    def test_lookalike_real_receipts_are_replaced(self):
+        from PIL import Image, ImageDraw
+        from ml.datagen.assemble_public_month import drop_lookalikes
+
+        def page(text):
+            image = Image.new("L", (200, 300), "white")
+            draw = ImageDraw.Draw(image)
+            for row in range(0, 280, 20):
+                draw.text((10 + (row * 7 + len(text)) % 80, row), text * 3, fill="black")
+            return image
+
+        images = {"a": page("alpha"), "b": page("alpha"), "c": page("zulu")}
+        records = [{"record_id": "a", "source": "sroie"}, {"record_id": "b", "source": "sroie"}]
+        spare = [{"record_id": "c", "source": "sroie"}]
+        with patch("ml.datagen.assemble_public_month._open_original",
+                   lambda record, *_: images[record["record_id"]]):
+            kept = drop_lookalikes(records, spare, Path("."), None)
+        self.assertEqual([row["record_id"] for row in kept], ["a", "c"])
 
 
 if __name__ == "__main__":

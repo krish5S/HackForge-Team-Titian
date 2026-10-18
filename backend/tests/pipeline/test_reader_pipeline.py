@@ -144,6 +144,17 @@ class ReaderPipelineTests(unittest.TestCase):
                      "fingerprints": {"merchant_norm": "merchant 3", "phash": "0000000000000000"}}]
         self.assertEqual(find_duplicates(receipts), [])
 
+    def test_unreadable_merchant_needs_near_identical_image(self):
+        def receipt(identifier, sha, phash):
+            return {"receipt_id": identifier, "file_sha256": sha, "extraction": {}, "fx": {},
+                    "fingerprints": {"merchant_norm": "", "phash": phash}}
+        same = find_duplicates([receipt("a", "one", "c55a7ab93e81855a"),
+                                receipt("b", "two", "c55a7ab93e81855b")])
+        self.assertEqual([(row["receipt_id"], row["duplicate_of"]) for row in same], [("b", "a")])
+        different = find_duplicates([receipt("a", "one", "c55a7ab93e81855a"),
+                                     receipt("b", "two", "0000000000000000")])
+        self.assertEqual(different, [])
+
 
 if __name__ == "__main__":
     unittest.main()

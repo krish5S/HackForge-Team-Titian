@@ -1,0 +1,148 @@
+{
+  "receipt_id": "r_088",
+  "file_sha256": "61f16c80f93a2777c8b3e519fc23b2a6813ec606541bbdc52aa2162e8afdcd7b",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "baskinBRrobbins",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "04:58",
+    "city": "",
+    "country": "",
+    "currency": "MYR",
+    "subtotal": "21.50",
+    "tax": "21.50",
+    "tip": "",
+    "other_charges": "",
+    "total": "21.50",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Cash (MYR)",
+        "amount": "22.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash Change:",
+        "amount": "0.50",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.9999300241470337,
+      "total": 0.9998559951782227,
+      "tax": 0.9998559951782227
+    },
+    "boxes": {
+      "subtotal": [
+        793,
+        1346,
+        908,
+        1394
+      ],
+      "total": [
+        787,
+        1450,
+        907,
+        1494
+      ],
+      "tax": [
+        787,
+        1450,
+        907,
+        1494
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.9999300241470337,
+          "total": 0.9998559951782227,
+          "tax": 0.9998559951782227
+        },
+        "boxes": {
+          "subtotal": [
+            793,
+            1346,
+            908,
+            1394
+          ],
+          "total": [
+            787,
+            1450,
+            907,
+            1494
+          ],
+          "tax": [
+            787,
+            1450,
+            907,
+            1494
+          ]
+        },
+        "merchant_name": "baskinBRrobbins",
+        "transaction_time": "04:58",
+        "subtotal": "21.50",
+        "total": "21.50",
+        "tax": "21.50",
+        "currency": "MYR",
+        "line_items": [
+          {
+            "description": "Cash (MYR)",
+            "amount": "22.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash Change:",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "21.50",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "43.00",
+        "printed": "21.50",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "22.50",
+        "printed": "21.50",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "0.23",
+    "total_base": "4.94"
+  },
+  "fingerprints": {
+    "phash": "80ff00ff00ff00fe",
+    "merchant_norm": "baskinbrrobbins"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

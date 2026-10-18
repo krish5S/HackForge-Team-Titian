@@ -1,0 +1,113 @@
+{
+  "receipt_id": "r_082",
+  "file_sha256": "020bdacaa439cd419d222736a32470c63c88f035590c06570d7d4b871455a726",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "31803041",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "12:09",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "2 X",
+        "amount": "3.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "6.60",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "50.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "43.40",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "0.37",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "31803041",
+        "transaction_time": "12:09",
+        "line_items": [
+          {
+            "description": "2 X",
+            "amount": "3.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "6.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "43.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "0.37",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "aaad3c8284377b2d",
+    "merchant_norm": "31803041"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

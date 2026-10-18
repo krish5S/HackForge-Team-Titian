@@ -1,0 +1,134 @@
+{
+  "receipt_id": "r_100",
+  "file_sha256": "d5a15e34289d620ace87a7849fe145cd3f7ed3fa342ce892364e264da9c9b9ef",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Eco-Shop Marketing Sdn Bhd",
+    "receipt_number": "FOR",
+    "card_last4": "",
+    "transaction_date": "2018-02-26",
+    "transaction_time": "17:31",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "16.30",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Payment (Cash):",
+        "amount": "17.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change (Cash) :",
+        "amount": "0.70",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR 6%",
+        "amount": "15.40",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9975960850715637,
+      "total": 0.9999788999557495
+    },
+    "boxes": {
+      "transaction_date": [
+        53,
+        495,
+        242,
+        517
+      ],
+      "total": [
+        340,
+        1047,
+        408,
+        1076
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9975960850715637,
+          "total": 0.9999788999557495
+        },
+        "boxes": {
+          "transaction_date": [
+            53,
+            495,
+            242,
+            517
+          ],
+          "total": [
+            340,
+            1047,
+            408,
+            1076
+          ]
+        },
+        "merchant_name": "Eco-Shop Marketing Sdn Bhd",
+        "transaction_date": "2018-02-26",
+        "transaction_time": "17:31",
+        "total": "16.30",
+        "receipt_number": "FOR",
+        "line_items": [
+          {
+            "description": "Payment (Cash):",
+            "amount": "17.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change (Cash) :",
+            "amount": "0.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6%",
+            "amount": "15.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "16.30",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-02-26",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "bba5e092871e936c",
+    "merchant_norm": "eco shop marketing sdn bhd"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}
