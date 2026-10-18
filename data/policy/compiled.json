@@ -1,0 +1,42 @@
+{
+  "policy": null,
+  "flags": [
+    {
+      "code": "COMPILER_UNAVAILABLE",
+      "clause_id": null,
+      "message": "Configure Dev 1 shared client callback; use load_fallback for decisions."
+    }
+  ],
+  "trust_report": {
+    "coverage": {
+      "status": "NOT_RUN",
+      "checked": 0,
+      "failed": 0,
+      "detail": "Not executed."
+    },
+    "grounding": {
+      "status": "NOT_RUN",
+      "checked": 0,
+      "failed": 0,
+      "detail": "Not executed."
+    },
+    "agreement": {
+      "status": "NOT_RUN",
+      "checked": 0,
+      "failed": 0,
+      "detail": "Not executed."
+    },
+    "checker": {
+      "status": "NOT_RUN",
+      "checked": 0,
+      "failed": 0,
+      "detail": "Not executed."
+    },
+    "boundary": {
+      "status": "NOT_RUN",
+      "checked": 0,
+      "failed": 0,
+      "detail": "Not executed."
+    }
+  }
+}
