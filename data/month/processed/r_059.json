@@ -1,59 +1,203 @@
 {
   "receipt_id": "r_059",
-  "file_sha256": "4bb6bd18301fc4bd333902ef07ec53531fdbfd04a170fa2ae2c2e098b2077f78",
+  "file_sha256": "42373995a5747fa049fd0abcc768108b9425da1e161615b6ed49921c5b27deb1",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "NRTHPOLE",
-    "receipt_number": "",
+    "merchant_name": "Late shop 1",
+    "receipt_number": "R_059",
     "card_last4": "",
-    "transaction_date": "",
-    "transaction_time": "",
-    "city": "",
-    "country": "",
-    "currency": "",
-    "subtotal": "",
-    "tax": "",
-    "tip": "",
-    "other_charges": "",
-    "total": "",
-    "itemization": "",
-    "category": "",
-    "line_items": [],
-    "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "transaction_date": "2026-09-10",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "50.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "50.00",
+    "itemization": "FULL",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Trip meal",
+        "amount": "50.00",
+        "item_class": "FOOD"
+      }
+    ],
+    "guest_count": 1,
+    "confidence": {
+      "transaction_date": 0.9808622598648071,
+      "subtotal": 0.9996171593666077,
+      "tax": 0.9985347986221313,
+      "tip": 0.9986186623573303,
+      "other_charges": 0.99870765209198,
+      "total": 0.9991927742958069
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        336,
+        311
+      ],
+      "subtotal": [
+        542,
+        548,
+        681,
+        575
+      ],
+      "tax": [
+        558,
+        609,
+        681,
+        634
+      ],
+      "tip": [
+        557,
+        668,
+        679,
+        694
+      ],
+      "other_charges": [
+        558,
+        729,
+        680,
+        754
+      ],
+      "total": [
+        640,
+        790,
+        804,
+        817
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "NRTHPOLE"
+        "confidence": {
+          "transaction_date": 0.9808622598648071,
+          "subtotal": 0.9996171593666077,
+          "tax": 0.9985347986221313,
+          "tip": 0.9986186623573303,
+          "other_charges": 0.99870765209198,
+          "total": 0.9991927742958069
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            542,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            558,
+            609,
+            681,
+            634
+          ],
+          "tip": [
+            557,
+            668,
+            679,
+            694
+          ],
+          "other_charges": [
+            558,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            640,
+            790,
+            804,
+            817
+          ]
+        },
+        "merchant_name": "Late shop 1",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-10",
+        "transaction_time": "12:00",
+        "receipt_number": "R_059",
+        "subtotal": "50.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "50.00",
+        "line_items": [
+          {
+            "description": "Trip meal",
+            "amount": "50.00",
+            "item_class": "FOOD"
+          }
+        ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Trip meal",
+            "amount": "50.00",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "50.00",
+        "printed": "50.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "50.00",
+        "printed": "50.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-10",
+        "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "50.00"
   },
   "fingerprints": {
-    "phash": "d5552f1a330e3a6c",
-    "merchant_norm": "nrthpole"
+    "phash": "8f1e9649e41af8b4",
+    "merchant_norm": "late shop 1"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

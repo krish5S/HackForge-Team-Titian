@@ -8,6 +8,7 @@ merchant, date, currency, total, and planted issue.
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 
@@ -61,6 +62,7 @@ def copy_public(scenarios: list[dict], assignments: list[dict], split_manifest: 
             shutil.copyfile(source_path, target)
         source = record["source"]
         index["images"].append({"image_id": scenario_id, "file": target.name,
+                                "path": os.path.relpath(target, index_path.parent).replace(os.sep, "/"),
                                 "source": source, "source_id": record["source_id"],
                                 "verified_fields": True,
                                 "scenario_id": scenario_id,

@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_010",
-  "file_sha256": "7260eb0086e52287a69f80e5f30345bed8c59b5e105a438d85646a805886be84",
+  "file_sha256": "5a26bea121241e814c41d18006782ac49adb0d9be30f6fdc67e1b24212afc60e",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "1 SAM DA SOD MINERAL WATER",
+    "merchant_name": "Kupen 9",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,33 +12,68 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
+    "subtotal": "40455",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "44500",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.9996485710144043,
+      "total": 0.9998990893363953
+    },
+    "boxes": {
+      "subtotal": [
+        382,
+        540,
+        444,
+        566
+      ],
+      "total": [
+        388,
+        641,
+        453,
+        674
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "1 SAM DA SOD MINERAL WATER"
+        "confidence": {
+          "subtotal": 0.9996485710144043,
+          "total": 0.9998990893363953
+        },
+        "boxes": {
+          "subtotal": [
+            382,
+            540,
+            444,
+            566
+          ],
+          "total": [
+            388,
+            641,
+            453,
+            674
+          ]
+        },
+        "merchant_name": "Kupen 9",
+        "subtotal": "40455",
+        "total": "44500"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "44500",
+        "passed": true
       }
     ]
   },
@@ -48,12 +83,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "b1c2e5ba1996cbc2",
-    "merchant_norm": "1 sam da sod mineral water"
+    "phash": "c08aabadada53595",
+    "merchant_norm": "kupen 9"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

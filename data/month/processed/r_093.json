@@ -1,19 +1,19 @@
 {
   "receipt_id": "r_093",
-  "file_sha256": "1cc15c54ef1edca697faa5bd786b4c58d89d1a81b2edd0d59cd19df45c99a877",
+  "file_sha256": "f1aa10deb8cf1ce5d851c35aa3194291c03fdf4238ac04c580ae11dd94d988d7",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "3180404",
+    "merchant_name": "POSTED",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-04-13",
-    "transaction_time": "2:26",
+    "transaction_date": "",
+    "transaction_time": "04:56",
     "city": "",
-    "country": "",
-    "currency": "",
-    "subtotal": "25.00",
-    "tax": "23.58",
+    "country": "MY",
+    "currency": "MYR",
+    "subtotal": "035.00",
+    "tax": "635.00",
     "tip": "",
     "other_charges": "",
     "total": "",
@@ -21,108 +21,134 @@
     "category": "",
     "line_items": [
       {
-        "description": "2 TAU SAR PNEAH (S) 24PCS @",
-        "amount": "12.50",
+        "description": "Rounding Adj :",
+        "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "C",
-        "amount": "50.00",
+        "description": "al Inclusive GST:",
+        "amount": "635.00",
         "item_class": "OTHER"
       },
       {
-        "description": "GE",
-        "amount": "25.00",
+        "description": "MASTER",
+        "amount": "035.00",
         "item_class": "OTHER"
       },
       {
-        "description": "SR:inclusive of GST @6%",
-        "amount": "23.58",
+        "description": "SR",
+        "amount": "594.34",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ZRL",
+        "amount": "5.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9712688326835632,
-      "subtotal": 0.9981321096420288,
-      "tax": 0.9999936819076538
+      "subtotal": 0.9890301823616028,
+      "tax": 0.9999471306800842
     },
     "boxes": {
-      "transaction_date": [
-        165,
-        447,
-        342,
-        480
-      ],
       "subtotal": [
-        474,
-        716,
-        542,
-        750
+        524,
+        974,
+        624,
+        1010
       ],
       "tax": [
-        390,
-        954,
-        455,
-        984
+        492,
+        1061,
+        633,
+        1107
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9712688326835632,
-          "subtotal": 0.9981321096420288,
-          "tax": 0.9999936819076538
+          "subtotal": 0.9890301823616028,
+          "tax": 0.9999471306800842
         },
         "boxes": {
-          "transaction_date": [
-            165,
-            447,
-            342,
-            480
-          ],
           "subtotal": [
-            474,
-            716,
-            542,
-            750
+            524,
+            974,
+            624,
+            1010
           ],
           "tax": [
-            390,
-            954,
-            455,
-            984
+            492,
+            1061,
+            633,
+            1107
           ]
         },
-        "merchant_name": "3180404",
-        "transaction_date": "2018-04-13",
-        "transaction_time": "2:26",
-        "subtotal": "25.00",
-        "tax": "23.58",
+        "merchant_name": "POSTED",
+        "transaction_time": "04:56",
+        "subtotal": "035.00",
+        "tax": "635.00",
+        "currency": "MYR",
         "line_items": [
           {
-            "description": "2 TAU SAR PNEAH (S) 24PCS @",
-            "amount": "12.50",
+            "description": "Rounding Adj :",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "C",
-            "amount": "50.00",
+            "description": "al Inclusive GST:",
+            "amount": "635.00",
             "item_class": "OTHER"
           },
           {
-            "description": "GE",
-            "amount": "25.00",
+            "description": "MASTER",
+            "amount": "035.00",
             "item_class": "OTHER"
           },
           {
-            "description": "SR:inclusive of GST @6%",
-            "amount": "23.58",
+            "description": "SR",
+            "amount": "594.34",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL",
+            "amount": "5.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "Rounding Adj :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "al Inclusive GST:",
+            "amount": "635.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MASTER",
+            "amount": "035.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "594.34",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -135,15 +161,9 @@
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "111.08",
-        "printed": "25.00",
+        "expected": "1269.34",
+        "printed": "35.00",
         "passed": false
-      },
-      {
-        "name": "date_format",
-        "expected": "YYYY-MM-DD",
-        "printed": "2018-04-13",
-        "passed": true
       }
     ]
   },
@@ -153,8 +173,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "bb37a50f87038b26",
-    "merchant_norm": "3180404"
+    "phash": "ae38f1cb8f4c0a93",
+    "merchant_norm": "posted"
   },
   "forensics": {
     "score": 25,

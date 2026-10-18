@@ -16,6 +16,7 @@ from backend.app.pipeline.normalize import save_normalized
 from backend.app.pipeline.ocr import extract_text
 from backend.app.pipeline.reader_a import read_fields as read_patterns
 from backend.app.pipeline.reader_b import read_fields as read_model
+from backend.app.pipeline.text_fallback import infer_fields
 from backend.app.pipeline.validate import validate_extraction
 
 LOG = logging.getLogger(__name__)
@@ -42,7 +43,13 @@ def process_receipt(
     digest = sha256_file(source)
     normalized_path = target / f"{source.stem}_{digest[:12]}_normalized.jpg"
     save_normalized(source, normalized_path)
-    ocr = extract_text(normalized_path)
+    ocr_path = target / "ocr_cache" / f"{digest}.json"
+    if ocr_path.is_file():
+        ocr = json.loads(ocr_path.read_text(encoding="utf-8"))
+    else:
+        ocr = extract_text(normalized_path)
+        ocr_path.parent.mkdir(parents=True, exist_ok=True)
+        ocr_path.write_text(json.dumps(ocr, ensure_ascii=False), encoding="utf-8")
     pattern = read_patterns(ocr)
     layout: dict[str, Any] = {}
     layout_error = ""
@@ -63,21 +70,25 @@ def process_receipt(
         model_error = str(exc)
         LOG.warning("Text model unavailable for %s: %s", source, exc)
 
+    text_rules = infer_fields(ocr, reader_a)
     extraction: dict[str, Any] = {field: "" for field in STRING_FIELDS}
     extraction.update({"line_items": [], "guest_count": 0,
                        "confidence": {}, "boxes": {}, "readers": {"reader_a": reader_a,
-                                                                   "reader_b": model}})
+                                                                   "reader_b": model,
+                                                                   "text_rules": text_rules}})
     if layout:
         extraction["readers"]["reader_a_pattern"] = pattern
         extraction["readers"]["reader_a_layoutlm"] = layout
     if layout_error:
         extraction["readers"]["reader_a_layoutlm_error"] = {"message": layout_error}
     for field in STRING_FIELDS:
-        value = reader_a.get(field) or model.get(field)
+        value = reader_a.get(field) or model.get(field) or text_rules.get(field)
         if value is not None:
             extraction[field] = str(value)
-    extraction["line_items"] = model.get("line_items", reader_a.get("line_items", []))
-    extraction["guest_count"] = model.get("guest_count", reader_a.get("guest_count", 0))
+    extraction["line_items"] = (model.get("line_items") or text_rules.get("line_items")
+                                or reader_a.get("line_items", []))
+    extraction["guest_count"] = (model.get("guest_count") or text_rules.get("guest_count")
+                                 or reader_a.get("guest_count", 0))
     extraction["confidence"] = reader_a.get("confidence", {})
     extraction["boxes"] = reader_a.get("boxes", {})
     if model_error:
@@ -98,7 +109,7 @@ def process_receipt(
     fx = convert_total(extraction["total"], extraction["currency"], rates)
     line_count = len(ocr.get("lines") or [])
     is_receipt = line_count > 0 and bool(extraction["merchant_name"] or extraction["total"])
-    status = "unreadable" if not line_count else ("ok" if extraction["total"] else "partial")
+    status = "UNREADABLE" if not line_count else ("OK" if extraction["total"] else "PARTIAL")
     result: ProcessedReceipt = {
         "receipt_id": str(submission.get("receipt_id") or submission.get("scenario_id") or source.stem),
         "file_sha256": digest,

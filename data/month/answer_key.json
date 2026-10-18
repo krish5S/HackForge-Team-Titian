@@ -1,0 +1,802 @@
+[
+  {
+    "receipt_id": "r_001",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_002",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_001"
+  },
+  {
+    "receipt_id": "r_003",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_004",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_003"
+  },
+  {
+    "receipt_id": "r_005",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_006",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_005"
+  },
+  {
+    "receipt_id": "r_007",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_008",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_007"
+  },
+  {
+    "receipt_id": "r_009",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_010",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_009"
+  },
+  {
+    "receipt_id": "r_011",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_012",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_011"
+  },
+  {
+    "receipt_id": "r_013",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_014",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_013"
+  },
+  {
+    "receipt_id": "r_015",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_016",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_015"
+  },
+  {
+    "receipt_id": "r_017",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_018",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_017"
+  },
+  {
+    "receipt_id": "r_019",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_020",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_019"
+  },
+  {
+    "receipt_id": "r_021",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_022",
+    "verdict": "REJECT",
+    "reason_codes": [
+      "DUPLICATE"
+    ],
+    "duplicate_of": "r_021"
+  },
+  {
+    "receipt_id": "r_023",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_024",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "POSSIBLE_DUPLICATE"
+    ],
+    "duplicate_of": "r_023"
+  },
+  {
+    "receipt_id": "r_025",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_026",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "POSSIBLE_DUPLICATE"
+    ],
+    "duplicate_of": "r_025"
+  },
+  {
+    "receipt_id": "r_027",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_028",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_029",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_030",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_031",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_032",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_033",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_034",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_035",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_036",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SUSPICIOUS"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_037",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "UNREADABLE"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_038",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "UNREADABLE"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_039",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SPLIT_TRANSACTION"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_040",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SPLIT_TRANSACTION"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_041",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SPLIT_TRANSACTION"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_042",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "SPLIT_TRANSACTION"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_043",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_044",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_045",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_046",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_047",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_048",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_049",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "MONTHLY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_050",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "EXCLUDED_ITEM"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_051",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "EXCLUDED_ITEM"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_052",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "EXCLUDED_ITEM"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_053",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "EXCLUDED_ITEM"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_054",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "MISSING_CLIENT_NAME"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_055",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "MISSING_CLIENT_NAME"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_056",
+    "verdict": "NEEDS_REVIEW",
+    "reason_codes": [
+      "MISSING_CLIENT_NAME"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_057",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_058",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_059",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "CITY_DAILY_CAP"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_060",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_061",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_062",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_063",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_064",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_065",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_066",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_067",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_068",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_069",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_070",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_071",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_072",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_073",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_074",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_075",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_076",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_077",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_078",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_079",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_080",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_081",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_082",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_083",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_084",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_085",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_086",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_087",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_088",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_089",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_090",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_091",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_092",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_093",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_094",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_095",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_096",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_097",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_098",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_099",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  },
+  {
+    "receipt_id": "r_100",
+    "verdict": "APPROVE",
+    "reason_codes": [
+      "POLICY_COMPLIANT"
+    ],
+    "duplicate_of": null
+  }
+]

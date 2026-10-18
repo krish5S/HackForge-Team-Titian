@@ -1,149 +1,138 @@
 {
   "receipt_id": "r_077",
-  "file_sha256": "3ce05fcd23121e6463443540462a58ebb5692a8ec1ac5427b5e3ef8bb5d34b98",
+  "file_sha256": "ca8c7cdc94bb253af3bed6711106a66cfe993bfb950f5e73e9bd7d84cfe561dc",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Dine In",
-    "receipt_number": "",
+    "merchant_name": "COLUMBUS RESTAURANT",
+    "receipt_number": "01029",
     "card_last4": "",
-    "transaction_date": "2015-08-30",
-    "transaction_time": "11:00",
+    "transaction_date": "2018-01-27",
+    "transaction_time": "",
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "3.99",
-    "tax": "0.30",
-    "tip": "1.00",
+    "subtotal": "",
+    "tax": "143.00",
+    "tip": "",
     "other_charges": "",
-    "total": "5.29",
+    "total": "184.47",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "1 No Beverage",
-        "amount": "0.00",
+        "description": "2 FBD BLUE MARGARI",
+        "amount": "55.00",
         "item_class": "OTHER"
       },
       {
-        "description": "1 Milk Shake",
-        "amount": "3.99",
+        "description": "RESORT TAX2%",
+        "amount": "2.86",
         "item_class": "OTHER"
       },
       {
-        "description": "Gratuity",
-        "amount": "1.00",
+        "description": "SERUICE20%",
+        "amount": "28.60",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999656677246094,
-      "subtotal": 0.9999353885650635,
-      "tax": 0.9999607801437378,
-      "tip": 0.9998517036437988,
-      "total": 0.9999976754188538
+      "tax": 0.9999776482582092,
+      "total": 0.9999451041221619,
+      "transaction_date": 0.9996649622917175
     },
     "boxes": {
-      "transaction_date": [
-        2,
-        154,
-        84,
-        182
-      ],
-      "subtotal": [
-        310,
-        312,
-        360,
-        342
-      ],
       "tax": [
-        313,
-        339,
-        360,
-        365
-      ],
-      "tip": [
-        315,
-        362,
-        362,
-        389
+        367,
+        436,
+        444,
+        470
       ],
       "total": [
-        271,
-        381,
-        368,
-        437
+        486,
+        577,
+        657,
+        634
+      ],
+      "transaction_date": [
+        173,
+        639,
+        499,
+        676
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999656677246094,
-          "subtotal": 0.9999353885650635,
-          "tax": 0.9999607801437378,
-          "tip": 0.9998517036437988,
-          "total": 0.9999976754188538
+          "tax": 0.9999776482582092,
+          "total": 0.9999451041221619,
+          "transaction_date": 0.9996649622917175
         },
         "boxes": {
-          "transaction_date": [
-            2,
-            154,
-            84,
-            182
-          ],
-          "subtotal": [
-            310,
-            312,
-            360,
-            342
-          ],
           "tax": [
-            313,
-            339,
-            360,
-            365
-          ],
-          "tip": [
-            315,
-            362,
-            362,
-            389
+            367,
+            436,
+            444,
+            470
           ],
           "total": [
-            271,
-            381,
-            368,
-            437
+            486,
+            577,
+            657,
+            634
+          ],
+          "transaction_date": [
+            173,
+            639,
+            499,
+            676
           ]
         },
-        "merchant_name": "Dine In",
-        "transaction_date": "2015-08-30",
-        "transaction_time": "11:00",
-        "subtotal": "3.99",
-        "tax": "0.30",
-        "tip": "1.00",
-        "total": "5.29",
-        "category": "MEALS",
+        "merchant_name": "COLUMBUS RESTAURANT",
+        "tax": "143.00",
+        "total": "184.47",
+        "transaction_date": "2018-01-27",
+        "receipt_number": "01029",
         "line_items": [
           {
-            "description": "1 No Beverage",
-            "amount": "0.00",
+            "description": "2 FBD BLUE MARGARI",
+            "amount": "55.00",
             "item_class": "OTHER"
           },
           {
-            "description": "1 Milk Shake",
-            "amount": "3.99",
+            "description": "RESORT TAX2%",
+            "amount": "2.86",
             "item_class": "OTHER"
           },
           {
-            "description": "Gratuity",
-            "amount": "1.00",
+            "description": "SERUICE20%",
+            "amount": "28.60",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "2 FBD BLUE MARGARI",
+            "amount": "55.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RESORT TAX2%",
+            "amount": "2.86",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SERUICE20%",
+            "amount": "28.60",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -151,25 +140,13 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "5.29",
+        "printed": "184.47",
         "passed": true
-      },
-      {
-        "name": "components_vs_total",
-        "expected": "5.29",
-        "printed": "5.29",
-        "passed": true
-      },
-      {
-        "name": "items_vs_subtotal",
-        "expected": "4.99",
-        "printed": "3.99",
-        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2015-08-30",
+        "printed": "2018-01-27",
         "passed": true
       }
     ]
@@ -180,14 +157,12 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "d55515970e838d1f",
-    "merchant_norm": "dine in"
+    "phash": "d9f167b247302cac",
+    "merchant_norm": "columbus restaurant"
   },
   "forensics": {
-    "score": 25,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

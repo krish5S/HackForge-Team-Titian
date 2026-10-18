@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_042",
-  "file_sha256": "17244048c542293f17018d9a875ac154ce9b183413a8be84bebdc3edb9ab7d87",
+  "file_sha256": "3fcbb223966751e173463aad2ccd6434dd0905c4f5ca3355decf8b8e0b144196",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Split shop 1",
     "receipt_number": "R_042",
@@ -17,11 +17,11 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "480.00",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "TRAVEL",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Trip fare",
         "amount": "480.00",
         "item_class": "OTHER"
       }
@@ -33,7 +33,7 @@
       "tax": 0.9985694885253906,
       "tip": 0.9988165497779846,
       "other_charges": 0.9986588954925537,
-      "total": 0.9941890835762024
+      "total": 0.9965189099311829
     },
     "boxes": {
       "transaction_date": [
@@ -67,9 +67,9 @@
         754
       ],
       "total": [
-        620,
+        621,
         790,
-        803,
+        804,
         817
       ]
     },
@@ -81,7 +81,7 @@
           "tax": 0.9985694885253906,
           "tip": 0.9988165497779846,
           "other_charges": 0.9986588954925537,
-          "total": 0.9941890835762024
+          "total": 0.9965189099311829
         },
         "boxes": {
           "transaction_date": [
@@ -115,9 +115,9 @@
             754
           ],
           "total": [
-            620,
+            621,
             790,
-            803,
+            804,
             817
           ]
         },
@@ -133,16 +133,26 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "480.00",
-        "category": "TRAVEL",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Trip fare",
             "amount": "480.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "TRAVEL",
+        "line_items": [
+          {
+            "description": "Trip fare",
+            "amount": "480.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +189,7 @@
     "total_base": "480.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41e9cb4",
+    "phash": "8f1e9649e51a9cb4",
     "merchant_norm": "split shop 1"
   },
   "forensics": {

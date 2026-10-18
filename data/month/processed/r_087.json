@@ -1,128 +1,168 @@
 {
   "receipt_id": "r_087",
-  "file_sha256": "688801015159991a14db5be2f261078fe20dfd881452d5d7d8f7b999c1308c30",
+  "file_sha256": "b9c6a08cec812f63c4ebf7f4cc1ce1054122f2507d9e87db8836dc4343d8fb08",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "L TWO FLORIST & HANDICRAFT",
+    "merchant_name": "A06106",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-03-21",
-    "transaction_time": "11:01",
+    "transaction_date": "2018-06-19",
+    "transaction_time": "06:56",
     "city": "",
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "0.00",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "9.00",
+    "total": "0.00",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
-        "description": "DISC",
-        "amount": "0.00",
+        "description": "Qty Description",
+        "amount": "70.00",
         "item_class": "OTHER"
       },
       {
-        "description": "ROUNDING",
-        "amount": "0.00",
+        "description": "M(Budae Jjigae)",
+        "amount": "16.00",
         "item_class": "OTHER"
       },
       {
-        "description": "CASH",
+        "description": "(Kimbab)",
+        "amount": "25.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "(Seafood Pancake)",
         "amount": "20.00",
         "item_class": "OTHER"
       },
       {
-        "description": "CHANGE",
-        "amount": "11.00",
+        "description": "Service Charges 10%",
+        "amount": "152.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "152.90",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999972581863403,
-      "total": 0.999996542930603,
-      "tax": 0.9999833106994629
+      "total": 0.9999717473983765,
+      "transaction_date": 0.9989739060401917
     },
     "boxes": {
-      "transaction_date": [
-        454,
-        418,
-        584,
-        446
-      ],
       "total": [
-        507,
-        908,
-        579,
-        946
+        3071,
+        4041,
+        3226,
+        4127
       ],
-      "tax": [
-        526,
-        831,
-        581,
-        858
+      "transaction_date": [
+        1957,
+        4430,
+        2883,
+        4536
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999972581863403,
-          "total": 0.999996542930603,
-          "tax": 0.9999833106994629
+          "total": 0.9999717473983765,
+          "transaction_date": 0.9989739060401917
         },
         "boxes": {
-          "transaction_date": [
-            454,
-            418,
-            584,
-            446
-          ],
           "total": [
-            507,
-            908,
-            579,
-            946
+            3071,
+            4041,
+            3226,
+            4127
           ],
-          "tax": [
-            526,
-            831,
-            581,
-            858
+          "transaction_date": [
+            1957,
+            4430,
+            2883,
+            4536
           ]
         },
-        "merchant_name": "L TWO FLORIST & HANDICRAFT",
-        "transaction_date": "2018-03-21",
-        "transaction_time": "11:01",
-        "total": "9.00",
-        "tax": "0.00",
+        "merchant_name": "A06106",
+        "total": "0.00",
+        "transaction_date": "2018-06-19",
+        "transaction_time": "06:56",
         "line_items": [
           {
-            "description": "DISC",
-            "amount": "0.00",
+            "description": "Qty Description",
+            "amount": "70.00",
             "item_class": "OTHER"
           },
           {
-            "description": "ROUNDING",
-            "amount": "0.00",
+            "description": "M(Budae Jjigae)",
+            "amount": "16.00",
             "item_class": "OTHER"
           },
           {
-            "description": "CASH",
+            "description": "(Kimbab)",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Seafood Pancake)",
             "amount": "20.00",
             "item_class": "OTHER"
           },
           {
-            "description": "CHANGE",
-            "amount": "11.00",
+            "description": "Service Charges 10%",
+            "amount": "152.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "152.90",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Qty Description",
+            "amount": "70.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "M(Budae Jjigae)",
+            "amount": "16.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Kimbab)",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Seafood Pancake)",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Service Charges 10%",
+            "amount": "152.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "152.90",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -130,13 +170,13 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "9.00",
+        "printed": "0.00",
         "passed": true
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2018-03-21",
+        "printed": "2018-06-19",
         "passed": true
       }
     ]
@@ -147,12 +187,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "d5a5fad2019ae19c",
-    "merchant_norm": "l two florist handicraft"
+    "phash": "b132ceccd9999332",
+    "merchant_norm": "a06106"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

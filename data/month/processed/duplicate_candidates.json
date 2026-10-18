@@ -27,22 +27,22 @@
   {
     "receipt_id": "r_012",
     "duplicate_of": "r_011",
-    "reason": "similar_image"
+    "reason": "similar_text_image"
   },
   {
     "receipt_id": "r_014",
     "duplicate_of": "r_013",
-    "reason": "similar_image"
+    "reason": "similar_text_image"
   },
   {
     "receipt_id": "r_016",
     "duplicate_of": "r_015",
-    "reason": "similar_image"
+    "reason": "similar_text_image"
   },
   {
     "receipt_id": "r_018",
     "duplicate_of": "r_017",
-    "reason": "similar_image"
+    "reason": "similar_text_image"
   },
   {
     "receipt_id": "r_020",

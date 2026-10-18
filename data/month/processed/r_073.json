@@ -1,144 +1,229 @@
 {
   "receipt_id": "r_073",
-  "file_sha256": "df88fa05e6930aceabee30559f31e203925702ee255ea072444daf4e48159e8c",
+  "file_sha256": "36b005aa17a425ea8a990626856fb39ff77675f46de3392edc9dfc5c62706e82",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Chelokababi",
+    "merchant_name": "Mexican Restaurant & Bar",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "",
-    "transaction_time": "6:35",
+    "transaction_date": "2017-12-29",
+    "transaction_time": "1:17",
     "city": "",
     "country": "",
-    "currency": "USD",
-    "subtotal": "146.85",
-    "tax": "13.22",
-    "tip": "22.40",
+    "currency": "",
+    "subtotal": "5.46",
+    "tax": "55.51",
+    "tip": "18.00",
     "other_charges": "",
-    "total": "160.07",
+    "total": "64.52",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
-        "description": "Koobideh × 7",
-        "amount": "115.50",
+        "description": "Reprint #: 1",
+        "amount": "3.25",
         "item_class": "OTHER"
       },
       {
-        "description": "(",
-        "amount": "16.50",
+        "description": "Coffee",
+        "amount": "14.95",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "pollo",
+        "amount": "5.95",
         "item_class": "OTHER"
       },
       {
-        "description": "Very well done",
-        "amount": "8.95",
+        "description": "Chicken Tenders",
+        "amount": "9.95",
         "item_class": "OTHER"
       },
       {
-        "description": "18% Gratuity",
-        "amount": "22.40",
+        "description": "Flautas Chicken",
+        "amount": "15.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "M",
+        "amount": "50.05",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Gratuity",
+        "amount": "18.00",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 3,
     "confidence": {
-      "tip": 0.9999935030937195,
-      "subtotal": 0.9999970197677612,
-      "tax": 0.9999814033508301,
-      "total": 0.9999809265136719
+      "transaction_date": 0.9999980926513672,
+      "subtotal": 0.9999963045120239,
+      "tax": 0.9999977350234985,
+      "total": 0.9999966621398926,
+      "tip": 0.9994314908981323
     },
     "boxes": {
-      "tip": [
-        467,
-        579,
-        534,
-        607
+      "transaction_date": [
+        420,
+        146,
+        540,
+        181
       ],
       "subtotal": [
-        461,
-        628,
-        537,
-        655
+        505,
+        520,
+        563,
+        555
       ],
       "tax": [
-        476,
-        656,
-        539,
-        681
+        497,
+        578,
+        567,
+        616
       ],
       "total": [
-        458,
-        715,
-        542,
-        740
+        445,
+        733,
+        577,
+        775
+      ],
+      "tip": [
+        40,
+        626,
+        239,
+        669
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tip": 0.9999935030937195,
-          "subtotal": 0.9999970197677612,
-          "tax": 0.9999814033508301,
-          "total": 0.9999809265136719
+          "transaction_date": 0.9999980926513672,
+          "subtotal": 0.9999963045120239,
+          "tax": 0.9999977350234985,
+          "total": 0.9999966621398926,
+          "tip": 0.9994314908981323
         },
         "boxes": {
-          "tip": [
-            467,
-            579,
-            534,
-            607
+          "transaction_date": [
+            420,
+            146,
+            540,
+            181
           ],
           "subtotal": [
-            461,
-            628,
-            537,
-            655
+            505,
+            520,
+            563,
+            555
           ],
           "tax": [
-            476,
-            656,
-            539,
-            681
+            497,
+            578,
+            567,
+            616
           ],
           "total": [
-            458,
-            715,
-            542,
-            740
+            445,
+            733,
+            577,
+            775
+          ],
+          "tip": [
+            40,
+            626,
+            239,
+            669
           ]
         },
-        "merchant_name": "Chelokababi",
-        "transaction_time": "6:35",
-        "currency": "USD",
-        "tip": "22.40",
-        "subtotal": "146.85",
-        "tax": "13.22",
-        "total": "160.07",
+        "merchant_name": "Mexican Restaurant & Bar",
+        "transaction_date": "2017-12-29",
+        "transaction_time": "1:17",
+        "subtotal": "5.46",
+        "tax": "55.51",
+        "total": "64.52",
+        "tip": "18.00",
         "line_items": [
           {
-            "description": "Koobideh × 7",
-            "amount": "115.50",
+            "description": "Reprint #: 1",
+            "amount": "3.25",
             "item_class": "OTHER"
           },
           {
-            "description": "(",
-            "amount": "16.50",
+            "description": "Coffee",
+            "amount": "14.95",
             "item_class": "OTHER"
           },
           {
-            "description": "Very well done",
-            "amount": "8.95",
+            "description": "pollo",
+            "amount": "5.95",
             "item_class": "OTHER"
           },
           {
-            "description": "18% Gratuity",
-            "amount": "22.40",
+            "description": "Chicken Tenders",
+            "amount": "9.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Flautas Chicken",
+            "amount": "15.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "M",
+            "amount": "50.05",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "18.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 3,
+        "line_items": [
+          {
+            "description": "Reprint #: 1",
+            "amount": "3.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Coffee",
+            "amount": "14.95",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "pollo",
+            "amount": "5.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Chicken Tenders",
+            "amount": "9.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Flautas Chicken",
+            "amount": "15.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "M",
+            "amount": "50.05",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "18.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -146,31 +231,37 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "160.07",
+        "printed": "64.52",
         "passed": true
       },
       {
         "name": "components_vs_total",
-        "expected": "182.47",
-        "printed": "160.07",
+        "expected": "78.97",
+        "printed": "64.52",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "163.35",
-        "printed": "146.85",
+        "expected": "118.10",
+        "printed": "5.46",
         "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-12-29",
+        "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "1.0",
-    "total_base": "160.07"
+    "rate": "",
+    "total_base": ""
   },
   "fingerprints": {
-    "phash": "d28827a73fe26c68",
-    "merchant_norm": "chelokababi"
+    "phash": "d2ea29fb2ab028b6",
+    "merchant_norm": "mexican restaurant bar"
   },
   "forensics": {
     "score": 50,

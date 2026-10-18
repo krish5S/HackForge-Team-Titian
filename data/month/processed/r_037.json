@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_037",
-  "file_sha256": "ffc770857e33e82b5c62b694137075cad5cfc86ab70947d13013b08f67f13265",
-  "is_receipt": true,
-  "extraction_status": "partial",
+  "file_sha256": "6e5683f5505ad60f1ef2e39fab94f42e9ca9ee21e1e5145f992765aeccb759c0",
+  "is_receipt": false,
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "Bose",
+    "merchant_name": "",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -26,10 +26,10 @@
     "readers": {
       "reader_a": {
         "confidence": {},
-        "boxes": {},
-        "merchant_name": "Bose"
+        "boxes": {}
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
@@ -49,7 +49,7 @@
   },
   "fingerprints": {
     "phash": "8f1e9649e51e8cb4",
-    "merchant_norm": "bose"
+    "merchant_norm": ""
   },
   "forensics": {
     "score": 0,

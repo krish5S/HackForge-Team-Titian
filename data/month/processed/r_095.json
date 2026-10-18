@@ -1,142 +1,172 @@
 {
   "receipt_id": "r_095",
-  "file_sha256": "c50c0abbd7ea893689b65b89d33f3ad43018871d77f30d14ca534c87ab6a42f4",
+  "file_sha256": "1cc15c54ef1edca697faa5bd786b4c58d89d1a81b2edd0d59cd19df45c99a877",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "PINGHWAI TRADING SDN BHD",
+    "merchant_name": "3180404",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2017-09-30",
-    "transaction_time": "13:04",
+    "transaction_date": "2018-04-13",
+    "transaction_time": "2:26",
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
-    "tax": "616.60",
+    "subtotal": "25.00",
+    "tax": "23.58",
     "tip": "",
     "other_charges": "",
-    "total": "616.59",
+    "total": "",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Discount",
-        "amount": "0.00",
+        "description": "2 TAU SAR PNEAH (S) 24PCS @",
+        "amount": "12.50",
         "item_class": "OTHER"
       },
       {
-        "description": "Rounding",
-        "amount": "0.01",
+        "description": "C",
+        "amount": "50.00",
         "item_class": "OTHER"
       },
       {
-        "description": "{4553 8800 9593 0119} VISA :",
-        "amount": "616.60",
+        "description": "GE",
+        "amount": "25.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Change :",
-        "amount": "0.00",
+        "description": "SR:inclusive of GST @6%",
+        "amount": "23.58",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9909801483154297,
-      "total": 0.9999963641166687,
-      "tax": 0.9999820590019226
+      "transaction_date": 0.9712688326835632,
+      "subtotal": 0.9981321096420288,
+      "tax": 0.9999936819076538
     },
     "boxes": {
       "transaction_date": [
-        405,
-        432,
-        590,
-        456
+        165,
+        447,
+        342,
+        480
       ],
-      "total": [
-        347,
-        1113,
-        423,
-        1140
+      "subtotal": [
+        474,
+        716,
+        542,
+        750
       ],
       "tax": [
-        460,
-        878,
-        533,
-        900
+        390,
+        954,
+        455,
+        984
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9909801483154297,
-          "total": 0.9999963641166687,
-          "tax": 0.9999820590019226
+          "transaction_date": 0.9712688326835632,
+          "subtotal": 0.9981321096420288,
+          "tax": 0.9999936819076538
         },
         "boxes": {
           "transaction_date": [
-            405,
-            432,
-            590,
-            456
+            165,
+            447,
+            342,
+            480
           ],
-          "total": [
-            347,
-            1113,
-            423,
-            1140
+          "subtotal": [
+            474,
+            716,
+            542,
+            750
           ],
           "tax": [
-            460,
-            878,
-            533,
-            900
+            390,
+            954,
+            455,
+            984
           ]
         },
-        "merchant_name": "PINGHWAI TRADING SDN BHD",
-        "transaction_date": "2017-09-30",
-        "transaction_time": "13:04",
-        "total": "616.59",
-        "tax": "616.60",
+        "merchant_name": "3180404",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "2:26",
+        "subtotal": "25.00",
+        "tax": "23.58",
         "line_items": [
           {
-            "description": "Discount",
-            "amount": "0.00",
+            "description": "2 TAU SAR PNEAH (S) 24PCS @",
+            "amount": "12.50",
             "item_class": "OTHER"
           },
           {
-            "description": "Rounding",
-            "amount": "0.01",
+            "description": "C",
+            "amount": "50.00",
             "item_class": "OTHER"
           },
           {
-            "description": "{4553 8800 9593 0119} VISA :",
-            "amount": "616.60",
+            "description": "GE",
+            "amount": "25.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Change :",
-            "amount": "0.00",
+            "description": "SR:inclusive of GST @6%",
+            "amount": "23.58",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "2 TAU SAR PNEAH (S) 24PCS @",
+            "amount": "12.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "C",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "GE",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR:inclusive of GST @6%",
+            "amount": "23.58",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "nonnegative_total",
-        "expected": ">= 0",
-        "printed": "616.59",
-        "passed": true
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "111.08",
+        "printed": "25.00",
+        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-09-30",
+        "printed": "2018-04-13",
         "passed": true
       }
     ]
@@ -147,12 +177,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "eae184de815fc1d4",
-    "merchant_norm": "pinghwai trading sdn bhd"
+    "phash": "bb37a50f87038b26",
+    "merchant_norm": "3180404"
   },
   "forensics": {
-    "score": 0,
+    "score": 25,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal"
+    ]
   }
 }

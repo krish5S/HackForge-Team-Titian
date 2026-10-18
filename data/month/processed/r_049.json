@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_049",
-  "file_sha256": "fb814b8aa1f4134d8118f9c3435e2fbdc07d02d9ee39fd01ee74f00ca63e309a",
+  "file_sha256": "6afd79d17edf262b415c1ea426a6e63af94242061463bf8762a3b8d7de0e861e",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Merchant 49",
     "receipt_number": "R_049",
@@ -17,21 +17,21 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "150.00",
-    "itemization": "",
-    "category": "MEALS",
+    "itemization": "FULL",
+    "category": "ENTERTAINMENT",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Show tickets",
         "amount": "150.00",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9863012433052063,
       "subtotal": 0.9990771412849426,
       "tax": 0.9990679025650024,
-      "tip": 0.9988387227058411,
+      "tip": 0.9977085590362549,
       "other_charges": 0.9985650181770325,
       "total": 0.999078094959259
     },
@@ -55,10 +55,10 @@
         634
       ],
       "tip": [
-        558,
-        669,
-        680,
-        695
+        557,
+        668,
+        679,
+        693
       ],
       "other_charges": [
         558,
@@ -79,7 +79,7 @@
           "transaction_date": 0.9863012433052063,
           "subtotal": 0.9990771412849426,
           "tax": 0.9990679025650024,
-          "tip": 0.9988387227058411,
+          "tip": 0.9977085590362549,
           "other_charges": 0.9985650181770325,
           "total": 0.999078094959259
         },
@@ -103,10 +103,10 @@
             634
           ],
           "tip": [
-            558,
-            669,
-            680,
-            695
+            557,
+            668,
+            679,
+            693
           ],
           "other_charges": [
             558,
@@ -133,16 +133,27 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "150.00",
-        "category": "MEALS",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Show tickets",
             "amount": "150.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "ENTERTAINMENT",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Show tickets",
+            "amount": "150.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +190,7 @@
     "total_base": "150.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41af8b4",
+    "phash": "8f1e9649e51ad8b4",
     "merchant_norm": "merchant 49"
   },
   "forensics": {

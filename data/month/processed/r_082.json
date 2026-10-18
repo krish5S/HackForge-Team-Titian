@@ -1,98 +1,181 @@
 {
   "receipt_id": "r_082",
-  "file_sha256": "020bdacaa439cd419d222736a32470c63c88f035590c06570d7d4b871455a726",
+  "file_sha256": "aeaee06e8e74d6626f544f74d0381b1d5b705d8d8378d056230b08ece2fe8f53",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "31803041",
+    "merchant_name": "El Charro Cafe Ventana",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "",
-    "transaction_time": "12:09",
+    "transaction_date": "2018-06-24",
+    "transaction_time": "8:00",
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": "45.15",
+    "tax": "2.75",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "47.90",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
-        "description": "2 X",
-        "amount": "3.30",
+        "description": "Ice Tea",
+        "amount": "3.25",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "Shrimp Fajita",
+        "amount": "18.95",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "6.60",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "50.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "43.40",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "0.37",
+        "description": "Stuffed Chicken",
+        "amount": "17.95",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "guest_count": 2,
+    "confidence": {
+      "transaction_date": 0.9999901652336121,
+      "subtotal": 0.9999567866325378,
+      "tax": 0.9998565912246704,
+      "total": 0.9999871253967285
+    },
+    "boxes": {
+      "transaction_date": [
+        306,
+        50,
+        393,
+        76
+      ],
+      "subtotal": [
+        373,
+        237,
+        425,
+        259
+      ],
+      "tax": [
+        382,
+        256,
+        429,
+        283
+      ],
+      "total": [
+        340,
+        353,
+        447,
+        381
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "31803041",
-        "transaction_time": "12:09",
+        "confidence": {
+          "transaction_date": 0.9999901652336121,
+          "subtotal": 0.9999567866325378,
+          "tax": 0.9998565912246704,
+          "total": 0.9999871253967285
+        },
+        "boxes": {
+          "transaction_date": [
+            306,
+            50,
+            393,
+            76
+          ],
+          "subtotal": [
+            373,
+            237,
+            425,
+            259
+          ],
+          "tax": [
+            382,
+            256,
+            429,
+            283
+          ],
+          "total": [
+            340,
+            353,
+            447,
+            381
+          ]
+        },
+        "merchant_name": "El Charro Cafe Ventana",
+        "transaction_date": "2018-06-24",
+        "transaction_time": "8:00",
+        "subtotal": "45.15",
+        "tax": "2.75",
+        "total": "47.90",
         "line_items": [
           {
-            "description": "2 X",
-            "amount": "3.30",
+            "description": "Ice Tea",
+            "amount": "3.25",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "6.60",
+            "description": "Shrimp Fajita",
+            "amount": "18.95",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "50.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "43.40",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.37",
+            "description": "Stuffed Chicken",
+            "amount": "17.95",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 2,
+        "line_items": [
+          {
+            "description": "Ice Tea",
+            "amount": "3.25",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Shrimp Fajita",
+            "amount": "18.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Stuffed Chicken",
+            "amount": "17.95",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "47.90",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "47.90",
+        "printed": "47.90",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "40.15",
+        "printed": "45.15",
         "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-06-24",
+        "passed": true
       }
     ]
   },
@@ -102,12 +185,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "aaad3c8284377b2d",
-    "merchant_norm": "31803041"
+    "phash": "804515f31ef334e7",
+    "merchant_norm": "el charro cafe ventana"
   },
   "forensics": {
-    "score": 0,
+    "score": 25,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal"
+    ]
   }
 }

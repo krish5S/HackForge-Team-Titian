@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_015",
-  "file_sha256": "8dd9e6d2bcb5149f9233f4ccbf8ec98af18d2c75007fd5d5dd60bc39ba4b27ee",
+  "file_sha256": "5241f6c8692526ebff96501d1d018b3b23d3e2cbbab857017bb4c39dc0b444f8",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "BBQ Chicken",
+    "merchant_name": "UDG GR TLUR ASIN",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -18,7 +18,7 @@
     "other_charges": "",
     "total": "",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [],
     "guest_count": 0,
     "confidence": {},
@@ -27,9 +27,12 @@
       "reader_a": {
         "confidence": {},
         "boxes": {},
-        "merchant_name": "BBQ Chicken"
+        "merchant_name": "UDG GR TLUR ASIN"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS"
+      }
     }
   },
   "validation": {
@@ -48,8 +51,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "85866b9f6a65c11b",
-    "merchant_norm": "bbq chicken"
+    "phash": "cb9b5ec62ccc64c4",
+    "merchant_norm": "udg gr tlur asin"
   },
   "forensics": {
     "score": 0,

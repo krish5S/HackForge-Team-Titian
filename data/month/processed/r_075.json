@@ -1,95 +1,170 @@
 {
   "receipt_id": "r_075",
-  "file_sha256": "8ea24c45c84d909c756b7b2ab8e9d4788b962be8e5125921e33d8e1cbe23dad0",
+  "file_sha256": "6bb736948875f4a79f3c6fcbecc429e5c8bd5e2bda2dc4c107215570d8253fea",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "R  ALAD",
-    "receipt_number": "",
+    "merchant_name": "OM INDIAN FOOD",
+    "receipt_number": "2143",
     "card_last4": "",
-    "transaction_date": "2017-03-18",
-    "transaction_time": "8:48",
+    "transaction_date": "2016-04-15",
+    "transaction_time": "12:03",
     "city": "",
     "country": "",
     "currency": "USD",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": "29.85",
+    "tax": "1.32",
     "tip": "",
     "other_charges": "",
-    "total": "4.99",
+    "total": "16.24",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "Small Fries",
-        "amount": "1.89",
+        "description": "Vegetable Biryani",
+        "amount": "12.95",
         "item_class": "OTHER"
       },
       {
-        "description": "Plain Potato",
-        "amount": "1.79",
+        "description": "Malai Kofta",
+        "amount": "12.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Onion Naan",
+        "amount": "3.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "You have saved",
+        "amount": "14.93",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9241769909858704,
-      "total": 0.9960988163948059
+      "transaction_date": 0.9952566027641296,
+      "subtotal": 0.9999699592590332,
+      "tax": 0.9995796084403992,
+      "total": 0.9999765753746033
     },
     "boxes": {
       "transaction_date": [
-        196,
-        127,
-        245,
-        139
+        422,
+        511,
+        566,
+        535
+      ],
+      "subtotal": [
+        499,
+        692,
+        578,
+        725
+      ],
+      "tax": [
+        521,
+        759,
+        582,
+        793
       ],
       "total": [
-        226,
-        322,
-        256,
-        338
+        500,
+        794,
+        584,
+        831
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9241769909858704,
-          "total": 0.9960988163948059
+          "transaction_date": 0.9952566027641296,
+          "subtotal": 0.9999699592590332,
+          "tax": 0.9995796084403992,
+          "total": 0.9999765753746033
         },
         "boxes": {
           "transaction_date": [
-            196,
-            127,
-            245,
-            139
+            422,
+            511,
+            566,
+            535
+          ],
+          "subtotal": [
+            499,
+            692,
+            578,
+            725
+          ],
+          "tax": [
+            521,
+            759,
+            582,
+            793
           ],
           "total": [
-            226,
-            322,
-            256,
-            338
+            500,
+            794,
+            584,
+            831
           ]
         },
-        "merchant_name": "R  ALAD",
-        "transaction_date": "2017-03-18",
-        "transaction_time": "8:48",
-        "total": "4.99",
+        "merchant_name": "OM INDIAN FOOD",
+        "receipt_number": "2143",
+        "transaction_date": "2016-04-15",
+        "transaction_time": "12:03",
         "currency": "USD",
-        "category": "MEALS",
+        "subtotal": "29.85",
+        "tax": "1.32",
+        "total": "16.24",
         "line_items": [
           {
-            "description": "Small Fries",
-            "amount": "1.89",
+            "description": "Vegetable Biryani",
+            "amount": "12.95",
             "item_class": "OTHER"
           },
           {
-            "description": "Plain Potato",
-            "amount": "1.79",
+            "description": "Malai Kofta",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Onion Naan",
+            "amount": "3.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "You have saved",
+            "amount": "14.93",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Vegetable Biryani",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Malai Kofta",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Onion Naan",
+            "amount": "3.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "You have saved",
+            "amount": "14.93",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -97,13 +172,25 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "4.99",
+        "printed": "16.24",
         "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "31.17",
+        "printed": "16.24",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "44.78",
+        "printed": "29.85",
+        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-03-18",
+        "printed": "2016-04-15",
         "passed": true
       }
     ]
@@ -111,15 +198,18 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "4.99"
+    "total_base": "16.24"
   },
   "fingerprints": {
-    "phash": "d0c22f943ed16f94",
-    "merchant_norm": "r alad"
+    "phash": "d253e1dc8dc78c8c",
+    "merchant_norm": "om indian food"
   },
   "forensics": {
-    "score": 0,
+    "score": 50,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
   }
 }

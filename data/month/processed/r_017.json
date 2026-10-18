@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_017",
-  "file_sha256": "9a4ef875194aba3f276399807c6210f165420757d926f48ca569029a20090de9",
+  "file_sha256": "8dd9e6d2bcb5149f9233f4ccbf8ec98af18d2c75007fd5d5dd60bc39ba4b27ee",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "培物华对动带计验信营音会",
+    "merchant_name": "BBQ Chicken",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "41000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9998372197151184
+    },
+    "boxes": {
+      "total": [
+        406,
+        394,
+        476,
+        416
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "培物华对动带计验信营音会"
+        "confidence": {
+          "total": 0.9998372197151184
+        },
+        "boxes": {
+          "total": [
+            406,
+            394,
+            476,
+            416
+          ]
+        },
+        "merchant_name": "BBQ Chicken",
+        "total": "41000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "41000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "c55a7ab93e81855a",
-    "merchant_norm": ""
+    "phash": "85866b9f6a65c11b",
+    "merchant_norm": "bbq chicken"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

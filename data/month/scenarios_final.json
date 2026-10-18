@@ -13,7 +13,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "48.00",
+      "total": "",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -36,10 +36,8 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000004",
-        "labeled_fields": [
-          "total"
-        ]
+        "source_id": "000001",
+        "labeled_fields": []
       }
     },
     {
@@ -54,7 +52,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "48.00",
+      "total": "",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "exact_duplicate",
@@ -90,7 +88,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "",
+      "total": "48.00",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -113,8 +111,10 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000030",
-        "labeled_fields": []
+        "source_id": "000004",
+        "labeled_fields": [
+          "total"
+        ]
       }
     },
     {
@@ -129,7 +129,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "",
+      "total": "48.00",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "exact_duplicate",
@@ -188,7 +188,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000070",
+        "source_id": "000030",
         "labeled_fields": []
       }
     },
@@ -263,7 +263,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000115",
+        "source_id": "000070",
         "labeled_fields": []
       }
     },
@@ -338,7 +338,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000120",
+        "source_id": "000115",
         "labeled_fields": []
       }
     },
@@ -413,7 +413,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000121",
+        "source_id": "000120",
         "labeled_fields": []
       }
     },
@@ -488,7 +488,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000124",
+        "source_id": "000121",
         "labeled_fields": []
       }
     },
@@ -563,7 +563,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000155",
+        "source_id": "000124",
         "labeled_fields": []
       }
     },
@@ -638,7 +638,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000172",
+        "source_id": "000155",
         "labeled_fields": []
       }
     },
@@ -713,7 +713,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000197",
+        "source_id": "000172",
         "labeled_fields": []
       }
     },
@@ -788,7 +788,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000001",
+        "source_id": "000197",
         "labeled_fields": []
       }
     },
@@ -1898,18 +1898,29 @@
     },
     {
       "scenario_id": "r_050",
-      "merchant": "",
+      "merchant": "Merchant 50",
       "city": "Chicago",
       "country": "US",
-      "transaction_date": "",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "228.00",
-      "line_items": [],
+      "transaction_date": "2026-09-15",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Food",
+          "amount": "15.00",
+          "item_class": "FOOD"
+        },
+        {
+          "description": "Beer",
+          "amount": "5.00",
+          "item_class": "ALCOHOL"
+        }
+      ],
       "category": "MEALS",
       "scenario_type": "alcohol",
       "planted_issue": "alcohol",
@@ -1928,29 +1939,33 @@
           "EXCLUDED_ITEM"
         ],
         "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "cord_v2",
-        "source_id": "000328",
-        "labeled_fields": [
-          "total"
-        ]
       }
     },
     {
       "scenario_id": "r_051",
-      "merchant": "",
+      "merchant": "Merchant 51",
       "city": "Chicago",
       "country": "US",
-      "transaction_date": "",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "22.00",
-      "line_items": [],
+      "transaction_date": "2026-09-16",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Food",
+          "amount": "15.00",
+          "item_class": "FOOD"
+        },
+        {
+          "description": "Beer",
+          "amount": "5.00",
+          "item_class": "ALCOHOL"
+        }
+      ],
       "category": "MEALS",
       "scenario_type": "alcohol",
       "planted_issue": "alcohol",
@@ -1969,13 +1984,6 @@
           "EXCLUDED_ITEM"
         ],
         "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "cord_v2",
-        "source_id": "000394",
-        "labeled_fields": [
-          "total"
-        ]
       }
     },
     {
@@ -2080,7 +2088,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "75500.00",
+      "total": "228.00",
       "line_items": [],
       "category": "MEALS",
       "scenario_type": "missing_client",
@@ -2103,7 +2111,7 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000476",
+        "source_id": "000328",
         "labeled_fields": [
           "total"
         ]
@@ -2121,7 +2129,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "",
+      "total": "22.00",
       "line_items": [],
       "category": "MEALS",
       "scenario_type": "missing_client",
@@ -2144,8 +2152,10 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000533",
-        "labeled_fields": []
+        "source_id": "000394",
+        "labeled_fields": [
+          "total"
+        ]
       }
     },
     {
@@ -2160,7 +2170,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "",
+      "total": "75500.00",
       "line_items": [],
       "category": "MEALS",
       "scenario_type": "missing_client",
@@ -2183,24 +2193,32 @@
       },
       "derived_from_public": {
         "source": "cord_v2",
-        "source_id": "000542",
-        "labeled_fields": []
+        "source_id": "000476",
+        "labeled_fields": [
+          "total"
+        ]
       }
     },
     {
       "scenario_id": "r_057",
-      "merchant": "",
+      "merchant": "Late shop 0",
       "city": "Chicago",
       "country": "US",
-      "transaction_date": "",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "34.00",
-      "line_items": [],
+      "transaction_date": "2026-09-10",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "50.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "50.00",
+      "line_items": [
+        {
+          "description": "Trip meal",
+          "amount": "50.00",
+          "item_class": "FOOD"
+        }
+      ],
       "category": "MEALS",
       "scenario_type": "late_original",
       "planted_issue": null,
@@ -2221,13 +2239,6 @@
           "CITY_DAILY_CAP"
         ],
         "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "cord_v2",
-        "source_id": "000569",
-        "labeled_fields": [
-          "total"
-        ]
       }
     },
     {
@@ -2274,18 +2285,24 @@
     },
     {
       "scenario_id": "r_059",
-      "merchant": "",
+      "merchant": "Late shop 1",
       "city": "Chicago",
       "country": "US",
-      "transaction_date": "",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "",
-      "line_items": [],
+      "transaction_date": "2026-09-10",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "50.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "50.00",
+      "line_items": [
+        {
+          "description": "Trip meal",
+          "amount": "50.00",
+          "item_class": "FOOD"
+        }
+      ],
       "category": "MEALS",
       "scenario_type": "late_original",
       "planted_issue": null,
@@ -2306,11 +2323,6 @@
           "CITY_DAILY_CAP"
         ],
         "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "cord_v2",
-        "source_id": "000571",
-        "labeled_fields": []
       }
     },
     {
@@ -2389,8 +2401,8 @@
         "duplicate_of": null
       },
       "derived_from_public": {
-        "source": "express_expense",
-        "source_id": "1022-receipt.jpg",
+        "source": "cord_v2",
+        "source_id": "000533",
         "labeled_fields": []
       }
     },
@@ -2428,8 +2440,8 @@
         "duplicate_of": null
       },
       "derived_from_public": {
-        "source": "express_expense",
-        "source_id": "1028-receipt.jpg",
+        "source": "cord_v2",
+        "source_id": "000542",
         "labeled_fields": []
       }
     },
@@ -2445,7 +2457,7 @@
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "",
+      "total": "34.00",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -2467,9 +2479,11 @@
         "duplicate_of": null
       },
       "derived_from_public": {
-        "source": "express_expense",
-        "source_id": "1044-receipt.jpg",
-        "labeled_fields": []
+        "source": "cord_v2",
+        "source_id": "000569",
+        "labeled_fields": [
+          "total"
+        ]
       }
     },
     {
@@ -2507,7 +2521,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1047-receipt.jpg",
+        "source_id": "1022-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2546,7 +2560,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1073-receipt.jpg",
+        "source_id": "1028-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2585,7 +2599,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1078-receipt.jpg",
+        "source_id": "1044-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2624,7 +2638,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1086-receipt.jpg",
+        "source_id": "1047-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2663,7 +2677,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1090-receipt.jpg",
+        "source_id": "1073-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2702,7 +2716,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1093-receipt.jpg",
+        "source_id": "1078-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2741,7 +2755,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1099-receipt.jpg",
+        "source_id": "1086-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2780,7 +2794,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1101-receipt.jpg",
+        "source_id": "1090-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2819,7 +2833,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1102-receipt.jpg",
+        "source_id": "1093-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2858,7 +2872,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1110-receipt.jpg",
+        "source_id": "1099-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2897,7 +2911,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1112-receipt.jpg",
+        "source_id": "1101-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2936,7 +2950,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1118-receipt.jpg",
+        "source_id": "1102-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -2975,7 +2989,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1134-receipt.jpg",
+        "source_id": "1110-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -3014,7 +3028,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1149-receipt.jpg",
+        "source_id": "1112-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -3053,7 +3067,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1174-receipt.jpg",
+        "source_id": "1118-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -3092,7 +3106,7 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1177-receipt.jpg",
+        "source_id": "1134-receipt.jpg",
         "labeled_fields": []
       }
     },
@@ -3131,12 +3145,90 @@
       },
       "derived_from_public": {
         "source": "express_expense",
-        "source_id": "1190-receipt.jpg",
+        "source_id": "1149-receipt.jpg",
         "labeled_fields": []
       }
     },
     {
       "scenario_id": "r_081",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-21T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1174-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_082",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-22T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1177-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_083",
       "merchant": "Sin Lianhap Son Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3153,9 +3245,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_03",
-      "channel": "mobile",
-      "submitted_at": "2026-09-21T18:00:00+05:30",
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-23T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3179,7 +3271,7 @@
       }
     },
     {
-      "scenario_id": "r_082",
+      "scenario_id": "r_084",
       "merchant": "Mr. D.I.Y. (M) Son Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3196,9 +3288,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_04",
-      "channel": "email",
-      "submitted_at": "2026-09-22T18:00:00+05:30",
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-24T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3222,7 +3314,7 @@
       }
     },
     {
-      "scenario_id": "r_083",
+      "scenario_id": "r_085",
       "merchant": "Maxincome Resources Sdn Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3239,9 +3331,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_05",
-      "channel": "upload",
-      "submitted_at": "2026-09-23T18:00:00+05:30",
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-25T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3265,7 +3357,7 @@
       }
     },
     {
-      "scenario_id": "r_084",
+      "scenario_id": "r_086",
       "merchant": "Becon Enterprise Sdn Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3282,9 +3374,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_06",
-      "channel": "mobile",
-      "submitted_at": "2026-09-24T18:00:00+05:30",
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-26T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3308,7 +3400,7 @@
       }
     },
     {
-      "scenario_id": "r_085",
+      "scenario_id": "r_087",
       "merchant": "Korean Dine Sdn Bhd(1077469-V)",
       "city": "Chicago",
       "country": "US",
@@ -3325,9 +3417,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_01",
-      "channel": "email",
-      "submitted_at": "2026-09-25T18:00:00+05:30",
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-27T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3351,7 +3443,7 @@
       }
     },
     {
-      "scenario_id": "r_086",
+      "scenario_id": "r_088",
       "merchant": "Aeon Co. (M) Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3368,9 +3460,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_02",
-      "channel": "upload",
-      "submitted_at": "2026-09-26T18:00:00+05:30",
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-28T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3394,7 +3486,7 @@
       }
     },
     {
-      "scenario_id": "r_087",
+      "scenario_id": "r_089",
       "merchant": "L Two Florist & Handicraft",
       "city": "Chicago",
       "country": "US",
@@ -3411,9 +3503,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_03",
-      "channel": "mobile",
-      "submitted_at": "2026-09-27T18:00:00+05:30",
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-29T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3437,7 +3529,7 @@
       }
     },
     {
-      "scenario_id": "r_088",
+      "scenario_id": "r_090",
       "merchant": "Golden Scoop Sdn Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3454,9 +3546,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_04",
-      "channel": "email",
-      "submitted_at": "2026-09-28T18:00:00+05:30",
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-30T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3480,7 +3572,7 @@
       }
     },
     {
-      "scenario_id": "r_089",
+      "scenario_id": "r_091",
       "merchant": "Advanco Company",
       "city": "Chicago",
       "country": "US",
@@ -3497,9 +3589,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_05",
-      "channel": "upload",
-      "submitted_at": "2026-09-29T18:00:00+05:30",
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3523,7 +3615,7 @@
       }
     },
     {
-      "scenario_id": "r_090",
+      "scenario_id": "r_092",
       "merchant": "Tonymoly Viva City",
       "city": "Chicago",
       "country": "US",
@@ -3540,9 +3632,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_06",
-      "channel": "mobile",
-      "submitted_at": "2026-09-30T18:00:00+05:30",
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3566,7 +3658,7 @@
       }
     },
     {
-      "scenario_id": "r_091",
+      "scenario_id": "r_093",
       "merchant": "Bemed (Sp) Sdn. Bhd.",
       "city": "Chicago",
       "country": "US",
@@ -3583,9 +3675,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_01",
-      "channel": "email",
-      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3608,7 +3700,7 @@
       }
     },
     {
-      "scenario_id": "r_092",
+      "scenario_id": "r_094",
       "merchant": "Amano Malaysia Son Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3625,9 +3717,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_02",
-      "channel": "upload",
-      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-04T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3651,7 +3743,7 @@
       }
     },
     {
-      "scenario_id": "r_093",
+      "scenario_id": "r_095",
       "merchant": "Ghee Hiang Gh Distributor & Marketing Sdn Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3668,9 +3760,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_03",
-      "channel": "mobile",
-      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-05T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3694,7 +3786,7 @@
       }
     },
     {
-      "scenario_id": "r_094",
+      "scenario_id": "r_096",
       "merchant": "Gardenia Bakertes (El) Sdn Bhd",
       "city": "Chicago",
       "country": "US",
@@ -3711,9 +3803,9 @@
       "scenario_type": "clean",
       "planted_issue": null,
       "related_ids": [],
-      "employee_id": "e_04",
-      "channel": "email",
-      "submitted_at": "2026-09-04T18:00:00+05:30",
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-06T18:00:00+05:30",
       "client_meal": false,
       "client_name": null,
       "attendee_count": 1,
@@ -3737,10 +3829,10 @@
       }
     },
     {
-      "scenario_id": "r_095",
+      "scenario_id": "r_097",
       "merchant": "Pinghwai Trading Sdn Bhd",
-      "city": "Chicago",
-      "country": "US",
+      "city": "Jakarta",
+      "country": "ID",
       "transaction_date": "2017-09-30",
       "transaction_time": "",
       "currency": "",
@@ -3749,92 +3841,6 @@
       "tip": "",
       "other_charges": "",
       "total": "616.60",
-      "line_items": [],
-      "category": "TRAVEL",
-      "scenario_type": "clean",
-      "planted_issue": null,
-      "related_ids": [],
-      "employee_id": "e_05",
-      "channel": "upload",
-      "submitted_at": "2026-09-05T18:00:00+05:30",
-      "client_meal": false,
-      "client_name": null,
-      "attendee_count": 1,
-      "attendee_names": [],
-      "approved": false,
-      "expected": {
-        "verdict": "APPROVE",
-        "reason_codes": [
-          "POLICY_COMPLIANT"
-        ],
-        "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "sroie",
-        "source_id": "train/images/X51006556831.jpg",
-        "labeled_fields": [
-          "merchant",
-          "total",
-          "transaction_date"
-        ]
-      }
-    },
-    {
-      "scenario_id": "r_096",
-      "merchant": "Gardenia Bakeries (Kl.) Sdn Bhd",
-      "city": "Chicago",
-      "country": "US",
-      "transaction_date": "2017-10-26",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "54.19",
-      "line_items": [],
-      "category": "TRAVEL",
-      "scenario_type": "clean",
-      "planted_issue": null,
-      "related_ids": [],
-      "employee_id": "e_06",
-      "channel": "mobile",
-      "submitted_at": "2026-09-06T18:00:00+05:30",
-      "client_meal": false,
-      "client_name": null,
-      "attendee_count": 1,
-      "attendee_names": [],
-      "approved": false,
-      "expected": {
-        "verdict": "APPROVE",
-        "reason_codes": [
-          "POLICY_COMPLIANT"
-        ],
-        "duplicate_of": null
-      },
-      "derived_from_public": {
-        "source": "sroie",
-        "source_id": "train/images/X51006557508.jpg",
-        "labeled_fields": [
-          "merchant",
-          "total",
-          "transaction_date"
-        ]
-      }
-    },
-    {
-      "scenario_id": "r_097",
-      "merchant": "Chef Lee Sdn Bhd",
-      "city": "Jakarta",
-      "country": "ID",
-      "transaction_date": "2016-02-13",
-      "transaction_time": "",
-      "currency": "",
-      "subtotal": "",
-      "tax": "",
-      "tip": "",
-      "other_charges": "",
-      "total": "",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -3858,26 +3864,27 @@
       "scenario_fx_rate": "0.000065",
       "derived_from_public": {
         "source": "sroie",
-        "source_id": "train/images/X51006619697.jpg",
+        "source_id": "train/images/X51006556831.jpg",
         "labeled_fields": [
           "merchant",
+          "total",
           "transaction_date"
         ]
       }
     },
     {
       "scenario_id": "r_098",
-      "merchant": "Eden Impression Sdn Bhd",
+      "merchant": "Gardenia Bakeries (Kl.) Sdn Bhd",
       "city": "Kuala Lumpur",
       "country": "MY",
-      "transaction_date": "2016-10-20",
+      "transaction_date": "2017-10-26",
       "transaction_time": "",
       "currency": "",
       "subtotal": "",
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "9.75",
+      "total": "54.19",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -3901,7 +3908,7 @@
       "scenario_fx_rate": "0.23",
       "derived_from_public": {
         "source": "sroie",
-        "source_id": "train/images/X51006620414.jpg",
+        "source_id": "train/images/X51006557508.jpg",
         "labeled_fields": [
           "merchant",
           "total",
@@ -3911,17 +3918,17 @@
     },
     {
       "scenario_id": "r_099",
-      "merchant": "Mph Bookstores Sdn Bhd",
+      "merchant": "Chef Lee Sdn Bhd",
       "city": "Jakarta",
       "country": "ID",
-      "transaction_date": "2017-12-11",
+      "transaction_date": "2016-02-13",
       "transaction_time": "",
       "currency": "",
       "subtotal": "",
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "31.45",
+      "total": "",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -3945,27 +3952,26 @@
       "scenario_fx_rate": "0.000065",
       "derived_from_public": {
         "source": "sroie",
-        "source_id": "train/images/X51006857265.jpg",
+        "source_id": "train/images/X51006619697.jpg",
         "labeled_fields": [
           "merchant",
-          "total",
           "transaction_date"
         ]
       }
     },
     {
       "scenario_id": "r_100",
-      "merchant": "Eco-Shop Marketing Sdn Bhd",
+      "merchant": "Eden Impression Sdn Bhd",
       "city": "Kuala Lumpur",
       "country": "MY",
-      "transaction_date": "2018-02-26",
+      "transaction_date": "2016-10-20",
       "transaction_time": "",
       "currency": "",
       "subtotal": "",
       "tax": "",
       "tip": "",
       "other_charges": "",
-      "total": "16.30",
+      "total": "9.75",
       "line_items": [],
       "category": "TRAVEL",
       "scenario_type": "clean",
@@ -3989,7 +3995,7 @@
       "scenario_fx_rate": "0.23",
       "derived_from_public": {
         "source": "sroie",
-        "source_id": "train/images/X51006882603.jpg",
+        "source_id": "train/images/X51006620414.jpg",
         "labeled_fields": [
           "merchant",
           "total",

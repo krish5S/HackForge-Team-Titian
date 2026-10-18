@@ -2,7 +2,7 @@
   "receipt_id": "r_031",
   "file_sha256": "70084e01f69796ab57134ccdb9d5f6bbb1af23415cc8c550e3ed657d18e64b3c",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "99 SPEED MART S/B (519537-X)",
     "receipt_number": "FOR",
@@ -11,7 +11,7 @@
     "transaction_time": "",
     "city": "",
     "country": "",
-    "currency": "",
+    "currency": "MYR",
     "subtotal": "",
     "tax": "37.44",
     "tip": "",
@@ -89,6 +89,37 @@
         "tax": "37.44",
         "total": "37.44",
         "receipt_number": "FOR",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "29.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding RH",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CREDIT RM",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "s = 6%",
+            "amount": "3535.32",
+            "item_class": "OTHER"
+          }
+        ],
+        "currency": "MYR"
+      },
+      "reader_b": {},
+      "text_rules": {
         "category": "MEALS",
         "line_items": [
           {
@@ -117,8 +148,7 @@
             "item_class": "OTHER"
           }
         ]
-      },
-      "reader_b": {}
+      }
     }
   },
   "validation": {
@@ -133,8 +163,8 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "8.61"
   },
   "fingerprints": {
     "phash": "b61595571d157435",

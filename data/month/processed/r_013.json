@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_013",
-  "file_sha256": "5241f6c8692526ebff96501d1d018b3b23d3e2cbbab857017bb4c39dc0b444f8",
+  "file_sha256": "eb6fa8f84d15bcd7b9188f8aff686d66a96137d5e0cd410039c945348a449fdd",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "UDG GR TLUR ASIN",
+    "merchant_name": "1001-Choco Bun",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "22000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999305605888367
+    },
+    "boxes": {
+      "total": [
+        598,
+        948,
+        728,
+        1000
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "UDG GR TLUR ASIN"
+        "confidence": {
+          "total": 0.9999305605888367
+        },
+        "boxes": {
+          "total": [
+            598,
+            948,
+            728,
+            1000
+          ]
+        },
+        "merchant_name": "1001-Choco Bun",
+        "total": "22000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "22000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "cb9b5ec62ccc64c4",
-    "merchant_norm": "udg gr tlur asin"
+    "phash": "90d57754d45755c2",
+    "merchant_norm": "1001 choco bun"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

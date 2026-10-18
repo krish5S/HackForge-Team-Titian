@@ -5,7 +5,8 @@ from decimal import Decimal, InvalidOperation
 import re
 from typing import Any
 
-MONEY = re.compile(r"(?<!\d)(?:[$€£₹]\s*)?(-?\d+(?:,\d{3})*(?:\.\d{2})|-?\d+,\d{2})(?!\d)")
+MONEY = re.compile(r"(?<!\d)(?:[$€£₹]\s*)?(-?(?:\d{1,3}(?:,\d{3})+(?:\.\d{2})?|"
+                   r"\d{1,3}(?:\.\d{3})+|\d+\.\d{2}|\d+,\d{2}))(?![\d.,])")
 DATE = re.compile(r"\b(\d{4}[-/]\d{1,2}[-/]\d{1,2}|\d{1,2}[-/]\d{1,2}[-/]\d{2,4})\b")
 TIME = re.compile(r"\b([01]?\d|2[0-3]):[0-5]\d(?::[0-5]\d)?\b")
 FIELD_LABELS = {"subtotal": ("subtotal", "sub total"), "tax": ("tax", "gst", "vat"),
@@ -14,11 +15,17 @@ FIELD_LABELS = {"subtotal": ("subtotal", "sub total"), "tax": ("tax", "gst", "va
 
 
 def _amount(text: str) -> str | None:
-    matches = list(MONEY.finditer(text))
+    matches = [match for match in MONEY.finditer(text)
+               if not re.match(r"\s*%", text[match.end():])]
     if not matches:
         return None
     value = matches[-1].group(1)
-    value = value.replace(",", ".") if "." not in value else value.replace(",", "")
+    if re.fullmatch(r"-?\d{1,3}(?:,\d{3})+(?:\.\d{2})?", value):
+        value = value.replace(",", "")
+    elif re.fullmatch(r"-?\d{1,3}(?:\.\d{3})+", value):
+        value = value.replace(".", "")
+    elif "," in value:
+        value = value.replace(",", ".")
     return value
 
 
@@ -102,16 +109,15 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
                 if re.search(r"\b" + code + r"\b", text.upper()):
                     result["currency"] = code
                     break
+            if not result.get("currency") and re.search(r"\bRM\s*-?\d", text, re.I):
+                result["currency"] = "MYR"
+            if not result.get("currency") and re.search(r"\bRP\.?\s*-?\d", text, re.I):
+                result["currency"] = "IDR"
         if "city" not in result:
             location = re.fullmatch(r"\s*([A-Za-z][A-Za-z .'-]{1,40}),\s*([A-Z]{2,3})\s*", text)
             if location:
                 result["city"] = location.group(1).strip()
                 result["country"] = location.group(2)
-    all_text = str(ocr.get("full_text") or "\n".join(str(line.get("text", "")) for line in lines)).lower()
-    if any(word in all_text for word in ("taxi", "hotel", "lodging", "ride fare", "trip fare")):
-        result["category"] = "TRAVEL"
-    elif any(word in all_text for word in ("restaurant", "bistro", "cafe", "meal", "dinner", "lunch")):
-        result["category"] = "MEALS"
     items = []
     for index, line in enumerate(lines):
         description = str(line.get("text", "")).strip()

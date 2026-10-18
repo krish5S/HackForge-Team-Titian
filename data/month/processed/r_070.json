@@ -1,189 +1,228 @@
 {
   "receipt_id": "r_070",
-  "file_sha256": "36b005aa17a425ea8a990626856fb39ff77675f46de3392edc9dfc5c62706e82",
+  "file_sha256": "c486315cdaa26b99fce015145fa5b3f365280d0cdce1eecdf7f0f90f0066f7fa",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Mexican Restaurant & Bar",
+    "merchant_name": "Calagero's",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2017-12-29",
-    "transaction_time": "1:17",
+    "transaction_date": "2018-04-20",
+    "transaction_time": "8:29",
     "city": "",
     "country": "",
-    "currency": "",
-    "subtotal": "5.46",
-    "tax": "55.51",
-    "tip": "18.00",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "12.51",
+    "tip": "",
     "other_charges": "",
-    "total": "64.52",
+    "total": "157.51",
     "itemization": "",
-    "category": "MEALS",
+    "category": "",
     "line_items": [
       {
-        "description": "Reprint #: 1",
-        "amount": "3.25",
+        "description": "Descript",
+        "amount": "27.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Coffee",
-        "amount": "14.95",
+        "description": "2 Chicken Milanese",
+        "amount": "46.00",
         "item_class": "OTHER"
       },
       {
-        "description": "pollo",
-        "amount": "5.95",
+        "description": "1 Veal Milanese",
+        "amount": "27.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Chicken Tenders",
-        "amount": "9.95",
+        "description": "3 Grey Goose",
+        "amount": "30.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Flautas Chicken",
-        "amount": "15.95",
+        "description": "1 Pineapple Juice",
+        "amount": "3.00",
         "item_class": "OTHER"
       },
       {
-        "description": "M",
-        "amount": "50.05",
+        "description": "1 Belvedere",
+        "amount": "12.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Gratuity",
-        "amount": "18.00",
+        "description": "1 Becks Non Alcoholic",
+        "amount": "6.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Corona",
+        "amount": "6.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Amount Due:",
+        "amount": "157.51",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999980926513672,
-      "subtotal": 0.9999963045120239,
-      "tax": 0.9999977350234985,
-      "total": 0.9999966621398926,
-      "tip": 0.9994314908981323
+      "transaction_date": 0.999939501285553,
+      "total": 0.9999170303344727,
+      "tax": 0.9999470114707947
     },
     "boxes": {
       "transaction_date": [
-        420,
-        146,
-        540,
-        181
-      ],
-      "subtotal": [
-        505,
-        520,
-        563,
-        555
-      ],
-      "tax": [
-        497,
-        578,
-        567,
-        616
+        73,
+        308,
+        271,
+        343
       ],
       "total": [
-        445,
-        733,
-        577,
-        775
+        364,
+        849,
+        552,
+        883
       ],
-      "tip": [
-        40,
-        626,
-        239,
-        669
+      "tax": [
+        470,
+        748,
+        554,
+        781
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999980926513672,
-          "subtotal": 0.9999963045120239,
-          "tax": 0.9999977350234985,
-          "total": 0.9999966621398926,
-          "tip": 0.9994314908981323
+          "transaction_date": 0.999939501285553,
+          "total": 0.9999170303344727,
+          "tax": 0.9999470114707947
         },
         "boxes": {
           "transaction_date": [
-            420,
-            146,
-            540,
-            181
-          ],
-          "subtotal": [
-            505,
-            520,
-            563,
-            555
-          ],
-          "tax": [
-            497,
-            578,
-            567,
-            616
+            73,
+            308,
+            271,
+            343
           ],
           "total": [
-            445,
-            733,
-            577,
-            775
+            364,
+            849,
+            552,
+            883
           ],
-          "tip": [
-            40,
-            626,
-            239,
-            669
+          "tax": [
+            470,
+            748,
+            554,
+            781
           ]
         },
-        "merchant_name": "Mexican Restaurant & Bar",
-        "transaction_date": "2017-12-29",
-        "transaction_time": "1:17",
-        "subtotal": "5.46",
-        "tax": "55.51",
-        "total": "64.52",
-        "tip": "18.00",
-        "category": "MEALS",
+        "merchant_name": "Calagero's",
+        "transaction_date": "2018-04-20",
+        "transaction_time": "8:29",
+        "currency": "USD",
+        "total": "157.51",
+        "tax": "12.51",
         "line_items": [
           {
-            "description": "Reprint #: 1",
-            "amount": "3.25",
+            "description": "Descript",
+            "amount": "27.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Coffee",
-            "amount": "14.95",
+            "description": "2 Chicken Milanese",
+            "amount": "46.00",
             "item_class": "OTHER"
           },
           {
-            "description": "pollo",
-            "amount": "5.95",
+            "description": "1 Veal Milanese",
+            "amount": "27.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Chicken Tenders",
-            "amount": "9.95",
+            "description": "3 Grey Goose",
+            "amount": "30.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Flautas Chicken",
-            "amount": "15.95",
+            "description": "1 Pineapple Juice",
+            "amount": "3.00",
             "item_class": "OTHER"
           },
           {
-            "description": "M",
-            "amount": "50.05",
+            "description": "1 Belvedere",
+            "amount": "12.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Gratuity",
-            "amount": "18.00",
+            "description": "1 Becks Non Alcoholic",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Corona",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due:",
+            "amount": "157.51",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Descript",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Chicken Milanese",
+            "amount": "46.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Veal Milanese",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Grey Goose",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Pineapple Juice",
+            "amount": "3.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Belvedere",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Becks Non Alcoholic",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Corona",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due:",
+            "amount": "157.51",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -191,44 +230,29 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "64.52",
+        "printed": "157.51",
         "passed": true
-      },
-      {
-        "name": "components_vs_total",
-        "expected": "78.97",
-        "printed": "64.52",
-        "passed": false
-      },
-      {
-        "name": "items_vs_subtotal",
-        "expected": "118.10",
-        "printed": "5.46",
-        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-12-29",
+        "printed": "2018-04-20",
         "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "157.51"
   },
   "fingerprints": {
-    "phash": "d2ea29fb2ab028b6",
-    "merchant_norm": "mexican restaurant bar"
+    "phash": "b93766c258cd849d",
+    "merchant_norm": "calagero s"
   },
   "forensics": {
-    "score": 50,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "components_vs_total",
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

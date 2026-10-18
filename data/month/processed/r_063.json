@@ -1,14 +1,14 @@
 {
   "receipt_id": "r_063",
-  "file_sha256": "77c7af1bedc61cdf504ccd4fe3b147b6a2c817d784c7380e4194be528f341417",
+  "file_sha256": "ef2037f04e744603039a5b3125679b7af75bfbcc144e93ab3d45cc09f0b34aec",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "CHURCH'S",
+    "merchant_name": "shier:",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
-    "transaction_time": "20:57",
+    "transaction_time": "",
     "city": "",
     "country": "",
     "currency": "",
@@ -16,73 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "34000",
     "itemization": "",
     "category": "",
-    "line_items": [
-      {
-        "description": "1 9PC LT",
-        "amount": "9.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "NET",
-        "amount": "9.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "TOTL",
-        "amount": "10.94",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "CHNG",
-        "amount": "11.00",
-        "item_class": "OTHER"
-      }
-    ],
+    "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999173283576965
+    },
+    "boxes": {
+      "total": [
+        136,
+        350,
+        196,
+        379
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "CHURCH'S",
-        "transaction_time": "20:57",
-        "line_items": [
-          {
-            "description": "1 9PC LT",
-            "amount": "9.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "NET",
-            "amount": "9.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "TOTL",
-            "amount": "10.94",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "CHNG",
-            "amount": "11.00",
-            "item_class": "OTHER"
-          }
-        ]
+        "confidence": {
+          "total": 0.9999173283576965
+        },
+        "boxes": {
+          "total": [
+            136,
+            350,
+            196,
+            379
+          ]
+        },
+        "merchant_name": "shier:",
+        "total": "34000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "34000",
+        "passed": true
       }
     ]
   },
@@ -92,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "b5cc3611c9c63b39",
-    "merchant_norm": "church s"
+    "phash": "8281838be5ed53eb",
+    "merchant_norm": "shier"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

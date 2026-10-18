@@ -1,139 +1,152 @@
 {
   "receipt_id": "r_091",
-  "file_sha256": "f1aa10deb8cf1ce5d851c35aa3194291c03fdf4238ac04c580ae11dd94d988d7",
+  "file_sha256": "dab060ae8139a6fd841bba0aea092a5caade7dd5093abc285e5809bf4510117f",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "POSTED",
+    "merchant_name": "ADVANCO COMPANY",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "",
-    "transaction_time": "04:56",
+    "transaction_date": "2018-01-17",
+    "transaction_time": "08:53",
     "city": "",
     "country": "",
-    "currency": "MYR",
-    "subtotal": "035.00",
-    "tax": "635.00",
+    "currency": "",
+    "subtotal": "",
+    "tax": "29.00",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "27.36",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Rounding Adj :",
+        "description": "Rounding Adj",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "al Inclusive GST:",
-        "amount": "635.00",
+        "description": "CASH",
+        "amount": "50.00",
         "item_class": "OTHER"
       },
       {
-        "description": "MASTER",
-        "amount": "035.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "SR",
-        "amount": "594.34",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "ZRL",
-        "amount": "5.00",
+        "description": "Change",
+        "amount": "21.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9890301823616028,
-      "tax": 0.9999471306800842
+      "transaction_date": 0.9850294589996338,
+      "total": 0.9999961853027344,
+      "tax": 0.9999784231185913
     },
     "boxes": {
-      "subtotal": [
-        524,
-        974,
-        624,
-        1010
+      "transaction_date": [
+        390,
+        365,
+        631,
+        402
+      ],
+      "total": [
+        296,
+        966,
+        378,
+        1003
       ],
       "tax": [
-        492,
-        1061,
-        633,
-        1107
+        556,
+        713,
+        631,
+        746
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9890301823616028,
-          "tax": 0.9999471306800842
+          "transaction_date": 0.9850294589996338,
+          "total": 0.9999961853027344,
+          "tax": 0.9999784231185913
         },
         "boxes": {
-          "subtotal": [
-            524,
-            974,
-            624,
-            1010
+          "transaction_date": [
+            390,
+            365,
+            631,
+            402
+          ],
+          "total": [
+            296,
+            966,
+            378,
+            1003
           ],
           "tax": [
-            492,
-            1061,
-            633,
-            1107
+            556,
+            713,
+            631,
+            746
           ]
         },
-        "merchant_name": "POSTED",
-        "transaction_time": "04:56",
-        "subtotal": "035.00",
-        "tax": "635.00",
-        "currency": "MYR",
+        "merchant_name": "ADVANCO COMPANY",
+        "transaction_date": "2018-01-17",
+        "transaction_time": "08:53",
+        "total": "27.36",
+        "tax": "29.00",
         "line_items": [
           {
-            "description": "Rounding Adj :",
+            "description": "Rounding Adj",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "al Inclusive GST:",
-            "amount": "635.00",
+            "description": "CASH",
+            "amount": "50.00",
             "item_class": "OTHER"
           },
           {
-            "description": "MASTER",
-            "amount": "035.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "SR",
-            "amount": "594.34",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "ZRL",
-            "amount": "5.00",
+            "description": "Change",
+            "amount": "21.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "21.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "27.36",
+        "passed": true
       },
       {
-        "name": "items_vs_subtotal",
-        "expected": "1269.34",
-        "printed": "35.00",
-        "passed": false
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-01-17",
+        "passed": true
       }
     ]
   },
@@ -143,14 +156,12 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "ae38f1cb8f4c0a93",
-    "merchant_norm": "posted"
+    "phash": "bab425dacc8d9b42",
+    "merchant_norm": "advanco company"
   },
   "forensics": {
-    "score": 25,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

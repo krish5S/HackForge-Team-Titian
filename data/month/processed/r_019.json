@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_019",
-  "file_sha256": "a11f123c5ada5609e108e78baeb7d2324a5ca83d290217ca645042ab68dc97b1",
+  "file_sha256": "9a4ef875194aba3f276399807c6210f165420757d926f48ca569029a20090de9",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "CK.MANTAP A",
+    "merchant_name": "培物华对动带计验信营音会",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -27,9 +27,10 @@
       "reader_a": {
         "confidence": {},
         "boxes": {},
-        "merchant_name": "CK.MANTAP A"
+        "merchant_name": "培物华对动带计验信营音会"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
@@ -48,8 +49,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "b5c24afd348147da",
-    "merchant_norm": "ck mantap a"
+    "phash": "c55a7ab93e81855a",
+    "merchant_norm": ""
   },
   "forensics": {
     "score": 0,

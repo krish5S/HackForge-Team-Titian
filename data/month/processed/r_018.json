@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_018",
-  "file_sha256": "dbc32d9a97f18e6f2bd01bd397c308343a35bcccfb96222b6145837da0d182c8",
+  "file_sha256": "f86c24fa241182964b5434578742163a2b9159aef1e1e51ef8938f528da43813",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "培物学对动时计学信做学验",
+    "merchant_name": "BBQ Chicken",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "41000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.999832808971405
+    },
+    "boxes": {
+      "total": [
+        388,
+        379,
+        458,
+        401
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "培物学对动时计学信做学验"
+        "confidence": {
+          "total": 0.999832808971405
+        },
+        "boxes": {
+          "total": [
+            388,
+            379,
+            458,
+            401
+          ]
+        },
+        "merchant_name": "BBQ Chicken",
+        "total": "41000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "41000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "c55a7ab93e81855a",
-    "merchant_norm": ""
+    "phash": "85866b9f6a65c11b",
+    "merchant_norm": "bbq chicken"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

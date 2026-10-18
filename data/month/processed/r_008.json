@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_008",
-  "file_sha256": "5a26bea121241e814c41d18006782ac49adb0d9be30f6fdc67e1b24212afc60e",
+  "file_sha256": "361dfc42ecb6571e65f9a32e317dde3ffd364e43d63a47f1d1dc1e55a6c41902",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Kupen 9",
+    "merchant_name": "1 CAPTAIN HOOK",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -13,32 +13,84 @@
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "",
+    "tax": "16200",
     "tip": "",
-    "other_charges": "",
-    "total": "",
+    "other_charges": "12000",
+    "total": "178200",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "other_charges": 0.9999940395355225,
+      "tax": 0.999995768070221,
+      "total": 0.9993947148323059
+    },
+    "boxes": {
+      "other_charges": [
+        1560,
+        2735,
+        1787,
+        2825
+      ],
+      "tax": [
+        1560,
+        2820,
+        1786,
+        2916
+      ],
+      "total": [
+        1282,
+        2992,
+        1780,
+        3082
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "Kupen 9"
+        "confidence": {
+          "other_charges": 0.9999940395355225,
+          "tax": 0.999995768070221,
+          "total": 0.9993947148323059
+        },
+        "boxes": {
+          "other_charges": [
+            1560,
+            2735,
+            1787,
+            2825
+          ],
+          "tax": [
+            1560,
+            2820,
+            1786,
+            2916
+          ],
+          "total": [
+            1282,
+            2992,
+            1780,
+            3082
+          ]
+        },
+        "merchant_name": "1 CAPTAIN HOOK",
+        "tax": "16200",
+        "other_charges": "12000",
+        "total": "178200"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "178200",
+        "passed": true
       }
     ]
   },
@@ -48,12 +100,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "c08aabadada53595",
-    "merchant_norm": "kupen 9"
+    "phash": "94d06b3c6a7f206b",
+    "merchant_norm": "1 captain hook"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

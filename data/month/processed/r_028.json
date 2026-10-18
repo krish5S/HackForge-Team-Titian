@@ -2,7 +2,7 @@
   "receipt_id": "r_028",
   "file_sha256": "c783120e802e965e9f7864bc0f78af2146b369cb83d820aca9e345b6386e19f8",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "RESTORAN WAN SHENG",
     "receipt_number": "",
@@ -132,7 +132,36 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "1 x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 x",
+            "amount": "0.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "GST payable (6%):",
+            "amount": "0.26",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH :",
+            "amount": "4.80",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {

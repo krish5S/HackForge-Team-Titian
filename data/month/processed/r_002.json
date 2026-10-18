@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_002",
-  "file_sha256": "6236b5dc4879ba05c3b14e2361641eb0f66ff54c4fad35ed2113c03825eca658",
+  "file_sha256": "17706a425488126e3208486a66484809222d0125704e8e734e2fbf5b9cada406",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "AFUNG",
+    "merchant_name": "SPGTHY BOLOGNASE",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -13,7 +13,7 @@
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "10.00",
+    "tax": "",
     "tip": "",
     "other_charges": "",
     "total": "",
@@ -21,34 +21,16 @@
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {
-      "tax": 0.9934381246566772
-    },
-    "boxes": {
-      "tax": [
-        88,
-        943,
-        285,
-        985
-      ]
-    },
+    "confidence": {},
+    "boxes": {},
     "readers": {
       "reader_a": {
-        "confidence": {
-          "tax": 0.9934381246566772
-        },
-        "boxes": {
-          "tax": [
-            88,
-            943,
-            285,
-            985
-          ]
-        },
-        "merchant_name": "AFUNG",
-        "tax": "10.00"
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "SPGTHY BOLOGNASE"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
@@ -67,8 +49,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "80d131ce7dfb03a6",
-    "merchant_norm": "afung"
+    "phash": "94e3e3d5180417f7",
+    "merchant_norm": "spgthy bolognase"
   },
   "forensics": {
     "score": 0,

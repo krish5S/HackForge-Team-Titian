@@ -1,14 +1,14 @@
 {
   "receipt_id": "r_085",
-  "file_sha256": "b9c6a08cec812f63c4ebf7f4cc1ce1054122f2507d9e87db8836dc4343d8fb08",
+  "file_sha256": "e823ace84b50a18a48c07f460e1386eaf036b466cdb5fa546f9311228a425c5d",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "A06106",
+    "merchant_name": "Welcome to the Family",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-06-19",
-    "transaction_time": "06:56",
+    "transaction_date": "2018-10-04",
+    "transaction_time": "18:31",
     "city": "",
     "country": "",
     "currency": "",
@@ -16,132 +16,106 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "0.00",
+    "total": "",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Qty Description",
-        "amount": "70.00",
+        "description": "CASH",
+        "amount": "6.00",
         "item_class": "OTHER"
       },
       {
-        "description": "M(Budae Jjigae)",
-        "amount": "16.00",
+        "description": "CHANGE",
+        "amount": "0.20",
         "item_class": "OTHER"
       },
       {
-        "description": "(Kimbab)",
-        "amount": "25.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "(Seafood Pancake)",
-        "amount": "20.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Service Charges 10%",
-        "amount": "152.90",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "152.90",
+        "description": "SR (6%)",
+        "amount": "5.47",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999717473983765,
-      "transaction_date": 0.9989739060401917
+      "transaction_date": 0.9952483177185059
     },
     "boxes": {
-      "total": [
-        3071,
-        4041,
-        3226,
-        4127
-      ],
       "transaction_date": [
-        1957,
-        4430,
-        2883,
-        4536
+        17,
+        414,
+        202,
+        442
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999717473983765,
-          "transaction_date": 0.9989739060401917
+          "transaction_date": 0.9952483177185059
         },
         "boxes": {
-          "total": [
-            3071,
-            4041,
-            3226,
-            4127
-          ],
           "transaction_date": [
-            1957,
-            4430,
-            2883,
-            4536
+            17,
+            414,
+            202,
+            442
           ]
         },
-        "merchant_name": "A06106",
-        "total": "0.00",
-        "transaction_date": "2018-06-19",
-        "transaction_time": "06:56",
+        "merchant_name": "Welcome to the Family",
+        "transaction_date": "2018-10-04",
+        "transaction_time": "18:31",
         "line_items": [
           {
-            "description": "Qty Description",
-            "amount": "70.00",
+            "description": "CASH",
+            "amount": "6.00",
             "item_class": "OTHER"
           },
           {
-            "description": "M(Budae Jjigae)",
-            "amount": "16.00",
+            "description": "CHANGE",
+            "amount": "0.20",
             "item_class": "OTHER"
           },
           {
-            "description": "(Kimbab)",
-            "amount": "25.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "(Seafood Pancake)",
-            "amount": "20.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Service Charges 10%",
-            "amount": "152.90",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "152.90",
+            "description": "SR (6%)",
+            "amount": "5.47",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "0.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR (6%)",
+            "amount": "5.47",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "nonnegative_total",
-        "expected": ">= 0",
-        "printed": "0.00",
-        "passed": true
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2018-06-19",
+        "printed": "2018-10-04",
         "passed": true
       }
     ]
@@ -152,14 +126,12 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "b132ceccd9999332",
-    "merchant_norm": "a06106"
+    "phash": "af3d7c0fc0cac2d0",
+    "merchant_norm": "welcome to the family"
   },
   "forensics": {
-    "score": 10,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "round_total"
-    ]
+    "signals": []
   }
 }
