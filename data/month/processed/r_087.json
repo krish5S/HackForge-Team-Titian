@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_087",
   "file_sha256": "b9c6a08cec812f63c4ebf7f4cc1ce1054122f2507d9e87db8836dc4343d8fb08",
+  "ocr_text": "1\nA06106\nNAM SAN SEOUL KOREAN BBQ\nKOREAN DINE SDN BHD(1077469-V)\n\nNo 4, Jalan Permas 10/5.\nBandar Baru Permas Jaya,\n81750 Johor Bahru, Johor.\nTel : 07-380 8402\n[10::00\nGST ID No. : 000517836800\nINVOICE\n00032375\nRef No.\nTable 09\n“\nCashier 1\nPrice\nAmount\nQty Description\n70.00\n70.00\nM(Budae Jjigae)\n16.00\n16.00\n(Kimbab)\n25.00\n25.00\n(Seafood Pancake)\n20.00\n20.00\n(PorkCutlet)\n1\n4.00\n8.00\n(SteamedRice)\n2\n139.00\nSub-Total : RM\n13.90\nService Charges 10%\n152.90\nTotal :\nRM\n152.90\nPaid by CASH\n6\nTotal Qty :\n0.00\nChange\nThank You\n华年卡\n\nG\nPlease come again\n\n上长平平平平\n19/06/2018 06:56:10 PM",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -10,60 +11,79 @@
     "transaction_date": "2018-06-19",
     "transaction_time": "06:56",
     "city": "",
-    "country": "",
-    "currency": "",
+    "country": "MY",
+    "currency": "MYR",
     "subtotal": "",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "0.00",
+    "total": "152.90",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "Qty Description",
+        "description": "M(Budae Jjigae)",
         "amount": "70.00",
         "item_class": "OTHER"
       },
       {
-        "description": "M(Budae Jjigae)",
+        "description": "(Kimbab)",
         "amount": "16.00",
         "item_class": "OTHER"
       },
       {
-        "description": "(Kimbab)",
+        "description": "(Seafood Pancake)",
         "amount": "25.00",
         "item_class": "OTHER"
       },
       {
-        "description": "(Seafood Pancake)",
+        "description": "(PorkCutlet)",
         "amount": "20.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Service Charges 10%",
+        "description": "(SteamedRice)",
+        "amount": "4.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Paid by CASH",
         "amount": "152.90",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "152.90",
+        "description": "Change",
+        "amount": "0.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999717473983765,
-      "transaction_date": 0.9989739060401917
+      "total": 0.9999828338623047,
+      "transaction_date": 0.9989743828773499,
+      "merchant_name": 0.9981548190116882,
+      "transaction_time": 0.9989743828773499
     },
     "boxes": {
       "total": [
-        3071,
-        4041,
-        3226,
-        4127
+        2998,
+        3771,
+        3223,
+        3863
       ],
       "transaction_date": [
+        1957,
+        4430,
+        2883,
+        4536
+      ],
+      "merchant_name": [
+        2738,
+        1240,
+        3190,
+        1424
+      ],
+      "transaction_time": [
         1957,
         4430,
         2883,
@@ -73,15 +93,133 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999717473983765,
-          "transaction_date": 0.9989739060401917
+          "total": 0.9999828338623047,
+          "transaction_date": 0.9989743828773499,
+          "merchant_name": 0.9981548190116882,
+          "transaction_time": 0.9989743828773499
         },
         "boxes": {
           "total": [
-            3071,
-            4041,
-            3226,
-            4127
+            2998,
+            3771,
+            3223,
+            3863
+          ],
+          "transaction_date": [
+            1957,
+            4430,
+            2883,
+            4536
+          ],
+          "merchant_name": [
+            2738,
+            1240,
+            3190,
+            1424
+          ],
+          "transaction_time": [
+            1957,
+            4430,
+            2883,
+            4536
+          ]
+        },
+        "merchant_name": "A06106",
+        "total": "152.90",
+        "currency": "MYR",
+        "transaction_date": "2018-06-19",
+        "transaction_time": "06:56",
+        "line_items": [
+          {
+            "description": "M(Budae Jjigae)",
+            "amount": "70.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Kimbab)",
+            "amount": "16.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Seafood Pancake)",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(PorkCutlet)",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(SteamedRice)",
+            "amount": "4.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Paid by CASH",
+            "amount": "152.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "M(Budae Jjigae)",
+            "amount": "70.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Kimbab)",
+            "amount": "16.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(Seafood Pancake)",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(PorkCutlet)",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(SteamedRice)",
+            "amount": "4.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Paid by CASH",
+            "amount": "152.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9951319098472595,
+          "transaction_date": 0.9989743828773499
+        },
+        "boxes": {
+          "total": [
+            1619,
+            3932,
+            3220,
+            4036
           ],
           "transaction_date": [
             1957,
@@ -91,77 +229,85 @@
           ]
         },
         "merchant_name": "A06106",
-        "total": "0.00",
+        "total": "6.00",
+        "currency": "MYR",
         "transaction_date": "2018-06-19",
-        "transaction_time": "06:56",
+        "transaction_time": "18:56",
         "line_items": [
           {
-            "description": "Qty Description",
+            "description": "M(Budae Jjigae)",
             "amount": "70.00",
             "item_class": "OTHER"
           },
           {
-            "description": "M(Budae Jjigae)",
+            "description": "(Kimbab)",
             "amount": "16.00",
             "item_class": "OTHER"
           },
           {
-            "description": "(Kimbab)",
+            "description": "(Seafood Pancake)",
             "amount": "25.00",
             "item_class": "OTHER"
           },
           {
-            "description": "(Seafood Pancake)",
+            "description": "(PorkCutlet)",
             "amount": "20.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Service Charges 10%",
+            "description": "(SteamedRice)",
+            "amount": "4.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Paid by CASH",
             "amount": "152.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "152.90",
+            "description": "Change",
+            "amount": "0.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {},
-      "text_rules": {
-        "category": "MEALS",
-        "line_items": [
-          {
-            "description": "Qty Description",
-            "amount": "70.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "M(Budae Jjigae)",
-            "amount": "16.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "(Kimbab)",
-            "amount": "25.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "(Seafood Pancake)",
-            "amount": "20.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Service Charges 10%",
-            "amount": "152.90",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "152.90",
-            "item_class": "OTHER"
-          }
-        ]
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9981548190116882,
+          "total": 0.9999828338623047,
+          "transaction_date": 0.9989743828773499,
+          "transaction_time": 0.9989743828773499
+        },
+        "boxes": {
+          "merchant_name": [
+            2738,
+            1240,
+            3190,
+            1424
+          ],
+          "total": [
+            2998,
+            3771,
+            3223,
+            3863
+          ],
+          "transaction_date": [
+            1957,
+            4430,
+            2883,
+            4536
+          ],
+          "transaction_time": [
+            1957,
+            4430,
+            2883,
+            4536
+          ]
+        },
+        "merchant_name": "A06106",
+        "total": "152.90",
+        "transaction_date": "2018-06-19",
+        "transaction_time": "06:56"
       }
     }
   },
@@ -170,7 +316,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "0.00",
+        "printed": "152.90",
         "passed": true
       },
       {
@@ -183,18 +329,16 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "35.17"
   },
   "fingerprints": {
     "phash": "b132ceccd9999332",
     "merchant_norm": "a06106"
   },
   "forensics": {
-    "score": 10,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "round_total"
-    ]
+    "signals": []
   }
 }

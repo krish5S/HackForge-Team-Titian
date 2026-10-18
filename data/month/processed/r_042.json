@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_042",
   "file_sha256": "3fcbb223966751e173463aad2ccd6434dd0905c4f5ca3355decf8b8e0b144196",
+  "ocr_text": "Split shop 1\nTAXI TRIP RECEIPT\nChicago, US\nTrip fare / local transport\nDate: 2026-09-02\nTime:12:00:00\nReceipt: r_042\nTrip fare\n480.00\nSUBTOTAL\n480.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n480.00 USD\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -28,12 +29,14 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.974738359451294,
-      "subtotal": 0.9971741437911987,
-      "tax": 0.9985694885253906,
-      "tip": 0.9988165497779846,
-      "other_charges": 0.9986588954925537,
-      "total": 0.9965189099311829
+      "transaction_date": 0.9747386574745178,
+      "subtotal": 0.9971750378608704,
+      "tax": 0.9985711574554443,
+      "tip": 0.9988178014755249,
+      "other_charges": 0.9986604452133179,
+      "total": 0.9965204000473022,
+      "merchant_name": 0.9999057650566101,
+      "transaction_time": 0.9998763203620911
     },
     "boxes": {
       "transaction_date": [
@@ -43,25 +46,25 @@
         311
       ],
       "subtotal": [
-        526,
+        62,
         546,
         681,
         575
       ],
       "tax": [
-        558,
+        61,
         609,
         681,
-        634
+        636
       ],
       "tip": [
-        558,
-        669,
+        60,
+        667,
         680,
-        695
+        698
       ],
       "other_charges": [
-        558,
+        62,
         729,
         680,
         754
@@ -71,17 +74,31 @@
         790,
         804,
         817
+      ],
+      "merchant_name": [
+        62,
+        40,
+        356,
+        86
+      ],
+      "transaction_time": [
+        64,
+        340,
+        302,
+        364
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.974738359451294,
-          "subtotal": 0.9971741437911987,
-          "tax": 0.9985694885253906,
-          "tip": 0.9988165497779846,
-          "other_charges": 0.9986588954925537,
-          "total": 0.9965189099311829
+          "transaction_date": 0.9747386574745178,
+          "subtotal": 0.9971750378608704,
+          "tax": 0.9985711574554443,
+          "tip": 0.9988178014755249,
+          "other_charges": 0.9986604452133179,
+          "total": 0.9965204000473022,
+          "merchant_name": 0.9999057650566101,
+          "transaction_time": 0.9998763203620911
         },
         "boxes": {
           "transaction_date": [
@@ -91,25 +108,25 @@
             311
           ],
           "subtotal": [
-            526,
+            62,
             546,
             681,
             575
           ],
           "tax": [
-            558,
+            61,
             609,
             681,
-            634
+            636
           ],
           "tip": [
-            558,
-            669,
+            60,
+            667,
             680,
-            695
+            698
           ],
           "other_charges": [
-            558,
+            62,
             729,
             680,
             754
@@ -119,6 +136,18 @@
             790,
             804,
             817
+          ],
+          "merchant_name": [
+            62,
+            40,
+            356,
+            86
+          ],
+          "transaction_time": [
+            64,
+            340,
+            302,
+            364
           ]
         },
         "merchant_name": "Split shop 1",
@@ -152,6 +181,111 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9747386574745178,
+          "subtotal": 0.9971750378608704,
+          "tax": 0.9985711574554443,
+          "tip": 0.9988178014755249,
+          "other_charges": 0.9986604452133179,
+          "total": 0.9965204000473022
+        },
+        "boxes": {
+          "transaction_date": [
+            64,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            62,
+            546,
+            681,
+            575
+          ],
+          "tax": [
+            61,
+            609,
+            681,
+            636
+          ],
+          "tip": [
+            60,
+            667,
+            680,
+            698
+          ],
+          "other_charges": [
+            62,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            62,
+            790,
+            804,
+            818
+          ]
+        },
+        "merchant_name": "Split shop 1",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-02",
+        "transaction_time": "12:00",
+        "receipt_number": "R_042",
+        "subtotal": "480.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "480.00",
+        "line_items": [
+          {
+            "description": "Trip fare",
+            "amount": "480.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999057650566101,
+          "total": 0.9965204000473022,
+          "transaction_date": 0.9747386574745178,
+          "transaction_time": 0.9998763203620911
+        },
+        "boxes": {
+          "merchant_name": [
+            62,
+            40,
+            356,
+            86
+          ],
+          "total": [
+            621,
+            790,
+            804,
+            817
+          ],
+          "transaction_date": [
+            64,
+            287,
+            336,
+            311
+          ],
+          "transaction_time": [
+            64,
+            340,
+            302,
+            364
+          ]
+        },
+        "merchant_name": "Split shop 1",
+        "total": "480.00",
+        "transaction_date": "2026-09-02",
+        "transaction_time": "12:00"
       }
     }
   },

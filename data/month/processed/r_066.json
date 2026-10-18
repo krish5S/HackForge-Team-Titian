@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_066",
   "file_sha256": "77c7af1bedc61cdf504ccd4fe3b147b6a2c817d784c7380e4194be528f341417",
+  "ocr_text": "CHURCH'S\nCHICKEN #4717\n7635 WINNETKA\nCANOGA PARK CA\n818 576-0490\n#253\nDR-T\n1 9PC LT\n9.99\nNET\n9.99\nTXTL\n.95\nTOTL\n10.94\nCASH\nCHNG\n11.00\n.06\nTHANK YOU COME AGAIN !!!\nLISBETH\nITfay\n0203-20:57 #02 MAY.21'19 REG0002",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "CHURCH'S",
     "receipt_number": "",
@@ -16,7 +17,7 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "11.00",
     "itemization": "",
     "category": "",
     "line_items": [
@@ -36,18 +37,64 @@
         "item_class": "OTHER"
       },
       {
-        "description": "CHNG",
+        "description": "CASH",
         "amount": "11.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "merchant_name": 0.9998236894607544,
+      "total": 0.9996427297592163,
+      "transaction_time": 0.9856405258178711
+    },
+    "boxes": {
+      "merchant_name": [
+        39,
+        28,
+        84,
+        45
+      ],
+      "total": [
+        161,
+        149,
+        190,
+        163
+      ],
+      "transaction_time": [
+        33,
+        217,
+        199,
+        238
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
+        "confidence": {
+          "merchant_name": 0.9998236894607544,
+          "total": 0.9996427297592163,
+          "transaction_time": 0.9856405258178711
+        },
+        "boxes": {
+          "merchant_name": [
+            39,
+            28,
+            84,
+            45
+          ],
+          "total": [
+            161,
+            149,
+            190,
+            163
+          ],
+          "transaction_time": [
+            33,
+            217,
+            199,
+            238
+          ]
+        },
         "merchant_name": "CHURCH'S",
         "transaction_time": "20:57",
         "line_items": [
@@ -67,11 +114,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "CHNG",
+            "description": "CASH",
             "amount": "11.00",
             "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "11.00"
       },
       "reader_b": {},
       "text_rules": {
@@ -92,21 +140,79 @@
             "item_class": "OTHER"
           },
           {
-            "description": "CHNG",
+            "description": "CASH",
             "amount": "11.00",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "CHURCH'S CHICKEN #4717",
+        "transaction_time": "20:57",
+        "line_items": [
+          {
+            "description": "1 9PC LT",
+            "amount": "9.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "NET",
+            "amount": "9.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "TOTL",
+            "amount": "10.94",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "11.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9998236894607544,
+          "total": 0.9996427297592163,
+          "transaction_time": 0.9856405258178711
+        },
+        "boxes": {
+          "merchant_name": [
+            39,
+            28,
+            84,
+            45
+          ],
+          "total": [
+            161,
+            149,
+            190,
+            163
+          ],
+          "transaction_time": [
+            33,
+            217,
+            199,
+            238
+          ]
+        },
+        "merchant_name": "CHURCH'S",
+        "total": "11.00",
+        "transaction_time": "20:57"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "11.00",
+        "passed": true
       }
     ]
   },

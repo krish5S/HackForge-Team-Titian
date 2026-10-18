@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_085",
   "file_sha256": "e823ace84b50a18a48c07f460e1386eaf036b466cdb5fa546f9311228a425c5d",
+  "ocr_text": "Welcome to the Family\nFamilyMart\nMaxincome Resouites Sdn Bhd (383322-D)\nNo 16A, Jalan Astaka U8/83, Bukit Jelutong.\n40150 Shah Alam, Selangor, D.E.\nGSTID:000468594688\n#0004 Gateway@KLIA 2 (L3-1\nTel No:\nTAX INVOICE\n10/04/2018 18:31\n#000420693\nPOS: 02 CSH: 00004108\nStaff: ECAH\nDesc\nAmt (RM)\nF/Friend S/F Original 2\n5.30SP\nSUB TOTAL (Inc GST)\nTOTAL\n5.0\nCASH\n6.00\nCHANGE\n0.20\n# ITEMS SOLD 1\nTax Code\nAmt(RM)\nTax(RM)\nSR (6%)\n5.47\n0.33\nTHANK YOU & PLEASE COME AGAIN\n***\nBE A PART OF OUR FAMILY TODAY!\nFACEBOOK : FamilyMartMY\nwww.familymart.com.my",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Welcome to the Family",
     "receipt_number": "",
@@ -16,10 +17,15 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "6.00",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "F/Friend S/F Original 2",
+        "amount": "5.30",
+        "item_class": "OTHER"
+      },
       {
         "description": "CASH",
         "amount": "6.00",
@@ -38,10 +44,31 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9952483177185059
+      "transaction_date": 0.9952490329742432,
+      "merchant_name": 0.9978578686714172,
+      "total": 0.9999790191650391,
+      "transaction_time": 0.9952490329742432
     },
     "boxes": {
       "transaction_date": [
+        17,
+        414,
+        393,
+        442
+      ],
+      "merchant_name": [
+        53,
+        78,
+        335,
+        111
+      ],
+      "total": [
+        318,
+        778,
+        371,
+        808
+      ],
+      "transaction_time": [
         17,
         414,
         202,
@@ -51,10 +78,31 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9952483177185059
+          "transaction_date": 0.9952490329742432,
+          "merchant_name": 0.9978578686714172,
+          "total": 0.9999790191650391,
+          "transaction_time": 0.9952490329742432
         },
         "boxes": {
           "transaction_date": [
+            17,
+            414,
+            393,
+            442
+          ],
+          "merchant_name": [
+            53,
+            78,
+            335,
+            111
+          ],
+          "total": [
+            318,
+            778,
+            371,
+            808
+          ],
+          "transaction_time": [
             17,
             414,
             202,
@@ -65,6 +113,37 @@
         "transaction_date": "2018-10-04",
         "transaction_time": "18:31",
         "line_items": [
+          {
+            "description": "F/Friend S/F Original 2",
+            "amount": "5.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "0.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR (6%)",
+            "amount": "5.47",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "6.00"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "F/Friend S/F Original 2",
+            "amount": "5.30",
+            "item_class": "OTHER"
+          },
           {
             "description": "CASH",
             "amount": "6.00",
@@ -82,9 +161,27 @@
           }
         ]
       },
-      "reader_b": {},
-      "text_rules": {
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9952490329742432
+        },
+        "boxes": {
+          "transaction_date": [
+            17,
+            414,
+            393,
+            442
+          ]
+        },
+        "merchant_name": "Welcome to the Family",
+        "transaction_date": "2018-10-04",
+        "transaction_time": "18:31",
         "line_items": [
+          {
+            "description": "F/Friend S/F Original 2",
+            "amount": "5.30",
+            "item_class": "OTHER"
+          },
           {
             "description": "CASH",
             "amount": "6.00",
@@ -101,16 +198,54 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9978578686714172,
+          "total": 0.9999790191650391,
+          "transaction_date": 0.9952490329742432,
+          "transaction_time": 0.9952490329742432
+        },
+        "boxes": {
+          "merchant_name": [
+            53,
+            78,
+            335,
+            111
+          ],
+          "total": [
+            318,
+            778,
+            371,
+            808
+          ],
+          "transaction_date": [
+            17,
+            414,
+            202,
+            442
+          ],
+          "transaction_time": [
+            17,
+            414,
+            202,
+            442
+          ]
+        },
+        "merchant_name": "Welcome to the Family",
+        "total": "6.00",
+        "transaction_date": "2018-10-04",
+        "transaction_time": "18:31"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "6.00",
+        "passed": true
       },
       {
         "name": "date_format",

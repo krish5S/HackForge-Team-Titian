@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_027",
   "file_sha256": "1d679799da023990809e1b57cf34058356d6c2e99c50b396ae2b18b2adf52633",
+  "ocr_text": "15\nA06057\nKEDAI RUNCIT ZBH\nNO.17. JALAN PERMAS 1/7\nBANDAR BARU PERMAS JAYA.\n81750,MASAI\n(GST:001019043840)\nTAX INVOICE\n#195360 01/06/2018\n6:31\n01 CLERK01\n000000\nINVOICE NO : 052949\n\n*BILL*\nA”\n2×1.00\nRM2.00 Z\n*RUNCIT\n1× 7.80\nRM7.80 Z\n*RUNCIT\n4x 2.20\nRM8.80 Z\n*RUNCIT\nRM1.80 2\n1× 1.80\n*RUNCIT\n2x 4.50\nRM9.00 Z\n*RUNCIT\nRM29.40\nZERO TAX AMT\n0% 2\nRM0.00\n2 ITEM ANT\nRM29.40\nTTL CASH\nRM-29. 40\n心\n2",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "A06057",
     "receipt_number": "",
@@ -10,23 +11,23 @@
     "transaction_date": "2018-01-06",
     "transaction_time": "6:31",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
-    "tax": "",
+    "tax": "29.40",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "29.40",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "RM",
-        "amount": "2.00",
+        "description": "2×",
+        "amount": "1.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "1×",
         "amount": "7.80",
         "item_class": "OTHER"
       },
@@ -36,12 +37,7 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "8.80",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
+        "description": "1×",
         "amount": "1.80",
         "item_class": "OTHER"
       },
@@ -51,62 +47,110 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "9.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "29.40",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
+        "description": "0% 2 RM",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "2 ITEM ANT RM",
         "amount": "29.40",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9784561991691589
+      "transaction_date": 0.9784595966339111,
+      "tax": 0.9964587688446045,
+      "merchant_name": 0.9877590537071228,
+      "total": 0.9998288154602051,
+      "transaction_time": 0.9998456239700317
     },
     "boxes": {
       "transaction_date": [
         1934,
         2026,
-        2664,
+        2932,
         2133
+      ],
+      "tax": [
+        1922,
+        3848,
+        2784,
+        3970
+      ],
+      "merchant_name": [
+        2583,
+        1226,
+        3040,
+        1414
+      ],
+      "total": [
+        2516,
+        4039,
+        2782,
+        4141
+      ],
+      "transaction_time": [
+        2768,
+        2028,
+        2932,
+        2122
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9784561991691589
+          "transaction_date": 0.9784595966339111,
+          "tax": 0.9964587688446045,
+          "merchant_name": 0.9877590537071228,
+          "total": 0.9998288154602051,
+          "transaction_time": 0.9998456239700317
         },
         "boxes": {
           "transaction_date": [
             1934,
             2026,
-            2664,
+            2932,
             2133
+          ],
+          "tax": [
+            1922,
+            3848,
+            2784,
+            3970
+          ],
+          "merchant_name": [
+            2583,
+            1226,
+            3040,
+            1414
+          ],
+          "total": [
+            2516,
+            4039,
+            2782,
+            4141
+          ],
+          "transaction_time": [
+            2768,
+            2028,
+            2932,
+            2122
           ]
         },
         "merchant_name": "A06057",
         "transaction_date": "2018-01-06",
         "transaction_time": "6:31",
+        "currency": "MYR",
+        "tax": "29.40",
         "line_items": [
           {
-            "description": "RM",
-            "amount": "2.00",
+            "description": "2×",
+            "amount": "1.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "1×",
             "amount": "7.80",
             "item_class": "OTHER"
           },
@@ -116,12 +160,7 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "8.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "1×",
             "amount": "1.80",
             "item_class": "OTHER"
           },
@@ -131,38 +170,29 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "9.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "29.40",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "0% 2 RM",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "2 ITEM ANT RM",
             "amount": "29.40",
             "item_class": "OTHER"
           }
         ],
-        "currency": "MYR"
+        "total": "29.40"
       },
       "reader_b": {},
       "text_rules": {
+        "country": "MY",
         "line_items": [
           {
-            "description": "RM",
-            "amount": "2.00",
+            "description": "2×",
+            "amount": "1.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "1×",
             "amount": "7.80",
             "item_class": "OTHER"
           },
@@ -172,12 +202,7 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "8.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "1×",
             "amount": "1.80",
             "item_class": "OTHER"
           },
@@ -187,36 +212,126 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "9.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "29.40",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "0% 2 RM",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "2 ITEM ANT RM",
             "amount": "29.40",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9784595966339111,
+          "tax": 0.9964587688446045
+        },
+        "boxes": {
+          "transaction_date": [
+            1934,
+            2026,
+            2932,
+            2133
+          ],
+          "tax": [
+            1922,
+            3848,
+            2784,
+            3970
+          ]
+        },
+        "merchant_name": "A06057",
+        "transaction_date": "2018-01-06",
+        "transaction_time": "6:31",
+        "currency": "MYR",
+        "tax": "29.40",
+        "line_items": [
+          {
+            "description": "2×",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1×",
+            "amount": "7.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1×",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2x",
+            "amount": "4.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "0% 2 RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 ITEM ANT RM",
+            "amount": "29.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9877590537071228,
+          "total": 0.9998288154602051,
+          "transaction_date": 0.9784595966339111,
+          "transaction_time": 0.9998456239700317
+        },
+        "boxes": {
+          "merchant_name": [
+            2583,
+            1226,
+            3040,
+            1414
+          ],
+          "total": [
+            2516,
+            4039,
+            2782,
+            4141
+          ],
+          "transaction_date": [
+            1934,
+            2026,
+            2664,
+            2133
+          ],
+          "transaction_time": [
+            2768,
+            2028,
+            2932,
+            2122
+          ]
+        },
+        "merchant_name": "A06057",
+        "total": "29.40",
+        "transaction_date": "2018-01-06",
+        "transaction_time": "6:31"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "29.40",
+        "passed": true
       },
       {
         "name": "date_format",
@@ -228,8 +343,8 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "6.76"
   },
   "fingerprints": {
     "phash": "b333cccc9899c963",

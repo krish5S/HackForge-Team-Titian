@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_033",
   "file_sha256": "eb7c533dbd4c7b393e367a628706e974ed10cd5e44ef535375696e98887e58b7",
+  "ocr_text": "Rite Aid\n1234 Elm Street\nSpringfield. ST 12345\n(555) 123-4567\nDate: 10/29/2023\nCashier ID: 00792\nTime: 02:35 PM\nItem\nToethpaste Colgate\nQty\nPrice\nShampoo Head&Shoulders\nTotal\nIbuprofen Tablets\n2\n3.49\n$6.98\nCereal Cheerios\n7.99\n$7.99\nMilk 2% Gallon\n12.49\n$12.49\nBread Whole Wheat\n3\n2.99\n$8.97\nEggs Large 12ct\n3.29\n$3.29\n2\nSoap Bar Dove\n2.00\n$2.59\n1\n2.59\n$5.00\nSubtotal:\n4\n1.25\n$5.00\nTax (8.25%):\nTotal:\n$51.31\n$4.23\nThank you for shopping\n$55.54\nat Rite Aid!",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -12,40 +13,47 @@
     "city": "",
     "country": "",
     "currency": "USD",
-    "subtotal": "",
-    "tax": "8.25",
+    "subtotal": "5.00",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "51.31",
+    "total": "55.54",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Cereal Cheerios",
+        "description": "Shampoo Head&Shoulders 2",
+        "amount": "3.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Ibuprofen Tablets",
         "amount": "7.99",
         "item_class": "OTHER"
       },
       {
-        "description": "Milk 2% Gallon",
+        "description": "Milk 2% Gallon Cereal Cheerios",
         "amount": "12.49",
         "item_class": "OTHER"
       },
       {
-        "description": "Eggs Large 12ct",
+        "description": "Eggs Large 12ct Bread Whole Wheat",
         "amount": "3.29",
         "item_class": "OTHER"
       },
       {
-        "description": "Soap Bar Dove",
-        "amount": "2.00",
+        "description": "Soap Bar Dove 1",
+        "amount": "2.59",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9961775541305542,
-      "tax": 0.9978358149528503,
-      "total": 0.9999487996101379
+      "transaction_date": 0.9961776733398438,
+      "subtotal": 0.9998536705970764,
+      "total": 0.999964714050293,
+      "merchant_name": 0.9914911389350891,
+      "transaction_time": 0.9988600611686707
     },
     "boxes": {
       "transaction_date": [
@@ -54,25 +62,39 @@
         507,
         320
       ],
-      "tax": [
-        119,
-        728,
-        324,
-        803
+      "subtotal": [
+        130,
+        675,
+        739,
+        757
       ],
       "total": [
-        601,
-        772,
-        715,
-        830
+        567,
+        843,
+        697,
+        909
+      ],
+      "merchant_name": [
+        386,
+        27,
+        757,
+        180
+      ],
+      "transaction_time": [
+        550,
+        295,
+        799,
+        370
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9961775541305542,
-          "tax": 0.9978358149528503,
-          "total": 0.9999487996101379
+          "transaction_date": 0.9961776733398438,
+          "subtotal": 0.9998536705970764,
+          "total": 0.999964714050293,
+          "merchant_name": 0.9914911389350891,
+          "transaction_time": 0.9988600611686707
         },
         "boxes": {
           "transaction_date": [
@@ -81,44 +103,61 @@
             507,
             320
           ],
-          "tax": [
-            119,
-            728,
-            324,
-            803
+          "subtotal": [
+            130,
+            675,
+            739,
+            757
           ],
           "total": [
-            601,
-            772,
-            715,
-            830
+            567,
+            843,
+            697,
+            909
+          ],
+          "merchant_name": [
+            386,
+            27,
+            757,
+            180
+          ],
+          "transaction_time": [
+            550,
+            295,
+            799,
+            370
           ]
         },
         "merchant_name": "Rite Aid",
         "transaction_date": "2023-10-29",
         "transaction_time": "02:35",
         "currency": "USD",
-        "tax": "8.25",
-        "total": "51.31",
+        "subtotal": "5.00",
+        "total": "55.54",
         "line_items": [
           {
-            "description": "Cereal Cheerios",
+            "description": "Shampoo Head&Shoulders 2",
+            "amount": "3.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ibuprofen Tablets",
             "amount": "7.99",
             "item_class": "OTHER"
           },
           {
-            "description": "Milk 2% Gallon",
+            "description": "Milk 2% Gallon Cereal Cheerios",
             "amount": "12.49",
             "item_class": "OTHER"
           },
           {
-            "description": "Eggs Large 12ct",
+            "description": "Eggs Large 12ct Bread Whole Wheat",
             "amount": "3.29",
             "item_class": "OTHER"
           },
           {
-            "description": "Soap Bar Dove",
-            "amount": "2.00",
+            "description": "Soap Bar Dove 1",
+            "amount": "2.59",
             "item_class": "OTHER"
           }
         ]
@@ -127,26 +166,129 @@
       "text_rules": {
         "line_items": [
           {
-            "description": "Cereal Cheerios",
+            "description": "Shampoo Head&Shoulders 2",
+            "amount": "3.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ibuprofen Tablets",
             "amount": "7.99",
             "item_class": "OTHER"
           },
           {
-            "description": "Milk 2% Gallon",
+            "description": "Milk 2% Gallon Cereal Cheerios",
             "amount": "12.49",
             "item_class": "OTHER"
           },
           {
-            "description": "Eggs Large 12ct",
+            "description": "Eggs Large 12ct Bread Whole Wheat",
             "amount": "3.29",
             "item_class": "OTHER"
           },
           {
-            "description": "Soap Bar Dove",
-            "amount": "2.00",
+            "description": "Soap Bar Dove 1",
+            "amount": "2.59",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9961776733398438,
+          "subtotal": 0.9998536705970764,
+          "total": 0.9992466568946838
+        },
+        "boxes": {
+          "transaction_date": [
+            246,
+            242,
+            507,
+            320
+          ],
+          "subtotal": [
+            130,
+            675,
+            739,
+            757
+          ],
+          "total": [
+            110,
+            770,
+            715,
+            830
+          ]
+        },
+        "merchant_name": "Rite Aid",
+        "transaction_date": "2023-10-29",
+        "transaction_time": "14:35",
+        "currency": "USD",
+        "subtotal": "5.00",
+        "total": "51.31",
+        "line_items": [
+          {
+            "description": "Shampoo Head&Shoulders 2",
+            "amount": "3.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ibuprofen Tablets",
+            "amount": "7.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Milk 2% Gallon Cereal Cheerios",
+            "amount": "12.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Eggs Large 12ct Bread Whole Wheat",
+            "amount": "3.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Soap Bar Dove 1",
+            "amount": "2.59",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9914911389350891,
+          "total": 0.999964714050293,
+          "transaction_date": 0.9961776733398438,
+          "transaction_time": 0.9988600611686707
+        },
+        "boxes": {
+          "merchant_name": [
+            386,
+            27,
+            757,
+            180
+          ],
+          "total": [
+            567,
+            843,
+            697,
+            909
+          ],
+          "transaction_date": [
+            246,
+            242,
+            507,
+            320
+          ],
+          "transaction_time": [
+            550,
+            295,
+            799,
+            370
+          ]
+        },
+        "merchant_name": "Rite Aid",
+        "total": "55.54",
+        "transaction_date": "2023-10-29",
+        "transaction_time": "02:35"
       }
     }
   },
@@ -155,8 +297,14 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "51.31",
+        "printed": "55.54",
         "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "29.85",
+        "printed": "5.00",
+        "passed": false
       },
       {
         "name": "date_format",
@@ -169,15 +317,17 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "51.31"
+    "total_base": "55.54"
   },
   "fingerprints": {
     "phash": "d2057dac3b4a7a4a",
     "merchant_norm": "rite aid"
   },
   "forensics": {
-    "score": 0,
+    "score": 25,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal"
+    ]
   }
 }

@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_030",
   "file_sha256": "b81c9ed0115db9b62c4d09bd070ef75fc2fa4c8a31e38d2c57bdfecd9f632685",
+  "ocr_text": "A04067\nSELASIH EKSLUSIF SDN BHD (S24101-D)\nDuty Free Zone (JB)\n88 Jalan Ibrahim Sultan\nStulang Laut\n80300 Johor Bahro\nTel:\n07-2212888 FaX: 07-2216888\nGST ID: 000752517120\nTAX INVOICE\nInvH: J100086182-0000000J10000087385\n89282\nTrans:\nStaff: SJ10263\nDate: 18/4/2018 19:34\nAmount\nDescription\nX000001720 L01\nWINSTON ROUND\n270.00 SR\n3 slo 0 90.00\n270.00\nTotal RM\n-300.00\nCash\n30.00\nChange in RM\nP3\nNo. of Qty:\n0ST\nAmount\nG5T%\nNet.Amt\n270.00\n9\n15.28\n254.72\nSR\nEligible PWP Amount is : 270\nGOODS SOLD ARE NOT REFUNDABLE\nTHANK YOU",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "A04067",
     "receipt_number": "",
@@ -16,7 +17,7 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "270.00",
     "itemization": "",
     "category": "",
     "line_items": [
@@ -29,19 +30,35 @@
         "description": "Cash",
         "amount": "30.00",
         "item_class": "OTHER"
-      },
-      {
-        "description": "Net.Amt",
-        "amount": "270.00",
-        "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9927566051483154
+      "transaction_date": 0.9927571415901184,
+      "merchant_name": 0.9993988871574402,
+      "total": 0.9999681115150452,
+      "transaction_time": 0.9927571415901184
     },
     "boxes": {
       "transaction_date": [
+        1582,
+        2589,
+        2339,
+        2711
+      ],
+      "merchant_name": [
+        2508,
+        1038,
+        2973,
+        1235
+      ],
+      "total": [
+        2816,
+        4157,
+        3052,
+        4256
+      ],
+      "transaction_time": [
         1582,
         2589,
         2339,
@@ -51,7 +68,72 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9927566051483154
+          "transaction_date": 0.9927571415901184,
+          "merchant_name": 0.9993988871574402,
+          "total": 0.9999681115150452,
+          "transaction_time": 0.9927571415901184
+        },
+        "boxes": {
+          "transaction_date": [
+            1582,
+            2589,
+            2339,
+            2711
+          ],
+          "merchant_name": [
+            2508,
+            1038,
+            2973,
+            1235
+          ],
+          "total": [
+            2816,
+            4157,
+            3052,
+            4256
+          ],
+          "transaction_time": [
+            1582,
+            2589,
+            2339,
+            2711
+          ]
+        },
+        "merchant_name": "A04067",
+        "transaction_date": "2018-04-18",
+        "transaction_time": "19:34",
+        "line_items": [
+          {
+            "description": "3 slo 0",
+            "amount": "90.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "270.00"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "3 slo 0",
+            "amount": "90.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9927571415901184
         },
         "boxes": {
           "transaction_date": [
@@ -74,43 +156,56 @@
             "description": "Cash",
             "amount": "30.00",
             "item_class": "OTHER"
-          },
-          {
-            "description": "Net.Amt",
-            "amount": "270.00",
-            "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {},
-      "text_rules": {
-        "line_items": [
-          {
-            "description": "3 slo 0",
-            "amount": "90.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Cash",
-            "amount": "30.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Net.Amt",
-            "amount": "270.00",
-            "item_class": "OTHER"
-          }
-        ]
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9993988871574402,
+          "total": 0.9999681115150452,
+          "transaction_date": 0.9927571415901184,
+          "transaction_time": 0.9927571415901184
+        },
+        "boxes": {
+          "merchant_name": [
+            2508,
+            1038,
+            2973,
+            1235
+          ],
+          "total": [
+            2816,
+            4157,
+            3052,
+            4256
+          ],
+          "transaction_date": [
+            1582,
+            2589,
+            2339,
+            2711
+          ],
+          "transaction_time": [
+            1582,
+            2589,
+            2339,
+            2711
+          ]
+        },
+        "merchant_name": "A04067",
+        "total": "270.00",
+        "transaction_date": "2018-04-18",
+        "transaction_time": "19:34"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "270.00",
+        "passed": true
       },
       {
         "name": "date_format",
@@ -130,8 +225,10 @@
     "merchant_norm": "a04067"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

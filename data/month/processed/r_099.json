@@ -1,102 +1,128 @@
 {
   "receipt_id": "r_099",
   "file_sha256": "e978332d016259b6ee88cda163e81dd3f89edeede30a0f3a1fc75e3f66eaade5",
+  "ocr_text": "OLD ASIA\nOWN BY: CHEF LEE SDN BHD\nCO.NO. (458592-T)\nLG226, LGF, 1 UTAMA SHOPPING CENTRE.\nLEBUH BANDAR UTAMA, 47800 PETALING JAYA.\nGST NO: 001406865408)\nTEL:03-77100299\nDUPLICATE RECEIPT\nMC #01\nREG\nYENG LIN 13-02-2016 02:29 PM 088341\nTABLE NO.10\n4CT\nSEAFOOD FRIED PRICE\nRM13.50\nSR\nFISH HEAD\nRM11.50\nSR\nFISH CAKE\nRM7.90\nSR\nG.CRISPY CHIC RICE\nRM15.90\nSR\nV.GRILL CHIC RICE\nRM16.50\nSR\nW/MELON JUICE\nRM7.50\nSR\nRIBENA\nRM5.90\nSR\n2X\n0\n1.90\nICED CHINESE TEA\nRM3.80\nSR\n9 No\nSERV.CHG.10%\nRM8.25\nGST TA AMT\nRM90.75\nGST 6%\nRM5.45\nSUBTOTAL\nRM96.20\nCASH\nRM100.00\nYOUR CHANGE\nRM3.80\nTAX INVOICE NO.\n039170\nTAX INVOICE\nTHANK YOU PLEASE COME AGAIN",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "OLD ASIA",
-    "receipt_number": "",
+    "receipt_number": "039170",
     "card_last4": "",
     "transaction_date": "2016-02-13",
     "transaction_time": "02:29",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": "96.20",
+    "tax": "5.45",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "100.00",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "RM",
+        "description": "SEAFOOD FRIED PRICE RM",
         "amount": "13.50",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "FISH HEAD RM",
         "amount": "11.50",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "FISH CAKE RM",
         "amount": "7.90",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "G.CRISPY CHIC RICE RM",
         "amount": "15.90",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       },
       {
-        "description": "RM",
+        "description": "V.GRILL CHIC RICE RM",
         "amount": "16.50",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       },
       {
-        "description": "RM",
+        "description": "W/MELON JUICE RM",
         "amount": "7.50",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "RIBENA RM",
         "amount": "5.90",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "3.80",
+        "description": "2X 0",
+        "amount": "1.90",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "ICED CHINESE TEA RM",
+        "amount": "3.80",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "SERV.CHG.10% RM",
         "amount": "8.25",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "90.75",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "5.45",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "96.20",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
+        "description": "CASH RM",
         "amount": "100.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "YOUR CHANGE RM",
         "amount": "3.80",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9783010482788086
+      "transaction_date": 0.9783034324645996,
+      "tax": 0.9996166825294495,
+      "subtotal": 0.9998505115509033,
+      "merchant_name": 0.980405330657959,
+      "total": 0.9999723434448242,
+      "transaction_time": 0.9783034324645996
     },
     "boxes": {
       "transaction_date": [
+        82,
+        765,
+        885,
+        814
+      ],
+      "tax": [
+        204,
+        1640,
+        812,
+        1691
+      ],
+      "subtotal": [
+        207,
+        1691,
+        808,
+        1739
+      ],
+      "merchant_name": [
+        324,
+        164,
+        628,
+        212
+      ],
+      "total": [
+        643,
+        1740,
+        811,
+        1789
+      ],
+      "transaction_time": [
         184,
         765,
         885,
@@ -106,10 +132,45 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9783010482788086
+          "transaction_date": 0.9783034324645996,
+          "tax": 0.9996166825294495,
+          "subtotal": 0.9998505115509033,
+          "merchant_name": 0.980405330657959,
+          "total": 0.9999723434448242,
+          "transaction_time": 0.9783034324645996
         },
         "boxes": {
           "transaction_date": [
+            82,
+            765,
+            885,
+            814
+          ],
+          "tax": [
+            204,
+            1640,
+            812,
+            1691
+          ],
+          "subtotal": [
+            207,
+            1691,
+            808,
+            1739
+          ],
+          "merchant_name": [
+            324,
+            164,
+            628,
+            212
+          ],
+          "total": [
+            643,
+            1740,
+            811,
+            1789
+          ],
+          "transaction_time": [
             184,
             765,
             885,
@@ -119,164 +180,295 @@
         "merchant_name": "OLD ASIA",
         "transaction_date": "2016-02-13",
         "transaction_time": "02:29",
+        "currency": "MYR",
+        "tax": "5.45",
+        "subtotal": "96.20",
+        "receipt_number": "039170",
         "line_items": [
           {
-            "description": "RM",
+            "description": "SEAFOOD FRIED PRICE RM",
             "amount": "13.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "FISH HEAD RM",
             "amount": "11.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "FISH CAKE RM",
             "amount": "7.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "G.CRISPY CHIC RICE RM",
             "amount": "15.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "V.GRILL CHIC RICE RM",
             "amount": "16.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "W/MELON JUICE RM",
             "amount": "7.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "RIBENA RM",
             "amount": "5.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "2X 0",
+            "amount": "1.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ICED CHINESE TEA RM",
             "amount": "3.80",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "SERV.CHG.10% RM",
             "amount": "8.25",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "90.75",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "5.45",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "96.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "CASH RM",
             "amount": "100.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "YOUR CHANGE RM",
             "amount": "3.80",
             "item_class": "OTHER"
           }
         ],
-        "currency": "MYR"
+        "total": "100.00"
       },
       "reader_b": {},
       "text_rules": {
         "category": "MEALS",
+        "country": "MY",
         "line_items": [
           {
-            "description": "RM",
+            "description": "SEAFOOD FRIED PRICE RM",
             "amount": "13.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "FISH HEAD RM",
             "amount": "11.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "FISH CAKE RM",
             "amount": "7.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "G.CRISPY CHIC RICE RM",
             "amount": "15.90",
-            "item_class": "OTHER"
+            "item_class": "FOOD"
           },
           {
-            "description": "RM",
+            "description": "V.GRILL CHIC RICE RM",
             "amount": "16.50",
-            "item_class": "OTHER"
+            "item_class": "FOOD"
           },
           {
-            "description": "RM",
+            "description": "W/MELON JUICE RM",
             "amount": "7.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "RIBENA RM",
             "amount": "5.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "3.80",
+            "description": "2X 0",
+            "amount": "1.90",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "ICED CHINESE TEA RM",
+            "amount": "3.80",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "SERV.CHG.10% RM",
             "amount": "8.25",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "90.75",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "5.45",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "96.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "CASH RM",
             "amount": "100.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "YOUR CHANGE RM",
             "amount": "3.80",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9783034324645996,
+          "tax": 0.9996166825294495,
+          "subtotal": 0.9998505115509033
+        },
+        "boxes": {
+          "transaction_date": [
+            82,
+            765,
+            885,
+            814
+          ],
+          "tax": [
+            204,
+            1640,
+            812,
+            1691
+          ],
+          "subtotal": [
+            207,
+            1691,
+            808,
+            1739
+          ]
+        },
+        "merchant_name": "OLD ASIA",
+        "transaction_date": "2016-02-13",
+        "transaction_time": "14:29",
+        "currency": "MYR",
+        "tax": "5.45",
+        "subtotal": "96.20",
+        "receipt_number": "039170",
+        "line_items": [
+          {
+            "description": "SEAFOOD FRIED PRICE RM",
+            "amount": "13.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FISH HEAD RM",
+            "amount": "11.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FISH CAKE RM",
+            "amount": "7.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "G.CRISPY CHIC RICE RM",
+            "amount": "15.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "V.GRILL CHIC RICE RM",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "W/MELON JUICE RM",
+            "amount": "7.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RIBENA RM",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2X 0",
+            "amount": "1.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ICED CHINESE TEA RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SERV.CHG.10% RM",
+            "amount": "8.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "YOUR CHANGE RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.980405330657959,
+          "total": 0.9999723434448242,
+          "transaction_date": 0.9783034324645996,
+          "transaction_time": 0.9783034324645996
+        },
+        "boxes": {
+          "merchant_name": [
+            324,
+            164,
+            628,
+            212
+          ],
+          "total": [
+            643,
+            1740,
+            811,
+            1789
+          ],
+          "transaction_date": [
+            184,
+            765,
+            885,
+            812
+          ],
+          "transaction_time": [
+            184,
+            765,
+            885,
+            812
+          ]
+        },
+        "merchant_name": "OLD ASIA",
+        "total": "100.00",
+        "transaction_date": "2016-02-13",
+        "transaction_time": "02:29"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "100.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "101.65",
+        "printed": "100.00",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "196.45",
+        "printed": "96.20",
         "passed": false
       },
       {
@@ -289,16 +481,20 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "23.00"
   },
   "fingerprints": {
     "phash": "f1e72508d708d5f2",
     "merchant_norm": "old asia"
   },
   "forensics": {
-    "score": 0,
+    "score": 60,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal",
+      "round_total"
+    ]
   }
 }

@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_100",
   "file_sha256": "01b36f55e33e37d07a8d049f82d753d70930bd850ec3fb395573d64bfcb8211b",
+  "ocr_text": "Sushi Q\nEDEN IMPRESSION SDN BHD\n(894996-D)\nLot NO : 20, Level UG1, Publika Solaris\nDutamas.\nNo 1, Jalan Dutamas, 50480 KL\nTel: 03-62062378\n(GST ID:000926818304)\nTax Invoice\nDate:\n20/10/2016 Time:\n3:08:19PM\nINV No: 388171\nTable:\n-Take Away\nCounter: C1 Pax: 1\nStaff:\nNG XIN YEE\nDescription\nTax\nUnit Price Unit Discount\nAmount\nCod\nALACARTE SUSHI 2.80\nRM 2.80\n2\n0.00\nRM5.60 SR\nALACARTE SUSHI 1.80\nRM 1.80\n2\n0.00\nRM3.60 SR\nQty:\n4\nTotal Excl GST\nRM9.20\nDiscount:\nRM0.00\nAfter Discount:\nRM9.20\nService Charge (Excl GST):\nRM0.00\nGST:\nRM0.55\nItem Value Adj:\nRM0.00\nTotal Sales:\nRM9.75\nTendered: RM10.00\nChange : RM0.25\nGST Summary\nExcl Amount(RM)\nTax(RM)\nSR = 6%\n9.20\n0.55\n*Settled at 20/10/2016 3:08:19 PM*\nTHANK YOU AND PLEASE COME AGAIN",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Sushi Q",
     "receipt_number": "",
@@ -10,13 +11,13 @@
     "transaction_date": "2016-10-20",
     "transaction_time": "3:08",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
-    "tax": "",
+    "tax": "0.55",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "10.00",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
@@ -31,11 +32,6 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "5.60",
-        "item_class": "OTHER"
-      },
-      {
         "description": "ALACARTE SUSHI",
         "amount": "1.80",
         "item_class": "OTHER"
@@ -46,43 +42,18 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "3.60",
+        "description": "Discount: RM",
+        "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "After Discount: RM",
         "amount": "9.20",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "Item Value Adj: RM",
         "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "9.20",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "0.55",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "9.75",
         "item_class": "OTHER"
       },
       {
@@ -103,32 +74,91 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9998328685760498
+      "transaction_date": 0.999833345413208,
+      "tax": 0.9836559295654297,
+      "total": 0.999072790145874,
+      "merchant_name": 0.9499326348304749,
+      "transaction_time": 0.999990701675415
     },
     "boxes": {
       "transaction_date": [
-        250,
+        110,
         712,
-        529,
+        777,
         756
+      ],
+      "tax": [
+        516,
+        1492,
+        838,
+        1533
+      ],
+      "total": [
+        425,
+        1661,
+        835,
+        1702
+      ],
+      "merchant_name": [
+        373,
+        228,
+        541,
+        280
+      ],
+      "transaction_time": [
+        611,
+        714,
+        777,
+        752
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9998328685760498
+          "transaction_date": 0.999833345413208,
+          "tax": 0.9836559295654297,
+          "total": 0.999072790145874,
+          "merchant_name": 0.9499326348304749,
+          "transaction_time": 0.999990701675415
         },
         "boxes": {
           "transaction_date": [
-            250,
+            110,
             712,
-            529,
+            777,
             756
+          ],
+          "tax": [
+            516,
+            1492,
+            838,
+            1533
+          ],
+          "total": [
+            425,
+            1661,
+            835,
+            1702
+          ],
+          "merchant_name": [
+            373,
+            228,
+            541,
+            280
+          ],
+          "transaction_time": [
+            611,
+            714,
+            777,
+            752
           ]
         },
         "merchant_name": "Sushi Q",
         "transaction_date": "2016-10-20",
         "transaction_time": "3:08",
+        "currency": "MYR",
+        "tax": "0.55",
+        "total": "10.00",
         "line_items": [
           {
             "description": "ALACARTE SUSHI",
@@ -141,11 +171,6 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "5.60",
-            "item_class": "OTHER"
-          },
-          {
             "description": "ALACARTE SUSHI",
             "amount": "1.80",
             "item_class": "OTHER"
@@ -156,131 +181,18 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "3.60",
+            "description": "Discount: RM",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "After Discount: RM",
             "amount": "9.20",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "Item Value Adj: RM",
             "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "9.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.55",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "9.75",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Tendered: RM",
-            "amount": "10.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Change : RM",
-            "amount": "0.25",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "SR = 6%",
-            "amount": "9.20",
-            "item_class": "OTHER"
-          }
-        ],
-        "currency": "MYR"
-      },
-      "reader_b": {},
-      "text_rules": {
-        "category": "MEALS",
-        "guest_count": 1,
-        "line_items": [
-          {
-            "description": "ALACARTE SUSHI",
-            "amount": "2.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "2.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "5.60",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "ALACARTE SUSHI",
-            "amount": "1.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "1.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "3.60",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "9.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "9.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.55",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "9.75",
             "item_class": "OTHER"
           },
           {
@@ -299,16 +211,197 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "country": "MY",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "ALACARTE SUSHI",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ALACARTE SUSHI",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount: RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "After Discount: RM",
+            "amount": "9.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Item Value Adj: RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tendered: RM",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change : RM",
+            "amount": "0.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR = 6%",
+            "amount": "9.20",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.999833345413208,
+          "tax": 0.9836559295654297,
+          "total": 0.999972403049469
+        },
+        "boxes": {
+          "transaction_date": [
+            110,
+            712,
+            777,
+            756
+          ],
+          "tax": [
+            516,
+            1492,
+            838,
+            1533
+          ],
+          "total": [
+            218,
+            1587,
+            842,
+            1640
+          ]
+        },
+        "merchant_name": "Sushi Q",
+        "transaction_date": "2016-10-20",
+        "transaction_time": "3:08",
+        "currency": "MYR",
+        "tax": "0.55",
+        "total": "9.75",
+        "line_items": [
+          {
+            "description": "ALACARTE SUSHI",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ALACARTE SUSHI",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount: RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "After Discount: RM",
+            "amount": "9.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Item Value Adj: RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tendered: RM",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change : RM",
+            "amount": "0.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR = 6%",
+            "amount": "9.20",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9499326348304749,
+          "total": 0.999072790145874,
+          "transaction_date": 0.999833345413208,
+          "transaction_time": 0.999990701675415
+        },
+        "boxes": {
+          "merchant_name": [
+            373,
+            228,
+            541,
+            280
+          ],
+          "total": [
+            425,
+            1661,
+            835,
+            1702
+          ],
+          "transaction_date": [
+            250,
+            712,
+            529,
+            756
+          ],
+          "transaction_time": [
+            611,
+            714,
+            777,
+            752
+          ]
+        },
+        "merchant_name": "Sushi Q",
+        "total": "10.00",
+        "transaction_date": "2016-10-20",
+        "transaction_time": "3:08"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "10.00",
+        "passed": true
       },
       {
         "name": "date_format",
@@ -320,16 +413,18 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "2.30"
   },
   "fingerprints": {
     "phash": "f2b564da1dc8916c",
     "merchant_norm": "sushi q"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

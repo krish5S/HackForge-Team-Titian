@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_002",
   "file_sha256": "17706a425488126e3208486a66484809222d0125704e8e734e2fbf5b9cada406",
+  "ocr_text": "y\nSPGTHY BOLOGNASE\n58,000\n1\nPEPPER AUS\n165,000\nWELL DONE\nWAGYU RIBEYE\n195,000\n4=1\nMEDIUM WELL\n22,000\n1\nICED LEMON TEA\n28,000\n1\nFUSION·TEA LYCHE\n35,000\n1\nNUTTELA BROWNIES\n503,000\nSUBTOTAL\n52,815\nPB1\n25,150\nSVC CHRG\n580,965\nDUE",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "SPGTHY BOLOGNASE",
+    "merchant_name": "y SPGTHY BOLOGNASE 58,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,33 +13,270 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
+    "subtotal": "503000",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "580965",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "y SPGTHY BOLOGNASE",
+        "amount": "58000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 PEPPER AUS",
+        "amount": "165000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "4=1 WAGYU RIBEYE",
+        "amount": "195000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ICED LEMON TEA",
+        "amount": "22000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "FUSION·TEA LYCHE",
+        "amount": "28000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "NUTTELA BROWNIES",
+        "amount": "35000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "PB1",
+        "amount": "25150",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "DUE",
+        "amount": "580965",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.9999532699584961,
+      "total": 0.9999341368675232
+    },
+    "boxes": {
+      "subtotal": [
+        112,
+        879,
+        659,
+        959
+      ],
+      "total": [
+        334,
+        1016,
+        653,
+        1133
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "SPGTHY BOLOGNASE"
+        "confidence": {
+          "subtotal": 0.9999532699584961,
+          "total": 0.9999341368675232
+        },
+        "boxes": {
+          "subtotal": [
+            112,
+            879,
+            659,
+            959
+          ],
+          "total": [
+            334,
+            1016,
+            653,
+            1133
+          ]
+        },
+        "merchant_name": "y SPGTHY BOLOGNASE 58,000",
+        "subtotal": "503000",
+        "line_items": [
+          {
+            "description": "y SPGTHY BOLOGNASE",
+            "amount": "58000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PEPPER AUS",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4=1 WAGYU RIBEYE",
+            "amount": "195000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ICED LEMON TEA",
+            "amount": "22000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FUSION·TEA LYCHE",
+            "amount": "28000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "NUTTELA BROWNIES",
+            "amount": "35000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1",
+            "amount": "25150",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DUE",
+            "amount": "580965",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "580965"
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "y SPGTHY BOLOGNASE",
+            "amount": "58000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PEPPER AUS",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4=1 WAGYU RIBEYE",
+            "amount": "195000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ICED LEMON TEA",
+            "amount": "22000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "FUSION·TEA LYCHE",
+            "amount": "28000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "NUTTELA BROWNIES",
+            "amount": "35000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1",
+            "amount": "25150",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DUE",
+            "amount": "580965",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9999532699584961
+        },
+        "boxes": {
+          "subtotal": [
+            112,
+            879,
+            659,
+            959
+          ]
+        },
+        "merchant_name": "y SPGTHY BOLOGNASE 58,000",
+        "subtotal": "503000",
+        "line_items": [
+          {
+            "description": "y SPGTHY BOLOGNASE",
+            "amount": "58000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PEPPER AUS",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4=1 WAGYU RIBEYE",
+            "amount": "195000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ICED LEMON TEA",
+            "amount": "22000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FUSION·TEA LYCHE",
+            "amount": "28000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "NUTTELA BROWNIES",
+            "amount": "35000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1",
+            "amount": "25150",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DUE",
+            "amount": "580965",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999341368675232
+        },
+        "boxes": {
+          "total": [
+            334,
+            1016,
+            653,
+            1133
+          ]
+        },
+        "total": "580965"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "580965",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "1109115.00",
+        "printed": "503000.00",
         "passed": false
       }
     ]
@@ -50,11 +288,13 @@
   },
   "fingerprints": {
     "phash": "94e3e3d5180417f7",
-    "merchant_norm": "spgthy bolognase"
+    "merchant_norm": "y spgthy bolognase 58 000"
   },
   "forensics": {
-    "score": 0,
+    "score": 25,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal"
+    ]
   }
 }

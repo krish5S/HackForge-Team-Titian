@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_056",
   "file_sha256": "072b18c41e752d8888d9c4e1efd0dd044fd47d5c6a341205b603f90c67d2b995",
+  "ocr_text": "Receipt\nPLASTIC BAG\n500.00\nPink Panther (P)\n37,500.00\nRed dragon (P)\n37,500.00\nSubTotal\n75,500.00\nDiscount\n0.00\nTotal\n75,500.00\nPayment\n75,500.00\nChange\n0.00\n3 item(s)",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -53,41 +54,41 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9999886751174927,
-      "total": 0.9999815821647644
+      "subtotal": 0.999988853931427,
+      "total": 0.9999924898147583
     },
     "boxes": {
       "subtotal": [
-        573,
+        306,
         929,
         706,
         967
       ],
       "total": [
-        541,
-        1102,
+        572,
+        1190,
         707,
-        1142
+        1228
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9999886751174927,
-          "total": 0.9999815821647644
+          "subtotal": 0.999988853931427,
+          "total": 0.9999924898147583
         },
         "boxes": {
           "subtotal": [
-            573,
+            306,
             929,
             706,
             967
           ],
           "total": [
-            541,
-            1102,
+            572,
+            1190,
             707,
-            1142
+            1228
           ]
         },
         "merchant_name": "Receipt",
@@ -160,6 +161,75 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.999988853931427,
+          "total": 0.9999818801879883
+        },
+        "boxes": {
+          "subtotal": [
+            306,
+            929,
+            706,
+            967
+          ],
+          "total": [
+            300,
+            1100,
+            707,
+            1142
+          ]
+        },
+        "merchant_name": "Receipt",
+        "subtotal": "75500.00",
+        "total": "75500.00",
+        "line_items": [
+          {
+            "description": "PLASTIC BAG",
+            "amount": "500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pink Panther (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Red dragon (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Payment",
+            "amount": "75500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999924898147583
+        },
+        "boxes": {
+          "total": [
+            572,
+            1190,
+            707,
+            1228
+          ]
+        },
+        "total": "75500.00"
       }
     }
   },

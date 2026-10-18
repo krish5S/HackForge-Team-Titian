@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_070",
   "file_sha256": "c486315cdaa26b99fce015145fa5b3f365280d0cdce1eecdf7f0f90f0066f7fa",
+  "ocr_text": "Calagero's\nCalogero's\n919 Franklin Ave.\nGarden City, NY 11530\n516-2942922\nTable\n#2\nServ:\nManager 2\nTrans #:\n137017\n# Cust:4\n4/20/2018 8:29 PM\nCost\nQuan\nDescript\n$27.00\n1 Shrimp Scampi\n2 Chicken Milanese\n$46.00\n1 Veal Milanese\n$27.00\n3 Grey Goose\n$30.00\n1 Pineapple Juice\n$3.00\n1 Belvedere\n$12.00\n1 Becks Non Alcoholic\n$6.00\n1 Corona\n$6.00\n1 Comp Item\n($12.00)\nNet Total:\n$145.00\nTax\n$12.51\nTOTAL:\n$157.51\nAmount Due:\n$157.51\nFOLLOW US ON\nFACEBOOK AND INSTAGRAM\n@calogerosac",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -21,7 +22,7 @@
     "category": "",
     "line_items": [
       {
-        "description": "Descript",
+        "description": "1 Shrimp Scampi",
         "amount": "27.00",
         "item_class": "OTHER"
       },
@@ -61,16 +62,23 @@
         "item_class": "OTHER"
       },
       {
-        "description": "Amount Due:",
+        "description": "1 Comp Item (",
+        "amount": "12.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Amount Due",
         "amount": "157.51",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.999939501285553,
-      "total": 0.9999170303344727,
-      "tax": 0.9999470114707947
+      "transaction_date": 0.9999397397041321,
+      "total": 0.9999181628227234,
+      "tax": 0.9999480247497559,
+      "merchant_name": 0.9997628927230835,
+      "transaction_time": 0.9999397397041321
     },
     "boxes": {
       "transaction_date": [
@@ -86,18 +94,32 @@
         883
       ],
       "tax": [
-        470,
-        748,
+        351,
+        745,
         554,
         781
+      ],
+      "merchant_name": [
+        234,
+        60,
+        354,
+        95
+      ],
+      "transaction_time": [
+        73,
+        308,
+        271,
+        343
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.999939501285553,
-          "total": 0.9999170303344727,
-          "tax": 0.9999470114707947
+          "transaction_date": 0.9999397397041321,
+          "total": 0.9999181628227234,
+          "tax": 0.9999480247497559,
+          "merchant_name": 0.9997628927230835,
+          "transaction_time": 0.9999397397041321
         },
         "boxes": {
           "transaction_date": [
@@ -113,10 +135,22 @@
             883
           ],
           "tax": [
-            470,
-            748,
+            351,
+            745,
             554,
             781
+          ],
+          "merchant_name": [
+            234,
+            60,
+            354,
+            95
+          ],
+          "transaction_time": [
+            73,
+            308,
+            271,
+            343
           ]
         },
         "merchant_name": "Calagero's",
@@ -127,7 +161,7 @@
         "tax": "12.51",
         "line_items": [
           {
-            "description": "Descript",
+            "description": "1 Shrimp Scampi",
             "amount": "27.00",
             "item_class": "OTHER"
           },
@@ -167,7 +201,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Amount Due:",
+            "description": "1 Comp Item (",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due",
             "amount": "157.51",
             "item_class": "OTHER"
           }
@@ -177,7 +216,7 @@
       "text_rules": {
         "line_items": [
           {
-            "description": "Descript",
+            "description": "1 Shrimp Scampi",
             "amount": "27.00",
             "item_class": "OTHER"
           },
@@ -217,11 +256,139 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Amount Due:",
+            "description": "1 Comp Item (",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due",
             "amount": "157.51",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9999397397041321,
+          "total": 0.9998407959938049,
+          "tax": 0.9999480247497559
+        },
+        "boxes": {
+          "transaction_date": [
+            73,
+            308,
+            271,
+            343
+          ],
+          "total": [
+            51,
+            842,
+            552,
+            883
+          ],
+          "tax": [
+            351,
+            745,
+            554,
+            781
+          ]
+        },
+        "merchant_name": "Calagero's",
+        "transaction_date": "2018-04-20",
+        "transaction_time": "20:29",
+        "currency": "USD",
+        "total": "157.51",
+        "tax": "12.51",
+        "line_items": [
+          {
+            "description": "1 Shrimp Scampi",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Chicken Milanese",
+            "amount": "46.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Veal Milanese",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Grey Goose",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Pineapple Juice",
+            "amount": "3.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Belvedere",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Becks Non Alcoholic",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Corona",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Comp Item (",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due",
+            "amount": "157.51",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9997628927230835,
+          "total": 0.9999181628227234,
+          "transaction_date": 0.9999397397041321,
+          "transaction_time": 0.9999397397041321
+        },
+        "boxes": {
+          "merchant_name": [
+            234,
+            60,
+            354,
+            95
+          ],
+          "total": [
+            364,
+            849,
+            552,
+            883
+          ],
+          "transaction_date": [
+            73,
+            308,
+            271,
+            343
+          ],
+          "transaction_time": [
+            73,
+            308,
+            271,
+            343
+          ]
+        },
+        "merchant_name": "Calagero's",
+        "total": "157.51",
+        "transaction_date": "2018-04-20",
+        "transaction_time": "8:29"
       }
     }
   },

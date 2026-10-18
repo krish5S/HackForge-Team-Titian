@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_048",
   "file_sha256": "266ea45938fb76552c66763707160fa37326f40640303eb2763d08cef554bbe3",
+  "ocr_text": "Merchant 48\nSHOW & ENTERTAINMENT\nChicago, US\nParty size: 1\nDate: 2026-09-02\nTime:12:00:00\nReceipt: r_048\nShow tickets\n150.00\nSUBTOTAL\n150.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n150.00 USD\nGuests: 1\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -28,12 +29,14 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9860336184501648,
-      "subtotal": 0.9990771412849426,
-      "tax": 0.9990679025650024,
-      "tip": 0.9977085590362549,
-      "other_charges": 0.9985650181770325,
-      "total": 0.999078094959259
+      "transaction_date": 0.9860339164733887,
+      "subtotal": 0.9990782737731934,
+      "tax": 0.9990692138671875,
+      "tip": 0.9977103471755981,
+      "other_charges": 0.9985665082931519,
+      "total": 0.9990789294242859,
+      "merchant_name": 0.9999107718467712,
+      "transaction_time": 0.9999229907989502
     },
     "boxes": {
       "transaction_date": [
@@ -43,25 +46,25 @@
         311
       ],
       "subtotal": [
-        527,
+        62,
         548,
         680,
         575
       ],
       "tax": [
-        557,
+        61,
         609,
         681,
-        634
+        636
       ],
       "tip": [
-        557,
+        61,
         668,
         679,
-        693
+        696
       ],
       "other_charges": [
-        558,
+        61,
         729,
         680,
         754
@@ -71,17 +74,31 @@
         790,
         804,
         817
+      ],
+      "merchant_name": [
+        62,
+        44,
+        328,
+        79
+      ],
+      "transaction_time": [
+        64,
+        340,
+        302,
+        364
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9860336184501648,
-          "subtotal": 0.9990771412849426,
-          "tax": 0.9990679025650024,
-          "tip": 0.9977085590362549,
-          "other_charges": 0.9985650181770325,
-          "total": 0.999078094959259
+          "transaction_date": 0.9860339164733887,
+          "subtotal": 0.9990782737731934,
+          "tax": 0.9990692138671875,
+          "tip": 0.9977103471755981,
+          "other_charges": 0.9985665082931519,
+          "total": 0.9990789294242859,
+          "merchant_name": 0.9999107718467712,
+          "transaction_time": 0.9999229907989502
         },
         "boxes": {
           "transaction_date": [
@@ -91,25 +108,25 @@
             311
           ],
           "subtotal": [
-            527,
+            62,
             548,
             680,
             575
           ],
           "tax": [
-            557,
+            61,
             609,
             681,
-            634
+            636
           ],
           "tip": [
-            557,
+            61,
             668,
             679,
-            693
+            696
           ],
           "other_charges": [
-            558,
+            61,
             729,
             680,
             754
@@ -119,6 +136,18 @@
             790,
             804,
             817
+          ],
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "transaction_time": [
+            64,
+            340,
+            302,
+            364
           ]
         },
         "merchant_name": "Merchant 48",
@@ -153,6 +182,111 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9860339164733887,
+          "subtotal": 0.9990782737731934,
+          "tax": 0.9990692138671875,
+          "tip": 0.9977103471755981,
+          "other_charges": 0.9985665082931519,
+          "total": 0.9990789294242859
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            62,
+            548,
+            680,
+            575
+          ],
+          "tax": [
+            61,
+            609,
+            681,
+            636
+          ],
+          "tip": [
+            61,
+            668,
+            679,
+            696
+          ],
+          "other_charges": [
+            61,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            61,
+            789,
+            804,
+            818
+          ]
+        },
+        "merchant_name": "Merchant 48",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-02",
+        "transaction_time": "12:00",
+        "receipt_number": "R_048",
+        "subtotal": "150.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "150.00",
+        "line_items": [
+          {
+            "description": "Show tickets",
+            "amount": "150.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999107718467712,
+          "total": 0.9990789294242859,
+          "transaction_date": 0.9860339164733887,
+          "transaction_time": 0.9999229907989502
+        },
+        "boxes": {
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "total": [
+            622,
+            790,
+            804,
+            817
+          ],
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "transaction_time": [
+            64,
+            340,
+            302,
+            364
+          ]
+        },
+        "merchant_name": "Merchant 48",
+        "total": "150.00",
+        "transaction_date": "2026-09-02",
+        "transaction_time": "12:00"
       }
     }
   },

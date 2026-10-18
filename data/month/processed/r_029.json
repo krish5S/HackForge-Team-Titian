@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_029",
   "file_sha256": "8941c3d0d872af60a28a510a442705d9e18fe6ef0b19093bb0388d47e4b7916c",
+  "ocr_text": "31705509\n99 SPEED MART S/B (519537-X)\nLOT P.T. 2811, JALAN ANGSA,\nTAMAN BERKELEY\n41150 KLANG, SELANGOR\n1422-TMN DESA JAYA\nGST ID. NO ; 000181747712\nINVOICE NO : 18028/103/T0369\n01:57PM\n563498\n10-05-17\n2174 A&W SARSAPARILLA 1.5L\nRM2.85 s\n2502 COKE ZERO 1.25L STOP\nRM2.50 s\n261 HELANG MINYAK MASAK SKG\nRM24.40 z\n325 CINTAN MI PERISA ASLI S\nRM24.65 s\n311 MAMEE EXPRESS MI CAWAN\nRM1.29 s\n5425 MAG0I HOT CUP MEE TOM\nRM3.50 s\n02 X RM 1.75\n066 MILO FUZE 3IN1 ORIGINAL\nRM13.65 s\n1821 JULIES SUGAR CRACKERS\nRM6.70 s\n02 X RM 3.35\n6059 S88 TWISTIES COOKIES 1\nRM2.30 s\n371 BIN BIN RICE CRACKER 15\nRM11.90 s\n02 X RM 5.95\nTotal Sales (Inclusive GST) RM\n72.74\nRounding Adjustment RM\n.01\nRounding RN\n72.75\nCASH RM\n100.00\nCHANGE RM\n27.25\n1\nGST Summary\nAmount(RM)\nTax(RM)\n5 = 6%\n45.60\n2.74\nz = 0%\n24.40\n.00\nThank You. Please come again\nKeep the invoice for applicable returns",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -10,18 +11,18 @@
     "transaction_date": "",
     "transaction_time": "",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
     "tax": "72.74",
     "tip": "",
     "other_charges": "",
-    "total": "72.74",
+    "total": "100.00",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "RM",
+        "description": "2174 A&W SARSAPARILLA 1.5L RM",
         "amount": "2.85",
         "item_class": "OTHER"
       },
@@ -31,27 +32,22 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "2.50",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
+        "description": "261 HELANG MINYAK MASAK SKG RM",
         "amount": "24.40",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "325 CINTAN MI PERISA ASLI S RM",
         "amount": "24.65",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "311 MAMEE EXPRESS MI CAWAN RM",
         "amount": "1.29",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "5425 MAG0I HOT CUP MEE TOM RM",
         "amount": "3.50",
         "item_class": "OTHER"
       },
@@ -61,12 +57,12 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "066 MILO FUZE 3IN1 ORIGINAL RM",
         "amount": "13.65",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "1821 JULIES SUGAR CRACKERS RM",
         "amount": "6.70",
         "item_class": "OTHER"
       },
@@ -76,14 +72,14 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "6059 S88 TWISTIES COOKIES 1 RM",
         "amount": "2.30",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "371 BIN BIN RICE CRACKER 15 RM",
         "amount": "11.90",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       },
       {
         "description": "02 X RM",
@@ -113,50 +109,64 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.9999635815620422,
-      "total": 0.9999635815620422
+      "tax": 0.968153715133667,
+      "merchant_name": 0.9999974370002747,
+      "total": 0.9995604157447815
     },
     "boxes": {
       "tax": [
-        429,
+        40,
         1050,
         493,
-        1080
+        1081
+      ],
+      "merchant_name": [
+        90,
+        56,
+        355,
+        112
       ],
       "total": [
-        429,
-        1050,
-        493,
-        1080
+        415,
+        1147,
+        491,
+        1177
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999635815620422,
-          "total": 0.9999635815620422
+          "tax": 0.968153715133667,
+          "merchant_name": 0.9999974370002747,
+          "total": 0.9995604157447815
         },
         "boxes": {
           "tax": [
-            429,
+            40,
             1050,
             493,
-            1080
+            1081
+          ],
+          "merchant_name": [
+            90,
+            56,
+            355,
+            112
           ],
           "total": [
-            429,
-            1050,
-            493,
-            1080
+            415,
+            1147,
+            491,
+            1177
           ]
         },
         "merchant_name": "31705509",
+        "currency": "MYR",
         "tax": "72.74",
-        "total": "72.74",
         "receipt_number": "FOR",
         "line_items": [
           {
-            "description": "RM",
+            "description": "2174 A&W SARSAPARILLA 1.5L RM",
             "amount": "2.85",
             "item_class": "OTHER"
           },
@@ -166,27 +176,22 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "2.50",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "261 HELANG MINYAK MASAK SKG RM",
             "amount": "24.40",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "325 CINTAN MI PERISA ASLI S RM",
             "amount": "24.65",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "311 MAMEE EXPRESS MI CAWAN RM",
             "amount": "1.29",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "5425 MAG0I HOT CUP MEE TOM RM",
             "amount": "3.50",
             "item_class": "OTHER"
           },
@@ -196,12 +201,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "066 MILO FUZE 3IN1 ORIGINAL RM",
             "amount": "13.65",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "1821 JULIES SUGAR CRACKERS RM",
             "amount": "6.70",
             "item_class": "OTHER"
           },
@@ -211,12 +216,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "6059 S88 TWISTIES COOKIES 1 RM",
             "amount": "2.30",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "371 BIN BIN RICE CRACKER 15 RM",
             "amount": "11.90",
             "item_class": "OTHER"
           },
@@ -246,13 +251,14 @@
             "item_class": "OTHER"
           }
         ],
-        "currency": "MYR"
+        "total": "100.00"
       },
       "reader_b": {},
       "text_rules": {
+        "country": "MY",
         "line_items": [
           {
-            "description": "RM",
+            "description": "2174 A&W SARSAPARILLA 1.5L RM",
             "amount": "2.85",
             "item_class": "OTHER"
           },
@@ -262,27 +268,22 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "2.50",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "261 HELANG MINYAK MASAK SKG RM",
             "amount": "24.40",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "325 CINTAN MI PERISA ASLI S RM",
             "amount": "24.65",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "311 MAMEE EXPRESS MI CAWAN RM",
             "amount": "1.29",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "5425 MAG0I HOT CUP MEE TOM RM",
             "amount": "3.50",
             "item_class": "OTHER"
           },
@@ -292,12 +293,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "066 MILO FUZE 3IN1 ORIGINAL RM",
             "amount": "13.65",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "1821 JULIES SUGAR CRACKERS RM",
             "amount": "6.70",
             "item_class": "OTHER"
           },
@@ -307,12 +308,116 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "6059 S88 TWISTIES COOKIES 1 RM",
             "amount": "2.30",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "371 BIN BIN RICE CRACKER 15 RM",
+            "amount": "11.90",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "5.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding RN",
+            "amount": "72.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE RM",
+            "amount": "27.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "z = 0%",
+            "amount": "24.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.968153715133667
+        },
+        "boxes": {
+          "tax": [
+            40,
+            1050,
+            493,
+            1081
+          ]
+        },
+        "merchant_name": "31705509",
+        "currency": "MYR",
+        "tax": "72.74",
+        "receipt_number": "FOR",
+        "line_items": [
+          {
+            "description": "2174 A&W SARSAPARILLA 1.5L RM",
+            "amount": "2.85",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2502 COKE ZERO",
+            "amount": "1.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "261 HELANG MINYAK MASAK SKG RM",
+            "amount": "24.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "325 CINTAN MI PERISA ASLI S RM",
+            "amount": "24.65",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "311 MAMEE EXPRESS MI CAWAN RM",
+            "amount": "1.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "5425 MAG0I HOT CUP MEE TOM RM",
+            "amount": "3.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "1.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "066 MILO FUZE 3IN1 ORIGINAL RM",
+            "amount": "13.65",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1821 JULIES SUGAR CRACKERS RM",
+            "amount": "6.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "3.35",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "6059 S88 TWISTIES COOKIES 1 RM",
+            "amount": "2.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "371 BIN BIN RICE CRACKER 15 RM",
             "amount": "11.90",
             "item_class": "OTHER"
           },
@@ -342,6 +447,28 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999974370002747,
+          "total": 0.9995604157447815
+        },
+        "boxes": {
+          "merchant_name": [
+            90,
+            56,
+            355,
+            112
+          ],
+          "total": [
+            415,
+            1147,
+            491,
+            1177
+          ]
+        },
+        "merchant_name": "31705509",
+        "total": "100.00"
       }
     }
   },
@@ -350,7 +477,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "72.74",
+        "printed": "100.00",
         "passed": true
       }
     ]
@@ -358,15 +485,17 @@
   "fx": {
     "base_currency": "USD",
     "rate": "0.23",
-    "total_base": "16.73"
+    "total_base": "23.00"
   },
   "fingerprints": {
     "phash": "b53570561b4b48de",
     "merchant_norm": "31705509"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

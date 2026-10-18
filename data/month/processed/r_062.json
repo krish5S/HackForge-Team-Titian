@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_062",
   "file_sha256": "21657a3281a0a5d9cd4b764472641f82c9d6a14191f71eb6a31801d90fed7013",
+  "ocr_text": "3 SI EKO\n60,000\nSubtotal\n60,000\nPb1\n6,000\nTotal\n66,000\nCASH\n70,000\nCash CHANGE\n-4,000\nTotal Item\n1\nTotal Qty\n3",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "3 SI EKO",
+    "merchant_name": "3 SI EKO 60,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,55 +17,180 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "66000",
+    "total": "70000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "3 SI EKO",
+        "amount": "60000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pb1",
+        "amount": "6000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "70000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash CHANGE",
+        "amount": "-4000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9999774098396301,
-      "total": 0.9999752640724182
+      "subtotal": 0.9999780654907227,
+      "total": 0.9999861121177673
     },
     "boxes": {
       "subtotal": [
-        795,
-        725,
+        478,
+        723,
         924,
         776
       ],
       "total": [
-        762,
-        829,
-        921,
-        883
+        764,
+        879,
+        922,
+        932
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9999774098396301,
-          "total": 0.9999752640724182
+          "subtotal": 0.9999780654907227,
+          "total": 0.9999861121177673
         },
         "boxes": {
           "subtotal": [
-            795,
-            725,
+            478,
+            723,
             924,
             776
           ],
           "total": [
-            762,
-            829,
-            921,
-            883
+            764,
+            879,
+            922,
+            932
           ]
         },
-        "merchant_name": "3 SI EKO",
+        "merchant_name": "3 SI EKO 60,000",
         "subtotal": "60000",
-        "total": "66000"
+        "total": "70000",
+        "line_items": [
+          {
+            "description": "3 SI EKO",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pb1",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "70000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash CHANGE",
+            "amount": "-4000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "3 SI EKO",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pb1",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "70000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash CHANGE",
+            "amount": "-4000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9999780654907227,
+          "total": 0.9998359680175781
+        },
+        "boxes": {
+          "subtotal": [
+            478,
+            723,
+            924,
+            776
+          ],
+          "total": [
+            452,
+            1018,
+            925,
+            1075
+          ]
+        },
+        "merchant_name": "3 SI EKO 60,000",
+        "subtotal": "60000",
+        "total": "3.00",
+        "line_items": [
+          {
+            "description": "3 SI EKO",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pb1",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "70000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash CHANGE",
+            "amount": "-4000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999861121177673
+        },
+        "boxes": {
+          "total": [
+            764,
+            879,
+            922,
+            932
+          ]
+        },
+        "total": "70000"
+      }
     }
   },
   "validation": {
@@ -72,8 +198,14 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "66000",
+        "printed": "70000",
         "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "132000.00",
+        "printed": "60000.00",
+        "passed": false
       }
     ]
   },
@@ -84,12 +216,13 @@
   },
   "fingerprints": {
     "phash": "a0cd34e34e9c3be2",
-    "merchant_norm": "3 si eko"
+    "merchant_norm": "3 si eko 60 000"
   },
   "forensics": {
-    "score": 10,
+    "score": 35,
     "cnn_fake_probability": 0.0,
     "signals": [
+      "items_vs_subtotal",
       "round_total"
     ]
   }

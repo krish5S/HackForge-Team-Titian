@@ -85,15 +85,25 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
         if ("merchant_name" not in result and len(text) >= 3 and not is_field_label
                 and not MONEY.fullmatch(text) and not DATE.search(text)):
             result["merchant_name"] = text
+        all_label_re = r"\b(grand total|sub\s*total|amount due|balance due|total|tax invoice|tax|gst|vat|sgst|cgst|igst|tip|gratuity|service charge|other charge)\b"
+        positions = [(m.start(), m.group(0)) for m in re.finditer(all_label_re, text, re.I)]
         for field, labels in FIELD_LABELS.items():
-            if not any(re.search(r"\b" + re.escape(label) + r"\b", lower) for label in labels):
+            matched_label = next((label for label in labels if re.search(r"\b" + re.escape(label) + r"\b", lower)), None)
+            if not matched_label:
                 continue
-            if field == "total" and re.search(r"\bsub\s*total\b", lower):
+            if field == "total" and re.search(r"\bsub\s*total\b", lower) and not re.search(r"(?<!\bsub\s)(?<!\bsub)total\b", lower):
                 continue
             if field == "tax" and re.search(r"\b(?:tax\s+invoice|(?:gst|tax|vat)\s*(?:no|id|number|registration))\b", lower):
                 continue
             amount_line = line
-            amount = _label_amount(text)
+            matching_pos = [pos for pos, lbl in positions if re.search(r"\b" + re.escape(matched_label) + r"\b", lbl, re.I)]
+            if matching_pos:
+                pos = matching_pos[-1]
+                next_positions = [p for p, _ in positions if p > pos]
+                end_pos = min(next_positions) if next_positions else len(text)
+                amount = _label_amount(text[pos:end_pos])
+            else:
+                amount = _label_amount(text)
             if amount is None and index + 1 < len(lines):
                 following = lines[index + 1]
                 following_text = str(following.get("text", "")).strip()

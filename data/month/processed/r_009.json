@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_009",
   "file_sha256": "5a26bea121241e814c41d18006782ac49adb0d9be30f6fdc67e1b24212afc60e",
+  "ocr_text": "Kupen 9\n8,182\nKupon 1\n20,000\nLARGE ICED LEMON TEA\n12,273\nSubtotal\n40,455\nPB1 (10%)\n4,046\nRound\n-1\nDine In Total\n44,500\nCash\n50,000\nChange\n5,500",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Kupen 9",
+    "merchant_name": "Kupen 9 8,182",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,55 +17,220 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "44500",
+    "total": "50000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "Kupen 9",
+        "amount": "8182",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Kupon 1",
+        "amount": "20000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "LARGE ICED LEMON TEA",
+        "amount": "12273",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "PB1 (10%)",
+        "amount": "4046",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "50000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change",
+        "amount": "5500",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9996485710144043,
-      "total": 0.9998990893363953
+      "subtotal": 0.9996509552001953,
+      "total": 0.9961602687835693
     },
     "boxes": {
       "subtotal": [
-        382,
+        69,
         540,
         444,
-        566
+        567
       ],
       "total": [
-        388,
-        641,
-        453,
-        674
+        393,
+        697,
+        458,
+        727
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9996485710144043,
-          "total": 0.9998990893363953
+          "subtotal": 0.9996509552001953,
+          "total": 0.9961602687835693
         },
         "boxes": {
           "subtotal": [
-            382,
+            69,
             540,
             444,
-            566
+            567
           ],
           "total": [
-            388,
+            393,
+            697,
+            458,
+            727
+          ]
+        },
+        "merchant_name": "Kupen 9 8,182",
+        "subtotal": "40455",
+        "total": "50000",
+        "line_items": [
+          {
+            "description": "Kupen 9",
+            "amount": "8182",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Kupon 1",
+            "amount": "20000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "LARGE ICED LEMON TEA",
+            "amount": "12273",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1 (10%)",
+            "amount": "4046",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "5500",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Kupen 9",
+            "amount": "8182",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Kupon 1",
+            "amount": "20000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "LARGE ICED LEMON TEA",
+            "amount": "12273",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "PB1 (10%)",
+            "amount": "4046",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "5500",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9996509552001953,
+          "total": 0.9999008178710938
+        },
+        "boxes": {
+          "subtotal": [
+            69,
+            540,
+            444,
+            567
+          ],
+          "total": [
+            58,
             641,
             453,
             674
           ]
         },
-        "merchant_name": "Kupen 9",
+        "merchant_name": "Kupen 9 8,182",
         "subtotal": "40455",
-        "total": "44500"
+        "total": "44500",
+        "line_items": [
+          {
+            "description": "Kupen 9",
+            "amount": "8182",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Kupon 1",
+            "amount": "20000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "LARGE ICED LEMON TEA",
+            "amount": "12273",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1 (10%)",
+            "amount": "4046",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "5500",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9961602687835693
+        },
+        "boxes": {
+          "total": [
+            393,
+            697,
+            458,
+            727
+          ]
+        },
+        "total": "50000"
+      }
     }
   },
   "validation": {
@@ -72,8 +238,14 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "44500",
+        "printed": "50000",
         "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "100001.00",
+        "printed": "40455.00",
+        "passed": false
       }
     ]
   },
@@ -84,12 +256,13 @@
   },
   "fingerprints": {
     "phash": "c08aabadada53595",
-    "merchant_norm": "kupen 9"
+    "merchant_norm": "kupen 9 8 182"
   },
   "forensics": {
-    "score": 10,
+    "score": 35,
     "cnn_fake_probability": 0.0,
     "signals": [
+      "items_vs_subtotal",
       "round_total"
     ]
   }

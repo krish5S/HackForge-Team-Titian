@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_083",
   "file_sha256": "237c48627388c41df835814b64b95134819deae3bb8c055ba6c69ba44dca375e",
+  "ocr_text": "SIN LIANHAP SDN BHD\nLOT 13, JALAN\nSIN LIANHAP SDN BHD\nLOT 13, JALANIPOH,\nKGBATU30,ULUYAMLAMA\n44300 BTG KALI, SELANGOR.\nTEL:03-60752222(HUNTING LINE)FAX: 03-60752572\n(Company Reg No: 284922-D)\n(GST Reg No: 001610833920)\nTAX INVOICE\nCASH CUSTOMER\nInvoice No.:\n:H0003939\nDate:\n: 05/02/2018\nCashler#:\nRM\nCode\nPPD 4MM DENLIME\n1.887\nSR\n1.000 PC\n2.00\n6023#GARDEN\n5.000\nSR\n1.000PC\nX\n5.30\nSubtotal:\n7.30\nTotal Sales Excuding GST:\n6.69\nTotal Sales Inclueive of GST:\n7.30\ntounding Adjustment:\n0.00\nPayment:\n7.30\nChange Due :\n0.00\nTotal Item(s):\n2\nLIANH\nGST Summary\nAmount\nTax\n女\nSR @6\n6.89\n041\n女\nBHD\n太太太太\nTHANKYOU\n永夫末夫未永太\ndc大大k\nPLEASE COMEAGAIN\n大大大",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,32 +17,22 @@
     "tax": "7.30",
     "tip": "",
     "other_charges": "",
-    "total": "7.30",
+    "total": "5000",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "1.000 PC",
-        "amount": "2.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "X",
-        "amount": "5.30",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "tounding Adjustment:",
+        "description": "tounding Adjustment",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Payment:",
+        "description": "Payment",
         "amount": "7.30",
         "item_class": "OTHER"
       },
       {
-        "description": "Change Due :",
+        "description": "Change Due",
         "amount": "0.00",
         "item_class": "OTHER"
       },
@@ -53,99 +44,103 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9611621499061584,
-      "subtotal": 0.9999865293502808,
-      "tax": 0.9999702572822571,
-      "total": 0.9999702572822571
+      "transaction_date": 0.9611680507659912,
+      "subtotal": 0.9987674355506897,
+      "tax": 0.9709193706512451,
+      "total": 0.9893603324890137,
+      "merchant_name": 0.9798738360404968
     },
     "boxes": {
       "transaction_date": [
-        214,
+        42,
         776,
         341,
         803
       ],
       "subtotal": [
-        458,
-        1138,
+        225,
+        1136,
         506,
         1165
       ],
       "tax": [
-        464,
-        1217,
+        46,
+        1214,
         512,
         1243
       ],
       "total": [
-        464,
-        1217,
-        512,
-        1243
+        280,
+        1046,
+        340,
+        1075
+      ],
+      "merchant_name": [
+        164,
+        326,
+        410,
+        356
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9611621499061584,
-          "subtotal": 0.9999865293502808,
-          "tax": 0.9999702572822571,
-          "total": 0.9999702572822571
+          "transaction_date": 0.9611680507659912,
+          "subtotal": 0.9987674355506897,
+          "tax": 0.9709193706512451,
+          "total": 0.9893603324890137,
+          "merchant_name": 0.9798738360404968
         },
         "boxes": {
           "transaction_date": [
-            214,
+            42,
             776,
             341,
             803
           ],
           "subtotal": [
-            458,
-            1138,
+            225,
+            1136,
             506,
             1165
           ],
           "tax": [
-            464,
-            1217,
+            46,
+            1214,
             512,
             1243
           ],
           "total": [
-            464,
-            1217,
-            512,
-            1243
+            280,
+            1046,
+            340,
+            1075
+          ],
+          "merchant_name": [
+            164,
+            326,
+            410,
+            356
           ]
         },
         "merchant_name": "SIN LIANHAP SDN BHD",
         "transaction_date": "2018-05-02",
         "subtotal": "7.30",
         "tax": "7.30",
-        "total": "7.30",
+        "total": "5000",
         "line_items": [
           {
-            "description": "1.000 PC",
-            "amount": "2.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "X",
-            "amount": "5.30",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "tounding Adjustment:",
+            "description": "tounding Adjustment",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Payment:",
+            "description": "Payment",
             "amount": "7.30",
             "item_class": "OTHER"
           },
           {
-            "description": "Change Due :",
+            "description": "Change Due",
             "amount": "0.00",
             "item_class": "OTHER"
           },
@@ -160,27 +155,17 @@
       "text_rules": {
         "line_items": [
           {
-            "description": "1.000 PC",
-            "amount": "2.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "X",
-            "amount": "5.30",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "tounding Adjustment:",
+            "description": "tounding Adjustment",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Payment:",
+            "description": "Payment",
             "amount": "7.30",
             "item_class": "OTHER"
           },
           {
-            "description": "Change Due :",
+            "description": "Change Due",
             "amount": "0.00",
             "item_class": "OTHER"
           },
@@ -190,6 +175,97 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9611680507659912,
+          "subtotal": 0.9987674355506897,
+          "tax": 0.9709193706512451,
+          "total": 0.9610400795936584
+        },
+        "boxes": {
+          "transaction_date": [
+            42,
+            776,
+            341,
+            803
+          ],
+          "subtotal": [
+            225,
+            1136,
+            506,
+            1165
+          ],
+          "tax": [
+            46,
+            1214,
+            512,
+            1243
+          ],
+          "total": [
+            43,
+            1406,
+            244,
+            1441
+          ]
+        },
+        "merchant_name": "SIN LIANHAP SDN BHD",
+        "transaction_date": "2018-05-02",
+        "subtotal": "7.30",
+        "tax": "7.30",
+        "total": "2.00",
+        "line_items": [
+          {
+            "description": "tounding Adjustment",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Payment",
+            "amount": "7.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change Due",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR @6",
+            "amount": "6.89",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9798738360404968,
+          "total": 0.9893603324890137,
+          "transaction_date": 0.9611680507659912
+        },
+        "boxes": {
+          "merchant_name": [
+            164,
+            326,
+            410,
+            356
+          ],
+          "total": [
+            280,
+            1046,
+            340,
+            1075
+          ],
+          "transaction_date": [
+            214,
+            776,
+            341,
+            803
+          ]
+        },
+        "merchant_name": "SIN LIANHAP SDN BHD",
+        "total": "5000",
+        "transaction_date": "2018-05-02"
       }
     }
   },
@@ -198,18 +274,18 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "7.30",
+        "printed": "5000",
         "passed": true
       },
       {
         "name": "components_vs_total",
         "expected": "14.60",
-        "printed": "7.30",
+        "printed": "5000.00",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "21.49",
+        "expected": "14.19",
         "printed": "7.30",
         "passed": false
       },
@@ -231,11 +307,12 @@
     "merchant_norm": "sin lianhap sdn bhd"
   },
   "forensics": {
-    "score": 50,
+    "score": 60,
     "cnn_fake_probability": 0.0,
     "signals": [
       "components_vs_total",
-      "items_vs_subtotal"
+      "items_vs_subtotal",
+      "round_total"
     ]
   }
 }

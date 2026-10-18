@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_091",
   "file_sha256": "dab060ae8139a6fd841bba0aea092a5caade7dd5093abc285e5809bf4510117f",
+  "ocr_text": "ADVANCO COMPANY\nCompany Reg. No. : 725186-V\nNO 1&3, Jalan Wangsa Delima 12,\nWangsa Link, Wangsa Maju,\n53300 Kuala Lumpur\n03-41318972\nGST Reg:001658445824\nTAX INVOICE\nCB#：389772\n17/01/2018 8.08:53\nM#:M1-0\nCashier: c1000-\nQty Description\nPrice\nTotal\nCANON PG-47BK E400 BLACK FINE( SR\n1 27736\n29.00\n29.00\nType:\n1\nTotal\n29.00\nRounding Adj\n0.00\nTotal Inclusive GST:\n29.00\nCASH\n50.00\nChange\n21.00\nGST Summary\nCode\n%\nNet Amt\nGST\nTotal\nSR\n6%\n27.36\n1.64\n29.00\nTotal\n27.36\n1.64\n29.00\nThank you & Please come again.\nGoods soid are not returnable for refund or\nexchange !!",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,10 +17,15 @@
     "tax": "29.00",
     "tip": "",
     "other_charges": "",
-    "total": "27.36",
+    "total": "50.00",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "CB#：389772 17/01/2018",
+        "amount": "8.08",
+        "item_class": "OTHER"
+      },
       {
         "description": "Rounding Adj",
         "amount": "0.00",
@@ -34,67 +40,105 @@
         "description": "Change",
         "amount": "21.00",
         "item_class": "OTHER"
+      },
+      {
+        "description": "SR 6%",
+        "amount": "27.36",
+        "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9850294589996338,
-      "total": 0.9999961853027344,
-      "tax": 0.9999784231185913
+      "tax": 0.9980217814445496,
+      "transaction_date": 0.9561796188354492,
+      "total": 0.9991626739501953,
+      "merchant_name": 0.9976491928100586,
+      "transaction_time": 0.9850308299064636
     },
     "boxes": {
+      "tax": [
+        78,
+        709,
+        631,
+        746
+      ],
       "transaction_date": [
-        390,
-        365,
+        65,
+        359,
         631,
         402
       ],
       "total": [
-        296,
-        966,
-        378,
-        1003
+        555,
+        755,
+        632,
+        789
       ],
-      "tax": [
-        556,
-        713,
+      "merchant_name": [
+        175,
+        59,
+        507,
+        101
+      ],
+      "transaction_time": [
+        390,
+        365,
         631,
-        746
+        402
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9850294589996338,
-          "total": 0.9999961853027344,
-          "tax": 0.9999784231185913
+          "tax": 0.9980217814445496,
+          "transaction_date": 0.9561796188354492,
+          "total": 0.9991626739501953,
+          "merchant_name": 0.9976491928100586,
+          "transaction_time": 0.9850308299064636
         },
         "boxes": {
+          "tax": [
+            78,
+            709,
+            631,
+            746
+          ],
           "transaction_date": [
-            390,
-            365,
+            65,
+            359,
             631,
             402
           ],
           "total": [
-            296,
-            966,
-            378,
-            1003
+            555,
+            755,
+            632,
+            789
           ],
-          "tax": [
-            556,
-            713,
+          "merchant_name": [
+            175,
+            59,
+            507,
+            101
+          ],
+          "transaction_time": [
+            390,
+            365,
             631,
-            746
+            402
           ]
         },
         "merchant_name": "ADVANCO COMPANY",
+        "tax": "29.00",
         "transaction_date": "2018-01-17",
         "transaction_time": "08:53",
-        "total": "27.36",
-        "tax": "29.00",
+        "total": "50.00",
         "line_items": [
+          {
+            "description": "CB#：389772 17/01/2018",
+            "amount": "8.08",
+            "item_class": "OTHER"
+          },
           {
             "description": "Rounding Adj",
             "amount": "0.00",
@@ -108,6 +152,11 @@
           {
             "description": "Change",
             "amount": "21.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6%",
+            "amount": "27.36",
             "item_class": "OTHER"
           }
         ]
@@ -116,6 +165,11 @@
       "text_rules": {
         "line_items": [
           {
+            "description": "CB#：389772 17/01/2018",
+            "amount": "8.08",
+            "item_class": "OTHER"
+          },
+          {
             "description": "Rounding Adj",
             "amount": "0.00",
             "item_class": "OTHER"
@@ -129,8 +183,110 @@
             "description": "Change",
             "amount": "21.00",
             "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6%",
+            "amount": "27.36",
+            "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9980217814445496,
+          "transaction_date": 0.9561796188354492,
+          "total": 0.9999083280563354
+        },
+        "boxes": {
+          "tax": [
+            78,
+            709,
+            631,
+            746
+          ],
+          "transaction_date": [
+            65,
+            359,
+            631,
+            402
+          ],
+          "total": [
+            73,
+            965,
+            635,
+            1004
+          ]
+        },
+        "merchant_name": "ADVANCO COMPANY",
+        "tax": "29.00",
+        "transaction_date": "2018-01-17",
+        "transaction_time": "08:53",
+        "total": "29.00",
+        "line_items": [
+          {
+            "description": "CB#：389772 17/01/2018",
+            "amount": "8.08",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "21.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6%",
+            "amount": "27.36",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9976491928100586,
+          "total": 0.9991626739501953,
+          "transaction_date": 0.9850308299064636,
+          "transaction_time": 0.9850308299064636
+        },
+        "boxes": {
+          "merchant_name": [
+            175,
+            59,
+            507,
+            101
+          ],
+          "total": [
+            555,
+            755,
+            632,
+            789
+          ],
+          "transaction_date": [
+            390,
+            365,
+            631,
+            402
+          ],
+          "transaction_time": [
+            390,
+            365,
+            631,
+            402
+          ]
+        },
+        "merchant_name": "ADVANCO COMPANY",
+        "total": "50.00",
+        "transaction_date": "2018-01-17",
+        "transaction_time": "08:53"
       }
     }
   },
@@ -139,7 +295,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "27.36",
+        "printed": "50.00",
         "passed": true
       },
       {
@@ -160,8 +316,10 @@
     "merchant_norm": "advanco company"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

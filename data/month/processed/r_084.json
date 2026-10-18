@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_084",
   "file_sha256": "020bdacaa439cd419d222736a32470c63c88f035590c06570d7d4b871455a726",
+  "ocr_text": "31803041\nMR. D.1.Y. (M) SDN BHD\n(CO.REG :860671-D)\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000306020352)\n(IOI PUCHONG)\n-TAX INVOICE-\n*S\nPP WATER FILTER CARTRIDGE INDOOR 1S\nWA38 - 100\n2 X 3.30\n6.60\n9690059\nQty(s) : 2\nItem(s) : 1\nRM 6.60\nTotal Incl. GST@6%\nRM 50.00\nCASH\nRM 43.40\nCHANGE\nRM 0.37\nGST @6% included in total\nT3 R000060580\n18-03-18 12:09 SH01 ZJ86\nOPERATOR TRAINEE CASHIER\nEXCHANGE ARE ALLOWED WITHIN\n7 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "31803041",
     "receipt_number": "",
@@ -10,24 +11,24 @@
     "transaction_date": "",
     "transaction_time": "12:09",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
-    "tax": "",
+    "tax": "6.60",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "50.00",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "2 X",
-        "amount": "3.30",
+        "description": "WA38 - 100",
+        "amount": "6.60",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "6.60",
+        "description": "9690059 2 X",
+        "amount": "3.30",
         "item_class": "OTHER"
       },
       {
@@ -36,34 +37,92 @@
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "CASH RM",
         "amount": "43.40",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "0.37",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "tax": 0.9977878332138062,
+      "total": 0.999786376953125,
+      "merchant_name": 0.9999940991401672,
+      "transaction_time": 0.9998259544372559
+    },
+    "boxes": {
+      "tax": [
+        4,
+        742,
+        677,
+        802
+      ],
+      "total": [
+        533,
+        776,
+        678,
+        818
+      ],
+      "merchant_name": [
+        0,
+        29,
+        202,
+        85
+      ],
+      "transaction_time": [
+        12,
+        955,
+        417,
+        1004
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
+        "confidence": {
+          "tax": 0.9977878332138062,
+          "total": 0.999786376953125,
+          "merchant_name": 0.9999940991401672,
+          "transaction_time": 0.9998259544372559
+        },
+        "boxes": {
+          "tax": [
+            4,
+            742,
+            677,
+            802
+          ],
+          "total": [
+            533,
+            776,
+            678,
+            818
+          ],
+          "merchant_name": [
+            0,
+            29,
+            202,
+            85
+          ],
+          "transaction_time": [
+            12,
+            955,
+            417,
+            1004
+          ]
+        },
         "merchant_name": "31803041",
+        "tax": "6.60",
+        "currency": "MYR",
+        "total": "50.00",
         "transaction_time": "12:09",
         "line_items": [
           {
-            "description": "2 X",
-            "amount": "3.30",
+            "description": "WA38 - 100",
+            "amount": "6.60",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "6.60",
+            "description": "9690059 2 X",
+            "amount": "3.30",
             "item_class": "OTHER"
           },
           {
@@ -72,72 +131,141 @@
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "CASH RM",
             "amount": "43.40",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.37",
-            "item_class": "OTHER"
-          }
-        ],
-        "currency": "MYR"
-      },
-      "reader_b": {},
-      "text_rules": {
-        "line_items": [
-          {
-            "description": "2 X",
-            "amount": "3.30",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "6.60",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "50.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "43.40",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.37",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "WA38 - 100",
+            "amount": "6.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "9690059 2 X",
+            "amount": "3.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH RM",
+            "amount": "43.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9977878332138062,
+          "total": 0.9990936517715454
+        },
+        "boxes": {
+          "tax": [
+            4,
+            742,
+            677,
+            802
+          ],
+          "total": [
+            8,
+            878,
+            630,
+            938
+          ]
+        },
+        "merchant_name": "31803041",
+        "tax": "6.60",
+        "currency": "MYR",
+        "total": "0.37",
+        "transaction_time": "12:09",
+        "line_items": [
+          {
+            "description": "WA38 - 100",
+            "amount": "6.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "9690059 2 X",
+            "amount": "3.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH RM",
+            "amount": "43.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999940991401672,
+          "total": 0.999786376953125,
+          "transaction_time": 0.9998259544372559
+        },
+        "boxes": {
+          "merchant_name": [
+            0,
+            29,
+            202,
+            85
+          ],
+          "total": [
+            533,
+            776,
+            678,
+            818
+          ],
+          "transaction_time": [
+            12,
+            955,
+            417,
+            1004
+          ]
+        },
+        "merchant_name": "31803041",
+        "total": "50.00",
+        "transaction_time": "12:09"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50.00",
+        "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "11.50"
   },
   "fingerprints": {
     "phash": "aaad3c8284377b2d",
     "merchant_norm": "31803041"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_028",
   "file_sha256": "c783120e802e965e9f7864bc0f78af2146b369cb83d820aca9e345b6386e19f8",
+  "ocr_text": "RESTORAN WAN SHENG\n002043319-W\nNo.2, Jalan Temenggung 19/9,\nSeksyen 9, Bandar Mahkota Cheras,\n43200 Cheras, Selangor\nGST REG NO: 001335787520\nTax\nInvoice\nINV No.: 1044120\nCashier: Thandar\nDate\n14-03-2014 10:06:20\nDescription\nQty\nU.price\nTotal TAX\nKopi (B)\n1 x\n2.20\n2.20\nSR\nCham (B)\n1 x\n2.20\n2.20\nSR\nTake Away\n2 x\n0.20\n0.40\nSR\nTotal QTY: 4\nTotal (Excluding GST):\n4.54\nGST payable (6%):\n0.26\nTotal (Inclusive of GST):\n4.80\nTOTAL:\n4.80\nCASH :\n4.80\nGST Summary\nAmount(RM)\nTax(RM)\nSR\n(@ 6%)\n4.54\n0.26",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -36,73 +37,101 @@
         "item_class": "OTHER"
       },
       {
-        "description": "GST payable (6%):",
-        "amount": "0.26",
+        "description": "CASH",
+        "amount": "4.80",
         "item_class": "OTHER"
       },
       {
-        "description": "CASH :",
-        "amount": "4.80",
+        "description": "SR (@ 6%)",
+        "amount": "4.54",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9811286926269531,
-      "tax": 0.9999764561653137,
-      "total": 0.9999706745147705
+      "tax": 0.9909709692001343,
+      "transaction_date": 0.9811297059059143,
+      "total": 0.9992077350616455,
+      "merchant_name": 0.9999761581420898,
+      "transaction_time": 0.9811297059059143
     },
     "boxes": {
+      "tax": [
+        34,
+        1282,
+        750,
+        1330
+      ],
       "transaction_date": [
+        31,
+        686,
+        537,
+        736
+      ],
+      "total": [
+        670,
+        1409,
+        749,
+        1456
+      ],
+      "merchant_name": [
+        230,
+        261,
+        554,
+        306
+      ],
+      "transaction_time": [
         194,
         691,
         537,
         735
-      ],
-      "tax": [
-        670,
-        1283,
-        750,
-        1330
-      ],
-      "total": [
-        601,
-        1326,
-        746,
-        1372
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9811286926269531,
-          "tax": 0.9999764561653137,
-          "total": 0.9999706745147705
+          "tax": 0.9909709692001343,
+          "transaction_date": 0.9811297059059143,
+          "total": 0.9992077350616455,
+          "merchant_name": 0.9999761581420898,
+          "transaction_time": 0.9811297059059143
         },
         "boxes": {
+          "tax": [
+            34,
+            1282,
+            750,
+            1330
+          ],
           "transaction_date": [
+            31,
+            686,
+            537,
+            736
+          ],
+          "total": [
+            670,
+            1409,
+            749,
+            1456
+          ],
+          "merchant_name": [
+            230,
+            261,
+            554,
+            306
+          ],
+          "transaction_time": [
             194,
             691,
             537,
             735
-          ],
-          "tax": [
-            670,
-            1283,
-            750,
-            1330
-          ],
-          "total": [
-            601,
-            1326,
-            746,
-            1372
           ]
         },
         "merchant_name": "RESTORAN WAN SHENG",
+        "tax": "4.80",
         "transaction_date": "2014-03-14",
         "transaction_time": "10:06",
-        "tax": "4.80",
         "total": "4.80",
         "line_items": [
           {
@@ -121,13 +150,13 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GST payable (6%):",
-            "amount": "0.26",
+            "description": "CASH",
+            "amount": "4.80",
             "item_class": "OTHER"
           },
           {
-            "description": "CASH :",
-            "amount": "4.80",
+            "description": "SR (@ 6%)",
+            "amount": "4.54",
             "item_class": "OTHER"
           }
         ]
@@ -151,16 +180,113 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GST payable (6%):",
-            "amount": "0.26",
+            "description": "CASH",
+            "amount": "4.80",
             "item_class": "OTHER"
           },
           {
-            "description": "CASH :",
-            "amount": "4.80",
+            "description": "SR (@ 6%)",
+            "amount": "4.54",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9909709692001343,
+          "transaction_date": 0.9811297059059143,
+          "total": 0.9994274973869324
+        },
+        "boxes": {
+          "tax": [
+            34,
+            1282,
+            750,
+            1330
+          ],
+          "transaction_date": [
+            31,
+            686,
+            537,
+            736
+          ],
+          "total": [
+            36,
+            1325,
+            746,
+            1372
+          ]
+        },
+        "merchant_name": "RESTORAN WAN SHENG",
+        "tax": "4.80",
+        "transaction_date": "2014-03-14",
+        "transaction_time": "10:06",
+        "total": "4.80",
+        "line_items": [
+          {
+            "description": "1 x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 x",
+            "amount": "0.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "4.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR (@ 6%)",
+            "amount": "4.54",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999761581420898,
+          "total": 0.9992077350616455,
+          "transaction_date": 0.9811297059059143,
+          "transaction_time": 0.9811297059059143
+        },
+        "boxes": {
+          "merchant_name": [
+            230,
+            261,
+            554,
+            306
+          ],
+          "total": [
+            670,
+            1409,
+            749,
+            1456
+          ],
+          "transaction_date": [
+            194,
+            691,
+            537,
+            735
+          ],
+          "transaction_time": [
+            194,
+            691,
+            537,
+            735
+          ]
+        },
+        "merchant_name": "RESTORAN WAN SHENG",
+        "total": "4.80",
+        "transaction_date": "2014-03-14",
+        "transaction_time": "10:06"
       }
     }
   },

@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_061",
   "file_sha256": "7e3a4b2c1adb1afadb711c32f30bad963b60e6c44776cad072b197ab47658778",
+  "ocr_text": "nm\n10100\n1 TROPICAL PUNCH\n30,000\n1 SOUP 50%\n7,273\n17,273\n1 SALAD BAR 50%\nSUBTOTAL\n54,546\nTAX\n5,454\n60,000\nTOTAL\n真喜ngnnli",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "10100",
     "receipt_number": "",
@@ -12,34 +13,211 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": "54546",
+    "tax": "5454",
     "tip": "",
     "other_charges": "",
-    "total": "",
-    "itemization": "",
+    "total": "60000",
+    "itemization": "FULL",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "1 TROPICAL PUNCH",
+        "amount": "30000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 SOUP 50%",
+        "amount": "7273",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "1 SALAD BAR 50%",
+        "amount": "17273",
+        "item_class": "FOOD"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.999900758266449,
+      "tax": 0.9999514818191528,
+      "total": 0.999978244304657
+    },
+    "boxes": {
+      "subtotal": [
+        210,
+        596,
+        485,
+        633
+      ],
+      "tax": [
+        271,
+        629,
+        486,
+        666
+      ],
+      "total": [
+        329,
+        690,
+        490,
+        756
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "10100"
+        "confidence": {
+          "subtotal": 0.999900758266449,
+          "tax": 0.9999514818191528,
+          "total": 0.999978244304657
+        },
+        "boxes": {
+          "subtotal": [
+            210,
+            596,
+            485,
+            633
+          ],
+          "tax": [
+            271,
+            629,
+            486,
+            666
+          ],
+          "total": [
+            329,
+            690,
+            490,
+            756
+          ]
+        },
+        "merchant_name": "10100",
+        "subtotal": "54546",
+        "tax": "5454",
+        "total": "60000",
+        "line_items": [
+          {
+            "description": "1 TROPICAL PUNCH",
+            "amount": "30000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SOUP 50%",
+            "amount": "7273",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SALAD BAR 50%",
+            "amount": "17273",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "1 TROPICAL PUNCH",
+            "amount": "30000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SOUP 50%",
+            "amount": "7273",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "1 SALAD BAR 50%",
+            "amount": "17273",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.999900758266449,
+          "tax": 0.9999514818191528,
+          "total": 0.9999693036079407
+        },
+        "boxes": {
+          "subtotal": [
+            210,
+            596,
+            485,
+            633
+          ],
+          "tax": [
+            271,
+            629,
+            486,
+            666
+          ],
+          "total": [
+            82,
+            690,
+            490,
+            767
+          ]
+        },
+        "merchant_name": "10100",
+        "subtotal": "54546",
+        "tax": "5454",
+        "total": "60000",
+        "line_items": [
+          {
+            "description": "1 TROPICAL PUNCH",
+            "amount": "30000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SOUP 50%",
+            "amount": "7273",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SALAD BAR 50%",
+            "amount": "17273",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.999978244304657
+        },
+        "boxes": {
+          "total": [
+            329,
+            690,
+            490,
+            756
+          ]
+        },
+        "total": "60000"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "60000",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "60000.00",
+        "printed": "60000.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "54546.00",
+        "printed": "54546.00",
+        "passed": true
       }
     ]
   },
@@ -53,8 +231,10 @@
     "merchant_norm": "10100"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

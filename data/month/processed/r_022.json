@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_022",
   "file_sha256": "499589ad00a1c3c1611254b94b8f8fce86c637bc02aadd911a288baccc202462",
+  "ocr_text": "CK.MANTAP A\n25,455\nCHEESE B\n25\nTAKE AWAY\n20,455\n40,90\n909\n909\nSub Total\nPAJAK RESTORAN 10%\n67,273\n6,727\nTotal\nCash\n4,000\n74,000\n100,000\nChanging\n26,000",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "CK.MANTAP A",
+    "merchant_name": "CK.MANTAP A 25,455",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,33 +13,198 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
+    "subtotal": "67273",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "100000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "CK.MANTAP A",
+        "amount": "25455",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "PAJAK RESTORAN 10%",
+        "amount": "6727",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "74000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Changing",
+        "amount": "26000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.9996978044509888,
+      "total": 0.9997649788856506
+    },
+    "boxes": {
+      "subtotal": [
+        214,
+        517,
+        502,
+        555
+      ],
+      "total": [
+        435,
+        625,
+        508,
+        656
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "CK.MANTAP A"
+        "confidence": {
+          "subtotal": 0.9996978044509888,
+          "total": 0.9997649788856506
+        },
+        "boxes": {
+          "subtotal": [
+            214,
+            517,
+            502,
+            555
+          ],
+          "total": [
+            435,
+            625,
+            508,
+            656
+          ]
+        },
+        "merchant_name": "CK.MANTAP A 25,455",
+        "subtotal": "67273",
+        "total": "100000",
+        "line_items": [
+          {
+            "description": "CK.MANTAP A",
+            "amount": "25455",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PAJAK RESTORAN 10%",
+            "amount": "6727",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "74000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Changing",
+            "amount": "26000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "CK.MANTAP A",
+            "amount": "25455",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PAJAK RESTORAN 10%",
+            "amount": "6727",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "74000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Changing",
+            "amount": "26000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9996978044509888,
+          "total": 0.9998847246170044
+        },
+        "boxes": {
+          "subtotal": [
+            214,
+            517,
+            502,
+            555
+          ],
+          "total": [
+            80,
+            590,
+            506,
+            629
+          ]
+        },
+        "merchant_name": "CK.MANTAP A 25,455",
+        "subtotal": "67273",
+        "total": "4000",
+        "line_items": [
+          {
+            "description": "CK.MANTAP A",
+            "amount": "25455",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PAJAK RESTORAN 10%",
+            "amount": "6727",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "74000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Changing",
+            "amount": "26000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9997649788856506
+        },
+        "boxes": {
+          "total": [
+            435,
+            625,
+            508,
+            656
+          ]
+        },
+        "total": "100000"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "100000",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "132182.00",
+        "printed": "67273.00",
         "passed": false
       }
     ]
@@ -50,11 +216,14 @@
   },
   "fingerprints": {
     "phash": "b5c24afd348147da",
-    "merchant_norm": "ck mantap a"
+    "merchant_norm": "ck mantap a 25 455"
   },
   "forensics": {
-    "score": 0,
+    "score": 35,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal",
+      "round_total"
+    ]
   }
 }

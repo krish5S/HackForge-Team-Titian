@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_004",
   "file_sha256": "6236b5dc4879ba05c3b14e2361641eb0f66ff54c4fad35ed2113c03825eca658",
+  "ocr_text": "AFUNG\n家\nAFUNG\nFUNG\nBASO BIHUN\n1 43.636\n43.636\nTOTAL\n43.636\nTAX 10.00 %\n4.364\n48.000\nAFUNG\nGRAND TOTAL\n50.000\nTUNAI\n2.000\nKEMBALI\n福\nKa-ih",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -19,38 +20,168 @@
     "total": "50000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "BASO BIHUN 1",
+        "amount": "43636",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "TUNAI",
+        "amount": "50000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "KEMBALI",
+        "amount": "2000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.999925971031189,
-      "total": 0.9998602867126465
+      "total": 0.9998617768287659,
+      "tax": 0.9934386610984802,
+      "merchant_name": 0.9998529553413391
     },
     "boxes": {
-      "tax": [
-        653,
-        935,
-        749,
-        980
-      ],
       "total": [
         639,
         1028,
         753,
         1080
+      ],
+      "tax": [
+        88,
+        935,
+        749,
+        985
+      ],
+      "merchant_name": [
+        737,
+        130,
+        797,
+        319
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.999925971031189,
-          "total": 0.9998602867126465
+          "total": 0.9998617768287659,
+          "tax": 0.9934386610984802,
+          "merchant_name": 0.9998529553413391
         },
         "boxes": {
+          "total": [
+            639,
+            1028,
+            753,
+            1080
+          ],
           "tax": [
-            653,
+            88,
             935,
             749,
-            980
+            985
+          ],
+          "merchant_name": [
+            737,
+            130,
+            797,
+            319
+          ]
+        },
+        "merchant_name": "AFUNG",
+        "total": "50000",
+        "tax": "4364",
+        "line_items": [
+          {
+            "description": "BASO BIHUN 1",
+            "amount": "43636",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "TUNAI",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "KEMBALI",
+            "amount": "2000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "BASO BIHUN 1",
+            "amount": "43636",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "TUNAI",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "KEMBALI",
+            "amount": "2000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9996023178100586,
+          "tax": 0.9934386610984802
+        },
+        "boxes": {
+          "total": [
+            83,
+            984,
+            748,
+            1035
+          ],
+          "tax": [
+            88,
+            935,
+            749,
+            985
+          ]
+        },
+        "merchant_name": "AFUNG",
+        "total": "48000",
+        "tax": "4364",
+        "line_items": [
+          {
+            "description": "BASO BIHUN 1",
+            "amount": "43636",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "TUNAI",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "KEMBALI",
+            "amount": "2000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9998529553413391,
+          "total": 0.9998617768287659
+        },
+        "boxes": {
+          "merchant_name": [
+            737,
+            130,
+            797,
+            319
           ],
           "total": [
             639,
@@ -60,11 +191,8 @@
           ]
         },
         "merchant_name": "AFUNG",
-        "tax": "4364",
         "total": "50000"
-      },
-      "reader_b": {},
-      "text_rules": {}
+      }
     }
   },
   "validation": {

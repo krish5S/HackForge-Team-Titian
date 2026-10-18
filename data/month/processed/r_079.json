@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_079",
   "file_sha256": "17343b6eed229cdaf42e094bf7f06aa7c9f0f7757c6329a4291e75169fc5ebf8",
+  "ocr_text": "KFC\nRestaurant #C160014\n3880 Hempstead Turnpike\nLevittown\n(516)735-3508\nTicket #2884\n2016-07-08\n9:16 PM\nC160014 2 117 2884\nCashier: TIANA\nFamily Fill Up\n20.00\nLrg Coleslaw\nLrg Mash/ Gvy\nLrg Mash Only\n4 Biscuit\n1.73\nTax\nDRIVE THRU\n$21.73\nETender Credit\n$21.73\nChange\n$0.00\nCHARGE DETAIL:SALE",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "KFC",
     "receipt_number": "",
@@ -13,21 +14,16 @@
     "country": "",
     "currency": "USD",
     "subtotal": "",
-    "tax": "",
+    "tax": "1.73",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "21.73",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
         "description": "Family Fill Up",
         "amount": "20.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "4 Biscuit",
-        "amount": "1.73",
         "item_class": "OTHER"
       },
       {
@@ -48,42 +44,80 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999974966049194
+      "transaction_date": 0.9998759031295776,
+      "tax": 0.9995562434196472,
+      "total": 0.9999745488166809,
+      "transaction_time": 0.9998759031295776
     },
     "boxes": {
       "transaction_date": [
         154,
-        487,
-        249,
+        480,
+        519,
         513
+      ],
+      "tax": [
+        140,
+        730,
+        538,
+        765
+      ],
+      "total": [
+        473,
+        805,
+        543,
+        837
+      ],
+      "transaction_time": [
+        446,
+        480,
+        519,
+        505
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999974966049194
+          "transaction_date": 0.9998759031295776,
+          "tax": 0.9995562434196472,
+          "total": 0.9999745488166809,
+          "transaction_time": 0.9998759031295776
         },
         "boxes": {
           "transaction_date": [
             154,
-            487,
-            249,
+            480,
+            519,
             513
+          ],
+          "tax": [
+            140,
+            730,
+            538,
+            765
+          ],
+          "total": [
+            473,
+            805,
+            543,
+            837
+          ],
+          "transaction_time": [
+            446,
+            480,
+            519,
+            505
           ]
         },
         "merchant_name": "KFC",
         "transaction_date": "2016-07-08",
         "transaction_time": "9:16",
+        "tax": "1.73",
         "currency": "USD",
         "line_items": [
           {
             "description": "Family Fill Up",
             "amount": "20.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "4 Biscuit",
-            "amount": "1.73",
             "item_class": "OTHER"
           },
           {
@@ -101,7 +135,8 @@
             "amount": "0.00",
             "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "21.73"
       },
       "reader_b": {},
       "text_rules": {
@@ -113,8 +148,50 @@
             "item_class": "OTHER"
           },
           {
-            "description": "4 Biscuit",
-            "amount": "1.73",
+            "description": "DRIVE THRU",
+            "amount": "21.73",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ETender Credit",
+            "amount": "21.73",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9998759031295776,
+          "tax": 0.9995562434196472
+        },
+        "boxes": {
+          "transaction_date": [
+            154,
+            480,
+            519,
+            513
+          ],
+          "tax": [
+            140,
+            730,
+            538,
+            765
+          ]
+        },
+        "merchant_name": "KFC",
+        "transaction_date": "2016-07-08",
+        "transaction_time": "21:16",
+        "tax": "1.73",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Family Fill Up",
+            "amount": "20.00",
             "item_class": "OTHER"
           },
           {
@@ -133,16 +210,46 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999745488166809,
+          "transaction_date": 0.9999977350234985,
+          "transaction_time": 0.9998759031295776
+        },
+        "boxes": {
+          "total": [
+            473,
+            805,
+            543,
+            837
+          ],
+          "transaction_date": [
+            154,
+            487,
+            249,
+            513
+          ],
+          "transaction_time": [
+            446,
+            480,
+            519,
+            505
+          ]
+        },
+        "total": "21.73",
+        "transaction_date": "2016-07-08",
+        "transaction_time": "9:16"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "21.73",
+        "passed": true
       },
       {
         "name": "date_format",
@@ -154,8 +261,8 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "21.73"
   },
   "fingerprints": {
     "phash": "8368394e78cb7c55",

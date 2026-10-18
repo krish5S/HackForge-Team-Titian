@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_080",
   "file_sha256": "3ce05fcd23121e6463443540462a58ebb5692a8ec1ac5427b5e3ef8bb5d34b98",
+  "ocr_text": "Dine In\nDenny's Restaurant #8129\n160 Eastern Boulevard\nCanandaigua, NY 14424\n(585) 394-4880\n( )\n8/30/2015\n11:00:11 PM\nOrder:\n429742\nServer: Bethany F\nTable: 12 Guests:\n2\n0.00\n1 No Beverage\n1 No Beverage\n0.00\n1 Milk Shake\n3.99\nShake Choc\nSubTotal\n3.99\nTax\n0.30\nGratuity\n1.00\nTotal\n5.29",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -26,6 +27,11 @@
         "item_class": "OTHER"
       },
       {
+        "description": "1 No Beverage",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
         "description": "1 Milk Shake",
         "amount": "3.99",
         "item_class": "OTHER"
@@ -38,83 +44,111 @@
     ],
     "guest_count": 2,
     "confidence": {
-      "transaction_date": 0.9999656677246094,
-      "subtotal": 0.9999353885650635,
-      "tax": 0.9999607801437378,
-      "tip": 0.9998517036437988,
-      "total": 0.9999976754188538
+      "transaction_date": 0.9990057349205017,
+      "subtotal": 0.9996185302734375,
+      "tax": 0.9999611377716064,
+      "tip": 0.999852180480957,
+      "total": 0.9999977350234985,
+      "merchant_name": 0.9999423623085022,
+      "transaction_time": 0.9990057349205017
     },
     "boxes": {
       "transaction_date": [
         2,
-        154,
-        84,
+        148,
+        344,
         182
       ],
       "subtotal": [
-        310,
+        132,
         312,
         360,
-        342
+        346
       ],
       "tax": [
-        313,
+        131,
         339,
         360,
-        365
+        368
       ],
       "tip": [
-        315,
+        127,
         362,
         362,
-        389
+        395
       ],
       "total": [
         271,
         381,
         368,
         437
+      ],
+      "merchant_name": [
+        150,
+        40,
+        216,
+        67
+      ],
+      "transaction_time": [
+        245,
+        148,
+        344,
+        172
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999656677246094,
-          "subtotal": 0.9999353885650635,
-          "tax": 0.9999607801437378,
-          "tip": 0.9998517036437988,
-          "total": 0.9999976754188538
+          "transaction_date": 0.9990057349205017,
+          "subtotal": 0.9996185302734375,
+          "tax": 0.9999611377716064,
+          "tip": 0.999852180480957,
+          "total": 0.9999977350234985,
+          "merchant_name": 0.9999423623085022,
+          "transaction_time": 0.9990057349205017
         },
         "boxes": {
           "transaction_date": [
             2,
-            154,
-            84,
+            148,
+            344,
             182
           ],
           "subtotal": [
-            310,
+            132,
             312,
             360,
-            342
+            346
           ],
           "tax": [
-            313,
+            131,
             339,
             360,
-            365
+            368
           ],
           "tip": [
-            315,
+            127,
             362,
             362,
-            389
+            395
           ],
           "total": [
             271,
             381,
             368,
             437
+          ],
+          "merchant_name": [
+            150,
+            40,
+            216,
+            67
+          ],
+          "transaction_time": [
+            245,
+            148,
+            344,
+            172
           ]
         },
         "merchant_name": "Dine In",
@@ -125,6 +159,11 @@
         "tip": "1.00",
         "total": "5.29",
         "line_items": [
+          {
+            "description": "1 No Beverage",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
           {
             "description": "1 No Beverage",
             "amount": "0.00",
@@ -153,6 +192,11 @@
             "item_class": "OTHER"
           },
           {
+            "description": "1 No Beverage",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
             "description": "1 Milk Shake",
             "amount": "3.99",
             "item_class": "OTHER"
@@ -163,6 +207,114 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9990057349205017,
+          "subtotal": 0.9996185302734375,
+          "tax": 0.9999611377716064,
+          "tip": 0.999852180480957,
+          "total": 0.9992109537124634
+        },
+        "boxes": {
+          "transaction_date": [
+            2,
+            148,
+            344,
+            182
+          ],
+          "subtotal": [
+            132,
+            312,
+            360,
+            346
+          ],
+          "tax": [
+            131,
+            339,
+            360,
+            368
+          ],
+          "tip": [
+            127,
+            362,
+            362,
+            395
+          ],
+          "total": [
+            54,
+            381,
+            368,
+            437
+          ]
+        },
+        "merchant_name": "Dine In",
+        "transaction_date": "2015-08-30",
+        "transaction_time": "23:00",
+        "subtotal": "3.99",
+        "tax": "0.30",
+        "tip": "1.00",
+        "total": "5.29",
+        "line_items": [
+          {
+            "description": "1 No Beverage",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 No Beverage",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Milk Shake",
+            "amount": "3.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999423623085022,
+          "total": 0.9999977350234985,
+          "transaction_date": 0.9999660849571228,
+          "transaction_time": 0.9990057349205017
+        },
+        "boxes": {
+          "merchant_name": [
+            150,
+            40,
+            216,
+            67
+          ],
+          "total": [
+            271,
+            381,
+            368,
+            437
+          ],
+          "transaction_date": [
+            2,
+            154,
+            84,
+            182
+          ],
+          "transaction_time": [
+            245,
+            148,
+            344,
+            172
+          ]
+        },
+        "merchant_name": "Dine In",
+        "total": "5.29",
+        "transaction_date": "2015-08-30",
+        "transaction_time": "11:00"
       }
     }
   },

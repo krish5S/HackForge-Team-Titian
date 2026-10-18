@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_090",
   "file_sha256": "61f16c80f93a2777c8b3e519fc23b2a6813ec606541bbdc52aa2162e8afdcd7b",
+  "ocr_text": "baskinBRrobbins\nDesa Park City\nGolden Scoop Sdn Bhd (169609-A)\nA-16-1, Tower A, Northpoint Office, Mid Valley\nCity, No1, Medan Syed Putra Utara Kuala\nLumpur\nMalaysia\nGST ID: 001513148416\nOutlet Tel: (603) 6280 7131\nTax Invoice\nInvoice No\n:DPC1153409-001-0006\nPOS No\n: DPC11\nCashier\n: DPC1PT1\nDate & time\n:16/02/201812:04:58\nDescription\nQty\nU.Price\nTotal(RM)\nDouble Rg. Cup\n1\n20.00\n20.00SR\nColour Rice\n1\n1.50\n1.50SR\nSub Total\n21.50\nRounding adj.\n0\nTotal (Incl.GST)\n21.50\nCash (MYR)\n22.00\nCash Change:\n0.50\nGST\nTax Rate Sale (RM) Tax (RM)\nSummary\nSR\n6.0%\n20.28\n1.22\nThank you! Please come again!\nwww.baskinrobbins.com.my\nding",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,108 +17,263 @@
     "tax": "21.50",
     "tip": "",
     "other_charges": "",
-    "total": "21.50",
+    "total": "22.00",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "Double Rg. Cup 1",
+        "amount": "20.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Colour Rice 1",
+        "amount": "1.50",
+        "item_class": "FOOD"
+      },
       {
         "description": "Cash (MYR)",
         "amount": "22.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Cash Change:",
+        "description": "Cash Change",
         "amount": "0.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR 6.0%",
+        "amount": "20.28",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9999300241470337,
-      "total": 0.9998559951782227,
-      "tax": 0.9998559951782227
+      "subtotal": 0.9473404288291931,
+      "tax": 0.9739993810653687,
+      "merchant_name": 0.9731536507606506,
+      "total": 0.9999948740005493,
+      "transaction_time": 0.9886333346366882
     },
     "boxes": {
       "subtotal": [
-        793,
+        52,
         1346,
         908,
-        1394
-      ],
-      "total": [
-        787,
-        1450,
-        907,
-        1494
+        1397
       ],
       "tax": [
-        787,
+        49,
         1450,
         907,
-        1494
+        1501
+      ],
+      "merchant_name": [
+        179,
+        234,
+        775,
+        352
+      ],
+      "total": [
+        796,
+        1500,
+        907,
+        1545
+      ],
+      "transaction_time": [
+        342,
+        1049,
+        755,
+        1095
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9999300241470337,
-          "total": 0.9998559951782227,
-          "tax": 0.9998559951782227
+          "subtotal": 0.9473404288291931,
+          "tax": 0.9739993810653687,
+          "merchant_name": 0.9731536507606506,
+          "total": 0.9999948740005493,
+          "transaction_time": 0.9886333346366882
         },
         "boxes": {
           "subtotal": [
-            793,
+            52,
             1346,
             908,
-            1394
-          ],
-          "total": [
-            787,
-            1450,
-            907,
-            1494
+            1397
           ],
           "tax": [
-            787,
+            49,
             1450,
             907,
-            1494
+            1501
+          ],
+          "merchant_name": [
+            179,
+            234,
+            775,
+            352
+          ],
+          "total": [
+            796,
+            1500,
+            907,
+            1545
+          ],
+          "transaction_time": [
+            342,
+            1049,
+            755,
+            1095
           ]
         },
         "merchant_name": "baskinBRrobbins",
         "transaction_time": "04:58",
         "subtotal": "21.50",
-        "total": "21.50",
         "tax": "21.50",
         "currency": "MYR",
         "line_items": [
+          {
+            "description": "Double Rg. Cup 1",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Colour Rice 1",
+            "amount": "1.50",
+            "item_class": "OTHER"
+          },
           {
             "description": "Cash (MYR)",
             "amount": "22.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Cash Change:",
+            "description": "Cash Change",
             "amount": "0.50",
             "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6.0%",
+            "amount": "20.28",
+            "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "22.00"
       },
       "reader_b": {},
       "text_rules": {
         "country": "MY",
         "line_items": [
           {
+            "description": "Double Rg. Cup 1",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Colour Rice 1",
+            "amount": "1.50",
+            "item_class": "FOOD"
+          },
+          {
             "description": "Cash (MYR)",
             "amount": "22.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Cash Change:",
+            "description": "Cash Change",
             "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6.0%",
+            "amount": "20.28",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9473404288291931,
+          "tax": 0.9739993810653687
+        },
+        "boxes": {
+          "subtotal": [
+            52,
+            1346,
+            908,
+            1397
+          ],
+          "tax": [
+            49,
+            1450,
+            907,
+            1501
+          ]
+        },
+        "merchant_name": "baskinBRrobbins",
+        "transaction_time": "04:58",
+        "subtotal": "21.50",
+        "tax": "21.50",
+        "currency": "MYR",
+        "line_items": [
+          {
+            "description": "Double Rg. Cup 1",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Colour Rice 1",
+            "amount": "1.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash (MYR)",
+            "amount": "22.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash Change",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR 6.0%",
+            "amount": "20.28",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9731536507606506,
+          "total": 0.9999948740005493,
+          "transaction_time": 0.9886333346366882
+        },
+        "boxes": {
+          "merchant_name": [
+            179,
+            234,
+            775,
+            352
+          ],
+          "total": [
+            796,
+            1500,
+            907,
+            1545
+          ],
+          "transaction_time": [
+            342,
+            1049,
+            755,
+            1095
+          ]
+        },
+        "merchant_name": "baskinBRrobbins",
+        "total": "22.00",
+        "transaction_time": "04:58"
       }
     }
   },
@@ -126,18 +282,18 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "21.50",
+        "printed": "22.00",
         "passed": true
       },
       {
         "name": "components_vs_total",
         "expected": "43.00",
-        "printed": "21.50",
+        "printed": "22.00",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "22.50",
+        "expected": "64.28",
         "printed": "21.50",
         "passed": false
       }
@@ -146,7 +302,7 @@
   "fx": {
     "base_currency": "USD",
     "rate": "0.23",
-    "total_base": "4.94"
+    "total_base": "5.06"
   },
   "fingerprints": {
     "phash": "80ff00ff00ff00fe",

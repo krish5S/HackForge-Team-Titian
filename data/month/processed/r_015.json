@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_015",
   "file_sha256": "5241f6c8692526ebff96501d1d018b3b23d3e2cbbab857017bb4c39dc0b444f8",
+  "ocr_text": "1\nUDG GR TLUR ASIN\n165,000\n=*MEDIUM*=\n1\nSAPO TH SEAFOOD\n129,000\n=*MEDIUM*=\n1.CUMI GR JUNJAN\n129,000\n=*MEDIUM*=\n1\nBIHUN GORENG JJ\n87,000\n=*MEDIUM*=\n1\nOYONG 3 TELOR\n84,000\n=*MEDIUM*=\n1. GURAME FILLET M\n163,000\nASAM MANIS\n2\nCHINESE TE\n14,000 28,000\n2\nCRYSANTNUM\n8\nNASI PUTIH\n10,000\n80,000\n3\nHOT TEA\n12,000\n36,000\n3\nICED TEA 12,000\n36,000\nFOOD\n757,000\nBEVERAGES\n100,000\nOTHERS\n80,000\nSUBTOTAL\n937,000\nSERVICE CHARGE\n56,220\nTax 10%\n99,322\nDU 1,092,542",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "UDG GR TLUR ASIN",
+    "merchant_name": "1 UDG GR TLUR ASIN 165,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,35 +13,443 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": "937000",
+    "tax": "99322",
     "tip": "",
-    "other_charges": "",
-    "total": "",
+    "other_charges": "56220",
+    "total": "1092542",
     "itemization": "",
     "category": "MEALS",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "1 UDG GR TLUR ASIN",
+        "amount": "165000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 SAPO TH SEAFOOD",
+        "amount": "129000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1.CUMI GR JUNJAN",
+        "amount": "129000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 BIHUN GORENG JJ",
+        "amount": "87000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 OYONG 3 TELOR",
+        "amount": "84000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1. GURAME FILLET M",
+        "amount": "163000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2 CHINESE TE",
+        "amount": "14000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "8 NASI PUTIH",
+        "amount": "10000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "3 HOT TEA",
+        "amount": "12000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "3 ICED TEA",
+        "amount": "12000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "FOOD",
+        "amount": "757000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "BEVERAGES",
+        "amount": "100000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "OTHERS",
+        "amount": "80000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "DU",
+        "amount": "1092542",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.9998693466186523,
+      "other_charges": 0.9935393333435059,
+      "tax": 0.9674588441848755,
+      "total": 0.9990448355674744
+    },
+    "boxes": {
+      "subtotal": [
+        58,
+        1186,
+        435,
+        1229
+      ],
+      "other_charges": [
+        58,
+        1218,
+        435,
+        1260
+      ],
+      "tax": [
+        58,
+        1249,
+        436,
+        1293
+      ],
+      "total": [
+        55,
+        1278,
+        422,
+        1347
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "UDG GR TLUR ASIN"
+        "confidence": {
+          "subtotal": 0.9998693466186523,
+          "other_charges": 0.9935393333435059,
+          "tax": 0.9674588441848755,
+          "total": 0.9990448355674744
+        },
+        "boxes": {
+          "subtotal": [
+            58,
+            1186,
+            435,
+            1229
+          ],
+          "other_charges": [
+            58,
+            1218,
+            435,
+            1260
+          ],
+          "tax": [
+            58,
+            1249,
+            436,
+            1293
+          ],
+          "total": [
+            55,
+            1278,
+            422,
+            1347
+          ]
+        },
+        "merchant_name": "1 UDG GR TLUR ASIN 165,000",
+        "subtotal": "937000",
+        "other_charges": "56220",
+        "tax": "99322",
+        "line_items": [
+          {
+            "description": "1 UDG GR TLUR ASIN",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SAPO TH SEAFOOD",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1.CUMI GR JUNJAN",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 BIHUN GORENG JJ",
+            "amount": "87000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 OYONG 3 TELOR",
+            "amount": "84000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1. GURAME FILLET M",
+            "amount": "163000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 CHINESE TE",
+            "amount": "14000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "8 NASI PUTIH",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 HOT TEA",
+            "amount": "12000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 ICED TEA",
+            "amount": "12000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FOOD",
+            "amount": "757000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "BEVERAGES",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "OTHERS",
+            "amount": "80000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DU",
+            "amount": "1092542",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "1092542"
       },
       "reader_b": {},
       "text_rules": {
-        "category": "MEALS"
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "1 UDG GR TLUR ASIN",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SAPO TH SEAFOOD",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1.CUMI GR JUNJAN",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 BIHUN GORENG JJ",
+            "amount": "87000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 OYONG 3 TELOR",
+            "amount": "84000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1. GURAME FILLET M",
+            "amount": "163000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 CHINESE TE",
+            "amount": "14000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "8 NASI PUTIH",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 HOT TEA",
+            "amount": "12000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "3 ICED TEA",
+            "amount": "12000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "FOOD",
+            "amount": "757000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "BEVERAGES",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "OTHERS",
+            "amount": "80000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DU",
+            "amount": "1092542",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9998693466186523,
+          "other_charges": 0.9935393333435059,
+          "tax": 0.9674588441848755
+        },
+        "boxes": {
+          "subtotal": [
+            58,
+            1186,
+            435,
+            1229
+          ],
+          "other_charges": [
+            58,
+            1218,
+            435,
+            1260
+          ],
+          "tax": [
+            58,
+            1249,
+            436,
+            1293
+          ]
+        },
+        "merchant_name": "1 UDG GR TLUR ASIN 165,000",
+        "subtotal": "937000",
+        "other_charges": "56220",
+        "tax": "99322",
+        "line_items": [
+          {
+            "description": "1 UDG GR TLUR ASIN",
+            "amount": "165000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 SAPO TH SEAFOOD",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1.CUMI GR JUNJAN",
+            "amount": "129000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 BIHUN GORENG JJ",
+            "amount": "87000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 OYONG 3 TELOR",
+            "amount": "84000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1. GURAME FILLET M",
+            "amount": "163000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 CHINESE TE",
+            "amount": "14000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "8 NASI PUTIH",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 HOT TEA",
+            "amount": "12000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 ICED TEA",
+            "amount": "12000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "FOOD",
+            "amount": "757000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "BEVERAGES",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "OTHERS",
+            "amount": "80000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DU",
+            "amount": "1092542",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9990448355674744
+        },
+        "boxes": {
+          "total": [
+            55,
+            1278,
+            422,
+            1347
+          ]
+        },
+        "total": "1092542"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "1092542",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "1092542.00",
+        "printed": "1092542.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "2834542.00",
+        "printed": "937000.00",
         "passed": false
       }
     ]
@@ -52,11 +461,13 @@
   },
   "fingerprints": {
     "phash": "cb9b5ec62ccc64c4",
-    "merchant_norm": "udg gr tlur asin"
+    "merchant_norm": "1 udg gr tlur asin 165 000"
   },
   "forensics": {
-    "score": 0,
+    "score": 25,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal"
+    ]
   }
 }

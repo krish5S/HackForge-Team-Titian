@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_074",
   "file_sha256": "d71119c1fe21cbcb755cdd08e50ea61dbde66530b8cac8a1a814a74a1468425b",
+  "ocr_text": "KAZ RAMEN\n22413 BARTON ROAD\nGRAND TERRACE, CA 92313\n9094229532\nORDER: T4G1\nDINE IN\nCashier: Mickey\n04-Nov-2018 9:07:13P\nGuest 1\n$9.50\n1 Tonkotsu\nTofu $0.00\nEgg $1.30\nCorn $0.50\nBamboo shoots $1.00\nNaruto $0.75\nSpicy $0.00\nSubtotal\n$13.05\n$1.01\nTax\nTotal\n$14.06\nOrder 4AW465DFNMVRT",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -13,7 +14,7 @@
     "country": "",
     "currency": "USD",
     "subtotal": "13.05",
-    "tax": "",
+    "tax": "1.01",
     "tip": "",
     "other_charges": "",
     "total": "14.06",
@@ -58,47 +59,90 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "subtotal": 0.999975860118866,
-      "total": 0.9999887943267822
+      "subtotal": 0.9999763369560242,
+      "tax": 0.9999492764472961,
+      "total": 0.9999892711639404,
+      "merchant_name": 0.9979012608528137,
+      "transaction_time": 0.9957568049430847
     },
     "boxes": {
       "subtotal": [
-        504,
+        164,
         691,
         577,
-        720
+        727
+      ],
+      "tax": [
+        164,
+        715,
+        578,
+        752
       ],
       "total": [
         511,
         768,
         582,
         794
+      ],
+      "merchant_name": [
+        294,
+        270,
+        423,
+        300
+      ],
+      "transaction_time": [
+        173,
+        458,
+        365,
+        483
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.999975860118866,
-          "total": 0.9999887943267822
+          "subtotal": 0.9999763369560242,
+          "tax": 0.9999492764472961,
+          "total": 0.9999892711639404,
+          "merchant_name": 0.9979012608528137,
+          "transaction_time": 0.9957568049430847
         },
         "boxes": {
           "subtotal": [
-            504,
+            164,
             691,
             577,
-            720
+            727
+          ],
+          "tax": [
+            164,
+            715,
+            578,
+            752
           ],
           "total": [
             511,
             768,
             582,
             794
+          ],
+          "merchant_name": [
+            294,
+            270,
+            423,
+            300
+          ],
+          "transaction_time": [
+            173,
+            458,
+            365,
+            483
           ]
         },
         "merchant_name": "KAZ RAMEN",
         "transaction_time": "9:07",
         "currency": "USD",
         "subtotal": "13.05",
+        "tax": "1.01",
         "total": "14.06",
         "line_items": [
           {
@@ -180,6 +224,107 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9999763369560242,
+          "tax": 0.9999492764472961,
+          "total": 0.9999892711639404
+        },
+        "boxes": {
+          "subtotal": [
+            164,
+            691,
+            577,
+            727
+          ],
+          "tax": [
+            164,
+            715,
+            578,
+            752
+          ],
+          "total": [
+            162,
+            768,
+            582,
+            800
+          ]
+        },
+        "merchant_name": "KAZ RAMEN",
+        "transaction_time": "9:07",
+        "currency": "USD",
+        "subtotal": "13.05",
+        "tax": "1.01",
+        "total": "14.06",
+        "line_items": [
+          {
+            "description": "Guest 1",
+            "amount": "9.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tofu",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Egg",
+            "amount": "1.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Corn",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bamboo shoots",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Naruto",
+            "amount": "0.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spicy",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9979012608528137,
+          "total": 0.9999892711639404,
+          "transaction_time": 0.9957568049430847
+        },
+        "boxes": {
+          "merchant_name": [
+            294,
+            270,
+            423,
+            300
+          ],
+          "total": [
+            511,
+            768,
+            582,
+            794
+          ],
+          "transaction_time": [
+            173,
+            458,
+            365,
+            483
+          ]
+        },
+        "merchant_name": "KAZ RAMEN",
+        "total": "14.06",
+        "transaction_time": "9:07"
       }
     }
   },
@@ -188,6 +333,12 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
+        "printed": "14.06",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "14.06",
         "printed": "14.06",
         "passed": true
       },

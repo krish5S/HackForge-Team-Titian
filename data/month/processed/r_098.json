@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_098",
   "file_sha256": "9af0dd2996e7f154d1991fbbb7b80701572ad3d37a987cf2b9a0741b3f0092c5",
+  "ocr_text": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)\nLot 3, Jalan Pelabur 23/1,\n40300 Shah Alam, Selangor.\nTel:03-55423228 Fax:03-55423213\nGSTID:000381399040\nTAX INVOICE / ADJUSTMENT NOTE\nCash Inv No.: 7026F713\nV.4\nDate: 26/10/2017\nMAKASSAR FRESH MARKET SDN BHD\nGROUND FLOOR, NO. 4 & 6,\nJALAN SS 15/4B,\n47500 SUBANG JÁYA, SELANGOR\nVE05: Ridzuan (11900)\nDD: 26/10/2017\n11:56\nDescription\nU.P\nIss\nExc\nD Sale\nAmt(RM)\nO.C. WHITE\n2.13\n6\n0 0\n6\n12.78\nWHOLEMEAL\n2.78\n3\n0 0\n3\n8.34\nO.C JUMBO\n2.97\n4\n1 0\n3\n8.91\nTotal 0% supplies:\n30.03\nCR-VANILLA\n0.72\n20\n6\n0\n14\n10.08\nBUN-SBILIS\n0.84\n0\n2\n-2\n-1.68\nKAYA-PANDN\n2.40\n6\n0 0\n6\n14.40\nTotal 6% supplies (excl. GST):\n22.80\nGST:\n1.36\nTotal6% supplies (Inc. GST):\n24.16\nTotal 0% supplies:\n30.03\nTotal Payable:\n54.19\nE.&.0.E.\nReceived above goods in good order condition.\nThe recipient of Gardenia's products is\nrequired to make necessary adjustments to its\ninput tax claims, on the basic of the\nadjustments shown in this Tax Invoice /\nAdjustment Note\nCUSTOMER'S COPY",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -49,28 +50,20 @@
         "description": "KAYA-PANDN",
         "amount": "2.40",
         "item_class": "OTHER"
-      },
-      {
-        "description": "GST:",
-        "amount": "1.36",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Total6% supplies (Inc. GST):",
-        "amount": "24.16",
-        "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9992823600769043,
-      "total": 0.9999966621398926,
-      "tax": 0.9999869465827942
+      "transaction_date": 0.9103062748908997,
+      "total": 0.9999969601631165,
+      "tax": 0.8375282287597656,
+      "merchant_name": 0.9774039387702942,
+      "transaction_time": 0.9999580383300781
     },
     "boxes": {
       "transaction_date": [
-        327,
-        299,
+        32,
+        291,
         522,
         327
       ],
@@ -81,23 +74,37 @@
         972
       ],
       "tax": [
-        443,
-        833,
+        50,
+        822,
         510,
-        874
+        879
+      ],
+      "merchant_name": [
+        46,
+        58,
+        603,
+        98
+      ],
+      "transaction_time": [
+        437,
+        463,
+        497,
+        488
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9992823600769043,
-          "total": 0.9999966621398926,
-          "tax": 0.9999869465827942
+          "transaction_date": 0.9103062748908997,
+          "total": 0.9999969601631165,
+          "tax": 0.8375282287597656,
+          "merchant_name": 0.9774039387702942,
+          "transaction_time": 0.9999580383300781
         },
         "boxes": {
           "transaction_date": [
-            327,
-            299,
+            32,
+            291,
             522,
             327
           ],
@@ -108,10 +115,22 @@
             972
           ],
           "tax": [
-            443,
-            833,
+            50,
+            822,
             510,
-            874
+            879
+          ],
+          "merchant_name": [
+            46,
+            58,
+            603,
+            98
+          ],
+          "transaction_time": [
+            437,
+            463,
+            497,
+            488
           ]
         },
         "merchant_name": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
@@ -149,16 +168,6 @@
             "description": "KAYA-PANDN",
             "amount": "2.40",
             "item_class": "OTHER"
-          },
-          {
-            "description": "GST:",
-            "amount": "1.36",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Total6% supplies (Inc. GST):",
-            "amount": "24.16",
-            "item_class": "OTHER"
           }
         ]
       },
@@ -195,18 +204,110 @@
             "description": "KAYA-PANDN",
             "amount": "2.40",
             "item_class": "OTHER"
-          },
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9103062748908997,
+          "total": 0.9999695420265198,
+          "tax": 0.8375282287597656
+        },
+        "boxes": {
+          "transaction_date": [
+            32,
+            291,
+            522,
+            327
+          ],
+          "total": [
+            223,
+            921,
+            509,
+            978
+          ],
+          "tax": [
+            50,
+            822,
+            510,
+            879
+          ]
+        },
+        "merchant_name": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+        "transaction_date": "2017-10-26",
+        "transaction_time": "11:56",
+        "total": "54.19",
+        "tax": "24.16",
+        "line_items": [
           {
-            "description": "GST:",
-            "amount": "1.36",
+            "description": "O.C. WHITE",
+            "amount": "2.13",
             "item_class": "OTHER"
           },
           {
-            "description": "Total6% supplies (Inc. GST):",
-            "amount": "24.16",
+            "description": "WHOLEMEAL",
+            "amount": "2.78",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "O.C JUMBO",
+            "amount": "2.97",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CR-VANILLA",
+            "amount": "0.72",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "BUN-SBILIS",
+            "amount": "0.84",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "KAYA-PANDN",
+            "amount": "2.40",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9774039387702942,
+          "total": 0.9999969601631165,
+          "transaction_date": 0.9992825984954834,
+          "transaction_time": 0.9999580383300781
+        },
+        "boxes": {
+          "merchant_name": [
+            46,
+            58,
+            603,
+            98
+          ],
+          "total": [
+            439,
+            930,
+            509,
+            972
+          ],
+          "transaction_date": [
+            327,
+            299,
+            522,
+            327
+          ],
+          "transaction_time": [
+            437,
+            463,
+            497,
+            488
+          ]
+        },
+        "merchant_name": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+        "total": "54.19",
+        "transaction_date": "2017-10-26",
+        "transaction_time": "11:56"
       }
     }
   },

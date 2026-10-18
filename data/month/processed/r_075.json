@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_075",
   "file_sha256": "6bb736948875f4a79f3c6fcbecc429e5c8bd5e2bda2dc4c107215570d8253fea",
+  "ocr_text": "OM\nOM INDIAN FOOD\n204 Spring St\nNew York, NY 10012\n(646)756-4000\n(646)657-0514(Fax)\nTABLE T1\nORDER#2\n2 Guests\nInvoice#2143\n4/15/16 12:03:14 PM\nManoj\nVegetable Biryani\n$12.95\nMalai Kofta\n$12.95\nOnion Naan\n$3.95\nSUBTOTAL:\n$29.85\nLUNCH DISCOUNT 50% OFF :\n-$14.93\nTAX:\n$1.32\nTOTAL:\n$16.24\nYou have saved : $14.93",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,7 +17,7 @@
     "tax": "1.32",
     "tip": "",
     "other_charges": "",
-    "total": "16.24",
+    "total": "29.85",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
@@ -36,6 +37,11 @@
         "item_class": "OTHER"
       },
       {
+        "description": "LUNCH DISCOUNT 50% OFF",
+        "amount": "14.93",
+        "item_class": "FOOD"
+      },
+      {
         "description": "You have saved",
         "amount": "14.93",
         "item_class": "OTHER"
@@ -43,79 +49,107 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9952566027641296,
-      "subtotal": 0.9999699592590332,
-      "tax": 0.9995796084403992,
-      "total": 0.9999765753746033
+      "transaction_date": 0.9952577352523804,
+      "subtotal": 0.9999268651008606,
+      "tax": 0.9995850324630737,
+      "total": 0.9999704957008362,
+      "merchant_name": 0.9843837022781372,
+      "transaction_time": 0.9952577352523804
     },
     "boxes": {
       "transaction_date": [
-        422,
+        112,
         511,
         566,
-        535
+        536
       ],
       "subtotal": [
-        499,
+        300,
         692,
         578,
         725
       ],
       "tax": [
-        521,
+        375,
         759,
         582,
         793
       ],
       "total": [
-        500,
-        794,
-        584,
-        831
+        499,
+        692,
+        578,
+        725
+      ],
+      "merchant_name": [
+        259,
+        248,
+        424,
+        269
+      ],
+      "transaction_time": [
+        422,
+        511,
+        566,
+        535
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9952566027641296,
-          "subtotal": 0.9999699592590332,
-          "tax": 0.9995796084403992,
-          "total": 0.9999765753746033
+          "transaction_date": 0.9952577352523804,
+          "subtotal": 0.9999268651008606,
+          "tax": 0.9995850324630737,
+          "total": 0.9999704957008362,
+          "merchant_name": 0.9843837022781372,
+          "transaction_time": 0.9952577352523804
         },
         "boxes": {
           "transaction_date": [
-            422,
+            112,
             511,
             566,
-            535
+            536
           ],
           "subtotal": [
-            499,
+            300,
             692,
             578,
             725
           ],
           "tax": [
-            521,
+            375,
             759,
             582,
             793
           ],
           "total": [
-            500,
-            794,
-            584,
-            831
+            499,
+            692,
+            578,
+            725
+          ],
+          "merchant_name": [
+            259,
+            248,
+            424,
+            269
+          ],
+          "transaction_time": [
+            422,
+            511,
+            566,
+            535
           ]
         },
         "merchant_name": "OM INDIAN FOOD",
-        "receipt_number": "2143",
         "transaction_date": "2016-04-15",
         "transaction_time": "12:03",
+        "receipt_number": "2143",
         "currency": "USD",
         "subtotal": "29.85",
         "tax": "1.32",
-        "total": "16.24",
+        "total": "29.85",
         "line_items": [
           {
             "description": "Vegetable Biryani",
@@ -131,6 +165,11 @@
             "description": "Onion Naan",
             "amount": "3.95",
             "item_class": "OTHER"
+          },
+          {
+            "description": "LUNCH DISCOUNT 50% OFF",
+            "amount": "14.93",
+            "item_class": "FOOD"
           },
           {
             "description": "You have saved",
@@ -159,11 +198,123 @@
             "item_class": "OTHER"
           },
           {
+            "description": "LUNCH DISCOUNT 50% OFF",
+            "amount": "14.93",
+            "item_class": "FOOD"
+          },
+          {
             "description": "You have saved",
             "amount": "14.93",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9952577352523804,
+          "subtotal": 0.9999268651008606,
+          "tax": 0.9995850324630737,
+          "total": 0.9999138712882996
+        },
+        "boxes": {
+          "transaction_date": [
+            112,
+            511,
+            566,
+            536
+          ],
+          "subtotal": [
+            300,
+            692,
+            578,
+            725
+          ],
+          "tax": [
+            375,
+            759,
+            582,
+            793
+          ],
+          "total": [
+            337,
+            794,
+            584,
+            831
+          ]
+        },
+        "merchant_name": "OM INDIAN FOOD",
+        "transaction_date": "2016-04-15",
+        "transaction_time": "12:03",
+        "receipt_number": "2143",
+        "currency": "USD",
+        "subtotal": "29.85",
+        "tax": "1.32",
+        "total": "16.24",
+        "line_items": [
+          {
+            "description": "Vegetable Biryani",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Malai Kofta",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Onion Naan",
+            "amount": "3.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "LUNCH DISCOUNT 50% OFF",
+            "amount": "14.93",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "You have saved",
+            "amount": "14.93",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9843837022781372,
+          "total": 0.9999704957008362,
+          "transaction_date": 0.9952577352523804,
+          "transaction_time": 0.9952577352523804
+        },
+        "boxes": {
+          "merchant_name": [
+            259,
+            248,
+            424,
+            269
+          ],
+          "total": [
+            499,
+            692,
+            578,
+            725
+          ],
+          "transaction_date": [
+            422,
+            511,
+            566,
+            535
+          ],
+          "transaction_time": [
+            422,
+            511,
+            566,
+            535
+          ]
+        },
+        "merchant_name": "OM INDIAN FOOD",
+        "total": "29.85",
+        "transaction_date": "2016-04-15",
+        "transaction_time": "12:03"
       }
     }
   },
@@ -172,18 +323,18 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "16.24",
+        "printed": "29.85",
         "passed": true
       },
       {
         "name": "components_vs_total",
         "expected": "31.17",
-        "printed": "16.24",
+        "printed": "29.85",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "44.78",
+        "expected": "59.71",
         "printed": "29.85",
         "passed": false
       },
@@ -198,7 +349,7 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "16.24"
+    "total_base": "29.85"
   },
   "fingerprints": {
     "phash": "d253e1dc8dc78c8c",

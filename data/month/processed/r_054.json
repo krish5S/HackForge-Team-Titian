@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_054",
   "file_sha256": "9c2728853ff8750479fc7ea6ec7464a8b31ba9011f3f88c0e7e6ed6b94a7ee48",
+  "ocr_text": "Coke (L)\n25.000\nFanta Strwbry (L)\n25.000\nXXI Java Tea Spc\n25.000\nExtra Jelly Lychee\n5.000\n1\nCaramel Medium\n50.000\n1\nButter Milk Popcorn\n38.000\n3\nTahu Ikan Oma Giok\n60.000\n228.000\nTOTAL\nCASH\n228.000\nCHANGED\n0",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Coke (L)",
+    "merchant_name": "Coke (L) 25.000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,30 +17,246 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "228000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "Coke (L)",
+        "amount": "25000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Fanta Strwbry (L)",
+        "amount": "25000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "XXI Java Tea Spc",
+        "amount": "25000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "Extra Jelly Lychee",
+        "amount": "5000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Caramel Medium",
+        "amount": "50000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Butter Milk Popcorn",
+        "amount": "38000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "3 Tahu Ikan Oma Giok",
+        "amount": "60000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "228000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9974818825721741
+    },
+    "boxes": {
+      "total": [
+        620,
+        900,
+        739,
+        946
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "Coke (L)"
+        "confidence": {
+          "total": 0.9974818825721741
+        },
+        "boxes": {
+          "total": [
+            620,
+            900,
+            739,
+            946
+          ]
+        },
+        "merchant_name": "Coke (L) 25.000",
+        "total": "228000",
+        "line_items": [
+          {
+            "description": "Coke (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Fanta Strwbry (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "XXI Java Tea Spc",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Extra Jelly Lychee",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Caramel Medium",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Butter Milk Popcorn",
+            "amount": "38000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Tahu Ikan Oma Giok",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "228000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Coke (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Fanta Strwbry (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "XXI Java Tea Spc",
+            "amount": "25000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Extra Jelly Lychee",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Caramel Medium",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Butter Milk Popcorn",
+            "amount": "38000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Tahu Ikan Oma Giok",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "228000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9999671578407288
+        },
+        "boxes": {
+          "total": [
+            431,
+            802,
+            744,
+            878
+          ]
+        },
+        "merchant_name": "Coke (L) 25.000",
+        "total": "228000",
+        "line_items": [
+          {
+            "description": "Coke (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Fanta Strwbry (L)",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "XXI Java Tea Spc",
+            "amount": "25000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Extra Jelly Lychee",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Caramel Medium",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Butter Milk Popcorn",
+            "amount": "38000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Tahu Ikan Oma Giok",
+            "amount": "60000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "228000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9974818825721741
+        },
+        "boxes": {
+          "total": [
+            620,
+            900,
+            739,
+            946
+          ]
+        },
+        "total": "228000"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "228000",
+        "passed": true
       }
     ]
   },
@@ -50,11 +267,13 @@
   },
   "fingerprints": {
     "phash": "80f566a67f9d8891",
-    "merchant_norm": "coke l"
+    "merchant_norm": "coke l 25 000"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

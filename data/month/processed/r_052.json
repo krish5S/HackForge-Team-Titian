@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_052",
   "file_sha256": "2c472f92df2e4703f1b5dbd391cd11e60ebc2f852cfd7237d1ab6d5870b7101f",
+  "ocr_text": "Merchant 52\nRESTAURANT RECEIPT\nChicago, US\nParty size: 1\nDate: 2026-09-17\nTime:12:00:00\nReceipt: r_052\nFood\n15.00\nBeer\n5.00\nSUBTOTAL\n20.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n20.00 USD\nGuests: 1\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -33,12 +34,14 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9849514365196228,
-      "subtotal": 0.9932153224945068,
-      "tax": 0.9991950988769531,
-      "tip": 0.9978330731391907,
-      "other_charges": 0.9975895881652832,
-      "total": 0.9983490705490112
+      "transaction_date": 0.9849518537521362,
+      "subtotal": 0.9932168126106262,
+      "tax": 0.9991962909698486,
+      "tip": 0.997835636138916,
+      "other_charges": 0.9975913763046265,
+      "total": 0.9983500242233276,
+      "merchant_name": 0.999951958656311,
+      "transaction_time": 0.99991774559021
     },
     "boxes": {
       "transaction_date": [
@@ -48,45 +51,59 @@
         311
       ],
       "subtotal": [
-        543,
+        62,
         605,
         680,
         629
       ],
       "tax": [
-        558,
-        664,
+        61,
+        663,
         680,
-        690
+        691
       ],
       "tip": [
-        558,
-        725,
+        61,
+        724,
         681,
-        749
+        751
       ],
       "other_charges": [
-        558,
+        62,
         785,
         680,
-        809
+        810
       ],
       "total": [
         639,
         844,
         804,
         872
+      ],
+      "merchant_name": [
+        62,
+        44,
+        328,
+        79
+      ],
+      "transaction_time": [
+        63,
+        339,
+        301,
+        363
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9849514365196228,
-          "subtotal": 0.9932153224945068,
-          "tax": 0.9991950988769531,
-          "tip": 0.9978330731391907,
-          "other_charges": 0.9975895881652832,
-          "total": 0.9983490705490112
+          "transaction_date": 0.9849518537521362,
+          "subtotal": 0.9932168126106262,
+          "tax": 0.9991962909698486,
+          "tip": 0.997835636138916,
+          "other_charges": 0.9975913763046265,
+          "total": 0.9983500242233276,
+          "merchant_name": 0.999951958656311,
+          "transaction_time": 0.99991774559021
         },
         "boxes": {
           "transaction_date": [
@@ -96,34 +113,46 @@
             311
           ],
           "subtotal": [
-            543,
+            62,
             605,
             680,
             629
           ],
           "tax": [
-            558,
-            664,
+            61,
+            663,
             680,
-            690
+            691
           ],
           "tip": [
-            558,
-            725,
+            61,
+            724,
             681,
-            749
+            751
           ],
           "other_charges": [
-            558,
+            62,
             785,
             680,
-            809
+            810
           ],
           "total": [
             639,
             844,
             804,
             872
+          ],
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
           ]
         },
         "merchant_name": "Merchant 52",
@@ -169,6 +198,117 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9849518537521362,
+          "subtotal": 0.9932168126106262,
+          "tax": 0.9991962909698486,
+          "tip": 0.997835636138916,
+          "other_charges": 0.9975913763046265,
+          "total": 0.9983500242233276
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            62,
+            605,
+            680,
+            629
+          ],
+          "tax": [
+            61,
+            663,
+            680,
+            691
+          ],
+          "tip": [
+            61,
+            724,
+            681,
+            751
+          ],
+          "other_charges": [
+            62,
+            785,
+            680,
+            810
+          ],
+          "total": [
+            61,
+            844,
+            804,
+            873
+          ]
+        },
+        "merchant_name": "Merchant 52",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-17",
+        "transaction_time": "12:00",
+        "receipt_number": "R_052",
+        "subtotal": "20.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "20.00",
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.999951958656311,
+          "total": 0.9983500242233276,
+          "transaction_date": 0.9849518537521362,
+          "transaction_time": 0.99991774559021
+        },
+        "boxes": {
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "total": [
+            639,
+            844,
+            804,
+            872
+          ],
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
+          ]
+        },
+        "merchant_name": "Merchant 52",
+        "total": "20.00",
+        "transaction_date": "2026-09-17",
+        "transaction_time": "12:00"
       }
     }
   },

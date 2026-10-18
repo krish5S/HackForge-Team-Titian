@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_035",
   "file_sha256": "d3600936c79265be4e40a361e3498ea3dc50583394408804ca81154fe9a6e263",
+  "ocr_text": "Dairy Queen\n1234 Blizzard Blvd\nSpringfleld, IL 62701\nPhone: (217) 655-0199\nTime: 03:45 PM\nDate: 11/01/2023\nTotal\nCashier ID #0047\nUnit\n$9.98\nDescription\n4.99\n0ty\n$2.49\n2.49\nCheeseburger\n$3.29\n2\n3.29\nSmall Fries\n$7.18\n1\n7.18\nOnion Rings\n1\n$14.37\n4.79\nMediun Sundae\n$3.58\n2\n3.58\nDQ Blizzard\n3\n$5.99\n5.99\nSoft Drink\n2\n$4.29\n4.29\nHot Fudge Sundae\n$7.49\n1\n7.49\nCrispy Chicken Salad\n1\n$62.65\nMilkshake\n1\n$5.17\nSubtotal\n$67.82\nTax (8.25%)\nTotal\nThank yo fou for visiting!\nEnjoy your delicious treats!\nHave a nice day!",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Dairy Queen",
     "receipt_number": "",
@@ -13,18 +14,13 @@
     "country": "",
     "currency": "USD",
     "subtotal": "67.82",
-    "tax": "8.25",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "67.82",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
-      {
-        "description": "Unit",
-        "amount": "9.98",
-        "item_class": "OTHER"
-      },
       {
         "description": "Description",
         "amount": "4.99",
@@ -41,26 +37,53 @@
         "item_class": "OTHER"
       },
       {
-        "description": "Small Fries",
-        "amount": "7.18",
+        "description": "2 Small Fries",
+        "amount": "3.29",
         "item_class": "OTHER"
       },
       {
-        "description": "Mediun Sundae",
-        "amount": "3.58",
+        "description": "Onion Rings",
+        "amount": "14.37",
         "item_class": "OTHER"
       },
       {
-        "description": "Hot Fudge Sundae",
+        "description": "1 Mediun Sundae",
+        "amount": "4.79",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "DQ Blizzard",
+        "amount": "5.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "3 Soft Drink",
+        "amount": "5.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2 Hot Fudge Sundae",
+        "amount": "4.29",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Crispy Chicken Salad",
         "amount": "7.49",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "1 Milkshake",
+        "amount": "62.65",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9950052499771118,
-      "subtotal": 0.999988317489624,
-      "tax": 0.9876688122749329
+      "transaction_date": 0.9950054287910461,
+      "subtotal": 0.9999887943267822,
+      "merchant_name": 0.9999576210975647,
+      "total": 0.9999887943267822,
+      "transaction_time": 0.9988617897033691
     },
     "boxes": {
       "transaction_date": [
@@ -70,24 +93,38 @@
         318
       ],
       "subtotal": [
+        222,
+        744,
+        849,
+        807
+      ],
+      "merchant_name": [
+        214,
+        13,
+        597,
+        136
+      ],
+      "total": [
         739,
         750,
         849,
         807
       ],
-      "tax": [
-        229,
-        778,
-        401,
-        843
+      "transaction_time": [
+        486,
+        188,
+        718,
+        263
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9950052499771118,
-          "subtotal": 0.999988317489624,
-          "tax": 0.9876688122749329
+          "transaction_date": 0.9950054287910461,
+          "subtotal": 0.9999887943267822,
+          "merchant_name": 0.9999576210975647,
+          "total": 0.9999887943267822,
+          "transaction_time": 0.9988617897033691
         },
         "boxes": {
           "transaction_date": [
@@ -97,16 +134,28 @@
             318
           ],
           "subtotal": [
+            222,
+            744,
+            849,
+            807
+          ],
+          "merchant_name": [
+            214,
+            13,
+            597,
+            136
+          ],
+          "total": [
             739,
             750,
             849,
             807
           ],
-          "tax": [
-            229,
-            778,
-            401,
-            843
+          "transaction_time": [
+            486,
+            188,
+            718,
+            263
           ]
         },
         "merchant_name": "Dairy Queen",
@@ -114,13 +163,7 @@
         "transaction_date": "2023-11-01",
         "currency": "USD",
         "subtotal": "67.82",
-        "tax": "8.25",
         "line_items": [
-          {
-            "description": "Unit",
-            "amount": "9.98",
-            "item_class": "OTHER"
-          },
           {
             "description": "Description",
             "amount": "4.99",
@@ -137,31 +180,134 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Small Fries",
-            "amount": "7.18",
+            "description": "2 Small Fries",
+            "amount": "3.29",
             "item_class": "OTHER"
           },
           {
-            "description": "Mediun Sundae",
-            "amount": "3.58",
+            "description": "Onion Rings",
+            "amount": "14.37",
             "item_class": "OTHER"
           },
           {
-            "description": "Hot Fudge Sundae",
+            "description": "1 Mediun Sundae",
+            "amount": "4.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DQ Blizzard",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Soft Drink",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Hot Fudge Sundae",
+            "amount": "4.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Crispy Chicken Salad",
             "amount": "7.49",
             "item_class": "OTHER"
+          },
+          {
+            "description": "1 Milkshake",
+            "amount": "62.65",
+            "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "67.82"
       },
       "reader_b": {},
       "text_rules": {
         "category": "MEALS",
         "line_items": [
           {
-            "description": "Unit",
-            "amount": "9.98",
+            "description": "Description",
+            "amount": "4.99",
             "item_class": "OTHER"
           },
+          {
+            "description": "0ty",
+            "amount": "2.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cheeseburger",
+            "amount": "3.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Small Fries",
+            "amount": "3.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Onion Rings",
+            "amount": "14.37",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Mediun Sundae",
+            "amount": "4.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DQ Blizzard",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Soft Drink",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Hot Fudge Sundae",
+            "amount": "4.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Crispy Chicken Salad",
+            "amount": "7.49",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "1 Milkshake",
+            "amount": "62.65",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9950054287910461,
+          "subtotal": 0.9999887943267822
+        },
+        "boxes": {
+          "transaction_date": [
+            147,
+            244,
+            408,
+            318
+          ],
+          "subtotal": [
+            222,
+            744,
+            849,
+            807
+          ]
+        },
+        "merchant_name": "Dairy Queen",
+        "transaction_time": "15:45",
+        "transaction_date": "2023-11-01",
+        "currency": "USD",
+        "subtotal": "67.82",
+        "line_items": [
           {
             "description": "Description",
             "amount": "4.99",
@@ -178,35 +324,98 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Small Fries",
-            "amount": "7.18",
+            "description": "2 Small Fries",
+            "amount": "3.29",
             "item_class": "OTHER"
           },
           {
-            "description": "Mediun Sundae",
-            "amount": "3.58",
+            "description": "Onion Rings",
+            "amount": "14.37",
             "item_class": "OTHER"
           },
           {
-            "description": "Hot Fudge Sundae",
+            "description": "1 Mediun Sundae",
+            "amount": "4.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DQ Blizzard",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Soft Drink",
+            "amount": "5.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Hot Fudge Sundae",
+            "amount": "4.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Crispy Chicken Salad",
             "amount": "7.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Milkshake",
+            "amount": "62.65",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999576210975647,
+          "total": 0.9999887943267822,
+          "transaction_date": 0.9950054287910461,
+          "transaction_time": 0.9988617897033691
+        },
+        "boxes": {
+          "merchant_name": [
+            214,
+            13,
+            597,
+            136
+          ],
+          "total": [
+            739,
+            750,
+            849,
+            807
+          ],
+          "transaction_date": [
+            147,
+            244,
+            408,
+            318
+          ],
+          "transaction_time": [
+            486,
+            188,
+            718,
+            263
+          ]
+        },
+        "merchant_name": "Dairy Queen",
+        "total": "67.82",
+        "transaction_date": "2023-11-01",
+        "transaction_time": "03:45"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "67.82",
+        "passed": true
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "39.00",
+        "expected": "119.63",
         "printed": "67.82",
         "passed": false
       },
@@ -220,8 +429,8 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "67.82"
   },
   "fingerprints": {
     "phash": "d0eaedd9618cc784",

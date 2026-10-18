@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_057",
   "file_sha256": "8b7eb29728b6a661e8cc5ba15d0f5b7c73a90a1ae6c17519ff610e358c47493c",
+  "ocr_text": "Late shop 0\nRESTAURANT RECEIPT\nChicago, US\nParty size: 1\nDate: 2026-09-10\nTime: 12:00:00\nReceipt: r_057\nTrip meal\n50.00\nSUBTOTAL\n50.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n50.00 USD\nGuests: 1\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -28,12 +29,14 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9801175594329834,
-      "subtotal": 0.9996171593666077,
-      "tax": 0.9985347986221313,
-      "tip": 0.9986186623573303,
-      "other_charges": 0.99870765209198,
-      "total": 0.9991927742958069
+      "transaction_date": 0.9801177978515625,
+      "subtotal": 0.9996181130409241,
+      "tax": 0.9985364675521851,
+      "tip": 0.9986206293106079,
+      "other_charges": 0.9987092018127441,
+      "total": 0.9991934299468994,
+      "merchant_name": 0.9999006390571594,
+      "transaction_time": 0.9771972298622131
     },
     "boxes": {
       "transaction_date": [
@@ -43,25 +46,25 @@
         311
       ],
       "subtotal": [
-        542,
+        62,
         548,
         681,
         575
       ],
       "tax": [
-        558,
+        61,
         609,
         681,
-        634
+        636
       ],
       "tip": [
-        557,
-        668,
+        60,
+        667,
         679,
-        694
+        698
       ],
       "other_charges": [
-        558,
+        61,
         729,
         680,
         754
@@ -71,17 +74,31 @@
         790,
         804,
         817
+      ],
+      "merchant_name": [
+        60,
+        39,
+        333,
+        87
+      ],
+      "transaction_time": [
+        63,
+        339,
+        301,
+        363
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9801175594329834,
-          "subtotal": 0.9996171593666077,
-          "tax": 0.9985347986221313,
-          "tip": 0.9986186623573303,
-          "other_charges": 0.99870765209198,
-          "total": 0.9991927742958069
+          "transaction_date": 0.9801177978515625,
+          "subtotal": 0.9996181130409241,
+          "tax": 0.9985364675521851,
+          "tip": 0.9986206293106079,
+          "other_charges": 0.9987092018127441,
+          "total": 0.9991934299468994,
+          "merchant_name": 0.9999006390571594,
+          "transaction_time": 0.9771972298622131
         },
         "boxes": {
           "transaction_date": [
@@ -91,25 +108,25 @@
             311
           ],
           "subtotal": [
-            542,
+            62,
             548,
             681,
             575
           ],
           "tax": [
-            558,
+            61,
             609,
             681,
-            634
+            636
           ],
           "tip": [
-            557,
-            668,
+            60,
+            667,
             679,
-            694
+            698
           ],
           "other_charges": [
-            558,
+            61,
             729,
             680,
             754
@@ -119,6 +136,18 @@
             790,
             804,
             817
+          ],
+          "merchant_name": [
+            60,
+            39,
+            333,
+            87
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
           ]
         },
         "merchant_name": "Late shop 0",
@@ -153,6 +182,111 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9801177978515625,
+          "subtotal": 0.9996181130409241,
+          "tax": 0.9985364675521851,
+          "tip": 0.9986206293106079,
+          "other_charges": 0.9987092018127441,
+          "total": 0.9991934299468994
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            62,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            61,
+            609,
+            681,
+            636
+          ],
+          "tip": [
+            60,
+            667,
+            679,
+            698
+          ],
+          "other_charges": [
+            61,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            62,
+            790,
+            804,
+            818
+          ]
+        },
+        "merchant_name": "Late shop 0",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-10",
+        "transaction_time": "12:00",
+        "receipt_number": "R_057",
+        "subtotal": "50.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "50.00",
+        "line_items": [
+          {
+            "description": "Trip meal",
+            "amount": "50.00",
+            "item_class": "FOOD"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999006390571594,
+          "total": 0.9991934299468994,
+          "transaction_date": 0.9801177978515625,
+          "transaction_time": 0.9771972298622131
+        },
+        "boxes": {
+          "merchant_name": [
+            60,
+            39,
+            333,
+            87
+          ],
+          "total": [
+            640,
+            790,
+            804,
+            817
+          ],
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
+          ]
+        },
+        "merchant_name": "Late shop 0",
+        "total": "50.00",
+        "transaction_date": "2026-09-10",
+        "transaction_time": "12:00"
       }
     }
   },

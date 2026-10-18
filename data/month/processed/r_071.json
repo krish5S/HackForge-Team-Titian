@@ -1,22 +1,23 @@
 {
   "receipt_id": "r_071",
   "file_sha256": "5f6f454ca153e917635b3e6833219199c8e7c05a45e66b500bae885b5e63310d",
+  "ocr_text": "FIVE GUYS\nSTORE # CA-1661\n2640 Reynolds Ranch Pkwy - Ste 140\nLodi, CA 95240\nPhone (209) 333-9750\n5/25/2017\n1:00:17 PM\nOrder Id: AAAP2F9WAEBP\n47 - FIVE GUYS\nEmployee: Robert C\n47\n1 Little Hamburger\n$5.19\nLettuce\n$0.00\nPickles\n$0.00\nTomatoes\n$0.00\nGrilled Onions\n$0.00\nGrilled Mushrooms\n$0.00\nMustard\n$0.00\nKetchup\n$0.00\nJalapeno Peppers\n$0.00\n2 Large Fry (@5.79)\n$11.58\n1 Large Soda\n$2.9\n1 Cheeseburger\n$7.8\nMayo\n$0.00\nLettuce\n$0.00\nPickles\nBBQ Sauce\n$0.00\n1 Regular Soda\n$0.00\n$2.70\nSub Total\n$30.31\nSales Tax\nOrder Total\n$2.35\n$32.66\nMasterCard\n$32.66\nCard#：*\n***2931\nAuthorization: 72876Z\n--> Order Closed <--\nDon't throw away your receipt!!!\nHelp Five Guys and you could win!\nLog online to www.fiveguys.com/survey\nand fill out a brief survey!\n10 lucky people will win a\nFive Guys Gift Card each month\nworth $25 each!\nNo purchase necessary\nSweepstakes ends 12/31/2017.\nMust be at least 18 years old and\nsubmit survey within 30 days\nof the receipt date to enter.\nPlease visit www.fiveguys.com/survey\nfor Official Rules and how to enter\nwithout making a purchase or\ncompleting a survey.\nVoid where prohibited.",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
     "merchant_name": "FIVE GUYS",
     "receipt_number": "DATE",
-    "card_last4": "",
+    "card_last4": "2931",
     "transaction_date": "2017-05-25",
     "transaction_time": "1:00:",
     "city": "",
     "country": "",
     "currency": "USD",
     "subtotal": "30.31",
-    "tax": "",
+    "tax": "2.35",
     "tip": "",
     "other_charges": "",
-    "total": "2.35",
+    "total": "32.66",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
@@ -81,13 +82,18 @@
         "item_class": "OTHER"
       },
       {
+        "description": "Pickles",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
         "description": "BBQ Sauce",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
         "description": "1 Regular Soda",
-        "amount": "0.00",
+        "amount": "2.70",
         "item_class": "OTHER"
       },
       {
@@ -98,55 +104,97 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999921321868896,
-      "subtotal": 0.9998500943183899,
-      "total": 0.999838650226593
+      "transaction_date": 0.9995155334472656,
+      "subtotal": 0.9998392462730408,
+      "tax": 0.9998087286949158,
+      "total": 0.9998926520347595,
+      "merchant_name": 0.9996254444122314,
+      "transaction_time": 0.9995155334472656
     },
     "boxes": {
       "transaction_date": [
         268,
-        119,
-        320,
+        114,
+        495,
         133
       ],
       "subtotal": [
-        459,
-        465,
+        261,
+        460,
         500,
         486
       ],
-      "total": [
-        467,
-        496,
+      "tax": [
+        260,
+        489,
         500,
         511
+      ],
+      "total": [
+        463,
+        536,
+        501,
+        551
+      ],
+      "merchant_name": [
+        272,
+        10,
+        488,
+        49
+      ],
+      "transaction_time": [
+        437,
+        114,
+        495,
+        128
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999921321868896,
-          "subtotal": 0.9998500943183899,
-          "total": 0.999838650226593
+          "transaction_date": 0.9995155334472656,
+          "subtotal": 0.9998392462730408,
+          "tax": 0.9998087286949158,
+          "total": 0.9998926520347595,
+          "merchant_name": 0.9996254444122314,
+          "transaction_time": 0.9995155334472656
         },
         "boxes": {
           "transaction_date": [
             268,
-            119,
-            320,
+            114,
+            495,
             133
           ],
           "subtotal": [
-            459,
-            465,
+            261,
+            460,
             500,
             486
           ],
-          "total": [
-            467,
-            496,
+          "tax": [
+            260,
+            489,
             500,
             511
+          ],
+          "total": [
+            463,
+            536,
+            501,
+            551
+          ],
+          "merchant_name": [
+            272,
+            10,
+            488,
+            49
+          ],
+          "transaction_time": [
+            437,
+            114,
+            495,
+            128
           ]
         },
         "merchant_name": "FIVE GUYS",
@@ -154,7 +202,9 @@
         "transaction_time": "1:00:",
         "currency": "USD",
         "subtotal": "30.31",
-        "total": "2.35",
+        "tax": "2.35",
+        "total": "32.66",
+        "card_last4": "2931",
         "receipt_number": "DATE",
         "line_items": [
           {
@@ -218,13 +268,18 @@
             "item_class": "OTHER"
           },
           {
+            "description": "Pickles",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
             "description": "BBQ Sauce",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
             "description": "1 Regular Soda",
-            "amount": "0.00",
+            "amount": "2.70",
             "item_class": "OTHER"
           },
           {
@@ -299,13 +354,18 @@
             "item_class": "OTHER"
           },
           {
+            "description": "Pickles",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
             "description": "BBQ Sauce",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
             "description": "1 Regular Soda",
-            "amount": "0.00",
+            "amount": "2.70",
             "item_class": "OTHER"
           },
           {
@@ -314,6 +374,169 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9995155334472656,
+          "subtotal": 0.9998392462730408,
+          "tax": 0.9998087286949158,
+          "total": 0.9615312814712524
+        },
+        "boxes": {
+          "transaction_date": [
+            268,
+            114,
+            495,
+            133
+          ],
+          "subtotal": [
+            261,
+            460,
+            500,
+            486
+          ],
+          "tax": [
+            260,
+            489,
+            500,
+            511
+          ],
+          "total": [
+            260,
+            504,
+            500,
+            525
+          ]
+        },
+        "merchant_name": "FIVE GUYS",
+        "transaction_date": "2017-05-25",
+        "transaction_time": "13:00",
+        "currency": "USD",
+        "subtotal": "30.31",
+        "tax": "2.35",
+        "total": "32.66",
+        "card_last4": "2931",
+        "receipt_number": "DATE",
+        "line_items": [
+          {
+            "description": "1 Little Hamburger",
+            "amount": "5.19",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Lettuce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pickles",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tomatoes",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Grilled Onions",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Grilled Mushrooms",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Mustard",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ketchup",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Jalapeno Peppers",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Large Fry (@",
+            "amount": "5.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Mayo",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Lettuce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pickles",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "BBQ Sauce",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Regular Soda",
+            "amount": "2.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MasterCard",
+            "amount": "32.66",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9996254444122314,
+          "total": 0.9998926520347595,
+          "transaction_date": 0.9999926090240479,
+          "transaction_time": 0.9995155334472656
+        },
+        "boxes": {
+          "merchant_name": [
+            272,
+            10,
+            488,
+            49
+          ],
+          "total": [
+            463,
+            536,
+            501,
+            551
+          ],
+          "transaction_date": [
+            268,
+            119,
+            320,
+            133
+          ],
+          "transaction_time": [
+            437,
+            114,
+            495,
+            128
+          ]
+        },
+        "merchant_name": "FIVE GUYS",
+        "total": "32.66",
+        "transaction_date": "2017-05-25",
+        "transaction_time": "1:00:"
       }
     }
   },
@@ -322,12 +545,18 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "2.35",
+        "printed": "32.66",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "32.66",
+        "printed": "32.66",
         "passed": true
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "43.64",
+        "expected": "46.34",
         "printed": "30.31",
         "passed": false
       },
@@ -342,7 +571,7 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "2.35"
+    "total_base": "32.66"
   },
   "fingerprints": {
     "phash": "9acc4a3ec13fe017",

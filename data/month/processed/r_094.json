@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_094",
   "file_sha256": "59998508759b1f9872a3df114553af328e3b20d0eb7630c7f1caebbf23ebb1a5",
+  "ocr_text": "AMANO MALAYSIA SDN BHD (682288-V)\n12 JALAN PENGACARA U1/48\nTEMASYA INDUSTRIAL PARK\n40150 SI AH ALAM SELANGOR\n03-55695002/5003\nID:001137704960)\nP/S #02 A INV-No.0002300417000116\nT/D #11\nTidket No. 029332\nEntry Time\n30/04/2017(9un)20:22\nPaid Time\n30/04/2017(Sn)21:51\nParking Time\n1:29\nType\nRate A\nRM1.00\nParking Fee\nRMD.94\nGST(Included)\n6.00 %\nRM0.06\nTotal\nRM1.00\nPaid\nRM1.00\nChange\nRMO.00\nThank You\nInclusive 6% GST",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
     "receipt_number": "",
@@ -10,43 +11,61 @@
     "transaction_date": "2017-04-30",
     "transaction_time": "20:22",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
-    "tax": "",
+    "tax": "0.06",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "1.00",
     "itemization": "",
     "category": "TRAVEL",
     "line_items": [
       {
-        "description": "RM",
+        "description": "Type Rate A RM",
         "amount": "1.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "0.06",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "1.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
+        "description": "Paid RM",
         "amount": "1.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9272434115409851
+      "transaction_date": 0.9272527694702148,
+      "tax": 0.9211214184761047,
+      "total": 0.9962620139122009,
+      "merchant_name": 0.9963101744651794,
+      "transaction_time": 0.9272527694702148
     },
     "boxes": {
       "transaction_date": [
+        4,
+        599,
+        495,
+        640
+      ],
+      "tax": [
+        5,
+        795,
+        501,
+        835
+      ],
+      "total": [
+        360,
+        901,
+        490,
+        931
+      ],
+      "merchant_name": [
+        5,
+        203,
+        481,
+        248
+      ],
+      "transaction_time": [
         173,
         602,
         495,
@@ -56,10 +75,38 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9272434115409851
+          "transaction_date": 0.9272527694702148,
+          "tax": 0.9211214184761047,
+          "total": 0.9962620139122009,
+          "merchant_name": 0.9963101744651794,
+          "transaction_time": 0.9272527694702148
         },
         "boxes": {
           "transaction_date": [
+            4,
+            599,
+            495,
+            640
+          ],
+          "tax": [
+            5,
+            795,
+            501,
+            835
+          ],
+          "total": [
+            360,
+            901,
+            490,
+            931
+          ],
+          "merchant_name": [
+            5,
+            203,
+            481,
+            248
+          ],
+          "transaction_time": [
             173,
             602,
             495,
@@ -69,65 +116,131 @@
         "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
         "transaction_date": "2017-04-30",
         "transaction_time": "20:22",
+        "currency": "MYR",
+        "tax": "0.06",
+        "total": "1.00",
         "line_items": [
           {
-            "description": "RM",
+            "description": "Type Rate A RM",
             "amount": "1.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "0.06",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "1.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "1.00",
-            "item_class": "OTHER"
-          }
-        ],
-        "currency": "MYR"
-      },
-      "reader_b": {},
-      "text_rules": {
-        "category": "TRAVEL",
-        "line_items": [
-          {
-            "description": "RM",
-            "amount": "1.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "0.06",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "1.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
+            "description": "Paid RM",
             "amount": "1.00",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "TRAVEL",
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "Type Rate A RM",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Paid RM",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9272527694702148,
+          "tax": 0.9211214184761047,
+          "total": 0.9915496706962585
+        },
+        "boxes": {
+          "transaction_date": [
+            4,
+            599,
+            495,
+            640
+          ],
+          "tax": [
+            5,
+            795,
+            501,
+            835
+          ],
+          "total": [
+            5,
+            862,
+            490,
+            900
+          ]
+        },
+        "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
+        "transaction_date": "2017-04-30",
+        "transaction_time": "20:22",
+        "currency": "MYR",
+        "tax": "0.06",
+        "total": "1.00",
+        "line_items": [
+          {
+            "description": "Type Rate A RM",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Paid RM",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9963101744651794,
+          "total": 0.9962620139122009,
+          "transaction_date": 0.9272527694702148,
+          "transaction_time": 0.9272527694702148
+        },
+        "boxes": {
+          "merchant_name": [
+            5,
+            203,
+            481,
+            248
+          ],
+          "total": [
+            360,
+            901,
+            490,
+            931
+          ],
+          "transaction_date": [
+            173,
+            602,
+            495,
+            640
+          ],
+          "transaction_time": [
+            173,
+            602,
+            495,
+            640
+          ]
+        },
+        "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
+        "total": "1.00",
+        "transaction_date": "2017-04-30",
+        "transaction_time": "20:22"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "1.00",
+        "passed": true
       },
       {
         "name": "date_format",
@@ -139,8 +252,8 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "0.23"
   },
   "fingerprints": {
     "phash": "a775717060373723",

@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_067",
   "file_sha256": "16c08e2de8d3309541e1fd962c626be4e10a66cc1dbe8476455419888b3bbf10",
+  "ocr_text": "Kitchen & Patio\n730 Tavern\n730tavern.com\n730 Mass Ave\nCambridge, MA 02139-3308\n617-868-8800\n09/23/2017\n45757\n9:40 PM\nver: Megan\n30062\nale 3/1\nuests: 2\nReprint #: 1\n48.00\nManhattan (3 @16.00)\n(3)Makers Mark\n28.50\n$85.\nGrey Goose (3 @9.50)\n3.00\nRocks (3 @1.00)\n79.50\nSubtotal\n5.57\nTax\n85.07\nTotal\n85.07\nBalance Due\nSUGGESTED GRATUITY PRIOR TO DISCOUNT\n22% $ 17.49\n20% Φ 15.90\n10% 8 14.41",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -12,8 +13,8 @@
     "city": "",
     "country": "",
     "currency": "USD",
-    "subtotal": "5.57",
-    "tax": "85.07",
+    "subtotal": "79.50",
+    "tax": "",
     "tip": "",
     "other_charges": "",
     "total": "85.07",
@@ -48,77 +49,90 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999958276748657,
-      "subtotal": 0.9997721314430237,
-      "tax": 0.9998958706855774,
-      "total": 0.9997425079345703
+      "transaction_date": 0.9999960064888,
+      "subtotal": 0.9910529851913452,
+      "total": 0.9997431039810181,
+      "merchant_name": 0.9794012904167175,
+      "transaction_time": 0.999915599822998
     },
     "boxes": {
       "transaction_date": [
         484,
-        187,
-        616,
+        171,
+        725,
         223
       ],
       "subtotal": [
-        580,
-        519,
-        646,
-        558
-      ],
-      "tax": [
-        569,
-        582,
-        649,
-        625
+        89,
+        487,
+        643,
+        542
       ],
       "total": [
         570,
         646,
         648,
         687
+      ],
+      "merchant_name": [
+        317,
+        54,
+        501,
+        98
+      ],
+      "transaction_time": [
+        522,
+        214,
+        622,
+        247
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999958276748657,
-          "subtotal": 0.9997721314430237,
-          "tax": 0.9998958706855774,
-          "total": 0.9997425079345703
+          "transaction_date": 0.9999960064888,
+          "subtotal": 0.9910529851913452,
+          "total": 0.9997431039810181,
+          "merchant_name": 0.9794012904167175,
+          "transaction_time": 0.999915599822998
         },
         "boxes": {
           "transaction_date": [
             484,
-            187,
-            616,
+            171,
+            725,
             223
           ],
           "subtotal": [
-            580,
-            519,
-            646,
-            558
-          ],
-          "tax": [
-            569,
-            582,
-            649,
-            625
+            89,
+            487,
+            643,
+            542
           ],
           "total": [
             570,
             646,
             648,
             687
+          ],
+          "merchant_name": [
+            317,
+            54,
+            501,
+            98
+          ],
+          "transaction_time": [
+            522,
+            214,
+            622,
+            247
           ]
         },
         "merchant_name": "Kitchen & Patio",
         "transaction_date": "2017-09-23",
         "transaction_time": "9:40",
         "currency": "USD",
-        "subtotal": "5.57",
-        "tax": "85.07",
+        "subtotal": "79.50",
         "total": "85.07",
         "line_items": [
           {
@@ -178,6 +192,104 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9999960064888,
+          "subtotal": 0.9910529851913452,
+          "total": 0.9997431039810181
+        },
+        "boxes": {
+          "transaction_date": [
+            484,
+            171,
+            725,
+            223
+          ],
+          "subtotal": [
+            89,
+            487,
+            643,
+            542
+          ],
+          "total": [
+            75,
+            646,
+            648,
+            703
+          ]
+        },
+        "merchant_name": "Kitchen & Patio",
+        "transaction_date": "2017-09-23",
+        "transaction_time": "21:40",
+        "currency": "USD",
+        "subtotal": "79.50",
+        "total": "85.07",
+        "line_items": [
+          {
+            "description": "Reprint #: 1",
+            "amount": "48.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Manhattan (3 @",
+            "amount": "16.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(3)Makers Mark",
+            "amount": "28.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Grey Goose (3 @",
+            "amount": "9.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rocks (3 @",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9794012904167175,
+          "total": 0.9997431039810181,
+          "transaction_date": 0.9999960064888,
+          "transaction_time": 0.999915599822998
+        },
+        "boxes": {
+          "merchant_name": [
+            317,
+            54,
+            501,
+            98
+          ],
+          "total": [
+            570,
+            646,
+            648,
+            687
+          ],
+          "transaction_date": [
+            484,
+            187,
+            616,
+            223
+          ],
+          "transaction_time": [
+            522,
+            214,
+            622,
+            247
+          ]
+        },
+        "merchant_name": "Kitchen & Patio",
+        "total": "85.07",
+        "transaction_date": "2017-09-23",
+        "transaction_time": "9:40"
       }
     }
   },
@@ -190,15 +302,9 @@
         "passed": true
       },
       {
-        "name": "components_vs_total",
-        "expected": "90.64",
-        "printed": "85.07",
-        "passed": false
-      },
-      {
         "name": "items_vs_subtotal",
         "expected": "103.00",
-        "printed": "5.57",
+        "printed": "79.50",
         "passed": false
       },
       {
@@ -219,10 +325,9 @@
     "merchant_norm": "kitchen patio"
   },
   "forensics": {
-    "score": 50,
+    "score": 25,
     "cnn_fake_probability": 0.0,
     "signals": [
-      "components_vs_total",
       "items_vs_subtotal"
     ]
   }

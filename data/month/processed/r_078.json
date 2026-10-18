@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_078",
   "file_sha256": "8ea24c45c84d909c756b7b2ab8e9d4788b962be8e5125921e33d8e1cbe23dad0",
+  "ocr_text": "R  ALAD\nWendy's Restaurant #00003675\nHarrison, NJ 07029\n401 Bergan St\n(973) 483-8704\n#3264\nCH\nHost: JULIANA\n03/18/2017\n#3254\n8:48-PM\n40103\nOrder Type: PUW\nAR\nVeggle Sandwich\n0:99\nNO American Cheese\nNO Mayo\naa\nSmall Fries\n1.89\nPlain Potato\n1.79\nADD Chives\nSK\nTotal Items 3\n4067\nTax\nONS2\nPUW Total\n4.99\nX\nBalance Due\n$4.99\nSALAD\nHow was your visit?\nCall us at 888-624-8140\nTT",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -33,41 +34,69 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9241769909858704,
-      "total": 0.9960988163948059
+      "transaction_date": 0.9241935610771179,
+      "total": 0.9961034655570984,
+      "merchant_name": 0.8354025483131409,
+      "transaction_time": 0.8946348428726196
     },
     "boxes": {
       "transaction_date": [
-        196,
+        51,
         127,
         245,
-        139
+        144
       ],
       "total": [
         226,
         322,
         256,
         338
+      ],
+      "merchant_name": [
+        221,
+        24,
+        239,
+        109
+      ],
+      "transaction_time": [
+        208,
+        136,
+        247,
+        151
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9241769909858704,
-          "total": 0.9960988163948059
+          "transaction_date": 0.9241935610771179,
+          "total": 0.9961034655570984,
+          "merchant_name": 0.8354025483131409,
+          "transaction_time": 0.8946348428726196
         },
         "boxes": {
           "transaction_date": [
-            196,
+            51,
             127,
             245,
-            139
+            144
           ],
           "total": [
             226,
             322,
             256,
             338
+          ],
+          "merchant_name": [
+            221,
+            24,
+            239,
+            109
+          ],
+          "transaction_time": [
+            208,
+            136,
+            247,
+            151
           ]
         },
         "merchant_name": "R  ALAD",
@@ -103,6 +132,81 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9241935610771179,
+          "total": 0.9961034655570984
+        },
+        "boxes": {
+          "transaction_date": [
+            51,
+            127,
+            245,
+            144
+          ],
+          "total": [
+            47,
+            322,
+            256,
+            339
+          ]
+        },
+        "merchant_name": "Wendy's Restaurant #00003675 R  ALAD",
+        "transaction_date": "2017-03-18",
+        "transaction_time": "20:48",
+        "total": "4.99",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Small Fries",
+            "amount": "1.89",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Plain Potato",
+            "amount": "1.79",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.8354025483131409,
+          "total": 0.9961034655570984,
+          "transaction_date": 0.9241935610771179,
+          "transaction_time": 0.8946348428726196
+        },
+        "boxes": {
+          "merchant_name": [
+            221,
+            24,
+            239,
+            109
+          ],
+          "total": [
+            226,
+            322,
+            256,
+            338
+          ],
+          "transaction_date": [
+            196,
+            127,
+            245,
+            139
+          ],
+          "transaction_time": [
+            208,
+            136,
+            247,
+            151
+          ]
+        },
+        "merchant_name": "R  ALAD",
+        "total": "4.99",
+        "transaction_date": "2017-03-18",
+        "transaction_time": "8:48"
       }
     }
   },

@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_069",
   "file_sha256": "734d3f3e9b98156db85404855a4db603183e7db4c4338fd6415570ecdac1bd27",
+  "ocr_text": "Tay Ho Oakland\nElegant Vietnamese Cuisine\nFollow us on Instagram & Facebook\n@tayhooakland #tayhooakland\nPlease help us going Green & Save our\nresources!\nPlease ask for Credit Card Receipt\nif you'd like one printed for your\nrecord...\nOrder# 142750\nTable: Table - 7\nDate: 2/19/19, 1:20 PM\n$12.95\n#19-D.B.B.V. - Special Combo Pho\n$12.95\nSubtotal:\n$1.23\nTotal Tax:\n$14.18\nTotal:\n$14.18\nOrder Balance due:\nSuggested Gratuity\n%\nTip\nTotal\n18.00% of sale:\n$2.33 =\n$16.51\n20.00% of sale:\n$2.59 =\n$16.77",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -13,10 +14,10 @@
     "country": "",
     "currency": "USD",
     "subtotal": "1.23",
-    "tax": "14.18",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "14.18",
+    "total": "16.77",
     "itemization": "",
     "category": "",
     "line_items": [
@@ -28,10 +29,11 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9874059557914734,
-      "subtotal": 0.9997868537902832,
-      "tax": 0.9999773502349854,
-      "total": 0.9988166689872742
+      "transaction_date": 0.9874063730239868,
+      "subtotal": 0.9935425519943237,
+      "total": 0.9999578595161438,
+      "merchant_name": 0.9989013671875,
+      "transaction_time": 0.9874063730239868
     },
     "boxes": {
       "transaction_date": [
@@ -41,31 +43,38 @@
         570
       ],
       "subtotal": [
-        426,
-        646,
+        84,
+        638,
         486,
         678
       ],
-      "tax": [
-        419,
-        693,
-        490,
-        727
-      ],
       "total": [
-        425,
-        770,
-        494,
-        802
+        433,
+        960,
+        503,
+        990
+      ],
+      "merchant_name": [
+        207,
+        264,
+        397,
+        308
+      ],
+      "transaction_time": [
+        272,
+        532,
+        476,
+        570
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9874059557914734,
-          "subtotal": 0.9997868537902832,
-          "tax": 0.9999773502349854,
-          "total": 0.9988166689872742
+          "transaction_date": 0.9874063730239868,
+          "subtotal": 0.9935425519943237,
+          "total": 0.9999578595161438,
+          "merchant_name": 0.9989013671875,
+          "transaction_time": 0.9874063730239868
         },
         "boxes": {
           "transaction_date": [
@@ -75,22 +84,28 @@
             570
           ],
           "subtotal": [
-            426,
-            646,
+            84,
+            638,
             486,
             678
           ],
-          "tax": [
-            419,
-            693,
-            490,
-            727
-          ],
           "total": [
-            425,
-            770,
-            494,
-            802
+            433,
+            960,
+            503,
+            990
+          ],
+          "merchant_name": [
+            207,
+            264,
+            397,
+            308
+          ],
+          "transaction_time": [
+            272,
+            532,
+            476,
+            570
           ]
         },
         "merchant_name": "Tay Ho Oakland",
@@ -98,8 +113,7 @@
         "transaction_time": "1:20",
         "currency": "USD",
         "subtotal": "1.23",
-        "tax": "14.18",
-        "total": "14.18",
+        "total": "16.77",
         "line_items": [
           {
             "description": "#19-D.B.B.V. - Special Combo Pho",
@@ -117,6 +131,84 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9874063730239868,
+          "subtotal": 0.9935425519943237,
+          "total": 0.998818576335907
+        },
+        "boxes": {
+          "transaction_date": [
+            272,
+            532,
+            476,
+            570
+          ],
+          "subtotal": [
+            84,
+            638,
+            486,
+            678
+          ],
+          "total": [
+            81,
+            770,
+            494,
+            811
+          ]
+        },
+        "merchant_name": "Tay Ho Oakland",
+        "transaction_date": "2019-02-19",
+        "transaction_time": "13:20",
+        "currency": "USD",
+        "subtotal": "1.23",
+        "total": "14.18",
+        "line_items": [
+          {
+            "description": "#19-D.B.B.V. - Special Combo Pho",
+            "amount": "12.95",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9989013671875,
+          "total": 0.9999578595161438,
+          "transaction_date": 0.9874063730239868,
+          "transaction_time": 0.9874063730239868
+        },
+        "boxes": {
+          "merchant_name": [
+            207,
+            264,
+            397,
+            308
+          ],
+          "total": [
+            433,
+            960,
+            503,
+            990
+          ],
+          "transaction_date": [
+            272,
+            532,
+            476,
+            570
+          ],
+          "transaction_time": [
+            272,
+            532,
+            476,
+            570
+          ]
+        },
+        "merchant_name": "Tay Ho Oakland",
+        "total": "16.77",
+        "transaction_date": "2019-02-19",
+        "transaction_time": "1:20"
       }
     }
   },
@@ -125,14 +217,8 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "14.18",
+        "printed": "16.77",
         "passed": true
-      },
-      {
-        "name": "components_vs_total",
-        "expected": "15.41",
-        "printed": "14.18",
-        "passed": false
       },
       {
         "name": "items_vs_subtotal",
@@ -151,17 +237,16 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "14.18"
+    "total_base": "16.77"
   },
   "fingerprints": {
     "phash": "c8713f36353a35a1",
     "merchant_norm": "tay ho oakland"
   },
   "forensics": {
-    "score": 50,
+    "score": 25,
     "cnn_fake_probability": 0.0,
     "signals": [
-      "components_vs_total",
       "items_vs_subtotal"
     ]
   }

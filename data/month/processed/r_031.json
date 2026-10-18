@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_031",
   "file_sha256": "70084e01f69796ab57134ccdb9d5f6bbb1af23415cc8c550e3ed657d18e64b3c",
+  "ocr_text": "99 SPEED MART S/B (519537-X)\nLOT P.T. 2811, JALAN ANGSA,\nTAMAN BERKELEY\n41150 KLANG, SELANGOR\n1299-SUBANG PERHAI\nGST ID. NO : 000181747712\nINVOICE NO : 17936/102/T0275\n06:34PM\n562004\n07-02-17\nO857 INDOCAFE COFFEEMIX 3IN\nRM29.95 s\n407 CADBURY CHOCOLATE HAZEL\nRM7.49 s\nTotal Sales (Inclusive GST) RM\n37.44\nRounding Adjustment RM\n.01\nRounding RH\n37.45\nCREDIT RM\n37.45\nCHANGE RM\n.00\nGST Summary\nAmount(RH)\nTax(RM)\ns = 6%\n3535.32\n2.12\nThank You. Please come again\nKeep the invoice for applicable returns",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -10,23 +11,23 @@
     "transaction_date": "",
     "transaction_time": "",
     "city": "",
-    "country": "",
+    "country": "MY",
     "currency": "MYR",
     "subtotal": "",
     "tax": "37.44",
     "tip": "",
     "other_charges": "",
-    "total": "37.44",
+    "total": "3535.32",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "RM",
+        "description": "O857 INDOCAFE COFFEEMIX 3IN RM",
         "amount": "29.95",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
+        "description": "407 CADBURY CHOCOLATE HAZEL RM",
         "amount": "7.49",
         "item_class": "OTHER"
       },
@@ -48,55 +49,69 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.9999116659164429,
-      "total": 0.9999116659164429
+      "tax": 0.9915397763252258,
+      "merchant_name": 0.9946384429931641,
+      "total": 0.9998718500137329
     },
     "boxes": {
       "tax": [
-        522,
+        59,
         828,
         600,
         866
       ],
+      "merchant_name": [
+        123,
+        269,
+        523,
+        308
+      ],
       "total": [
-        522,
-        828,
-        600,
-        866
+        326,
+        1105,
+        431,
+        1141
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999116659164429,
-          "total": 0.9999116659164429
+          "tax": 0.9915397763252258,
+          "merchant_name": 0.9946384429931641,
+          "total": 0.9998718500137329
         },
         "boxes": {
           "tax": [
-            522,
+            59,
             828,
             600,
             866
           ],
+          "merchant_name": [
+            123,
+            269,
+            523,
+            308
+          ],
           "total": [
-            522,
-            828,
-            600,
-            866
+            326,
+            1105,
+            431,
+            1141
           ]
         },
         "merchant_name": "99 SPEED MART S/B (519537-X)",
+        "currency": "MYR",
         "tax": "37.44",
-        "total": "37.44",
         "receipt_number": "FOR",
         "line_items": [
           {
-            "description": "RM",
+            "description": "O857 INDOCAFE COFFEEMIX 3IN RM",
             "amount": "29.95",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "407 CADBURY CHOCOLATE HAZEL RM",
             "amount": "7.49",
             "item_class": "OTHER"
           },
@@ -116,19 +131,20 @@
             "item_class": "OTHER"
           }
         ],
-        "currency": "MYR"
+        "total": "3535.32"
       },
       "reader_b": {},
       "text_rules": {
         "category": "MEALS",
+        "country": "MY",
         "line_items": [
           {
-            "description": "RM",
+            "description": "O857 INDOCAFE COFFEEMIX 3IN RM",
             "amount": "29.95",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
+            "description": "407 CADBURY CHOCOLATE HAZEL RM",
             "amount": "7.49",
             "item_class": "OTHER"
           },
@@ -148,6 +164,72 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9915397763252258
+        },
+        "boxes": {
+          "tax": [
+            59,
+            828,
+            600,
+            866
+          ]
+        },
+        "merchant_name": "99 SPEED MART S/B (519537-X)",
+        "currency": "MYR",
+        "tax": "37.44",
+        "receipt_number": "FOR",
+        "line_items": [
+          {
+            "description": "O857 INDOCAFE COFFEEMIX 3IN RM",
+            "amount": "29.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "407 CADBURY CHOCOLATE HAZEL RM",
+            "amount": "7.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding RH",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CREDIT RM",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "s = 6%",
+            "amount": "3535.32",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9946384429931641,
+          "total": 0.9998718500137329
+        },
+        "boxes": {
+          "merchant_name": [
+            123,
+            269,
+            523,
+            308
+          ],
+          "total": [
+            326,
+            1105,
+            431,
+            1141
+          ]
+        },
+        "merchant_name": "99 SPEED MART S/B (519537-X)",
+        "total": "3535.32"
       }
     }
   },
@@ -156,7 +238,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "37.44",
+        "printed": "3535.32",
         "passed": true
       }
     ]
@@ -164,7 +246,7 @@
   "fx": {
     "base_currency": "USD",
     "rate": "0.23",
-    "total_base": "8.61"
+    "total_base": "813.12"
   },
   "fingerprints": {
     "phash": "b61595571d157435",

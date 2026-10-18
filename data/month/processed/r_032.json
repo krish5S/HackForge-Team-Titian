@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_032",
   "file_sha256": "2c5b4a7e49d34878eaa5c0de588da7b6cfc3987d3dbe4c14b87176edf4f66cff",
+  "ocr_text": "PASARAYA BORONG PINTAR\nSDN BHD\nBR No.: (124525-H)\nNO 19-G&19-1&19-2 JALAN TASIK UTAMA 4,\nMEDN NIAGA TASIK DAMAI\n016-5498845,\nGST No. :\n04/04/201812:41:52\nTAX INVOICE\nTRN: CR0007636\nCOUNTER 4\nCASHIER:11\nQTY UOM\nUNITAmt Exc. Amt Inc. GST\nPrice\nTax\nTax Code\nPOKKA COFFEE VANILLA MILK COFFEE\n1\nWALK\n3.20\n3.20\n3.20 ZRL\n*Total Qty: 1.00\n3.20\nTotal Includes GST 0%\n3.20\nCustomer's Payment\nCash\n5.20\nChange\n2.00\nGST Summary\nAmount (RM)\nTax (RM)\nZRL = 0%\n3.20\n0.00\n*Goods sold are not returnable\nThank you for shopping at PASARAYA\nBORONG PINTAR SDN BHD",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,12 +17,12 @@
     "tax": "3.20",
     "tip": "",
     "other_charges": "",
-    "total": "3.20",
+    "total": "1.00",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "WALK",
+        "description": "1 WALK",
         "amount": "3.20",
         "item_class": "OTHER"
       },
@@ -43,49 +44,63 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999977350234985,
-      "tax": 0.9999977350234985
+      "total": 0.9716991186141968,
+      "tax": 0.9762568473815918,
+      "merchant_name": 0.999878466129303
     },
     "boxes": {
       "total": [
-        780,
+        92,
+        1104,
+        378,
+        1152
+      ],
+      "tax": [
+        98,
         1170,
         871,
         1217
       ],
-      "tax": [
-        780,
-        1170,
-        871,
-        1217
+      "merchant_name": [
+        137,
+        181,
+        830,
+        232
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999977350234985,
-          "tax": 0.9999977350234985
+          "total": 0.9716991186141968,
+          "tax": 0.9762568473815918,
+          "merchant_name": 0.999878466129303
         },
         "boxes": {
           "total": [
-            780,
+            92,
+            1104,
+            378,
+            1152
+          ],
+          "tax": [
+            98,
             1170,
             871,
             1217
           ],
-          "tax": [
-            780,
-            1170,
-            871,
-            1217
+          "merchant_name": [
+            137,
+            181,
+            830,
+            232
           ]
         },
         "merchant_name": "PASARAYA BORONG PINTAR",
-        "total": "3.20",
+        "total": "1.00",
         "tax": "3.20",
         "line_items": [
           {
-            "description": "WALK",
+            "description": "1 WALK",
             "amount": "3.20",
             "item_class": "OTHER"
           },
@@ -111,7 +126,7 @@
         "category": "MEALS",
         "line_items": [
           {
-            "description": "WALK",
+            "description": "1 WALK",
             "amount": "3.20",
             "item_class": "OTHER"
           },
@@ -131,6 +146,73 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9716991186141968,
+          "tax": 0.9762568473815918
+        },
+        "boxes": {
+          "total": [
+            92,
+            1104,
+            871,
+            1152
+          ],
+          "tax": [
+            98,
+            1170,
+            871,
+            1217
+          ]
+        },
+        "merchant_name": "PASARAYA BORONG PINTAR",
+        "total": "3.20",
+        "tax": "3.20",
+        "line_items": [
+          {
+            "description": "1 WALK",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "5.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL = 0%",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.999878466129303,
+          "total": 0.9716991186141968
+        },
+        "boxes": {
+          "merchant_name": [
+            137,
+            181,
+            830,
+            232
+          ],
+          "total": [
+            92,
+            1104,
+            378,
+            1152
+          ]
+        },
+        "merchant_name": "PASARAYA BORONG PINTAR",
+        "total": "1.00"
       }
     }
   },
@@ -139,7 +221,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "3.20",
+        "printed": "1.00",
         "passed": true
       }
     ]

@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_064",
   "file_sha256": "a58086293a115683a9b8c493bc8c69c38f33123095e2342730825cd37e2c2d7a",
+  "ocr_text": "Moonstar Restaurant\n383 Gellert Blvd., Daly City, CA 94015\n(650) 992-2888\nP A I D REPRINT 1\nTab:332 1P 19:51\n#2406\nQTY/LB\nNAME\nU/P\nPRICE\nWEEKDAY DINNER\n$29.88\n29.88\nSUBTOTAL\n29.88\n15% SERVICE CHARGE:\n4.48\nTax(8.75%):\n3.01\nSALES TOTAL:\n32.89\nTOTAL:\n37.37\nCASH:\n100.00\nCHANGE\n62.63\n10/29/2018 19:51\nTHANK YOU",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -13,10 +14,10 @@
     "country": "",
     "currency": "USD",
     "subtotal": "29.88",
-    "tax": "8.75",
+    "tax": "3.01",
     "tip": "",
     "other_charges": "4.48",
-    "total": "37.37",
+    "total": "100.00",
     "itemization": "",
     "category": "MEALS",
     "line_items": [
@@ -26,12 +27,7 @@
         "item_class": "FOOD"
       },
       {
-        "description": "15% SERVICE CHARGE:",
-        "amount": "4.48",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "CASH:",
+        "description": "CASH",
         "amount": "100.00",
         "item_class": "OTHER"
       },
@@ -43,83 +39,111 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9999402761459351,
-      "other_charges": 0.9998668432235718,
-      "tax": 0.9992076754570007,
-      "total": 0.9999982714653015,
-      "transaction_date": 0.999693751335144
+      "subtotal": 0.999879002571106,
+      "other_charges": 0.9822205901145935,
+      "tax": 0.9992082715034485,
+      "total": 0.9998778700828552,
+      "transaction_date": 0.9996941089630127,
+      "merchant_name": 0.9996373057365417,
+      "transaction_time": 0.9838307499885559
     },
     "boxes": {
       "subtotal": [
-        525,
+        269,
         509,
         571,
         531
       ],
       "other_charges": [
-        533,
-        530,
+        193,
+        527,
         571,
         550
       ],
       "tax": [
         257,
         546,
-        346,
-        568
+        572,
+        570
       ],
       "total": [
-        484,
-        621,
+        524,
+        682,
         577,
-        666
+        705
       ],
       "transaction_date": [
         175,
         788,
         311,
         812
+      ],
+      "merchant_name": [
+        216,
+        279,
+        535,
+        304
+      ],
+      "transaction_time": [
+        177,
+        394,
+        356,
+        433
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9999402761459351,
-          "other_charges": 0.9998668432235718,
-          "tax": 0.9992076754570007,
-          "total": 0.9999982714653015,
-          "transaction_date": 0.999693751335144
+          "subtotal": 0.999879002571106,
+          "other_charges": 0.9822205901145935,
+          "tax": 0.9992082715034485,
+          "total": 0.9998778700828552,
+          "transaction_date": 0.9996941089630127,
+          "merchant_name": 0.9996373057365417,
+          "transaction_time": 0.9838307499885559
         },
         "boxes": {
           "subtotal": [
-            525,
+            269,
             509,
             571,
             531
           ],
           "other_charges": [
-            533,
-            530,
+            193,
+            527,
             571,
             550
           ],
           "tax": [
             257,
             546,
-            346,
-            568
+            572,
+            570
           ],
           "total": [
-            484,
-            621,
+            524,
+            682,
             577,
-            666
+            705
           ],
           "transaction_date": [
             175,
             788,
             311,
             812
+          ],
+          "merchant_name": [
+            216,
+            279,
+            535,
+            304
+          ],
+          "transaction_time": [
+            177,
+            394,
+            356,
+            433
           ]
         },
         "merchant_name": "Moonstar Restaurant",
@@ -127,8 +151,8 @@
         "currency": "USD",
         "subtotal": "29.88",
         "other_charges": "4.48",
-        "tax": "8.75",
-        "total": "37.37",
+        "tax": "3.01",
+        "total": "100.00",
         "transaction_date": "2018-10-29",
         "line_items": [
           {
@@ -137,12 +161,7 @@
             "item_class": "FOOD"
           },
           {
-            "description": "15% SERVICE CHARGE:",
-            "amount": "4.48",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "CASH:",
+            "description": "CASH",
             "amount": "100.00",
             "item_class": "OTHER"
           },
@@ -163,12 +182,7 @@
             "item_class": "FOOD"
           },
           {
-            "description": "15% SERVICE CHARGE:",
-            "amount": "4.48",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "CASH:",
+            "description": "CASH",
             "amount": "100.00",
             "item_class": "OTHER"
           },
@@ -178,6 +192,110 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.999879002571106,
+          "other_charges": 0.9822205901145935,
+          "tax": 0.9992082715034485,
+          "total": 0.9999783635139465,
+          "transaction_date": 0.9996941089630127
+        },
+        "boxes": {
+          "subtotal": [
+            269,
+            509,
+            571,
+            531
+          ],
+          "other_charges": [
+            193,
+            527,
+            571,
+            550
+          ],
+          "tax": [
+            257,
+            546,
+            572,
+            570
+          ],
+          "total": [
+            244,
+            621,
+            577,
+            666
+          ],
+          "transaction_date": [
+            175,
+            788,
+            311,
+            812
+          ]
+        },
+        "merchant_name": "Moonstar Restaurant",
+        "transaction_time": "19:51",
+        "currency": "USD",
+        "subtotal": "29.88",
+        "other_charges": "4.48",
+        "tax": "3.01",
+        "total": "37.37",
+        "transaction_date": "2018-10-29",
+        "line_items": [
+          {
+            "description": "WEEKDAY DINNER",
+            "amount": "29.88",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "CASH",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "62.63",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9996373057365417,
+          "total": 0.9998778700828552,
+          "transaction_date": 0.9996941089630127,
+          "transaction_time": 0.9838307499885559
+        },
+        "boxes": {
+          "merchant_name": [
+            216,
+            279,
+            535,
+            304
+          ],
+          "total": [
+            524,
+            682,
+            577,
+            705
+          ],
+          "transaction_date": [
+            175,
+            788,
+            311,
+            812
+          ],
+          "transaction_time": [
+            177,
+            394,
+            356,
+            433
+          ]
+        },
+        "merchant_name": "Moonstar Restaurant",
+        "total": "100.00",
+        "transaction_date": "2018-10-29",
+        "transaction_time": "19:51"
       }
     }
   },
@@ -186,18 +304,18 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "37.37",
+        "printed": "100.00",
         "passed": true
       },
       {
         "name": "components_vs_total",
-        "expected": "43.11",
-        "printed": "37.37",
+        "expected": "37.37",
+        "printed": "100.00",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "196.99",
+        "expected": "192.51",
         "printed": "29.88",
         "passed": false
       },
@@ -212,18 +330,19 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "37.37"
+    "total_base": "100.00"
   },
   "fingerprints": {
     "phash": "962b6c38699e3996",
     "merchant_norm": "moonstar restaurant"
   },
   "forensics": {
-    "score": 50,
+    "score": 60,
     "cnn_fake_probability": 0.0,
     "signals": [
       "components_vs_total",
-      "items_vs_subtotal"
+      "items_vs_subtotal",
+      "round_total"
     ]
   }
 }

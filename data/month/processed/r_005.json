@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_005",
   "file_sha256": "be4bc47d48f896325cc637a6db0f4fbe91dbad30f837e24be7bfcbd409872db6",
+  "ocr_text": "VANBOOLEN\n8,102\nPLASTIK 25\nS\nSUBTOTAL\n8,182\nPB1 10%\n10.000%\nAMOUNT\n818\n2.00xITEMS\nTOTAL\n9,000\nCASH\n100.000\nCHANGE\n91,000\n\n\n你你您",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "VANBOOLEN",
+    "merchant_name": "VANBOOLEN 8,102",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,55 +17,180 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "9000",
+    "total": "100000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "VANBOOLEN",
+        "amount": "8102",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "PB1 10%",
+        "amount": "10000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "100000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CHANGE",
+        "amount": "91000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9190937280654907,
-      "total": 0.9740074276924133
+      "subtotal": 0.9190963506698608,
+      "total": 0.9379445314407349
     },
     "boxes": {
       "subtotal": [
-        529,
-        536,
+        120,
+        535,
         640,
-        589
+        592
       ],
       "total": [
-        538,
-        796,
-        649,
-        849
+        495,
+        847,
+        643,
+        902
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9190937280654907,
-          "total": 0.9740074276924133
+          "subtotal": 0.9190963506698608,
+          "total": 0.9379445314407349
         },
         "boxes": {
           "subtotal": [
-            529,
-            536,
+            120,
+            535,
             640,
-            589
+            592
           ],
           "total": [
-            538,
-            796,
-            649,
-            849
+            495,
+            847,
+            643,
+            902
           ]
         },
-        "merchant_name": "VANBOOLEN",
+        "merchant_name": "VANBOOLEN 8,102",
         "subtotal": "8182",
-        "total": "9000"
+        "total": "100000",
+        "line_items": [
+          {
+            "description": "VANBOOLEN",
+            "amount": "8102",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1 10%",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "91000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "VANBOOLEN",
+            "amount": "8102",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1 10%",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "91000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "subtotal": 0.9190963506698608,
+          "total": 0.9740124940872192
+        },
+        "boxes": {
+          "subtotal": [
+            120,
+            535,
+            640,
+            592
+          ],
+          "total": [
+            130,
+            796,
+            649,
+            853
+          ]
+        },
+        "merchant_name": "VANBOOLEN 8,102",
+        "subtotal": "8182",
+        "total": "9000",
+        "line_items": [
+          {
+            "description": "VANBOOLEN",
+            "amount": "8102",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "PB1 10%",
+            "amount": "10000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "91000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9379445314407349
+        },
+        "boxes": {
+          "total": [
+            495,
+            847,
+            643,
+            902
+          ]
+        },
+        "total": "100000"
+      }
     }
   },
   "validation": {
@@ -72,8 +198,14 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "9000",
+        "printed": "100000",
         "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "209102.00",
+        "printed": "8182.00",
+        "passed": false
       }
     ]
   },
@@ -84,12 +216,13 @@
   },
   "fingerprints": {
     "phash": "aff012d4853d0fc3",
-    "merchant_norm": "vanboolen"
+    "merchant_norm": "vanboolen 8 102"
   },
   "forensics": {
-    "score": 10,
+    "score": 35,
     "cnn_fake_probability": 0.0,
     "signals": [
+      "items_vs_subtotal",
       "round_total"
     ]
   }

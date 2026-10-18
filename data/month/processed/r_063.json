@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_063",
   "file_sha256": "ef2037f04e744603039a5b3125679b7af75bfbcc144e93ab3d45cc09f0b34aec",
+  "ocr_text": "shier:\nOR\nA1. Sate Babi Manis\n6.000\n2 3.000\nA2. Sate Babi Bumbu Ball\n2 4.000\n8.000\nA2. Lapciong\n4.000\n1 4.000\nA2. Sate Babi Cabe lijo\n4.000\n1 4.000\nA1. Paru Babl\n3.000\n1 3.000\nA2. Ngohiong\n4,000\n1 4.000\nA4. Es Teh Manis\n5.000\n1 5.000\nTotal\n34.000\nGash\n34.000",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -19,37 +20,256 @@
     "total": "34000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "A1. Sate Babi Manis",
+        "amount": "6000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A2. Sate Babi Bumbu Ball",
+        "amount": "8000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A2. Lapciong",
+        "amount": "4000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A2. Sate Babi Cabe lijo",
+        "amount": "4000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A1. Paru Babl",
+        "amount": "3000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A2. Ngohiong",
+        "amount": "4000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "A4. Es Teh Manis",
+        "amount": "5000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Gash",
+        "amount": "34000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999173283576965
+      "total": 0.964200496673584,
+      "merchant_name": 0.9567598700523376
     },
     "boxes": {
       "total": [
-        136,
-        350,
-        196,
-        379
+        151,
+        377,
+        195,
+        402
+      ],
+      "merchant_name": [
+        28,
+        35,
+        66,
+        53
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999173283576965
+          "total": 0.964200496673584,
+          "merchant_name": 0.9567598700523376
         },
         "boxes": {
           "total": [
-            136,
+            151,
+            377,
+            195,
+            402
+          ],
+          "merchant_name": [
+            28,
+            35,
+            66,
+            53
+          ]
+        },
+        "merchant_name": "shier:",
+        "total": "34000",
+        "line_items": [
+          {
+            "description": "A1. Sate Babi Manis",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Bumbu Ball",
+            "amount": "8000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Lapciong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Cabe lijo",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A1. Paru Babl",
+            "amount": "3000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Ngohiong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A4. Es Teh Manis",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gash",
+            "amount": "34000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "A1. Sate Babi Manis",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Bumbu Ball",
+            "amount": "8000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Lapciong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Cabe lijo",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A1. Paru Babl",
+            "amount": "3000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Ngohiong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A4. Es Teh Manis",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gash",
+            "amount": "34000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9951686859130859
+        },
+        "boxes": {
+          "total": [
+            13,
             350,
             196,
             379
           ]
         },
         "merchant_name": "shier:",
-        "total": "34000"
+        "total": "34000",
+        "line_items": [
+          {
+            "description": "A1. Sate Babi Manis",
+            "amount": "6000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Bumbu Ball",
+            "amount": "8000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Lapciong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Sate Babi Cabe lijo",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A1. Paru Babl",
+            "amount": "3000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A2. Ngohiong",
+            "amount": "4000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "A4. Es Teh Manis",
+            "amount": "5000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gash",
+            "amount": "34000",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9567598700523376,
+          "total": 0.964200496673584
+        },
+        "boxes": {
+          "merchant_name": [
+            28,
+            35,
+            66,
+            53
+          ],
+          "total": [
+            151,
+            377,
+            195,
+            402
+          ]
+        },
+        "merchant_name": "shier:",
+        "total": "34000"
+      }
     }
   },
   "validation": {

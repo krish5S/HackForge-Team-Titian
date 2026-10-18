@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_096",
   "file_sha256": "230b359446e12fc1fe307b90f1fe27590d0fa8ab8ea28c212a3a5f1c46a423be",
+  "ocr_text": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)\nLig3, Jalan Pelabur 23/1,\n40300 Shah Alam, Selangor.\nTel: 03- 55423228 Fax:03-55423213\nGST ID: 000381399040\nTAX INVOICE / ADJUSTMENT NOTE\nCash Inv No.: 7830F715\nVE0514\nDate: 30/08/2017\nMAKASSAR FRESH MARKET SDN BHD\nGROUND FLOOR, NO. 4 & 6,\nJALAN SS 15/4B,\n47500 SUBANG JAYA, SELANGOR\nVE05: Ridzuan (11900)\nDD:30/08/2017\n10:51\nDescription\nU.P Iss\nExc\nD Sale\nAmt(RM)\nO.C. WHITE\n2.13\n5\n0\n0\n5\n10.65\nWHOLEMEAL\n2.78\n5\n0\n0\n5\n13.90\nO.C JUMBO\n2.97\n5\n0 0\n5\n14.85\nTotal 0% supplies:\n39.40\nCR-CHOCLT\n0.72 20 2 0 18\n12.96\nTotal 6% supplies (excl. GST):\n12.96\nGST:\n0.78\nTotal 6% supplies (Inc. GST):\n13.74\nTotal 0% supplies:\n39.40\nTotal Payable:\n53.14\nE.&.0.E.\nReceived above goods in good order condition.\nThe recipient of Gardenia's products is\nrequired to make necessary adjustments to its\ninput tax claims, on the basic of the\nadjustments shown in this Tax Invoice /\nAdjustment Note\nCUSTOMER'S COPY",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -36,21 +37,23 @@
         "item_class": "OTHER"
       },
       {
-        "description": "GST:",
-        "amount": "0.78",
+        "description": "CR-CHOCLT",
+        "amount": "0.72",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9968887567520142,
-      "total": 0.9999876022338867,
-      "tax": 0.999798595905304
+      "transaction_date": 0.9968895316123962,
+      "total": 0.999987781047821,
+      "tax": 0.987938404083252,
+      "merchant_name": 0.989277720451355,
+      "transaction_time": 0.999941349029541
     },
     "boxes": {
       "transaction_date": [
-        323,
-        304,
+        28,
+        300,
         517,
         328
       ],
@@ -61,23 +64,37 @@
         927
       ],
       "tax": [
-        449,
-        788,
+        57,
+        783,
         516,
-        828
+        834
+      ],
+      "merchant_name": [
+        35,
+        66,
+        592,
+        99
+      ],
+      "transaction_time": [
+        437,
+        465,
+        495,
+        490
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9968887567520142,
-          "total": 0.9999876022338867,
-          "tax": 0.999798595905304
+          "transaction_date": 0.9968895316123962,
+          "total": 0.999987781047821,
+          "tax": 0.987938404083252,
+          "merchant_name": 0.989277720451355,
+          "transaction_time": 0.999941349029541
         },
         "boxes": {
           "transaction_date": [
-            323,
-            304,
+            28,
+            300,
             517,
             328
           ],
@@ -88,10 +105,22 @@
             927
           ],
           "tax": [
-            449,
-            788,
+            57,
+            783,
             516,
-            828
+            834
+          ],
+          "merchant_name": [
+            35,
+            66,
+            592,
+            99
+          ],
+          "transaction_time": [
+            437,
+            465,
+            495,
+            490
           ]
         },
         "merchant_name": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)",
@@ -116,8 +145,8 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GST:",
-            "amount": "0.78",
+            "description": "CR-CHOCLT",
+            "amount": "0.72",
             "item_class": "OTHER"
           }
         ]
@@ -142,11 +171,103 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GST:",
-            "amount": "0.78",
+            "description": "CR-CHOCLT",
+            "amount": "0.72",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9968895316123962,
+          "total": 0.9999526143074036,
+          "tax": 0.987938404083252
+        },
+        "boxes": {
+          "transaction_date": [
+            28,
+            300,
+            517,
+            328
+          ],
+          "total": [
+            232,
+            881,
+            517,
+            934
+          ],
+          "tax": [
+            57,
+            783,
+            516,
+            834
+          ]
+        },
+        "merchant_name": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)",
+        "transaction_date": "2017-08-30",
+        "transaction_time": "10:51",
+        "total": "53.14",
+        "tax": "13.74",
+        "line_items": [
+          {
+            "description": "O.C. WHITE",
+            "amount": "2.13",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "WHOLEMEAL",
+            "amount": "2.78",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "O.C JUMBO",
+            "amount": "2.97",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CR-CHOCLT",
+            "amount": "0.72",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.989277720451355,
+          "total": 0.999987781047821,
+          "transaction_date": 0.9968895316123962,
+          "transaction_time": 0.999941349029541
+        },
+        "boxes": {
+          "merchant_name": [
+            35,
+            66,
+            592,
+            99
+          ],
+          "total": [
+            447,
+            885,
+            517,
+            927
+          ],
+          "transaction_date": [
+            323,
+            304,
+            517,
+            328
+          ],
+          "transaction_time": [
+            437,
+            465,
+            495,
+            490
+          ]
+        },
+        "merchant_name": "GARDENIA BAKERTES(KL) SDN BHD (139386 X)",
+        "total": "53.14",
+        "transaction_date": "2017-08-30",
+        "transaction_time": "10:51"
       }
     }
   },

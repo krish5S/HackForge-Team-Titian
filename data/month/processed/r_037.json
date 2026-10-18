@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_037",
   "file_sha256": "6e5683f5505ad60f1ef2e39fab94f42e9ca9ee21e1e5145f992765aeccb759c0",
+  "ocr_text": "BR",
   "is_receipt": false,
   "extraction_status": "PARTIAL",
   "extraction": {
@@ -29,7 +30,15 @@
         "boxes": {}
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {},
+      "reader_a_pattern": {
+        "confidence": {},
+        "boxes": {}
+      },
+      "reader_a_layoutlm": {
+        "confidence": {},
+        "boxes": {}
+      }
     }
   },
   "validation": {

@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_093",
   "file_sha256": "f1aa10deb8cf1ce5d851c35aa3194291c03fdf4238ac04c580ae11dd94d988d7",
+  "ocr_text": "POSTED\nBEMED (SP) SDN. BHD.\nNo.49, Jalan OlnarG U3/G,\n(P)\nSubang Perdana,\n40150 Shah Alam, Selangor D..\n03-7845 8155\nGST Reg: 001734164480\nCASH RECEIPT\nCB#：83679570470\n15/Apr/2017 04:56:46\nCashier : be ()\nQty Code&Desc\nPrice\nTotal\nPRISTIN OMEGA-3 FISH OIL 2X150'S(VIP)\n1 209250\n300.00\n300 8R\nALPHA LIPID LIFE LINE 450MG 450G\n2 184810\n105.00\n330 8R\n80-(DERMAPRO OINT) 15G\nOK\n1 178104\n5.00\n5 ZRL\n4\nType:\n3\nSubTotal:\n035.00\nRounding Adj :\n0.00\nal Inclusive GST:\n635.00\nMASTER\n035.00\nGST Summary:\nAmount\nTax\n(MYR)\n(MYR)\nSR\n594.34\n35.08\nZRL\n5.00\n0.00\nONG GUAT CHYE\nPoints :\n1.124\nThank you.\nPlease come again.",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "POSTED",
     "receipt_number": "",
@@ -16,18 +17,23 @@
     "tax": "635.00",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "1124",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Rounding Adj :",
-        "amount": "0.00",
+        "description": "1 209250",
+        "amount": "300.00",
         "item_class": "OTHER"
       },
       {
-        "description": "al Inclusive GST:",
-        "amount": "635.00",
+        "description": "2 184810",
+        "amount": "105.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding Adj",
+        "amount": "0.00",
         "item_class": "OTHER"
       },
       {
@@ -44,61 +50,113 @@
         "description": "ZRL",
         "amount": "5.00",
         "item_class": "OTHER"
+      },
+      {
+        "description": "Points :",
+        "amount": "1124",
+        "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "subtotal": 0.9890301823616028,
-      "tax": 0.9999471306800842
+      "tax": 0.9825129508972168,
+      "subtotal": 0.989039421081543,
+      "merchant_name": 0.9829897880554199,
+      "total": 0.9564456939697266,
+      "transaction_time": 0.9993211030960083
     },
     "boxes": {
-      "subtotal": [
-        524,
-        974,
-        624,
-        1010
-      ],
       "tax": [
-        492,
+        70,
         1061,
         633,
-        1107
+        1109
+      ],
+      "subtotal": [
+        42,
+        974,
+        624,
+        1014
+      ],
+      "merchant_name": [
+        408,
+        114,
+        651,
+        188
+      ],
+      "total": [
+        43,
+        1556,
+        126,
+        1592
+      ],
+      "transaction_time": [
+        355,
+        510,
+        624,
+        557
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "subtotal": 0.9890301823616028,
-          "tax": 0.9999471306800842
+          "tax": 0.9825129508972168,
+          "subtotal": 0.989039421081543,
+          "merchant_name": 0.9829897880554199,
+          "total": 0.9564456939697266,
+          "transaction_time": 0.9993211030960083
         },
         "boxes": {
-          "subtotal": [
-            524,
-            974,
-            624,
-            1010
-          ],
           "tax": [
-            492,
+            70,
             1061,
             633,
-            1107
+            1109
+          ],
+          "subtotal": [
+            42,
+            974,
+            624,
+            1014
+          ],
+          "merchant_name": [
+            408,
+            114,
+            651,
+            188
+          ],
+          "total": [
+            43,
+            1556,
+            126,
+            1592
+          ],
+          "transaction_time": [
+            355,
+            510,
+            624,
+            557
           ]
         },
         "merchant_name": "POSTED",
+        "tax": "635.00",
         "transaction_time": "04:56",
         "subtotal": "035.00",
-        "tax": "635.00",
         "currency": "MYR",
         "line_items": [
           {
-            "description": "Rounding Adj :",
-            "amount": "0.00",
+            "description": "1 209250",
+            "amount": "300.00",
             "item_class": "OTHER"
           },
           {
-            "description": "al Inclusive GST:",
-            "amount": "635.00",
+            "description": "2 184810",
+            "amount": "105.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
@@ -115,21 +173,32 @@
             "description": "ZRL",
             "amount": "5.00",
             "item_class": "OTHER"
+          },
+          {
+            "description": "Points :",
+            "amount": "1124",
+            "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "1124"
       },
       "reader_b": {},
       "text_rules": {
         "country": "MY",
         "line_items": [
           {
-            "description": "Rounding Adj :",
-            "amount": "0.00",
+            "description": "1 209250",
+            "amount": "300.00",
             "item_class": "OTHER"
           },
           {
-            "description": "al Inclusive GST:",
-            "amount": "635.00",
+            "description": "2 184810",
+            "amount": "105.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
@@ -146,22 +215,125 @@
             "description": "ZRL",
             "amount": "5.00",
             "item_class": "OTHER"
+          },
+          {
+            "description": "Points :",
+            "amount": "1124",
+            "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9825129508972168,
+          "subtotal": 0.989039421081543
+        },
+        "boxes": {
+          "tax": [
+            70,
+            1061,
+            633,
+            1109
+          ],
+          "subtotal": [
+            42,
+            974,
+            624,
+            1014
+          ]
+        },
+        "merchant_name": "POSTED",
+        "tax": "635.00",
+        "transaction_time": "04:56",
+        "subtotal": "035.00",
+        "currency": "MYR",
+        "line_items": [
+          {
+            "description": "1 209250",
+            "amount": "300.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 184810",
+            "amount": "105.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MASTER",
+            "amount": "035.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "594.34",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Points :",
+            "amount": "1124",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9829897880554199,
+          "total": 0.9564456939697266,
+          "transaction_time": 0.9993211030960083
+        },
+        "boxes": {
+          "merchant_name": [
+            408,
+            114,
+            651,
+            188
+          ],
+          "total": [
+            43,
+            1556,
+            126,
+            1592
+          ],
+          "transaction_time": [
+            355,
+            510,
+            624,
+            557
+          ]
+        },
+        "merchant_name": "POSTED",
+        "total": "1124",
+        "transaction_time": "04:56"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "1124",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "670.00",
+        "printed": "1124.00",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "1269.34",
+        "expected": "2163.34",
         "printed": "35.00",
         "passed": false
       }
@@ -169,17 +341,18 @@
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "258.52"
   },
   "fingerprints": {
     "phash": "ae38f1cb8f4c0a93",
     "merchant_norm": "posted"
   },
   "forensics": {
-    "score": 25,
+    "score": 50,
     "cnn_fake_probability": 0.0,
     "signals": [
+      "components_vs_total",
       "items_vs_subtotal"
     ]
   }

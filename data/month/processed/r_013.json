@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_013",
   "file_sha256": "eb6fa8f84d15bcd7b9188f8aff686d66a96137d5e0cd410039c945348a449fdd",
+  "ocr_text": "1001-Choco Bun\n22.000\n22.000\nx1\n6001-Plastic Bag Small\n0\nx1\nTotal Item:\n2\nTotal.\n22.000\nCash\nTendered:\n100.000\nChange:\n78.000",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,40 +17,117 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "22000",
+    "total": "100000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "Tendered:",
+        "amount": "100000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change:",
+        "amount": "78000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999305605888367
+      "total": 0.9999693632125854
     },
     "boxes": {
       "total": [
-        598,
-        948,
-        728,
-        1000
+        660,
+        1058,
+        814,
+        1111
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999305605888367
+          "total": 0.9999693632125854
         },
         "boxes": {
           "total": [
-            598,
-            948,
+            660,
+            1058,
+            814,
+            1111
+          ]
+        },
+        "merchant_name": "1001-Choco Bun",
+        "total": "100000",
+        "line_items": [
+          {
+            "description": "Tendered:",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change:",
+            "amount": "78000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Tendered:",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change:",
+            "amount": "78000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9999310374259949
+        },
+        "boxes": {
+          "total": [
+            84,
+            941,
             728,
             1000
           ]
         },
         "merchant_name": "1001-Choco Bun",
-        "total": "22000"
+        "total": "22000",
+        "line_items": [
+          {
+            "description": "Tendered:",
+            "amount": "100000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change:",
+            "amount": "78000",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999693632125854
+        },
+        "boxes": {
+          "total": [
+            660,
+            1058,
+            814,
+            1111
+          ]
+        },
+        "total": "100000"
+      }
     }
   },
   "validation": {
@@ -57,7 +135,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "22000",
+        "printed": "100000",
         "passed": true
       }
     ]

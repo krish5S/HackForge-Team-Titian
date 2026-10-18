@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_077",
   "file_sha256": "ca8c7cdc94bb253af3bed6711106a66cfe993bfb950f5e73e9bd7d84cfe561dc",
+  "ocr_text": "COLUMBUS RESTAURANT\n736 OCEAN DRIVE\nMIAMI BEACH, FL 33139\nTEL:786-275-6944\nTABLE\n91\n5 GUESTS\nGustavo\n2 FBD BLUE MARGARI\n55.00\n110.001\n1 CHEESE BURGER\n14.501\n1 CHICKEN MARSALA\n18.50 1\nTAX and SERUICE Detail\nTF ARTICLES\nTax\nTotal\nSALES TAX 7%\n143.00\n10.01\n153.01\nRESORT TAX2%\n2.86\nSERUICE20%\n28.60\nTOTAL\n184.47\nSATURDAY 01-27-2018 03:59PM\nKey 12-Waitr: 12-POS\n1-BILL 01029/1\nPLEASE RATE US SO WE CAN BETTER SEUE\nFOOD:\n1 2 3 4 5 6 7 8\nSERUICE:\n1 2 3 4 5 6 7 8 9\n10\nAMBIANCE:\n1 23456 78 9\nNAME:",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -13,7 +14,7 @@
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "143.00",
+    "tax": "153.01",
     "tip": "",
     "other_charges": "",
     "total": "184.47",
@@ -23,6 +24,16 @@
       {
         "description": "2 FBD BLUE MARGARI",
         "amount": "55.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 CHEESE BURGER",
+        "amount": "14501",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "1 CHICKEN MARSALA",
+        "amount": "18.50",
         "item_class": "OTHER"
       },
       {
@@ -38,16 +49,17 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.9999776482582092,
-      "total": 0.9999451041221619,
-      "transaction_date": 0.9996649622917175
+      "tax": 0.9925999641418457,
+      "total": 0.9999480247497559,
+      "transaction_date": 0.9996655583381653,
+      "merchant_name": 0.9999831318855286
     },
     "boxes": {
       "tax": [
-        367,
-        436,
-        444,
-        470
+        179,
+        435,
+        642,
+        471
       ],
       "total": [
         486,
@@ -60,21 +72,28 @@
         639,
         499,
         676
+      ],
+      "merchant_name": [
+        259,
+        21,
+        587,
+        67
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999776482582092,
-          "total": 0.9999451041221619,
-          "transaction_date": 0.9996649622917175
+          "tax": 0.9925999641418457,
+          "total": 0.9999480247497559,
+          "transaction_date": 0.9996655583381653,
+          "merchant_name": 0.9999831318855286
         },
         "boxes": {
           "tax": [
-            367,
-            436,
-            444,
-            470
+            179,
+            435,
+            642,
+            471
           ],
           "total": [
             486,
@@ -87,10 +106,16 @@
             639,
             499,
             676
+          ],
+          "merchant_name": [
+            259,
+            21,
+            587,
+            67
           ]
         },
         "merchant_name": "COLUMBUS RESTAURANT",
-        "tax": "143.00",
+        "tax": "153.01",
         "total": "184.47",
         "transaction_date": "2018-01-27",
         "receipt_number": "01029",
@@ -98,6 +123,16 @@
           {
             "description": "2 FBD BLUE MARGARI",
             "amount": "55.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 CHEESE BURGER",
+            "amount": "14501",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 CHICKEN MARSALA",
+            "amount": "18.50",
             "item_class": "OTHER"
           },
           {
@@ -122,6 +157,16 @@
             "item_class": "OTHER"
           },
           {
+            "description": "1 CHEESE BURGER",
+            "amount": "14501",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "1 CHICKEN MARSALA",
+            "amount": "18.50",
+            "item_class": "OTHER"
+          },
+          {
             "description": "RESORT TAX2%",
             "amount": "2.86",
             "item_class": "OTHER"
@@ -132,6 +177,95 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9925999641418457,
+          "total": 0.9999480247497559,
+          "transaction_date": 0.9996655583381653
+        },
+        "boxes": {
+          "tax": [
+            179,
+            435,
+            642,
+            471
+          ],
+          "total": [
+            181,
+            577,
+            657,
+            634
+          ],
+          "transaction_date": [
+            173,
+            639,
+            499,
+            676
+          ]
+        },
+        "merchant_name": "COLUMBUS RESTAURANT",
+        "tax": "153.01",
+        "total": "184.47",
+        "transaction_date": "2018-01-27",
+        "receipt_number": "01029",
+        "line_items": [
+          {
+            "description": "2 FBD BLUE MARGARI",
+            "amount": "55.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 CHEESE BURGER",
+            "amount": "14501",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 CHICKEN MARSALA",
+            "amount": "18.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RESORT TAX2%",
+            "amount": "2.86",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SERUICE20%",
+            "amount": "28.60",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999831318855286,
+          "total": 0.9999480247497559,
+          "transaction_date": 0.9996655583381653
+        },
+        "boxes": {
+          "merchant_name": [
+            259,
+            21,
+            587,
+            67
+          ],
+          "total": [
+            486,
+            577,
+            657,
+            634
+          ],
+          "transaction_date": [
+            173,
+            639,
+            499,
+            676
+          ]
+        },
+        "merchant_name": "COLUMBUS RESTAURANT",
+        "total": "184.47",
+        "transaction_date": "2018-01-27"
       }
     }
   },

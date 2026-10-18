@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_023",
   "file_sha256": "66d6fc7cb413e3b7a6a2bcec98c76ceb9e9abca9e4d1c5bd6d85d6b6be9fd7dc",
+  "ocr_text": "BBQ Chicken\n41,000\n- Pedas sedikit\nITEMS:1\nTotal.\n41,000\nPay Cash 51,000\nChange :10,000\n要容GE第部名\n市E加加加",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "BBQ Chicken",
+    "merchant_name": "BBQ Chicken 41,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,40 +17,117 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "41000",
+    "total": "51000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "BBQ Chicken",
+        "amount": "41000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pay Cash",
+        "amount": "51000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999842643737793
+      "total": 0.9780861735343933
     },
     "boxes": {
       "total": [
-        420,
-        509,
-        506,
-        538
+        29,
+        527,
+        224,
+        558
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999842643737793
+          "total": 0.9780861735343933
         },
         "boxes": {
           "total": [
-            420,
-            509,
+            29,
+            527,
+            224,
+            558
+          ]
+        },
+        "merchant_name": "BBQ Chicken 41,000",
+        "total": "51000",
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "51000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "51000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9998247027397156
+        },
+        "boxes": {
+          "total": [
+            31,
+            505,
             506,
             538
           ]
         },
-        "merchant_name": "BBQ Chicken",
-        "total": "41000"
+        "merchant_name": "BBQ Chicken 41,000",
+        "total": "41000",
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "51000",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9780861735343933
+        },
+        "boxes": {
+          "total": [
+            29,
+            527,
+            224,
+            558
+          ]
+        },
+        "total": "51000"
+      }
     }
   },
   "validation": {
@@ -57,7 +135,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "41000",
+        "printed": "51000",
         "passed": true
       }
     ]
@@ -69,7 +147,7 @@
   },
   "fingerprints": {
     "phash": "fb8145db0b3c706a",
-    "merchant_norm": "bbq chicken"
+    "merchant_norm": "bbq chicken 41 000"
   },
   "forensics": {
     "score": 10,

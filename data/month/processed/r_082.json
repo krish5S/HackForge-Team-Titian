@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_082",
   "file_sha256": "aeaee06e8e74d6626f544f74d0381b1d5b705d8d8378d056230b08ece2fe8f53",
+  "ocr_text": "El Charro Cafe Ventana\n6910 E SUNRISE DR\nServer: Ana\n06/24/2018\n8:00 PM\nTable 24/1\nGuests: 2\n#30076\n5.00\nCoors Light\nIce Tea\n3.25\nShrimp Fajita\n18.95\nStuffed Chicken\n17.95\nSubtotal\n45.15\nTax\n2.75\nTotal\n47.90\nBalance Due\n47.90\nEAT FOR FREE!!!",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -17,9 +18,14 @@
     "tip": "",
     "other_charges": "",
     "total": "47.90",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "MEALS",
     "line_items": [
+      {
+        "description": "Coors Light",
+        "amount": "5.00",
+        "item_class": "OTHER"
+      },
       {
         "description": "Ice Tea",
         "amount": "3.25",
@@ -38,69 +44,97 @@
     ],
     "guest_count": 2,
     "confidence": {
-      "transaction_date": 0.9999901652336121,
-      "subtotal": 0.9999567866325378,
-      "tax": 0.9998565912246704,
-      "total": 0.9999871253967285
+      "transaction_date": 0.9987815618515015,
+      "subtotal": 0.9931100606918335,
+      "tax": 0.9998571872711182,
+      "total": 0.9999876022338867,
+      "merchant_name": 0.9935249090194702,
+      "transaction_time": 0.9996084570884705
     },
     "boxes": {
       "transaction_date": [
-        306,
+        57,
         50,
         393,
-        76
+        84
       ],
       "subtotal": [
-        373,
+        27,
         237,
         425,
-        259
+        267
       ],
       "tax": [
-        382,
+        26,
         256,
         429,
-        283
+        288
       ],
       "total": [
         340,
         353,
         447,
         381
+      ],
+      "merchant_name": [
+        139,
+        14,
+        307,
+        31
+      ],
+      "transaction_time": [
+        331,
+        67,
+        395,
+        89
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999901652336121,
-          "subtotal": 0.9999567866325378,
-          "tax": 0.9998565912246704,
-          "total": 0.9999871253967285
+          "transaction_date": 0.9987815618515015,
+          "subtotal": 0.9931100606918335,
+          "tax": 0.9998571872711182,
+          "total": 0.9999876022338867,
+          "merchant_name": 0.9935249090194702,
+          "transaction_time": 0.9996084570884705
         },
         "boxes": {
           "transaction_date": [
-            306,
+            57,
             50,
             393,
-            76
+            84
           ],
           "subtotal": [
-            373,
+            27,
             237,
             425,
-            259
+            267
           ],
           "tax": [
-            382,
+            26,
             256,
             429,
-            283
+            288
           ],
           "total": [
             340,
             353,
             447,
             381
+          ],
+          "merchant_name": [
+            139,
+            14,
+            307,
+            31
+          ],
+          "transaction_time": [
+            331,
+            67,
+            395,
+            89
           ]
         },
         "merchant_name": "El Charro Cafe Ventana",
@@ -110,6 +144,11 @@
         "tax": "2.75",
         "total": "47.90",
         "line_items": [
+          {
+            "description": "Coors Light",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          },
           {
             "description": "Ice Tea",
             "amount": "3.25",
@@ -125,13 +164,19 @@
             "amount": "17.95",
             "item_class": "OTHER"
           }
-        ]
+        ],
+        "itemization": "FULL"
       },
       "reader_b": {},
       "text_rules": {
         "category": "MEALS",
         "guest_count": 2,
         "line_items": [
+          {
+            "description": "Coors Light",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          },
           {
             "description": "Ice Tea",
             "amount": "3.25",
@@ -147,7 +192,109 @@
             "amount": "17.95",
             "item_class": "OTHER"
           }
-        ]
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9987815618515015,
+          "subtotal": 0.9931100606918335,
+          "tax": 0.9998571872711182,
+          "total": 0.9997953772544861
+        },
+        "boxes": {
+          "transaction_date": [
+            57,
+            50,
+            393,
+            84
+          ],
+          "subtotal": [
+            27,
+            237,
+            425,
+            267
+          ],
+          "tax": [
+            26,
+            256,
+            429,
+            288
+          ],
+          "total": [
+            8,
+            353,
+            447,
+            387
+          ]
+        },
+        "merchant_name": "El Charro Cafe Ventana",
+        "transaction_date": "2018-06-24",
+        "transaction_time": "20:00",
+        "subtotal": "45.15",
+        "tax": "2.75",
+        "total": "47.90",
+        "line_items": [
+          {
+            "description": "Coors Light",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ice Tea",
+            "amount": "3.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Shrimp Fajita",
+            "amount": "18.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Stuffed Chicken",
+            "amount": "17.95",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9935249090194702,
+          "total": 0.9999876022338867,
+          "transaction_date": 0.9999904632568359,
+          "transaction_time": 0.9996084570884705
+        },
+        "boxes": {
+          "merchant_name": [
+            139,
+            14,
+            307,
+            31
+          ],
+          "total": [
+            340,
+            353,
+            447,
+            381
+          ],
+          "transaction_date": [
+            306,
+            50,
+            393,
+            76
+          ],
+          "transaction_time": [
+            331,
+            67,
+            395,
+            89
+          ]
+        },
+        "merchant_name": "El Charro Cafe Ventana",
+        "total": "47.90",
+        "transaction_date": "2018-06-24",
+        "transaction_time": "8:00"
       }
     }
   },
@@ -167,9 +314,9 @@
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "40.15",
+        "expected": "45.15",
         "printed": "45.15",
-        "passed": false
+        "passed": true
       },
       {
         "name": "date_format",
@@ -189,10 +336,8 @@
     "merchant_norm": "el charro cafe ventana"
   },
   "forensics": {
-    "score": 25,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

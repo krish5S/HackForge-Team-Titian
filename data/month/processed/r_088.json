@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_088",
   "file_sha256": "21dfd16bfc3c7dd1da5c1432fe23dfd6bb07d56db092c913d8963b38b3295b76",
+  "ocr_text": "AEON CO. (M) BHD (126926-H)\n3RD FLR, AEON TAMAN MALURI SC\nJLN JEJAKA, TAMAN MALURI\nCHERAS, 5510O KUALA LUMPUR\nGST ID : 002017394688\nSHOPPING HOURS\nMON-SUN:1000 HRS - 2200 HRS\n1x 000004089728\n5.90SR\nSAKUMASHIKIDROP\n1x 000007572029\n5.90SR\nBINDER CLIP -BL\n1x 000006731878\n5.90SR\n150YEN CAR NECK\nSub-total\n17.70\nTotal Sales Incl GST\n17.70\nTotal After Adj Incl GST\n17.70\nCASH\n50.70\nItem Count 3\nChange Amt\n33.00\nInvoice No: 2018021951320026157\nGST Summary\nAmount\nTax\nSR @ 6%\n16.71\n0.99\nTotal\n16.71\n0.99\n19/02/2018 16:45\n5132 002 0026157\n0293605 SHIVANESWARY A/P MANY\nDAISO SUNWAY VELOCITY\nTEL 1-300-80-AE0N (2366)\nTHANK YOU FOR YOUR PATRONAGE\nPLEASE COME AGAIN",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,17 +17,32 @@
     "tax": "17.70",
     "tip": "",
     "other_charges": "",
-    "total": "16.71",
+    "total": "50.70",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "1x 000004089728",
+        "amount": "5.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1x 000007572029",
+        "amount": "5.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1x 000006731878",
+        "amount": "5.90",
+        "item_class": "OTHER"
+      },
       {
         "description": "CASH",
         "amount": "50.70",
         "item_class": "OTHER"
       },
       {
-        "description": "Change Amt",
+        "description": "Item Count 3 Change Amt",
         "amount": "33.00",
         "item_class": "OTHER"
       },
@@ -38,24 +54,38 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9994759559631348,
-      "tax": 0.999977707862854,
-      "transaction_date": 0.9941928386688232
+      "total": 0.9323563575744629,
+      "tax": 0.9962201118469238,
+      "transaction_date": 0.9941921234130859,
+      "merchant_name": 0.9798865914344788,
+      "transaction_time": 0.994193434715271
     },
     "boxes": {
       "total": [
-        469,
-        1309,
-        560,
-        1359
+        713,
+        1061,
+        810,
+        1111
       ],
       "tax": [
-        716,
-        1011,
+        96,
+        1009,
         811,
-        1061
+        1063
       ],
       "transaction_date": [
+        100,
+        1357,
+        806,
+        1408
+      ],
+      "merchant_name": [
+        252,
+        161,
+        733,
+        215
+      ],
+      "transaction_time": [
         100,
         1357,
         386,
@@ -65,24 +95,38 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9994759559631348,
-          "tax": 0.999977707862854,
-          "transaction_date": 0.9941928386688232
+          "total": 0.9323563575744629,
+          "tax": 0.9962201118469238,
+          "transaction_date": 0.9941921234130859,
+          "merchant_name": 0.9798865914344788,
+          "transaction_time": 0.994193434715271
         },
         "boxes": {
           "total": [
-            469,
-            1309,
-            560,
-            1359
+            713,
+            1061,
+            810,
+            1111
           ],
           "tax": [
-            716,
-            1011,
+            96,
+            1009,
             811,
-            1061
+            1063
           ],
           "transaction_date": [
+            100,
+            1357,
+            806,
+            1408
+          ],
+          "merchant_name": [
+            252,
+            161,
+            733,
+            215
+          ],
+          "transaction_time": [
             100,
             1357,
             386,
@@ -90,18 +134,33 @@
           ]
         },
         "merchant_name": "AEON CO. (M) BHD (126926-H)",
-        "total": "16.71",
+        "total": "50.70",
         "tax": "17.70",
         "transaction_date": "2018-02-19",
         "transaction_time": "16:45",
         "line_items": [
+          {
+            "description": "1x 000004089728",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000007572029",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000006731878",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
           {
             "description": "CASH",
             "amount": "50.70",
             "item_class": "OTHER"
           },
           {
-            "description": "Change Amt",
+            "description": "Item Count 3 Change Amt",
             "amount": "33.00",
             "item_class": "OTHER"
           },
@@ -116,12 +175,27 @@
       "text_rules": {
         "line_items": [
           {
+            "description": "1x 000004089728",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000007572029",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000006731878",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
             "description": "CASH",
             "amount": "50.70",
             "item_class": "OTHER"
           },
           {
-            "description": "Change Amt",
+            "description": "Item Count 3 Change Amt",
             "amount": "33.00",
             "item_class": "OTHER"
           },
@@ -131,6 +205,108 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.991747260093689,
+          "tax": 0.9962201118469238,
+          "transaction_date": 0.9941921234130859
+        },
+        "boxes": {
+          "total": [
+            94,
+            1306,
+            811,
+            1361
+          ],
+          "tax": [
+            96,
+            1009,
+            811,
+            1063
+          ],
+          "transaction_date": [
+            100,
+            1357,
+            806,
+            1408
+          ]
+        },
+        "merchant_name": "AEON CO. (M) BHD (126926-H)",
+        "total": "0.99",
+        "tax": "17.70",
+        "transaction_date": "2018-02-19",
+        "transaction_time": "16:45",
+        "line_items": [
+          {
+            "description": "1x 000004089728",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000007572029",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1x 000006731878",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Item Count 3 Change Amt",
+            "amount": "33.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR @ 6%",
+            "amount": "16.71",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9798865914344788,
+          "total": 0.9323563575744629,
+          "transaction_date": 0.994193434715271,
+          "transaction_time": 0.994193434715271
+        },
+        "boxes": {
+          "merchant_name": [
+            252,
+            161,
+            733,
+            215
+          ],
+          "total": [
+            713,
+            1061,
+            810,
+            1111
+          ],
+          "transaction_date": [
+            100,
+            1357,
+            386,
+            1408
+          ],
+          "transaction_time": [
+            100,
+            1357,
+            386,
+            1408
+          ]
+        },
+        "merchant_name": "AEON CO. (M) BHD (126926-H)",
+        "total": "50.70",
+        "transaction_date": "2018-02-19",
+        "transaction_time": "16:45"
       }
     }
   },
@@ -139,7 +315,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "16.71",
+        "printed": "50.70",
         "passed": true
       },
       {

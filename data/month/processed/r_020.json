@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_020",
   "file_sha256": "e9b1340c9593a87824aca27b98fa5735e5cac3e47e01df350ca7b0265baf6c0b",
+  "ocr_text": "培物学对动时计学信做学验\n\nXXL Crispy\nChicken\n40,000\np\n7\nPedas\n0\n40.00 0\nITEMS:1\nTatal\nPay\nCash 50,000\nChange\n10:000\n订印学世\n母世学时共世世会",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "培物学对动时计学信做学验",
     "receipt_number": "",
@@ -16,30 +17,136 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "50000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "p XXL Crispy Chicken",
+        "amount": "40000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ITEMS:1",
+        "amount": "40.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pay Cash",
+        "amount": "50000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9879470467567444
+    },
+    "boxes": {
+      "total": [
+        547,
+        2476,
+        1014,
+        2585
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "培物学对动时计学信做学验"
+        "confidence": {
+          "total": 0.9879470467567444
+        },
+        "boxes": {
+          "total": [
+            547,
+            2476,
+            1014,
+            2585
+          ]
+        },
+        "merchant_name": "培物学对动时计学信做学验",
+        "line_items": [
+          {
+            "description": "p XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "50000"
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "p XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "培物学对动时计学信做学验",
+        "line_items": [
+          {
+            "description": "p XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9879470467567444
+        },
+        "boxes": {
+          "total": [
+            547,
+            2476,
+            1014,
+            2585
+          ]
+        },
+        "total": "50000"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50000",
+        "passed": true
       }
     ]
   },
@@ -53,8 +160,10 @@
     "merchant_norm": ""
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_025",
   "file_sha256": "de1e616f2b2d2d1dfb9ee4a079f742dfe25e6ab1ebc7aacd600ae92217b33625",
+  "ocr_text": "ELEPHANT READ BEAN\n12,000\n12,000\nchapsal twister donnut\n10,000\n10,000\nTOTAL\n22,000\n2\nCASH\n22,000\nCHANGE\n0",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -17,39 +18,97 @@
     "tip": "",
     "other_charges": "",
     "total": "22000",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "CASH",
+        "amount": "22000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999921917915344
+      "total": 0.9999715685844421
     },
     "boxes": {
       "total": [
-        459,
-        638,
+        537,
+        691,
         624,
-        700
+        727
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999921917915344
+          "total": 0.9999715685844421
         },
         "boxes": {
           "total": [
-            459,
+            537,
+            691,
+            624,
+            727
+          ]
+        },
+        "merchant_name": "ELEPHANT READ BEAN",
+        "total": "22000",
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "22000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "22000",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9999855160713196
+        },
+        "boxes": {
+          "total": [
+            158,
             638,
             624,
             700
           ]
         },
         "merchant_name": "ELEPHANT READ BEAN",
-        "total": "22000"
+        "total": "22000",
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "22000",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9999715685844421
+        },
+        "boxes": {
+          "total": [
+            537,
+            691,
+            624,
+            727
+          ]
+        },
+        "total": "22000"
+      }
     }
   },
   "validation": {

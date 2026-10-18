@@ -1,8 +1,9 @@
 {
   "receipt_id": "r_095",
   "file_sha256": "1cc15c54ef1edca697faa5bd786b4c58d89d1a81b2edd0d59cd19df45c99a877",
+  "ocr_text": "3180404\n8taff ref\nGHEE HIANG\nGH DISTRIBUTOR & MARKETING SDN BHD\n(1097826-H)\n95, Beach Road, 10300 Penang.\n10400 Penang.\nTel: 04-262 0635\nGST Reg.No.: 001315377152\nTAX INVOICE\nInvoice No : 095_01/03124\nDate\n:13/04/2018 #1\n2:26 PM\nCashier\n: SOON WAH\nPRN ON\n: 13/04/2018 2:53 PM\nQTY ITEM\nRM\n*** Retail/Takeaway ***\n2 TAU SAR PNEAH (S) 24PCS @12.50\n25.00 SR\n2\nSubTotal\n25.00\nNet\nTotal\n25.\nC\nC\n50.00\nC.\nGE\n25.00\n*\n*3/0\n018 2:53 PM ***\nTax Summary\nAmc nt\nTax\nSR:inclusive of GST @6%\n23.58\n1.42\nTHANK YOU, PLEASE COME AGAIN\nGoods Cold Are Non Refundable",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "3180404",
     "receipt_number": "",
@@ -13,10 +14,10 @@
     "country": "",
     "currency": "",
     "subtotal": "25.00",
-    "tax": "23.58",
+    "tax": "1.42",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "50.00",
     "itemization": "",
     "category": "",
     "line_items": [
@@ -31,74 +32,111 @@
         "item_class": "OTHER"
       },
       {
-        "description": "GE",
+        "description": "C. GE",
         "amount": "25.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "SR:inclusive of GST @6%",
-        "amount": "23.58",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9712688326835632,
-      "subtotal": 0.9981321096420288,
-      "tax": 0.9999936819076538
+      "tax": 0.9864692091941833,
+      "transaction_date": 0.9712753891944885,
+      "subtotal": 0.9959036707878113,
+      "merchant_name": 0.9999990463256836,
+      "total": 0.9999949336051941,
+      "transaction_time": 0.993931770324707
     },
     "boxes": {
+      "tax": [
+        23,
+        947,
+        574,
+        987
+      ],
       "transaction_date": [
-        165,
-        447,
-        342,
-        480
+        32,
+        445,
+        582,
+        485
       ],
       "subtotal": [
-        474,
-        716,
+        29,
+        714,
         542,
         750
       ],
-      "tax": [
-        390,
-        954,
-        455,
-        984
+      "merchant_name": [
+        25,
+        24,
+        164,
+        59
+      ],
+      "total": [
+        474,
+        808,
+        540,
+        838
+      ],
+      "transaction_time": [
+        491,
+        449,
+        582,
+        485
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9712688326835632,
-          "subtotal": 0.9981321096420288,
-          "tax": 0.9999936819076538
+          "tax": 0.9864692091941833,
+          "transaction_date": 0.9712753891944885,
+          "subtotal": 0.9959036707878113,
+          "merchant_name": 0.9999990463256836,
+          "total": 0.9999949336051941,
+          "transaction_time": 0.993931770324707
         },
         "boxes": {
+          "tax": [
+            23,
+            947,
+            574,
+            987
+          ],
           "transaction_date": [
-            165,
-            447,
-            342,
-            480
+            32,
+            445,
+            582,
+            485
           ],
           "subtotal": [
-            474,
-            716,
+            29,
+            714,
             542,
             750
           ],
-          "tax": [
-            390,
-            954,
-            455,
-            984
+          "merchant_name": [
+            25,
+            24,
+            164,
+            59
+          ],
+          "total": [
+            474,
+            808,
+            540,
+            838
+          ],
+          "transaction_time": [
+            491,
+            449,
+            582,
+            485
           ]
         },
         "merchant_name": "3180404",
+        "tax": "1.42",
         "transaction_date": "2018-04-13",
         "transaction_time": "2:26",
         "subtotal": "25.00",
-        "tax": "23.58",
         "line_items": [
           {
             "description": "2 TAU SAR PNEAH (S) 24PCS @",
@@ -111,16 +149,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GE",
+            "description": "C. GE",
             "amount": "25.00",
             "item_class": "OTHER"
-          },
-          {
-            "description": "SR:inclusive of GST @6%",
-            "amount": "23.58",
-            "item_class": "OTHER"
           }
-        ]
+        ],
+        "total": "50.00"
       },
       "reader_b": {},
       "text_rules": {
@@ -136,30 +170,118 @@
             "item_class": "OTHER"
           },
           {
-            "description": "GE",
+            "description": "C. GE",
             "amount": "25.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "SR:inclusive of GST @6%",
-            "amount": "23.58",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9864692091941833,
+          "transaction_date": 0.9712753891944885,
+          "subtotal": 0.9959036707878113
+        },
+        "boxes": {
+          "tax": [
+            23,
+            947,
+            574,
+            987
+          ],
+          "transaction_date": [
+            32,
+            445,
+            582,
+            485
+          ],
+          "subtotal": [
+            29,
+            714,
+            542,
+            750
+          ]
+        },
+        "merchant_name": "3180404",
+        "tax": "1.42",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "14:26",
+        "subtotal": "25.00",
+        "line_items": [
+          {
+            "description": "2 TAU SAR PNEAH (S) 24PCS @",
+            "amount": "12.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "C",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "C. GE",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999990463256836,
+          "total": 0.9999949336051941,
+          "transaction_date": 0.9712753891944885,
+          "transaction_time": 0.993931770324707
+        },
+        "boxes": {
+          "merchant_name": [
+            25,
+            24,
+            164,
+            59
+          ],
+          "total": [
+            474,
+            808,
+            540,
+            838
+          ],
+          "transaction_date": [
+            165,
+            447,
+            342,
+            480
+          ],
+          "transaction_time": [
+            491,
+            449,
+            582,
+            485
+          ]
+        },
+        "merchant_name": "3180404",
+        "total": "50.00",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "2:26"
       }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "26.42",
+        "printed": "50.00",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "111.08",
+        "expected": "87.50",
         "printed": "25.00",
         "passed": false
       },
@@ -181,10 +303,12 @@
     "merchant_norm": "3180404"
   },
   "forensics": {
-    "score": 25,
+    "score": 60,
     "cnn_fake_probability": 0.0,
     "signals": [
-      "items_vs_subtotal"
+      "components_vs_total",
+      "items_vs_subtotal",
+      "round_total"
     ]
   }
 }

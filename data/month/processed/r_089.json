@@ -1,11 +1,12 @@
 {
   "receipt_id": "r_089",
   "file_sha256": "688801015159991a14db5be2f261078fe20dfd881452d5d7d8f7b999c1308c30",
+  "ocr_text": "L TWO FLORIST & HANDICRAFT\n002062543-P\nNO. 49, JALAN MAHAGONI 7/2,\nSEKSYEN 4 BANDAR UTAMA,\n44300 BATANG KALI, SELANGOR.\nTEL:012-3216447\nCASH\nRECEIPT #\nCS00007203\nDATE:\n21/03/2018\nSALESPERSON: 001\nTIME:\n11:01:00\nCASHIER:\nUSER\nITEM\nQTY\nU/P\nAMOUNT\nNE3555\n2\n1.00\n2.00\n1 1/2\" SAFETY PIN\nSB/01-3\n1\n7.00,\n7.00\nSATIN BIAS TAPE 12MMX3Y\nTOTAL QTY:\n3\n贝1D02\nSUB-TOTAL\n9.00\nDISC\n0.00\nTAX\n0.00\nROUNDING\n0.00\nTOTAL\n9.00\nCASH\n20.00\nCHANGE\n11.00\nBARANG YANG DIJUAL TIDAK BOLEH\nDITUKAR,",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
     "merchant_name": "L TWO FLORIST & HANDICRAFT",
-    "receipt_number": "",
+    "receipt_number": "CS00007203",
     "card_last4": "",
     "transaction_date": "2018-03-21",
     "transaction_time": "11:01",
@@ -16,10 +17,20 @@
     "tax": "0.00",
     "tip": "",
     "other_charges": "",
-    "total": "9.00",
+    "total": "20.00",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "NE3555 2",
+        "amount": "1.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SB/01-3 1 7.00,",
+        "amount": "7.00",
+        "item_class": "OTHER"
+      },
       {
         "description": "DISC",
         "amount": "0.00",
@@ -43,63 +54,102 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999972581863403,
-      "total": 0.999996542930603,
-      "tax": 0.9999833106994629
+      "transaction_date": 0.9700537919998169,
+      "total": 0.9999984502792358,
+      "tax": 0.9999841451644897,
+      "merchant_name": 0.9943429231643677,
+      "transaction_time": 0.9999714493751526
     },
     "boxes": {
       "transaction_date": [
-        454,
+        20,
         418,
         584,
         446
       ],
       "total": [
-        507,
-        908,
+        488,
+        949,
         579,
-        946
+        986
       ],
       "tax": [
-        526,
+        291,
         831,
         581,
         858
+      ],
+      "merchant_name": [
+        38,
+        153,
+        561,
+        186
+      ],
+      "transaction_time": [
+        455,
+        449,
+        556,
+        477
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999972581863403,
-          "total": 0.999996542930603,
-          "tax": 0.9999833106994629
+          "transaction_date": 0.9700537919998169,
+          "total": 0.9999984502792358,
+          "tax": 0.9999841451644897,
+          "merchant_name": 0.9943429231643677,
+          "transaction_time": 0.9999714493751526
         },
         "boxes": {
           "transaction_date": [
-            454,
+            20,
             418,
             584,
             446
           ],
           "total": [
-            507,
-            908,
+            488,
+            949,
             579,
-            946
+            986
           ],
           "tax": [
-            526,
+            291,
             831,
             581,
             858
+          ],
+          "merchant_name": [
+            38,
+            153,
+            561,
+            186
+          ],
+          "transaction_time": [
+            455,
+            449,
+            556,
+            477
           ]
         },
         "merchant_name": "L TWO FLORIST & HANDICRAFT",
         "transaction_date": "2018-03-21",
+        "receipt_number": "CS00007203",
         "transaction_time": "11:01",
-        "total": "9.00",
+        "total": "20.00",
         "tax": "0.00",
         "line_items": [
+          {
+            "description": "NE3555 2",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SB/01-3 1 7.00,",
+            "amount": "7.00",
+            "item_class": "OTHER"
+          },
           {
             "description": "DISC",
             "amount": "0.00",
@@ -126,6 +176,16 @@
       "text_rules": {
         "line_items": [
           {
+            "description": "NE3555 2",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SB/01-3 1 7.00,",
+            "amount": "7.00",
+            "item_class": "OTHER"
+          },
+          {
             "description": "DISC",
             "amount": "0.00",
             "item_class": "OTHER"
@@ -146,6 +206,109 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9700537919998169,
+          "total": 0.9999940991401672,
+          "tax": 0.9999841451644897
+        },
+        "boxes": {
+          "transaction_date": [
+            20,
+            418,
+            584,
+            446
+          ],
+          "total": [
+            100,
+            908,
+            579,
+            946
+          ],
+          "tax": [
+            291,
+            831,
+            581,
+            858
+          ]
+        },
+        "merchant_name": "L TWO FLORIST & HANDICRAFT",
+        "transaction_date": "2018-03-21",
+        "receipt_number": "CS00007203",
+        "transaction_time": "11:01",
+        "total": "9.00",
+        "tax": "0.00",
+        "line_items": [
+          {
+            "description": "NE3555 2",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SB/01-3 1 7.00,",
+            "amount": "7.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DISC",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ROUNDING",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "11.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9943429231643677,
+          "total": 0.9999984502792358,
+          "transaction_date": 0.9999974966049194,
+          "transaction_time": 0.9999714493751526
+        },
+        "boxes": {
+          "merchant_name": [
+            38,
+            153,
+            561,
+            186
+          ],
+          "total": [
+            488,
+            949,
+            579,
+            986
+          ],
+          "transaction_date": [
+            454,
+            418,
+            584,
+            446
+          ],
+          "transaction_time": [
+            455,
+            449,
+            556,
+            477
+          ]
+        },
+        "merchant_name": "L TWO FLORIST & HANDICRAFT",
+        "total": "20.00",
+        "transaction_date": "2018-03-21",
+        "transaction_time": "11:01"
       }
     }
   },
@@ -154,7 +317,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "9.00",
+        "printed": "20.00",
         "passed": true
       },
       {
@@ -175,8 +338,10 @@
     "merchant_norm": "l two florist handicraft"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

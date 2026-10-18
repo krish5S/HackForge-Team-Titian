@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_076",
   "file_sha256": "df88fa05e6930aceabee30559f31e203925702ee255ea072444daf4e48159e8c",
+  "ocr_text": "Chelokababi\n1236 S Wolfe Rd\nAug 18, 2018\nSunnyvale, CA 94086\n6:35 PM\n(408) 737-1222\nServer\nchelokababi.com\nTicket: D2\nFOR HERE\nKoobideh × 7\n$115.50\n($16,50 each)\nWell Done\nVery well done\n$8.95\nNan-O-Sabzi\nThanks:)\n18% Gratuity\n$22.40\nSubtotal\n$146.85\nSales Tax\n$13.22\nTotal\n$160.07\nMerci!\nThank you very much!",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -31,81 +32,109 @@
         "item_class": "OTHER"
       },
       {
-        "description": "Very well done",
+        "description": "Nan-O-Sabzi",
         "amount": "8.95",
         "item_class": "OTHER"
       },
       {
-        "description": "18% Gratuity",
+        "description": "18% Gratuity Thanks:)",
         "amount": "22.40",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "tip": 0.9999935030937195,
-      "subtotal": 0.9999970197677612,
-      "tax": 0.9999814033508301,
-      "total": 0.9999809265136719
+      "tip": 0.9972071051597595,
+      "subtotal": 0.9999893307685852,
+      "tax": 0.999970018863678,
+      "total": 0.9999812841415405,
+      "merchant_name": 0.9999797940254211,
+      "transaction_time": 0.9993177056312561
     },
     "boxes": {
       "tip": [
-        467,
-        579,
+        179,
+        574,
         534,
-        607
+        621
       ],
       "subtotal": [
-        461,
+        175,
         628,
         537,
-        655
+        659
       ],
       "tax": [
-        476,
+        174,
         656,
         539,
-        681
+        685
       ],
       "total": [
         458,
         715,
         542,
         740
+      ],
+      "merchant_name": [
+        171,
+        181,
+        312,
+        209
+      ],
+      "transaction_time": [
+        454,
+        251,
+        527,
+        273
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tip": 0.9999935030937195,
-          "subtotal": 0.9999970197677612,
-          "tax": 0.9999814033508301,
-          "total": 0.9999809265136719
+          "tip": 0.9972071051597595,
+          "subtotal": 0.9999893307685852,
+          "tax": 0.999970018863678,
+          "total": 0.9999812841415405,
+          "merchant_name": 0.9999797940254211,
+          "transaction_time": 0.9993177056312561
         },
         "boxes": {
           "tip": [
-            467,
-            579,
+            179,
+            574,
             534,
-            607
+            621
           ],
           "subtotal": [
-            461,
+            175,
             628,
             537,
-            655
+            659
           ],
           "tax": [
-            476,
+            174,
             656,
             539,
-            681
+            685
           ],
           "total": [
             458,
             715,
             542,
             740
+          ],
+          "merchant_name": [
+            171,
+            181,
+            312,
+            209
+          ],
+          "transaction_time": [
+            454,
+            251,
+            527,
+            273
           ]
         },
         "merchant_name": "Chelokababi",
@@ -127,12 +156,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Very well done",
+            "description": "Nan-O-Sabzi",
             "amount": "8.95",
             "item_class": "OTHER"
           },
           {
-            "description": "18% Gratuity",
+            "description": "18% Gratuity Thanks:)",
             "amount": "22.40",
             "item_class": "OTHER"
           }
@@ -152,16 +181,109 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Very well done",
+            "description": "Nan-O-Sabzi",
             "amount": "8.95",
             "item_class": "OTHER"
           },
           {
-            "description": "18% Gratuity",
+            "description": "18% Gratuity Thanks:)",
             "amount": "22.40",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tip": 0.9972071051597595,
+          "subtotal": 0.9999893307685852,
+          "tax": 0.999970018863678,
+          "total": 0.9999812841415405
+        },
+        "boxes": {
+          "tip": [
+            179,
+            574,
+            534,
+            621
+          ],
+          "subtotal": [
+            175,
+            628,
+            537,
+            659
+          ],
+          "tax": [
+            174,
+            656,
+            539,
+            685
+          ],
+          "total": [
+            169,
+            715,
+            542,
+            743
+          ]
+        },
+        "merchant_name": "Chelokababi",
+        "transaction_time": "18:35",
+        "currency": "USD",
+        "tip": "22.40",
+        "subtotal": "146.85",
+        "tax": "13.22",
+        "total": "160.07",
+        "line_items": [
+          {
+            "description": "Koobideh × 7",
+            "amount": "115.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Nan-O-Sabzi",
+            "amount": "8.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "18% Gratuity Thanks:)",
+            "amount": "22.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999797940254211,
+          "total": 0.9999812841415405,
+          "transaction_time": 0.9993177056312561
+        },
+        "boxes": {
+          "merchant_name": [
+            171,
+            181,
+            312,
+            209
+          ],
+          "total": [
+            458,
+            715,
+            542,
+            740
+          ],
+          "transaction_time": [
+            454,
+            251,
+            527,
+            273
+          ]
+        },
+        "merchant_name": "Chelokababi",
+        "total": "160.07",
+        "transaction_time": "6:35"
       }
     }
   },

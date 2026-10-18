@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_007",
   "file_sha256": "361dfc42ecb6571e65f9a32e317dde3ffd364e43d63a47f1d1dc1e55a6c41902",
+  "ocr_text": "1 CAPTAIN HOOK\n75,000\nIZZY PINK ZIGZAG\n1 PIRATES TREASURE\n75,000\nBILLY BROWN SMALL\n** KIDS\nMEAL\n150,000\nSUBTTL\n150,000\nService Charge\n12,000\nTAX\n16,200\nTOTAL\n178,200",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "1 CAPTAIN HOOK",
+    "merchant_name": "1 CAPTAIN HOOK 75,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -19,23 +20,44 @@
     "total": "178200",
     "itemization": "",
     "category": "MEALS",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "1 CAPTAIN HOOK",
+        "amount": "75000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 PIRATES TREASURE",
+        "amount": "75000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "** KIDS MEAL",
+        "amount": "150000",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "SUBTTL",
+        "amount": "150000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "other_charges": 0.9999940395355225,
-      "tax": 0.999995768070221,
+      "other_charges": 0.9999942779541016,
+      "tax": 0.9999961256980896,
       "total": 0.9993947148323059
     },
     "boxes": {
       "other_charges": [
-        1560,
-        2735,
+        563,
+        2720,
         1787,
         2825
       ],
       "tax": [
-        1560,
-        2820,
+        565,
+        2807,
         1786,
         2916
       ],
@@ -49,20 +71,20 @@
     "readers": {
       "reader_a": {
         "confidence": {
-          "other_charges": 0.9999940395355225,
-          "tax": 0.999995768070221,
+          "other_charges": 0.9999942779541016,
+          "tax": 0.9999961256980896,
           "total": 0.9993947148323059
         },
         "boxes": {
           "other_charges": [
-            1560,
-            2735,
+            563,
+            2720,
             1787,
             2825
           ],
           "tax": [
-            1560,
-            2820,
+            565,
+            2807,
             1786,
             2916
           ],
@@ -73,14 +95,125 @@
             3082
           ]
         },
-        "merchant_name": "1 CAPTAIN HOOK",
-        "tax": "16200",
+        "merchant_name": "1 CAPTAIN HOOK 75,000",
         "other_charges": "12000",
-        "total": "178200"
+        "tax": "16200",
+        "total": "178200",
+        "line_items": [
+          {
+            "description": "1 CAPTAIN HOOK",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PIRATES TREASURE",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "** KIDS MEAL",
+            "amount": "150000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "SUBTTL",
+            "amount": "150000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
       "text_rules": {
-        "category": "MEALS"
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "1 CAPTAIN HOOK",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PIRATES TREASURE",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "** KIDS MEAL",
+            "amount": "150000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "SUBTTL",
+            "amount": "150000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "other_charges": 0.9999942779541016,
+          "tax": 0.9999961256980896,
+          "total": 0.9993947148323059
+        },
+        "boxes": {
+          "other_charges": [
+            563,
+            2720,
+            1787,
+            2825
+          ],
+          "tax": [
+            565,
+            2807,
+            1786,
+            2916
+          ],
+          "total": [
+            568,
+            2981,
+            1780,
+            3082
+          ]
+        },
+        "merchant_name": "1 CAPTAIN HOOK 75,000",
+        "other_charges": "12000",
+        "tax": "16200",
+        "total": "178200",
+        "line_items": [
+          {
+            "description": "1 CAPTAIN HOOK",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 PIRATES TREASURE",
+            "amount": "75000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "** KIDS MEAL",
+            "amount": "150000",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "SUBTTL",
+            "amount": "150000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9993947148323059
+        },
+        "boxes": {
+          "total": [
+            1282,
+            2992,
+            1780,
+            3082
+          ]
+        },
+        "total": "178200"
       }
     }
   },
@@ -101,7 +234,7 @@
   },
   "fingerprints": {
     "phash": "94d06b3c6a7f206b",
-    "merchant_norm": "1 captain hook"
+    "merchant_norm": "1 captain hook 75 000"
   },
   "forensics": {
     "score": 10,

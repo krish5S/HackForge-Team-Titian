@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_073",
   "file_sha256": "36b005aa17a425ea8a990626856fb39ff77675f46de3392edc9dfc5c62706e82",
+  "ocr_text": "Mexican Restaurant & Bar\n25 West San Fernando St.\nSan Jose, CA 95113\n(408) 283-9595\n12/29/2017\nServer: Pablo\n1:17 PM\nTable 40/1\n30001\nGuests: 3\nReprint #: 1\n3.25\nCoffee\n14.95\nEnmoladas with Meat\nS\npollo\n5.95\n0\nChicken Tenders\n9.95\nT\nFlautas Chicken\n15.95\nColoradito\nM\n50.05\nSubtotal\n5.46\nTax\n55.51\nTotal\n9.01\nGratuity 18.00%\n64.52\nTotal\n64.52\nBalance Due\n!! Become a friend of us on\nFACEBOOK to receive news of\nevents & special offers !!\n!! THANK YOU FOR COMING !!",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -14,7 +15,7 @@
     "currency": "",
     "subtotal": "5.46",
     "tax": "55.51",
-    "tip": "18.00",
+    "tip": "64.52",
     "other_charges": "",
     "total": "64.52",
     "itemization": "",
@@ -31,17 +32,12 @@
         "item_class": "FOOD"
       },
       {
-        "description": "pollo",
-        "amount": "5.95",
-        "item_class": "OTHER"
-      },
-      {
         "description": "Chicken Tenders",
         "amount": "9.95",
         "item_class": "OTHER"
       },
       {
-        "description": "Flautas Chicken",
+        "description": "Flautas Chicken T",
         "amount": "15.95",
         "item_class": "OTHER"
       },
@@ -58,22 +54,24 @@
     ],
     "guest_count": 3,
     "confidence": {
-      "transaction_date": 0.9999980926513672,
-      "subtotal": 0.9999963045120239,
-      "tax": 0.9999977350234985,
-      "total": 0.9999966621398926,
-      "tip": 0.9994314908981323
+      "transaction_date": 0.9967095255851746,
+      "subtotal": 0.9995351433753967,
+      "tax": 0.9999979138374329,
+      "total": 0.9999969601631165,
+      "tip": 0.9994317293167114,
+      "merchant_name": 0.999976634979248,
+      "transaction_time": 0.9996866583824158
     },
     "boxes": {
       "transaction_date": [
-        420,
+        33,
         146,
         540,
-        181
+        192
       ],
       "subtotal": [
-        505,
-        520,
+        39,
+        509,
         563,
         555
       ],
@@ -92,29 +90,43 @@
       "tip": [
         40,
         626,
-        239,
-        669
+        573,
+        679
+      ],
+      "merchant_name": [
+        136,
+        4,
+        429,
+        43
+      ],
+      "transaction_time": [
+        453,
+        173,
+        544,
+        209
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999980926513672,
-          "subtotal": 0.9999963045120239,
-          "tax": 0.9999977350234985,
-          "total": 0.9999966621398926,
-          "tip": 0.9994314908981323
+          "transaction_date": 0.9967095255851746,
+          "subtotal": 0.9995351433753967,
+          "tax": 0.9999979138374329,
+          "total": 0.9999969601631165,
+          "tip": 0.9994317293167114,
+          "merchant_name": 0.999976634979248,
+          "transaction_time": 0.9996866583824158
         },
         "boxes": {
           "transaction_date": [
-            420,
+            33,
             146,
             540,
-            181
+            192
           ],
           "subtotal": [
-            505,
-            520,
+            39,
+            509,
             563,
             555
           ],
@@ -133,8 +145,20 @@
           "tip": [
             40,
             626,
-            239,
-            669
+            573,
+            679
+          ],
+          "merchant_name": [
+            136,
+            4,
+            429,
+            43
+          ],
+          "transaction_time": [
+            453,
+            173,
+            544,
+            209
           ]
         },
         "merchant_name": "Mexican Restaurant & Bar",
@@ -143,7 +167,7 @@
         "subtotal": "5.46",
         "tax": "55.51",
         "total": "64.52",
-        "tip": "18.00",
+        "tip": "64.52",
         "line_items": [
           {
             "description": "Reprint #: 1",
@@ -156,17 +180,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "pollo",
-            "amount": "5.95",
-            "item_class": "OTHER"
-          },
-          {
             "description": "Chicken Tenders",
             "amount": "9.95",
             "item_class": "OTHER"
           },
           {
-            "description": "Flautas Chicken",
+            "description": "Flautas Chicken T",
             "amount": "15.95",
             "item_class": "OTHER"
           },
@@ -198,17 +217,12 @@
             "item_class": "FOOD"
           },
           {
-            "description": "pollo",
-            "amount": "5.95",
-            "item_class": "OTHER"
-          },
-          {
             "description": "Chicken Tenders",
             "amount": "9.95",
             "item_class": "OTHER"
           },
           {
-            "description": "Flautas Chicken",
+            "description": "Flautas Chicken T",
             "amount": "15.95",
             "item_class": "OTHER"
           },
@@ -223,6 +237,124 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9967095255851746,
+          "subtotal": 0.9995351433753967,
+          "tax": 0.9999979138374329,
+          "total": 0.9987613558769226,
+          "tip": 0.9994317293167114
+        },
+        "boxes": {
+          "transaction_date": [
+            33,
+            146,
+            540,
+            192
+          ],
+          "subtotal": [
+            39,
+            509,
+            563,
+            555
+          ],
+          "tax": [
+            497,
+            578,
+            567,
+            616
+          ],
+          "total": [
+            40,
+            733,
+            577,
+            795
+          ],
+          "tip": [
+            40,
+            626,
+            573,
+            679
+          ]
+        },
+        "merchant_name": "Mexican Restaurant & Bar",
+        "transaction_date": "2017-12-29",
+        "transaction_time": "13:17",
+        "subtotal": "5.46",
+        "tax": "55.51",
+        "total": "64.52",
+        "tip": "64.52",
+        "line_items": [
+          {
+            "description": "Reprint #: 1",
+            "amount": "3.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Coffee",
+            "amount": "14.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Chicken Tenders",
+            "amount": "9.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Flautas Chicken T",
+            "amount": "15.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "M",
+            "amount": "50.05",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "18.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.999976634979248,
+          "total": 0.9999969601631165,
+          "transaction_date": 0.9999983906745911,
+          "transaction_time": 0.9996866583824158
+        },
+        "boxes": {
+          "merchant_name": [
+            136,
+            4,
+            429,
+            43
+          ],
+          "total": [
+            445,
+            733,
+            577,
+            775
+          ],
+          "transaction_date": [
+            420,
+            146,
+            540,
+            181
+          ],
+          "transaction_time": [
+            453,
+            173,
+            544,
+            209
+          ]
+        },
+        "merchant_name": "Mexican Restaurant & Bar",
+        "total": "64.52",
+        "transaction_date": "2017-12-29",
+        "transaction_time": "1:17"
       }
     }
   },
@@ -236,13 +368,13 @@
       },
       {
         "name": "components_vs_total",
-        "expected": "78.97",
+        "expected": "125.49",
         "printed": "64.52",
         "passed": false
       },
       {
         "name": "items_vs_subtotal",
-        "expected": "118.10",
+        "expected": "112.15",
         "printed": "5.46",
         "passed": false
       },

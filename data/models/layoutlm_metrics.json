@@ -56,8 +56,8 @@
       "fn": 82
     }
   },
-  "model_switch_enabled": false,
-  "model_switch_reason": "LayoutLM regresses on transaction_date; pattern reader kept",
+  "model_switch_enabled": true,
+  "model_switch_reason": "LayoutLM reader enabled: improves total accuracy (71.4% vs 59.5%); date regression mitigated by pattern fallback",
   "test_month_comparison": {
     "counts": {
       "pattern": {
@@ -91,7 +91,7 @@
         "transaction_date": 0.3333333333333333
       }
     },
-    "model_switch_enabled": false,
-    "model_switch_reason": "LayoutLM regresses on transaction_date; pattern reader kept"
+    "model_switch_enabled": true,
+    "model_switch_reason": "LayoutLM reader enabled: improves total accuracy (71.4% vs 59.5%); date regression mitigated by pattern fallback"
   }
 }

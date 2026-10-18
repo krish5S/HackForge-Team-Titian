@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_011",
   "file_sha256": "7260eb0086e52287a69f80e5f30345bed8c59b5e105a438d85646a805886be84",
+  "ocr_text": "10\n1 SAM DA SOD MINERAL WATER\n16,000\n2 TWIST DONUT\n18,000\nTOTAL\n34,000\nCASH\n50,000\nCHANGE\n16,000",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "1 SAM DA SOD MINERAL WATER",
+    "merchant_name": "1 SAM DA SOD MINERAL WATER 16,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,40 +17,157 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "34000",
+    "total": "50000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "1 SAM DA SOD MINERAL WATER",
+        "amount": "16000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2 TWIST DONUT",
+        "amount": "18000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "50000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CHANGE",
+        "amount": "16000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9999802708625793
+      "total": 0.99997878074646
     },
     "boxes": {
       "total": [
-        522,
-        685,
-        721,
-        765
+        617,
+        750,
+        719,
+        791
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9999802708625793
+          "total": 0.99997878074646
         },
         "boxes": {
           "total": [
-            522,
+            617,
+            750,
+            719,
+            791
+          ]
+        },
+        "merchant_name": "1 SAM DA SOD MINERAL WATER 16,000",
+        "total": "50000",
+        "line_items": [
+          {
+            "description": "1 SAM DA SOD MINERAL WATER",
+            "amount": "16000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 TWIST DONUT",
+            "amount": "18000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "16000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "1 SAM DA SOD MINERAL WATER",
+            "amount": "16000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 TWIST DONUT",
+            "amount": "18000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "16000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9999787211418152
+        },
+        "boxes": {
+          "total": [
+            202,
             685,
             721,
             765
           ]
         },
-        "merchant_name": "1 SAM DA SOD MINERAL WATER",
-        "total": "34000"
+        "merchant_name": "1 SAM DA SOD MINERAL WATER 16,000",
+        "total": "34000",
+        "line_items": [
+          {
+            "description": "1 SAM DA SOD MINERAL WATER",
+            "amount": "16000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 TWIST DONUT",
+            "amount": "18000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "16000",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {},
-      "text_rules": {}
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.99997878074646
+        },
+        "boxes": {
+          "total": [
+            617,
+            750,
+            719,
+            791
+          ]
+        },
+        "total": "50000"
+      }
     }
   },
   "validation": {
@@ -57,7 +175,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "34000",
+        "printed": "50000",
         "passed": true
       }
     ]
@@ -69,7 +187,7 @@
   },
   "fingerprints": {
     "phash": "b1c2e5ba1996cbc2",
-    "merchant_norm": "1 sam da sod mineral water"
+    "merchant_norm": "1 sam da sod mineral water 16 000"
   },
   "forensics": {
     "score": 10,

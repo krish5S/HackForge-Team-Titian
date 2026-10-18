@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_045",
   "file_sha256": "e27a9b05027ffccc038596b86f76244bb4b584bc2c9ae8e18434873153b85c2b",
+  "ocr_text": "Merchant 45\nRESTAURANT RECEIPT\nChicago, US\nParty size: 1\nDate: 2026-09-13\nTime: 12:00:00\nReceipt: r_045\nDinner\n100.00\nSUBTOTAL\n100.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n100.00 USD\nGuests: 1\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -28,12 +29,14 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.981531023979187,
-      "subtotal": 0.9990819692611694,
-      "tax": 0.9991315007209778,
-      "tip": 0.9987704157829285,
-      "other_charges": 0.9986505508422852,
-      "total": 0.9985589981079102
+      "transaction_date": 0.9815314412117004,
+      "subtotal": 0.9990831613540649,
+      "tax": 0.9991327524185181,
+      "tip": 0.9987718462944031,
+      "other_charges": 0.9986521005630493,
+      "total": 0.9985603094100952,
+      "merchant_name": 0.9999192953109741,
+      "transaction_time": 0.977093517780304
     },
     "boxes": {
       "transaction_date": [
@@ -43,25 +46,25 @@
         311
       ],
       "subtotal": [
-        527,
+        62,
         548,
         681,
         575
       ],
       "tax": [
-        557,
+        61,
         609,
         681,
-        634
+        636
       ],
       "tip": [
-        558,
-        669,
+        61,
+        668,
         680,
-        695
+        696
       ],
       "other_charges": [
-        558,
+        61,
         729,
         680,
         754
@@ -71,17 +74,31 @@
         790,
         804,
         817
+      ],
+      "merchant_name": [
+        62,
+        44,
+        328,
+        79
+      ],
+      "transaction_time": [
+        63,
+        339,
+        301,
+        363
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.981531023979187,
-          "subtotal": 0.9990819692611694,
-          "tax": 0.9991315007209778,
-          "tip": 0.9987704157829285,
-          "other_charges": 0.9986505508422852,
-          "total": 0.9985589981079102
+          "transaction_date": 0.9815314412117004,
+          "subtotal": 0.9990831613540649,
+          "tax": 0.9991327524185181,
+          "tip": 0.9987718462944031,
+          "other_charges": 0.9986521005630493,
+          "total": 0.9985603094100952,
+          "merchant_name": 0.9999192953109741,
+          "transaction_time": 0.977093517780304
         },
         "boxes": {
           "transaction_date": [
@@ -91,25 +108,25 @@
             311
           ],
           "subtotal": [
-            527,
+            62,
             548,
             681,
             575
           ],
           "tax": [
-            557,
+            61,
             609,
             681,
-            634
+            636
           ],
           "tip": [
-            558,
-            669,
+            61,
+            668,
             680,
-            695
+            696
           ],
           "other_charges": [
-            558,
+            61,
             729,
             680,
             754
@@ -119,6 +136,18 @@
             790,
             804,
             817
+          ],
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
           ]
         },
         "merchant_name": "Merchant 45",
@@ -153,6 +182,111 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9815314412117004,
+          "subtotal": 0.9990831613540649,
+          "tax": 0.9991327524185181,
+          "tip": 0.9987718462944031,
+          "other_charges": 0.9986521005630493,
+          "total": 0.9985603094100952
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            62,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            61,
+            609,
+            681,
+            636
+          ],
+          "tip": [
+            61,
+            668,
+            680,
+            696
+          ],
+          "other_charges": [
+            61,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            61,
+            790,
+            804,
+            818
+          ]
+        },
+        "merchant_name": "Merchant 45",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-13",
+        "transaction_time": "12:00",
+        "receipt_number": "R_045",
+        "subtotal": "100.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "100.00",
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999192953109741,
+          "total": 0.9985603094100952,
+          "transaction_date": 0.9815314412117004,
+          "transaction_time": 0.977093517780304
+        },
+        "boxes": {
+          "merchant_name": [
+            62,
+            44,
+            328,
+            79
+          ],
+          "total": [
+            622,
+            790,
+            804,
+            817
+          ],
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
+          ]
+        },
+        "merchant_name": "Merchant 45",
+        "total": "100.00",
+        "transaction_date": "2026-09-13",
+        "transaction_time": "12:00"
       }
     }
   },

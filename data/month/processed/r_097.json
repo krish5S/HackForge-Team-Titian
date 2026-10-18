@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_097",
   "file_sha256": "c50c0abbd7ea893689b65b89d33f3ad43018871d77f30d14ca534c87ab6a42f4",
+  "ocr_text": "PINGHWAI TRADING SDN BHD\n(1211036-W)\nNO.2, JALAN METRO PERDANA TIMUR 11.\nKEPONG ENTERPRENUERS PARK,\nOFF JALAN KEPONG,\n52100 KUALA LUMPUR.\nTEL:0122648835\nFAX:603-62592420\nGSTID:001371123712\nTAX INVOICE\nDoc No.\n:CS00020648\nDate: 30/09/2017\nCashier\n: USER\nTime: 13:04:00\nSalesperson :\nRef.:\n(GST)\n(GST)\nItem\nQty\nS/Price\nS/Price\nAmount\nTax\n17007\n39.00\n15.81\n15.81\n616.59\nZRL\nUDANG KERING\nTotal Qty:\n39.00\n616.59\nTotal Sales (Excluding GST):\n616.59\nDiscount\n0.00\nTotal GST\n0.00\nRounding\n0.01\nTotal Sales (Inclusive of GST)\n616.60\n{4553 8800 9593 0119} VISA :\n616.60\nChange :\n0.00\nGST SUMMARY\nTax Code\n%\nAmt (RM)\nTax (RM)\nZRL\n0\n616.59\n0.00\nTotal :\n616.59\n0.00\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU.",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,10 +17,15 @@
     "tax": "616.60",
     "tip": "",
     "other_charges": "",
-    "total": "616.59",
+    "total": "616.60",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "17007",
+        "amount": "39.00",
+        "item_class": "OTHER"
+      },
       {
         "description": "Discount",
         "amount": "0.00",
@@ -31,75 +37,113 @@
         "item_class": "OTHER"
       },
       {
-        "description": "{4553 8800 9593 0119} VISA :",
+        "description": "{4553 8800 9593 0119} VISA",
         "amount": "616.60",
         "item_class": "OTHER"
       },
       {
-        "description": "Change :",
+        "description": "Change",
         "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ZRL 0",
+        "amount": "616.59",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9909801483154297,
-      "total": 0.9999963641166687,
-      "tax": 0.9999820590019226
+      "transaction_date": 0.9909805655479431,
+      "total": 0.9999968409538269,
+      "tax": 0.9977060556411743,
+      "merchant_name": 0.983178436756134,
+      "transaction_time": 0.9924399256706238
     },
     "boxes": {
       "transaction_date": [
-        405,
+        33,
         432,
         590,
-        456
+        457
       ],
       "total": [
-        347,
-        1113,
-        423,
-        1140
+        459,
+        914,
+        535,
+        941
       ],
       "tax": [
-        460,
+        70,
         878,
         533,
-        900
+        902
+      ],
+      "merchant_name": [
+        88,
+        145,
+        534,
+        175
+      ],
+      "transaction_time": [
+        403,
+        465,
+        565,
+        489
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9909801483154297,
-          "total": 0.9999963641166687,
-          "tax": 0.9999820590019226
+          "transaction_date": 0.9909805655479431,
+          "total": 0.9999968409538269,
+          "tax": 0.9977060556411743,
+          "merchant_name": 0.983178436756134,
+          "transaction_time": 0.9924399256706238
         },
         "boxes": {
           "transaction_date": [
-            405,
+            33,
             432,
             590,
-            456
+            457
           ],
           "total": [
-            347,
-            1113,
-            423,
-            1140
+            459,
+            914,
+            535,
+            941
           ],
           "tax": [
-            460,
+            70,
             878,
             533,
-            900
+            902
+          ],
+          "merchant_name": [
+            88,
+            145,
+            534,
+            175
+          ],
+          "transaction_time": [
+            403,
+            465,
+            565,
+            489
           ]
         },
         "merchant_name": "PINGHWAI TRADING SDN BHD",
         "transaction_date": "2017-09-30",
         "transaction_time": "13:04",
-        "total": "616.59",
+        "total": "616.60",
         "tax": "616.60",
         "line_items": [
+          {
+            "description": "17007",
+            "amount": "39.00",
+            "item_class": "OTHER"
+          },
           {
             "description": "Discount",
             "amount": "0.00",
@@ -111,13 +155,18 @@
             "item_class": "OTHER"
           },
           {
-            "description": "{4553 8800 9593 0119} VISA :",
+            "description": "{4553 8800 9593 0119} VISA",
             "amount": "616.60",
             "item_class": "OTHER"
           },
           {
-            "description": "Change :",
+            "description": "Change",
             "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL 0",
+            "amount": "616.59",
             "item_class": "OTHER"
           }
         ]
@@ -126,6 +175,11 @@
       "text_rules": {
         "line_items": [
           {
+            "description": "17007",
+            "amount": "39.00",
+            "item_class": "OTHER"
+          },
+          {
             "description": "Discount",
             "amount": "0.00",
             "item_class": "OTHER"
@@ -136,16 +190,123 @@
             "item_class": "OTHER"
           },
           {
-            "description": "{4553 8800 9593 0119} VISA :",
+            "description": "{4553 8800 9593 0119} VISA",
             "amount": "616.60",
             "item_class": "OTHER"
           },
           {
-            "description": "Change :",
+            "description": "Change",
             "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL 0",
+            "amount": "616.59",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9909805655479431,
+          "total": 0.970962405204773,
+          "tax": 0.9977060556411743
+        },
+        "boxes": {
+          "transaction_date": [
+            33,
+            432,
+            590,
+            457
+          ],
+          "total": [
+            203,
+            1113,
+            571,
+            1140
+          ],
+          "tax": [
+            70,
+            878,
+            533,
+            902
+          ]
+        },
+        "merchant_name": "PINGHWAI TRADING SDN BHD",
+        "transaction_date": "2017-09-30",
+        "transaction_time": "13:04",
+        "total": "0.00",
+        "tax": "616.60",
+        "line_items": [
+          {
+            "description": "17007",
+            "amount": "39.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.01",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "{4553 8800 9593 0119} VISA",
+            "amount": "616.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL 0",
+            "amount": "616.59",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.983178436756134,
+          "total": 0.9999968409538269,
+          "transaction_date": 0.9909805655479431,
+          "transaction_time": 0.9924399256706238
+        },
+        "boxes": {
+          "merchant_name": [
+            88,
+            145,
+            534,
+            175
+          ],
+          "total": [
+            459,
+            914,
+            535,
+            941
+          ],
+          "transaction_date": [
+            405,
+            432,
+            590,
+            456
+          ],
+          "transaction_time": [
+            403,
+            465,
+            565,
+            489
+          ]
+        },
+        "merchant_name": "PINGHWAI TRADING SDN BHD",
+        "total": "616.60",
+        "transaction_date": "2017-09-30",
+        "transaction_time": "13:04"
       }
     }
   },
@@ -154,7 +315,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "616.59",
+        "printed": "616.60",
         "passed": true
       },
       {

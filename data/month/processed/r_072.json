@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_072",
   "file_sha256": "c6e914ac8b4a11e7a3d05349b89131a701645e357abde16eb37fbd1f8dbbd056",
+  "ocr_text": "POPEYE'S\n11538\n201-885-2085\nCARRY-OUT, SUN JUN 24 20:49:53 2018\n#150 Server #: 8325\n1 #5 5 WING COMBO\n9.99\n> SPICY\nREG CAJ FRIES\nCOKE\n1 #6 3 TENDER ML\n8.69\nREG MACHEESE\nCOKE\n1 #6 3 TENDER ML\n8.69\nREG CAJ FRIES\nCOKE\n1 #11/ POP SHRMP/COMBO\n8.49\nREG CAJ FRIES\nCOKE\nTAX A\n2.37\n150\nTotal D1-4\n38.23\nCREDIT\n38.23\nCHANGE\n0.00\nTHANK YOU FOR",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -53,41 +54,69 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.9999935626983643,
-      "total": 0.9999979138374329
+      "tax": 0.9993616342544556,
+      "total": 0.9999986886978149,
+      "merchant_name": 0.9999359846115112,
+      "transaction_time": 0.986419677734375
     },
     "boxes": {
       "tax": [
-        465,
-        751,
+        191,
+        741,
         539,
         793
       ],
       "total": [
         449,
-        789,
-        540,
-        834
+        831,
+        541,
+        875
+      ],
+      "merchant_name": [
+        248,
+        66,
+        478,
+        114
+      ],
+      "transaction_time": [
+        114,
+        169,
+        618,
+        201
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999935626983643,
-          "total": 0.9999979138374329
+          "tax": 0.9993616342544556,
+          "total": 0.9999986886978149,
+          "merchant_name": 0.9999359846115112,
+          "transaction_time": 0.986419677734375
         },
         "boxes": {
           "tax": [
-            465,
-            751,
+            191,
+            741,
             539,
             793
           ],
           "total": [
             449,
-            789,
-            540,
-            834
+            831,
+            541,
+            875
+          ],
+          "merchant_name": [
+            248,
+            66,
+            478,
+            114
+          ],
+          "transaction_time": [
+            114,
+            169,
+            618,
+            201
           ]
         },
         "merchant_name": "POPEYE'S",
@@ -161,6 +190,92 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "tax": 0.9993616342544556,
+          "total": 0.9987419843673706
+        },
+        "boxes": {
+          "tax": [
+            191,
+            741,
+            539,
+            793
+          ],
+          "total": [
+            92,
+            771,
+            540,
+            834
+          ]
+        },
+        "merchant_name": "POPEYE'S",
+        "transaction_time": "20:49",
+        "tax": "2.37",
+        "total": "38.23",
+        "line_items": [
+          {
+            "description": "1 #5 5 WING COMBO",
+            "amount": "9.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #6 3 TENDER ML",
+            "amount": "8.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #6 3 TENDER ML",
+            "amount": "8.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #11/ POP SHRMP/COMBO",
+            "amount": "8.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CREDIT",
+            "amount": "38.23",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999359846115112,
+          "total": 0.9999986886978149,
+          "transaction_time": 0.986419677734375
+        },
+        "boxes": {
+          "merchant_name": [
+            248,
+            66,
+            478,
+            114
+          ],
+          "total": [
+            449,
+            831,
+            541,
+            875
+          ],
+          "transaction_time": [
+            114,
+            169,
+            618,
+            201
+          ]
+        },
+        "merchant_name": "POPEYE'S",
+        "total": "38.23",
+        "transaction_time": "20:49"
       }
     }
   },

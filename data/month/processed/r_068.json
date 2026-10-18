@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_068",
   "file_sha256": "594d44f77af3cea4db44bd1223e0e3abe688cfbc506f05dd100073a16068689a",
+  "ocr_text": "Subway#44969-0 Phone 626-585-9999\n625 S Fatr Oaks Ave\nPasadena, CA, 91105\nServed by: 41 5/1/2019 2:25:37 pm\nTerm ID-Trans# 1/A-297424\nQty Size Item\nPrice\n#SMS $11.99 Any 2 FtLong 11.99\n12° -Steak & Chse Sub\n12°-B.M.T. Sub\nSub Total\n11.99\nSales Tax (10.25%)\nTotal (Eat In)\n13.22\n1.23\nChange\nCredit Card\n13.22\nApproval No: 051140\n0.00\nReference No: 912121113552\nCard Issuer: Visa\nAccount No: *02\nAcquired: Contact_EHV\nApplication: CHASE VISA\nAmount: $13.22\nAID: A00000031010\nTVR: 0080008000\nDate/Time: 5/1/2019 2:25:37 PM\nTSI: EBOO\nCUSTOMER COPY",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -13,7 +14,7 @@
     "country": "",
     "currency": "USD",
     "subtotal": "11.99",
-    "tax": "10.25",
+    "tax": "1.23",
     "tip": "",
     "other_charges": "",
     "total": "13.22",
@@ -26,22 +27,24 @@
         "item_class": "OTHER"
       },
       {
-        "description": "Approval No: 051140",
+        "description": "Change",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Amount",
+        "description": "Acquired: Contact_EHV Amount",
         "amount": "13.22",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9717409610748291,
-      "subtotal": 0.9994478225708008,
-      "total": 0.9993953704833984,
-      "tax": 0.9875115156173706
+      "transaction_date": 0.9717426896095276,
+      "subtotal": 0.9472247362136841,
+      "tax": 0.9875261783599854,
+      "total": 0.9809585809707642,
+      "merchant_name": 0.996673583984375,
+      "transaction_time": 0.9717426896095276
     },
     "boxes": {
       "transaction_date": [
@@ -51,31 +54,45 @@
         105
       ],
       "subtotal": [
-        222,
+        72,
         186,
         250,
         202
       ],
-      "total": [
-        223,
-        208,
-        248,
-        221
-      ],
       "tax": [
         74,
         199,
-        154,
+        248,
         211
+      ],
+      "total": [
+        113,
+        283,
+        178,
+        302
+      ],
+      "merchant_name": [
+        92,
+        53,
+        245,
+        72
+      ],
+      "transaction_time": [
+        92,
+        87,
+        244,
+        105
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9717409610748291,
-          "subtotal": 0.9994478225708008,
-          "total": 0.9993953704833984,
-          "tax": 0.9875115156173706
+          "transaction_date": 0.9717426896095276,
+          "subtotal": 0.9472247362136841,
+          "tax": 0.9875261783599854,
+          "total": 0.9809585809707642,
+          "merchant_name": 0.996673583984375,
+          "transaction_time": 0.9717426896095276
         },
         "boxes": {
           "transaction_date": [
@@ -85,22 +102,34 @@
             105
           ],
           "subtotal": [
-            222,
+            72,
             186,
             250,
             202
           ],
-          "total": [
-            223,
-            208,
-            248,
-            221
-          ],
           "tax": [
             74,
             199,
-            154,
+            248,
             211
+          ],
+          "total": [
+            113,
+            283,
+            178,
+            302
+          ],
+          "merchant_name": [
+            92,
+            53,
+            245,
+            72
+          ],
+          "transaction_time": [
+            92,
+            87,
+            244,
+            105
           ]
         },
         "merchant_name": "Subway#44969-0 Phone 626-585-9999",
@@ -108,8 +137,8 @@
         "transaction_time": "2:25:",
         "currency": "USD",
         "subtotal": "11.99",
+        "tax": "1.23",
         "total": "13.22",
-        "tax": "10.25",
         "line_items": [
           {
             "description": "#SMS",
@@ -117,12 +146,12 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Approval No: 051140",
+            "description": "Change",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Amount",
+            "description": "Acquired: Contact_EHV Amount",
             "amount": "13.22",
             "item_class": "OTHER"
           }
@@ -137,16 +166,112 @@
             "item_class": "OTHER"
           },
           {
-            "description": "Approval No: 051140",
+            "description": "Change",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Amount",
+            "description": "Acquired: Contact_EHV Amount",
             "amount": "13.22",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9717426896095276,
+          "subtotal": 0.9472247362136841,
+          "tax": 0.9875261783599854,
+          "total": 0.9732575416564941
+        },
+        "boxes": {
+          "transaction_date": [
+            92,
+            87,
+            244,
+            105
+          ],
+          "subtotal": [
+            72,
+            186,
+            250,
+            202
+          ],
+          "tax": [
+            74,
+            199,
+            248,
+            211
+          ],
+          "total": [
+            74,
+            208,
+            248,
+            221
+          ]
+        },
+        "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+        "transaction_date": "2019-05-01",
+        "transaction_time": "14:25",
+        "currency": "USD",
+        "subtotal": "11.99",
+        "tax": "1.23",
+        "total": "13.22",
+        "line_items": [
+          {
+            "description": "#SMS",
+            "amount": "11.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Acquired: Contact_EHV Amount",
+            "amount": "13.22",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.996673583984375,
+          "total": 0.9809585809707642,
+          "transaction_date": 0.9717426896095276,
+          "transaction_time": 0.9717426896095276
+        },
+        "boxes": {
+          "merchant_name": [
+            92,
+            53,
+            245,
+            72
+          ],
+          "total": [
+            113,
+            283,
+            178,
+            302
+          ],
+          "transaction_date": [
+            92,
+            87,
+            244,
+            105
+          ],
+          "transaction_time": [
+            92,
+            87,
+            244,
+            105
+          ]
+        },
+        "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+        "total": "13.22",
+        "transaction_date": "2019-05-01",
+        "transaction_time": "2:25:"
       }
     }
   },
@@ -160,9 +285,9 @@
       },
       {
         "name": "components_vs_total",
-        "expected": "22.24",
+        "expected": "13.22",
         "printed": "13.22",
-        "passed": false
+        "passed": true
       },
       {
         "name": "items_vs_subtotal",
@@ -188,10 +313,9 @@
     "merchant_norm": "subway 44969 0 phone 626 585 9999"
   },
   "forensics": {
-    "score": 50,
+    "score": 25,
     "cnn_fake_probability": 0.0,
     "signals": [
-      "components_vs_total",
       "items_vs_subtotal"
     ]
   }

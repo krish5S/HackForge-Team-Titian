@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_092",
   "file_sha256": "aa4500975fef2e512361eae9e45be40d2736dd96c754ab30a5b327ac90838221",
+  "ocr_text": "TONYMOLY VIVA CITY\n(TONYMOLY SHOP (95874))\nUNIT L1-O44B, VIVACITY MEGAMALL,\nJALAN WAN ALWI,\n93350 KUCHING, SARAWAK.\nGSI ID:000349356032\nTay Invoice\nTERMINAL\n: 880\nSALES NO.\n807949\nSALES DATE\n:29/03/2018 20:37:46\nCASH\n: Then Fiona\nCL:1\n: CASH\nPOIN.\n:0\nEGG PORE BLACKHEAD STEAM BALM2EAC [SR]\nSS04018600\n1 *55.90\n55.90\nDisc 10.00%\n-5.59\nLGG PORE TIGHTENING COOLING PA30g [SR]\nSS04017600\n1 *55.90\n55.90\nDisc 10.00%\n-5.59\nDISCOUNT 10%\nEAC\n[ZR]\nDIS10\n1*0.00\n0.00\nItem Count\n3\nTotal Sales Incl. GST\n100.62\nRounding Adjustment\n-0.02\nTotal After Rounding\n100.60\nVISA\n100.60\nCard No\n46 xxxxxxxx 1819\nApp. Code\na0000000031010\n46 xxxxxxxx 1819-\nCST summary\nAmount(RM)\nTax(RM)\nSR = 6%\n94.92\n5.70\nZR = 0%\n0.00\n0.00\nlotal promotional saving\n11.18\ninted cn: 29-03-2018 20:38:07\nThank: You\nPlease Come Again",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -16,18 +17,38 @@
     "tax": "100.62",
     "tip": "",
     "other_charges": "",
-    "total": "100.60",
+    "total": "100.62",
     "itemization": "",
     "category": "",
     "line_items": [
+      {
+        "description": "SS04018600 1 *",
+        "amount": "55.90",
+        "item_class": "OTHER"
+      },
       {
         "description": "Disc",
         "amount": "10.00",
         "item_class": "OTHER"
       },
       {
+        "description": "SS04017600 1 *",
+        "amount": "55.90",
+        "item_class": "OTHER"
+      },
+      {
         "description": "Disc",
         "amount": "10.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "DIS10 1*",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding Adjustment",
+        "amount": "-0.02",
         "item_class": "OTHER"
       },
       {
@@ -53,71 +74,119 @@
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9865253567695618,
-      "tax": 0.999994695186615,
-      "total": 0.999987781047821
+      "transaction_date": 0.9865264892578125,
+      "tax": 0.9935722351074219,
+      "total": 0.9999949932098389,
+      "merchant_name": 0.9998931884765625,
+      "transaction_time": 0.9865264892578125
     },
     "boxes": {
       "transaction_date": [
-        339,
+        110,
         644,
         640,
-        678
+        681
       ],
       "tax": [
+        113,
+        1235,
+        670,
+        1275
+      ],
+      "total": [
         577,
         1235,
         670,
         1272
       ],
-      "total": [
-        576,
-        1309,
-        671,
-        1347
+      "merchant_name": [
+        265,
+        234,
+        525,
+        271
+      ],
+      "transaction_time": [
+        339,
+        644,
+        640,
+        678
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9865253567695618,
-          "tax": 0.999994695186615,
-          "total": 0.999987781047821
+          "transaction_date": 0.9865264892578125,
+          "tax": 0.9935722351074219,
+          "total": 0.9999949932098389,
+          "merchant_name": 0.9998931884765625,
+          "transaction_time": 0.9865264892578125
         },
         "boxes": {
           "transaction_date": [
-            339,
+            110,
             644,
             640,
-            678
+            681
           ],
           "tax": [
+            113,
+            1235,
+            670,
+            1275
+          ],
+          "total": [
             577,
             1235,
             670,
             1272
           ],
-          "total": [
-            576,
-            1309,
-            671,
-            1347
+          "merchant_name": [
+            265,
+            234,
+            525,
+            271
+          ],
+          "transaction_time": [
+            339,
+            644,
+            640,
+            678
           ]
         },
         "merchant_name": "TONYMOLY VIVA CITY",
         "transaction_date": "2018-03-29",
         "transaction_time": "20:37",
         "tax": "100.62",
-        "total": "100.60",
+        "total": "100.62",
         "line_items": [
+          {
+            "description": "SS04018600 1 *",
+            "amount": "55.90",
+            "item_class": "OTHER"
+          },
           {
             "description": "Disc",
             "amount": "10.00",
             "item_class": "OTHER"
           },
           {
+            "description": "SS04017600 1 *",
+            "amount": "55.90",
+            "item_class": "OTHER"
+          },
+          {
             "description": "Disc",
             "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DIS10 1*",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adjustment",
+            "amount": "-0.02",
             "item_class": "OTHER"
           },
           {
@@ -146,13 +215,33 @@
       "text_rules": {
         "line_items": [
           {
-            "description": "Disc",
-            "amount": "10.00",
+            "description": "SS04018600 1 *",
+            "amount": "55.90",
             "item_class": "OTHER"
           },
           {
             "description": "Disc",
             "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SS04017600 1 *",
+            "amount": "55.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Disc",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DIS10 1*",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adjustment",
+            "amount": "-0.02",
             "item_class": "OTHER"
           },
           {
@@ -176,6 +265,128 @@
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9865264892578125,
+          "tax": 0.9935722351074219,
+          "total": 0.9903907775878906
+        },
+        "boxes": {
+          "transaction_date": [
+            110,
+            644,
+            640,
+            681
+          ],
+          "tax": [
+            113,
+            1235,
+            670,
+            1275
+          ],
+          "total": [
+            115,
+            1309,
+            671,
+            1349
+          ]
+        },
+        "merchant_name": "TONYMOLY VIVA CITY",
+        "transaction_date": "2018-03-29",
+        "transaction_time": "20:37",
+        "tax": "100.62",
+        "total": "100.60",
+        "line_items": [
+          {
+            "description": "SS04018600 1 *",
+            "amount": "55.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Disc",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SS04017600 1 *",
+            "amount": "55.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Disc",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DIS10 1*",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding Adjustment",
+            "amount": "-0.02",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "VISA",
+            "amount": "100.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR = 6%",
+            "amount": "94.92",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZR = 0%",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "lotal promotional saving",
+            "amount": "11.18",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9998931884765625,
+          "total": 0.9999949932098389,
+          "transaction_date": 0.9865264892578125,
+          "transaction_time": 0.9865264892578125
+        },
+        "boxes": {
+          "merchant_name": [
+            265,
+            234,
+            525,
+            271
+          ],
+          "total": [
+            577,
+            1235,
+            670,
+            1272
+          ],
+          "transaction_date": [
+            339,
+            644,
+            640,
+            678
+          ],
+          "transaction_time": [
+            339,
+            644,
+            640,
+            678
+          ]
+        },
+        "merchant_name": "TONYMOLY VIVA CITY",
+        "total": "100.62",
+        "transaction_date": "2018-03-29",
+        "transaction_time": "20:37"
       }
     }
   },
@@ -184,7 +395,7 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "100.60",
+        "printed": "100.62",
         "passed": true
       },
       {

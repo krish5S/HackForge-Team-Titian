@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_044",
   "file_sha256": "b9b4273cb699cf9d7c5236d68709916082cc0268924bfe8f947d72591f47cff6",
+  "ocr_text": "Merchant 44\nRESTAURANT RECEIPT\nChicago, US\nParty size: 1\nDate: 2026-09-12\nTime: 12:00:00\nReceipt: r_044\nDinner\n100.00\nSUBTOTAL\n100.00 USD\nTAX\n0.00 USD\nTIP\n0.00 USD\nOTHER\n0.00 USD\nTOTAL\n100.00 USD\nGuests: 1\nThank you for your visit",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -28,12 +29,14 @@
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9808592796325684,
-      "subtotal": 0.9990819692611694,
-      "tax": 0.9991315007209778,
-      "tip": 0.9987704157829285,
-      "other_charges": 0.9986505508422852,
-      "total": 0.9985589981079102
+      "transaction_date": 0.9808598160743713,
+      "subtotal": 0.9990831613540649,
+      "tax": 0.9991327524185181,
+      "tip": 0.9987718462944031,
+      "other_charges": 0.9986521005630493,
+      "total": 0.9985603094100952,
+      "merchant_name": 0.9999109506607056,
+      "transaction_time": 0.9773395657539368
     },
     "boxes": {
       "transaction_date": [
@@ -43,25 +46,25 @@
         311
       ],
       "subtotal": [
-        527,
+        62,
         548,
         681,
         575
       ],
       "tax": [
-        557,
+        61,
         609,
         681,
-        634
+        636
       ],
       "tip": [
-        558,
-        669,
+        61,
+        668,
         680,
-        695
+        696
       ],
       "other_charges": [
-        558,
+        61,
         729,
         680,
         754
@@ -71,17 +74,31 @@
         790,
         804,
         817
+      ],
+      "merchant_name": [
+        62,
+        44,
+        329,
+        79
+      ],
+      "transaction_time": [
+        63,
+        339,
+        301,
+        363
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9808592796325684,
-          "subtotal": 0.9990819692611694,
-          "tax": 0.9991315007209778,
-          "tip": 0.9987704157829285,
-          "other_charges": 0.9986505508422852,
-          "total": 0.9985589981079102
+          "transaction_date": 0.9808598160743713,
+          "subtotal": 0.9990831613540649,
+          "tax": 0.9991327524185181,
+          "tip": 0.9987718462944031,
+          "other_charges": 0.9986521005630493,
+          "total": 0.9985603094100952,
+          "merchant_name": 0.9999109506607056,
+          "transaction_time": 0.9773395657539368
         },
         "boxes": {
           "transaction_date": [
@@ -91,25 +108,25 @@
             311
           ],
           "subtotal": [
-            527,
+            62,
             548,
             681,
             575
           ],
           "tax": [
-            557,
+            61,
             609,
             681,
-            634
+            636
           ],
           "tip": [
-            558,
-            669,
+            61,
+            668,
             680,
-            695
+            696
           ],
           "other_charges": [
-            558,
+            61,
             729,
             680,
             754
@@ -119,6 +136,18 @@
             790,
             804,
             817
+          ],
+          "merchant_name": [
+            62,
+            44,
+            329,
+            79
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
           ]
         },
         "merchant_name": "Merchant 44",
@@ -153,6 +182,111 @@
           }
         ],
         "itemization": "FULL"
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9808598160743713,
+          "subtotal": 0.9990831613540649,
+          "tax": 0.9991327524185181,
+          "tip": 0.9987718462944031,
+          "other_charges": 0.9986521005630493,
+          "total": 0.9985603094100952
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            62,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            61,
+            609,
+            681,
+            636
+          ],
+          "tip": [
+            61,
+            668,
+            680,
+            696
+          ],
+          "other_charges": [
+            61,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            60,
+            790,
+            804,
+            818
+          ]
+        },
+        "merchant_name": "Merchant 44",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-12",
+        "transaction_time": "12:00",
+        "receipt_number": "R_044",
+        "subtotal": "100.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "100.00",
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999109506607056,
+          "total": 0.9985603094100952,
+          "transaction_date": 0.9808598160743713,
+          "transaction_time": 0.9773395657539368
+        },
+        "boxes": {
+          "merchant_name": [
+            62,
+            44,
+            329,
+            79
+          ],
+          "total": [
+            622,
+            790,
+            804,
+            817
+          ],
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "transaction_time": [
+            63,
+            339,
+            301,
+            363
+          ]
+        },
+        "merchant_name": "Merchant 44",
+        "total": "100.00",
+        "transaction_date": "2026-09-12",
+        "transaction_time": "12:00"
       }
     }
   },

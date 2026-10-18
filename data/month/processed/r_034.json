@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_034",
   "file_sha256": "60dc623b1f026985ca88177b8929537cc497c94081fb555bfc56bddfd439add4",
+  "ocr_text": "WinCo Foods #54\n6101 N Decatur Bivd\nLas Vegas, NV 89130\nTel: (702) 393-1600\nDate:10/05/2023\nTime:\nCashier ID: 01578\n03:47 PM\nQty\nDescription\nUnit Price\nTotal\n2\nGala Apples (lb)\n1\nWhole Milk (gal)\n$1.29\n$2.58\n5\nEggs. Dozen\n$2.79\n$2.79\n3\nSpaghetti Noodles\n$1.79\n$3.95\n1\nGround Beef (lb)\n$0.99\n$2.97\n4\nCanned Tomatoes\n$0.69\n$3.56\n2\nOrange Juice (0.5gal)\n$5.29\n$6.58\n1\nWheat Bread\n$1.99\n$1.99\n6\nBottled Water (each)\n$5.94\n$5.79\n$5.79\n$5.79\nSubtotal:\n$45.64\nTax (8.25%):\n$3.76\nTotal:\n$49.40\nThank you for shopping",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -12,8 +13,8 @@
     "city": "",
     "country": "",
     "currency": "USD",
-    "subtotal": "45.64",
-    "tax": "8.25",
+    "subtotal": "",
+    "tax": "45.64",
     "tip": "",
     "other_charges": "",
     "total": "49.40",
@@ -21,159 +22,112 @@
     "category": "MEALS",
     "line_items": [
       {
-        "description": "Whole Milk (gal)",
-        "amount": "1.29",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Eggs. Dozen",
+        "description": "5 Eggs. Dozen",
         "amount": "2.79",
         "item_class": "OTHER"
       },
       {
-        "description": "Spaghetti Noodles",
-        "amount": "1.79",
-        "item_class": "FOOD"
-      },
-      {
-        "description": "Ground Beef (lb)",
-        "amount": "0.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Canned Tomatoes",
-        "amount": "0.69",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Orange Juice (0.5gal)",
-        "amount": "5.29",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Wheat Bread",
+        "description": "1 Wheat Bread",
         "amount": "1.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Bottled Water (each)",
-        "amount": "5.94",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999968409538269,
-      "subtotal": 0.9999876022338867,
-      "tax": 0.9984570145606995,
-      "total": 0.9999957084655762
+      "transaction_date": 0.9999917149543762,
+      "total": 0.9999961853027344,
+      "tax": 0.998457670211792,
+      "merchant_name": 0.9999422430992126,
+      "transaction_time": 0.999948263168335
     },
     "boxes": {
       "transaction_date": [
         230,
         234,
-        498,
-        295
-      ],
-      "subtotal": [
-        674,
-        831,
-        794,
-        883
-      ],
-      "tax": [
-        314,
-        842,
-        515,
-        905
+        649,
+        309
       ],
       "total": [
         664,
         915,
         785,
         969
+      ],
+      "tax": [
+        314,
+        831,
+        794,
+        905
+      ],
+      "merchant_name": [
+        386,
+        62,
+        735,
+        134
+      ],
+      "transaction_time": [
+        681,
+        268,
+        837,
+        321
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999968409538269,
-          "subtotal": 0.9999876022338867,
-          "tax": 0.9984570145606995,
-          "total": 0.9999957084655762
+          "transaction_date": 0.9999917149543762,
+          "total": 0.9999961853027344,
+          "tax": 0.998457670211792,
+          "merchant_name": 0.9999422430992126,
+          "transaction_time": 0.999948263168335
         },
         "boxes": {
           "transaction_date": [
             230,
             234,
-            498,
-            295
-          ],
-          "subtotal": [
-            674,
-            831,
-            794,
-            883
-          ],
-          "tax": [
-            314,
-            842,
-            515,
-            905
+            649,
+            309
           ],
           "total": [
             664,
             915,
             785,
             969
+          ],
+          "tax": [
+            314,
+            831,
+            794,
+            905
+          ],
+          "merchant_name": [
+            386,
+            62,
+            735,
+            134
+          ],
+          "transaction_time": [
+            681,
+            268,
+            837,
+            321
           ]
         },
         "merchant_name": "WinCo Foods #54",
         "transaction_date": "2023-10-05",
         "transaction_time": "03:47",
-        "currency": "USD",
-        "subtotal": "45.64",
-        "tax": "8.25",
         "total": "49.40",
+        "currency": "USD",
+        "tax": "45.64",
         "line_items": [
           {
-            "description": "Whole Milk (gal)",
-            "amount": "1.29",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Eggs. Dozen",
+            "description": "5 Eggs. Dozen",
             "amount": "2.79",
             "item_class": "OTHER"
           },
           {
-            "description": "Spaghetti Noodles",
-            "amount": "1.79",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Ground Beef (lb)",
-            "amount": "0.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Canned Tomatoes",
-            "amount": "0.69",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Orange Juice (0.5gal)",
-            "amount": "5.29",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Wheat Bread",
+            "description": "1 Wheat Bread",
             "amount": "1.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Bottled Water (each)",
-            "amount": "5.94",
             "item_class": "OTHER"
           }
         ]
@@ -183,46 +137,99 @@
         "category": "MEALS",
         "line_items": [
           {
-            "description": "Whole Milk (gal)",
-            "amount": "1.29",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Eggs. Dozen",
+            "description": "5 Eggs. Dozen",
             "amount": "2.79",
             "item_class": "OTHER"
           },
           {
-            "description": "Spaghetti Noodles",
-            "amount": "1.79",
-            "item_class": "FOOD"
-          },
-          {
-            "description": "Ground Beef (lb)",
-            "amount": "0.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Canned Tomatoes",
-            "amount": "0.69",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Orange Juice (0.5gal)",
-            "amount": "5.29",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Wheat Bread",
+            "description": "1 Wheat Bread",
             "amount": "1.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Bottled Water (each)",
-            "amount": "5.94",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9999917149543762,
+          "total": 0.9999791979789734,
+          "tax": 0.998457670211792
+        },
+        "boxes": {
+          "transaction_date": [
+            230,
+            234,
+            649,
+            309
+          ],
+          "total": [
+            413,
+            872,
+            791,
+            947
+          ],
+          "tax": [
+            314,
+            831,
+            794,
+            905
+          ]
+        },
+        "merchant_name": "WinCo Foods #54",
+        "transaction_date": "2023-10-05",
+        "transaction_time": "15:47",
+        "total": "3.76",
+        "currency": "USD",
+        "tax": "45.64",
+        "line_items": [
+          {
+            "description": "5 Eggs. Dozen",
+            "amount": "2.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Wheat Bread",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999422430992126,
+          "total": 0.9999961853027344,
+          "transaction_date": 0.999997079372406,
+          "transaction_time": 0.999948263168335
+        },
+        "boxes": {
+          "merchant_name": [
+            386,
+            62,
+            735,
+            134
+          ],
+          "total": [
+            664,
+            915,
+            785,
+            969
+          ],
+          "transaction_date": [
+            230,
+            234,
+            498,
+            295
+          ],
+          "transaction_time": [
+            681,
+            268,
+            837,
+            321
+          ]
+        },
+        "merchant_name": "WinCo Foods #54",
+        "total": "49.40",
+        "transaction_date": "2023-10-05",
+        "transaction_time": "03:47"
       }
     }
   },
@@ -233,18 +240,6 @@
         "expected": ">= 0",
         "printed": "49.40",
         "passed": true
-      },
-      {
-        "name": "components_vs_total",
-        "expected": "53.89",
-        "printed": "49.40",
-        "passed": false
-      },
-      {
-        "name": "items_vs_subtotal",
-        "expected": "20.77",
-        "printed": "45.64",
-        "passed": false
       },
       {
         "name": "date_format",
@@ -264,11 +259,8 @@
     "merchant_norm": "winco foods 54"
   },
   "forensics": {
-    "score": 50,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "components_vs_total",
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

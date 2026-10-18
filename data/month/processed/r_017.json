@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_017",
   "file_sha256": "8dd9e6d2bcb5149f9233f4ccbf8ec98af18d2c75007fd5d5dd60bc39ba4b27ee",
+  "ocr_text": "BBQ Chicken\n41,000\n-Tidak Pedas\n0\nITEMS:1\n41,000\nTotal.\n41,000\nDEBIT BCA:\n41,000",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "BBQ Chicken",
+    "merchant_name": "BBQ Chicken 41,000",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -19,37 +20,134 @@
     "total": "41000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "BBQ Chicken",
+        "amount": "41000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ITEMS:1",
+        "amount": "41000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "DEBIT BCA",
+        "amount": "41000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
     "confidence": {
-      "total": 0.9998372197151184
+      "total": 0.999778687953949
     },
     "boxes": {
       "total": [
-        406,
-        394,
-        476,
-        416
+        405,
+        413,
+        477,
+        438
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "total": 0.9998372197151184
+          "total": 0.999778687953949
         },
         "boxes": {
           "total": [
-            406,
-            394,
-            476,
-            416
+            405,
+            413,
+            477,
+            438
           ]
         },
-        "merchant_name": "BBQ Chicken",
-        "total": "41000"
+        "merchant_name": "BBQ Chicken 41,000",
+        "total": "41000",
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DEBIT BCA",
+            "amount": "41000",
+            "item_class": "OTHER"
+          }
+        ]
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DEBIT BCA",
+            "amount": "41000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "total": 0.9998381733894348
+        },
+        "boxes": {
+          "total": [
+            32,
+            394,
+            476,
+            418
+          ]
+        },
+        "merchant_name": "BBQ Chicken 41,000",
+        "total": "41000",
+        "line_items": [
+          {
+            "description": "BBQ Chicken",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "41000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "DEBIT BCA",
+            "amount": "41000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.999778687953949
+        },
+        "boxes": {
+          "total": [
+            405,
+            413,
+            477,
+            438
+          ]
+        },
+        "total": "41000"
+      }
     }
   },
   "validation": {
@@ -69,7 +167,7 @@
   },
   "fingerprints": {
     "phash": "85866b9f6a65c11b",
-    "merchant_norm": "bbq chicken"
+    "merchant_norm": "bbq chicken 41 000"
   },
   "forensics": {
     "score": 10,

@@ -1,10 +1,11 @@
 {
   "receipt_id": "r_019",
   "file_sha256": "9a4ef875194aba3f276399807c6210f165420757d926f48ca569029a20090de9",
+  "ocr_text": "培物华对动带计验信营音会\n婴货出时售\nXXL Crispy\nChicken\n40,000\n\nPedas\n0\n40.00 00\nITEMS:1\nTatal\nPay\nCash 50,000\nChange\n10:000\n订EE学a\n时世会",
   "is_receipt": true,
-  "extraction_status": "PARTIAL",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "培物华对动带计验信营音会",
+    "merchant_name": "培物华对动带计验信营音会 婴货出时售",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,30 +17,136 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "50000",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "XXL Crispy Chicken",
+        "amount": "40000",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ITEMS:1",
+        "amount": "40.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pay Cash",
+        "amount": "50000",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9976089596748352
+    },
+    "boxes": {
+      "total": [
+        568,
+        2579,
+        1055,
+        2691
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "培物华对动带计验信营音会"
+        "confidence": {
+          "total": 0.9976089596748352
+        },
+        "boxes": {
+          "total": [
+            568,
+            2579,
+            1055,
+            2691
+          ]
+        },
+        "merchant_name": "培物华对动带计验信营音会 婴货出时售",
+        "line_items": [
+          {
+            "description": "XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ],
+        "total": "50000"
       },
       "reader_b": {},
-      "text_rules": {}
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_pattern": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "培物华对动带计验信营音会 婴货出时售",
+        "line_items": [
+          {
+            "description": "XXL Crispy Chicken",
+            "amount": "40000",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ITEMS:1",
+            "amount": "40.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pay Cash",
+            "amount": "50000",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "total": 0.9976089596748352
+        },
+        "boxes": {
+          "total": [
+            568,
+            2579,
+            1055,
+            2691
+          ]
+        },
+        "total": "50000"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50000",
+        "passed": true
       }
     ]
   },
@@ -53,8 +160,10 @@
     "merchant_norm": ""
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

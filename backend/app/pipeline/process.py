@@ -62,6 +62,12 @@ def process_receipt(
                             if key not in ("confidence", "boxes")}}
     reader_a["confidence"] = {**pattern.get("confidence", {}), **layout.get("confidence", {})}
     reader_a["boxes"] = {**pattern.get("boxes", {}), **layout.get("boxes", {})}
+    if pattern.get("transaction_date"):
+        reader_a["transaction_date"] = pattern["transaction_date"]
+        if "transaction_date" in pattern.get("confidence", {}):
+            reader_a["confidence"]["transaction_date"] = pattern["confidence"]["transaction_date"]
+        if "transaction_date" in pattern.get("boxes", {}):
+            reader_a["boxes"]["transaction_date"] = pattern["boxes"]["transaction_date"]
     model: dict[str, Any] = {}
     model_error = ""
     try:

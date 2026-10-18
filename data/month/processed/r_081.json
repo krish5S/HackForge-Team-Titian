@@ -1,6 +1,7 @@
 {
   "receipt_id": "r_081",
   "file_sha256": "6e96567e151dd684f8efb92d9ac6fc70d8626daf429387233fafb1de17e6bfe9",
+  "ocr_text": "ipanema\nBrazilian Steak House\n2023 South Pine Avenue\nOcala, Florida 34471\n(352) 622-1741\nDate: 04/13/18\nTime: 09:16 pm\nOrder #: 415\nServer: Kyle118\nGuest: 1\nTable #: 12\nName:\nDINING\nDINNER RODIZIO\n$41.95\nSub-total:\n$41.95\nGratuity:\n$10.49\nTax:\n$2.94\nTotal:\n$55.38\nPay This Amount:\nRecommended Gratuity:\n20%=$8.3923%=$9.6525%=$10.49\nThank You\nPlease Come Again",
   "is_receipt": true,
   "extraction_status": "OK",
   "extraction": {
@@ -26,24 +27,26 @@
         "item_class": "FOOD"
       },
       {
-        "description": "Gratuity:",
+        "description": "Gratuity",
         "amount": "10.49",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9863929152488708,
-      "total": 0.999945342540741,
-      "tip": 0.9999063611030579,
-      "tax": 0.9999747276306152
+      "transaction_date": 0.9863930344581604,
+      "total": 0.9999468922615051,
+      "tip": 0.9999081492424011,
+      "tax": 0.9988493919372559,
+      "merchant_name": 0.9999240040779114,
+      "transaction_time": 0.9991509318351746
     },
     "boxes": {
       "transaction_date": [
         187,
         320,
-        342,
-        355
+        517,
+        360
       ],
       "total": [
         453,
@@ -52,32 +55,46 @@
         716
       ],
       "tip": [
-        454,
-        641,
+        182,
+        634,
         521,
         667
       ],
       "tax": [
-        464,
-        665,
+        183,
+        659,
         520,
         691
+      ],
+      "merchant_name": [
+        279,
+        90,
+        563,
+        165
+      ],
+      "transaction_time": [
+        365,
+        327,
+        517,
+        360
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9863929152488708,
-          "total": 0.999945342540741,
-          "tip": 0.9999063611030579,
-          "tax": 0.9999747276306152
+          "transaction_date": 0.9863930344581604,
+          "total": 0.9999468922615051,
+          "tip": 0.9999081492424011,
+          "tax": 0.9988493919372559,
+          "merchant_name": 0.9999240040779114,
+          "transaction_time": 0.9991509318351746
         },
         "boxes": {
           "transaction_date": [
             187,
             320,
-            342,
-            355
+            517,
+            360
           ],
           "total": [
             453,
@@ -86,16 +103,28 @@
             716
           ],
           "tip": [
-            454,
-            641,
+            182,
+            634,
             521,
             667
           ],
           "tax": [
-            464,
-            665,
+            183,
+            659,
             520,
             691
+          ],
+          "merchant_name": [
+            279,
+            90,
+            563,
+            165
+          ],
+          "transaction_time": [
+            365,
+            327,
+            517,
+            360
           ]
         },
         "merchant_name": "ipanema",
@@ -112,7 +141,7 @@
             "item_class": "FOOD"
           },
           {
-            "description": "Gratuity:",
+            "description": "Gratuity",
             "amount": "10.49",
             "item_class": "OTHER"
           }
@@ -129,11 +158,102 @@
             "item_class": "FOOD"
           },
           {
-            "description": "Gratuity:",
+            "description": "Gratuity",
             "amount": "10.49",
             "item_class": "OTHER"
           }
         ]
+      },
+      "reader_a_pattern": {
+        "confidence": {
+          "transaction_date": 0.9863930344581604,
+          "total": 0.9984209537506104,
+          "tip": 0.9999081492424011,
+          "tax": 0.9988493919372559
+        },
+        "boxes": {
+          "transaction_date": [
+            187,
+            320,
+            517,
+            360
+          ],
+          "total": [
+            181,
+            681,
+            520,
+            716
+          ],
+          "tip": [
+            182,
+            634,
+            521,
+            667
+          ],
+          "tax": [
+            183,
+            659,
+            520,
+            691
+          ]
+        },
+        "merchant_name": "ipanema",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "21:16",
+        "currency": "USD",
+        "total": "55.38",
+        "tip": "10.49",
+        "tax": "2.94",
+        "line_items": [
+          {
+            "description": "DINNER RODIZIO",
+            "amount": "41.95",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Gratuity",
+            "amount": "10.49",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_a_layoutlm": {
+        "confidence": {
+          "merchant_name": 0.9999240040779114,
+          "total": 0.9999468922615051,
+          "transaction_date": 0.9863930344581604,
+          "transaction_time": 0.9991509318351746
+        },
+        "boxes": {
+          "merchant_name": [
+            279,
+            90,
+            563,
+            165
+          ],
+          "total": [
+            453,
+            690,
+            520,
+            716
+          ],
+          "transaction_date": [
+            187,
+            320,
+            342,
+            355
+          ],
+          "transaction_time": [
+            365,
+            327,
+            517,
+            360
+          ]
+        },
+        "merchant_name": "ipanema",
+        "total": "55.38",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "09:16"
       }
     }
   },
