@@ -22,7 +22,7 @@ export function ReceiptPanel({ id, onClose }: { id: string; onClose: () => void 
     {query.isPending ? <Skeleton /> : query.isError ? <ErrorState error={query.error} retry={() => query.refetch()} /> : data && <>
       <h2>{typeof extraction.merchant_name === 'string' ? extraction.merchant_name : 'Receipt'}</h2><p className="muted receipt-id">{data.receipt_id}</p><p>{data.employee_name || data.employee_id}</p><Badge verdict={decision?.verdict} />
       <section className="amount-grid">{(['claimed', 'proposed', 'reimbursable', 'amount_at_risk'] as const).map(key => <div key={key}><span className="eyebrow">{key.replaceAll('_', ' ')}</span><Money value={decision?.[key]} currency={decision?.currency} /></div>)}</section>
-      <ReceiptPreview key={id} id={id} />
+      <ReceiptPreview key={id} id={id} variants={data.available_variants} />
       <EvidenceSection title="Extracted fields" value={extracted} open />
       <EvidenceSection title="Line items" value={extraction.line_items ?? processed.line_items} />
       <EvidenceSection title="Confidence indicators" value={extraction.confidence ?? extraction.confidences ?? processed.confidence} />

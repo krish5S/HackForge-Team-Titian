@@ -19,13 +19,14 @@ export type Verdict = 'APPROVE' | 'NEEDS_REVIEW' | 'REJECT'
 export interface DecisionRow {
   receipt_id: string; employee_id: string; employee_name: string
   merchant_name: string | null; transaction_date: string | null; verdict: Verdict
-  claimed: string | null; proposed: string | null; reimbursable: string | null
+  currency: string | null; claimed: string | null; proposed: string | null; reimbursable: string | null
   amount_at_risk: string | null; risk_score: number | null; top_reason: string | null
 }
 export type RecordData = Record<string, unknown>
 export interface ReceiptDetail {
   receipt_id: string; employee_id: string; employee_name: string
   submission: RecordData; processed_receipt: RecordData
+  available_variants?: string[]
   decision: (RecordData & Partial<DecisionRow>) | null; evaluation_run_id: string | null
 }
 export interface Health { status: string; service: string; database: string; receipt_count: number; data_loaded: boolean }

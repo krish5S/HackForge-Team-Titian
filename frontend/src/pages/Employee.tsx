@@ -132,6 +132,7 @@ export function EmployeePage({ user }: { user: User }) {
             </div>
             {fileError && <p role="alert" className="employee-error">{fileError}</p>}
             <label>Expense purpose <span aria-hidden="true">*</span><textarea name="purpose" required maxLength={1000} rows={2} placeholder="What was this expense for?" /></label>
+            <label className="employee-checkbox"><input type="checkbox" name="client_meal" value="true" /> This is a client meal</label>
             <label>Client name <span className="muted">(optional)</span><input name="client_name" maxLength={300} /></label>
             <div className="employee-field-pair"><label>Attendee names <span className="muted">(optional)</span><input name="attendee_names" maxLength={2000} /></label><label>Attendee count <span className="muted">(optional)</span><input name="attendee_count" type="number" min="0" max="10000" step="1" /></label></div>
             <label>Supporting notes <span className="muted">(optional)</span><textarea name="notes" maxLength={5000} rows={3} /></label>

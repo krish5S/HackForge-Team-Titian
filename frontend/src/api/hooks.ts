@@ -8,4 +8,4 @@ export function useDecisions(filters: Filters = {}) {
   return useQuery({ queryKey: ['decisions', filters], queryFn: ({ signal }) => request<DecisionRow[]>(`/decisions?${params}`, signal) })
 }
 export const useReceipt = (id: string) => useQuery({ queryKey: ['receipt', id], queryFn: ({ signal }) => request<ReceiptDetail>(`/receipts/${encodeURIComponent(id)}`, signal) })
-export const useReceiptFile = (id: string) => useQuery({ queryKey: ['receipt-file', id, 'original'], queryFn: ({ signal }) => request<Blob>(`/receipts/${encodeURIComponent(id)}/image?variant=original`, signal, true), retry: false })
+export const useReceiptFile = (id: string, variant: 'original' | 'clean' = 'original') => useQuery({ queryKey: ['receipt-file', id, variant], queryFn: ({ signal }) => request<Blob>(`/receipts/${encodeURIComponent(id)}/image?variant=${variant}`, signal, true), retry: false })

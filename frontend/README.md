@@ -39,3 +39,7 @@ Production build and existing lint checks pass. The real database was inspected 
 ## Authentication
 
 Routes now require a server session. `/login` uses the existing public artwork; reviewers enter `/queue` and employees enter `/employee`. See [authentication setup](../AUTHENTICATION.md) for exact account-provisioning commands, backend configuration, and isolated test instructions. The API client sends cookies and never stores tokens locally.
+
+## Integrated application
+
+The Policy and Month Replay routes, Overview metrics, CSV, and real evaluation currency are now connected. See [INTEGRATION.md](../INTEGRATION.md) for the current setup, loading, evaluation, and worker commands; it supersedes the earlier implementation-stage limitations above.
