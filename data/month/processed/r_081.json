@@ -1,0 +1,207 @@
+{
+  "receipt_id": "r_081",
+  "file_sha256": "237c48627388c41df835814b64b95134819deae3bb8c055ba6c69ba44dca375e",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "SIN LIANHAP SDN BHD",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-05-02",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "7.30",
+    "tax": "7.30",
+    "tip": "",
+    "other_charges": "",
+    "total": "7.30",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "1.000 PC",
+        "amount": "2.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "X",
+        "amount": "5.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "tounding Adjustment:",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Payment:",
+        "amount": "7.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change Due :",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR @6",
+        "amount": "6.89",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9611621499061584,
+      "subtotal": 0.9999865293502808,
+      "tax": 0.9999702572822571,
+      "total": 0.9999702572822571
+    },
+    "boxes": {
+      "transaction_date": [
+        214,
+        776,
+        341,
+        803
+      ],
+      "subtotal": [
+        458,
+        1138,
+        506,
+        1165
+      ],
+      "tax": [
+        464,
+        1217,
+        512,
+        1243
+      ],
+      "total": [
+        464,
+        1217,
+        512,
+        1243
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9611621499061584,
+          "subtotal": 0.9999865293502808,
+          "tax": 0.9999702572822571,
+          "total": 0.9999702572822571
+        },
+        "boxes": {
+          "transaction_date": [
+            214,
+            776,
+            341,
+            803
+          ],
+          "subtotal": [
+            458,
+            1138,
+            506,
+            1165
+          ],
+          "tax": [
+            464,
+            1217,
+            512,
+            1243
+          ],
+          "total": [
+            464,
+            1217,
+            512,
+            1243
+          ]
+        },
+        "merchant_name": "SIN LIANHAP SDN BHD",
+        "transaction_date": "2018-05-02",
+        "subtotal": "7.30",
+        "tax": "7.30",
+        "total": "7.30",
+        "line_items": [
+          {
+            "description": "1.000 PC",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "X",
+            "amount": "5.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "tounding Adjustment:",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Payment:",
+            "amount": "7.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change Due :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR @6",
+            "amount": "6.89",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "7.30",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "14.60",
+        "printed": "7.30",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "21.49",
+        "printed": "7.30",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-05-02",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b080e49a5f9779ac",
+    "merchant_norm": "sin lianhap sdn bhd"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

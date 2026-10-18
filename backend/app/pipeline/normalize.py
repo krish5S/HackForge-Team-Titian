@@ -6,6 +6,21 @@ import numpy as np
 
 def load_image(image_path: str | Path) -> np.ndarray:
     """Load an image from disk as a BGR image."""
+    if Path(image_path).suffix.lower() == ".pdf":
+        import pypdfium2 as pdfium
+
+        document = pdfium.PdfDocument(str(image_path))
+        try:
+            if len(document) == 0:
+                raise ValueError(f"PDF has no pages: {image_path}")
+            page = document[0]
+            try:
+                rendered = page.render(scale=2).to_pil().convert("RGB")
+                return cv2.cvtColor(np.asarray(rendered), cv2.COLOR_RGB2BGR)
+            finally:
+                page.close()
+        finally:
+            document.close()
     image = cv2.imread(str(image_path))
     if image is None:
         raise ValueError(f"Could not read image: {image_path}")

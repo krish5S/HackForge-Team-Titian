@@ -1,0 +1,59 @@
+{
+  "receipt_id": "r_059",
+  "file_sha256": "4bb6bd18301fc4bd333902ef07ec53531fdbfd04a170fa2ae2c2e098b2077f78",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "NRTHPOLE",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "NRTHPOLE"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d5552f1a330e3a6c",
+    "merchant_norm": "nrthpole"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

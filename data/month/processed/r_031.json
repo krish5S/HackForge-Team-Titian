@@ -1,0 +1,148 @@
+{
+  "receipt_id": "r_031",
+  "file_sha256": "70084e01f69796ab57134ccdb9d5f6bbb1af23415cc8c550e3ed657d18e64b3c",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "99 SPEED MART S/B (519537-X)",
+    "receipt_number": "FOR",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "37.44",
+    "tip": "",
+    "other_charges": "",
+    "total": "37.44",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "RM",
+        "amount": "29.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "7.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding RH",
+        "amount": "37.45",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CREDIT RM",
+        "amount": "37.45",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "s = 6%",
+        "amount": "3535.32",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "tax": 0.9999116659164429,
+      "total": 0.9999116659164429
+    },
+    "boxes": {
+      "tax": [
+        522,
+        828,
+        600,
+        866
+      ],
+      "total": [
+        522,
+        828,
+        600,
+        866
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tax": 0.9999116659164429,
+          "total": 0.9999116659164429
+        },
+        "boxes": {
+          "tax": [
+            522,
+            828,
+            600,
+            866
+          ],
+          "total": [
+            522,
+            828,
+            600,
+            866
+          ]
+        },
+        "merchant_name": "99 SPEED MART S/B (519537-X)",
+        "tax": "37.44",
+        "total": "37.44",
+        "receipt_number": "FOR",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "29.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding RH",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CREDIT RM",
+            "amount": "37.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "s = 6%",
+            "amount": "3535.32",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "37.44",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b61595571d157435",
+    "merchant_norm": "99 speed mart s b 519537 x"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

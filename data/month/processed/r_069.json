@@ -1,0 +1,157 @@
+{
+  "receipt_id": "r_069",
+  "file_sha256": "c6e914ac8b4a11e7a3d05349b89131a701645e357abde16eb37fbd1f8dbbd056",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "POPEYE'S",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "20:49",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "2.37",
+    "tip": "",
+    "other_charges": "",
+    "total": "38.23",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "1 #5 5 WING COMBO",
+        "amount": "9.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 #6 3 TENDER ML",
+        "amount": "8.69",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 #6 3 TENDER ML",
+        "amount": "8.69",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 #11/ POP SHRMP/COMBO",
+        "amount": "8.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CREDIT",
+        "amount": "38.23",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CHANGE",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "tax": 0.9999935626983643,
+      "total": 0.9999979138374329
+    },
+    "boxes": {
+      "tax": [
+        465,
+        751,
+        539,
+        793
+      ],
+      "total": [
+        449,
+        789,
+        540,
+        834
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tax": 0.9999935626983643,
+          "total": 0.9999979138374329
+        },
+        "boxes": {
+          "tax": [
+            465,
+            751,
+            539,
+            793
+          ],
+          "total": [
+            449,
+            789,
+            540,
+            834
+          ]
+        },
+        "merchant_name": "POPEYE'S",
+        "transaction_time": "20:49",
+        "tax": "2.37",
+        "total": "38.23",
+        "line_items": [
+          {
+            "description": "1 #5 5 WING COMBO",
+            "amount": "9.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #6 3 TENDER ML",
+            "amount": "8.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #6 3 TENDER ML",
+            "amount": "8.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 #11/ POP SHRMP/COMBO",
+            "amount": "8.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CREDIT",
+            "amount": "38.23",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "38.23",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "e56a909c06e746b7",
+    "merchant_norm": "popeye s"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

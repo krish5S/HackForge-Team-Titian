@@ -7,5 +7,7 @@ timm
 imagehash
 rapidfuzz
 Pillow
+pypdfium2
+PyYAML
 pandas
 numpy

@@ -1,0 +1,155 @@
+{
+  "receipt_id": "r_078",
+  "file_sha256": "6e96567e151dd684f8efb92d9ac6fc70d8626daf429387233fafb1de17e6bfe9",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "ipanema",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-04-13",
+    "transaction_time": "09:16",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "2.94",
+    "tip": "10.49",
+    "other_charges": "",
+    "total": "55.38",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "DINNER RODIZIO",
+        "amount": "41.95",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "Gratuity:",
+        "amount": "10.49",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9863929152488708,
+      "total": 0.999945342540741,
+      "tip": 0.9999063611030579,
+      "tax": 0.9999747276306152
+    },
+    "boxes": {
+      "transaction_date": [
+        187,
+        320,
+        342,
+        355
+      ],
+      "total": [
+        453,
+        690,
+        520,
+        716
+      ],
+      "tip": [
+        454,
+        641,
+        521,
+        667
+      ],
+      "tax": [
+        464,
+        665,
+        520,
+        691
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9863929152488708,
+          "total": 0.999945342540741,
+          "tip": 0.9999063611030579,
+          "tax": 0.9999747276306152
+        },
+        "boxes": {
+          "transaction_date": [
+            187,
+            320,
+            342,
+            355
+          ],
+          "total": [
+            453,
+            690,
+            520,
+            716
+          ],
+          "tip": [
+            454,
+            641,
+            521,
+            667
+          ],
+          "tax": [
+            464,
+            665,
+            520,
+            691
+          ]
+        },
+        "merchant_name": "ipanema",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "09:16",
+        "currency": "USD",
+        "total": "55.38",
+        "tip": "10.49",
+        "tax": "2.94",
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "DINNER RODIZIO",
+            "amount": "41.95",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Gratuity:",
+            "amount": "10.49",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "55.38",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-04-13",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "55.38"
+  },
+  "fingerprints": {
+    "phash": "87ad55d5579ac484",
+    "merchant_norm": "ipanema"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

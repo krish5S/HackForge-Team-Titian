@@ -1,0 +1,209 @@
+{
+  "receipt_id": "r_067",
+  "file_sha256": "c486315cdaa26b99fce015145fa5b3f365280d0cdce1eecdf7f0f90f0066f7fa",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Calagero's",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-04-20",
+    "transaction_time": "8:29",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "12.51",
+    "tip": "",
+    "other_charges": "",
+    "total": "157.51",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Descript",
+        "amount": "27.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2 Chicken Milanese",
+        "amount": "46.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Veal Milanese",
+        "amount": "27.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "3 Grey Goose",
+        "amount": "30.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Pineapple Juice",
+        "amount": "3.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Belvedere",
+        "amount": "12.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Becks Non Alcoholic",
+        "amount": "6.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "1 Corona",
+        "amount": "6.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Amount Due:",
+        "amount": "157.51",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.999939501285553,
+      "total": 0.9999170303344727,
+      "tax": 0.9999470114707947
+    },
+    "boxes": {
+      "transaction_date": [
+        73,
+        308,
+        271,
+        343
+      ],
+      "total": [
+        364,
+        849,
+        552,
+        883
+      ],
+      "tax": [
+        470,
+        748,
+        554,
+        781
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.999939501285553,
+          "total": 0.9999170303344727,
+          "tax": 0.9999470114707947
+        },
+        "boxes": {
+          "transaction_date": [
+            73,
+            308,
+            271,
+            343
+          ],
+          "total": [
+            364,
+            849,
+            552,
+            883
+          ],
+          "tax": [
+            470,
+            748,
+            554,
+            781
+          ]
+        },
+        "merchant_name": "Calagero's",
+        "transaction_date": "2018-04-20",
+        "transaction_time": "8:29",
+        "currency": "USD",
+        "total": "157.51",
+        "tax": "12.51",
+        "line_items": [
+          {
+            "description": "Descript",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2 Chicken Milanese",
+            "amount": "46.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Veal Milanese",
+            "amount": "27.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "3 Grey Goose",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Pineapple Juice",
+            "amount": "3.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Belvedere",
+            "amount": "12.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Becks Non Alcoholic",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "1 Corona",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount Due:",
+            "amount": "157.51",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "157.51",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-04-20",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "157.51"
+  },
+  "fingerprints": {
+    "phash": "b93766c258cd849d",
+    "merchant_norm": "calagero s"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

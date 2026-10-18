@@ -1,0 +1,59 @@
+{
+  "receipt_id": "r_056",
+  "file_sha256": "21657a3281a0a5d9cd4b764472641f82c9d6a14191f71eb6a31801d90fed7013",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "3 SI EKO",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "3 SI EKO"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "a0cd34e34e9c3be2",
+    "merchant_norm": "3 si eko"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

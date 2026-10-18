@@ -1,0 +1,229 @@
+{
+  "receipt_id": "r_034",
+  "file_sha256": "60dc623b1f026985ca88177b8929537cc497c94081fb555bfc56bddfd439add4",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "WinCo Foods #54",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2023-10-05",
+    "transaction_time": "03:47",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "45.64",
+    "tax": "8.25",
+    "tip": "",
+    "other_charges": "",
+    "total": "49.40",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Whole Milk (gal)",
+        "amount": "1.29",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Eggs. Dozen",
+        "amount": "2.79",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Spaghetti Noodles",
+        "amount": "1.79",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Ground Beef (lb)",
+        "amount": "0.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Canned Tomatoes",
+        "amount": "0.69",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Orange Juice (0.5gal)",
+        "amount": "5.29",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Wheat Bread",
+        "amount": "1.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Bottled Water (each)",
+        "amount": "5.94",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9999968409538269,
+      "subtotal": 0.9999876022338867,
+      "tax": 0.9984570145606995,
+      "total": 0.9999957084655762
+    },
+    "boxes": {
+      "transaction_date": [
+        230,
+        234,
+        498,
+        295
+      ],
+      "subtotal": [
+        674,
+        831,
+        794,
+        883
+      ],
+      "tax": [
+        314,
+        842,
+        515,
+        905
+      ],
+      "total": [
+        664,
+        915,
+        785,
+        969
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9999968409538269,
+          "subtotal": 0.9999876022338867,
+          "tax": 0.9984570145606995,
+          "total": 0.9999957084655762
+        },
+        "boxes": {
+          "transaction_date": [
+            230,
+            234,
+            498,
+            295
+          ],
+          "subtotal": [
+            674,
+            831,
+            794,
+            883
+          ],
+          "tax": [
+            314,
+            842,
+            515,
+            905
+          ],
+          "total": [
+            664,
+            915,
+            785,
+            969
+          ]
+        },
+        "merchant_name": "WinCo Foods #54",
+        "transaction_date": "2023-10-05",
+        "transaction_time": "03:47",
+        "currency": "USD",
+        "subtotal": "45.64",
+        "tax": "8.25",
+        "total": "49.40",
+        "line_items": [
+          {
+            "description": "Whole Milk (gal)",
+            "amount": "1.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Eggs. Dozen",
+            "amount": "2.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spaghetti Noodles",
+            "amount": "1.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Ground Beef (lb)",
+            "amount": "0.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Canned Tomatoes",
+            "amount": "0.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Orange Juice (0.5gal)",
+            "amount": "5.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Wheat Bread",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bottled Water (each)",
+            "amount": "5.94",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "49.40",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "53.89",
+        "printed": "49.40",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "20.77",
+        "printed": "45.64",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2023-10-05",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "49.40"
+  },
+  "fingerprints": {
+    "phash": "d4a566292acb1ecb",
+    "merchant_norm": "winco foods 54"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

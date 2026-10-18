@@ -55,7 +55,8 @@ def extract_text(image_path: str | Path) -> dict[str, Any]:
 
         for index, text in enumerate(texts):
             score = float(scores[index]) if index < len(scores) else 0.0
-            box = boxes[index].tolist() if hasattr(boxes[index], "tolist") else boxes[index]
+            raw_box = boxes[index] if index < len(boxes) else []
+            box = raw_box.tolist() if hasattr(raw_box, "tolist") else raw_box
 
             lines.append(
                 {

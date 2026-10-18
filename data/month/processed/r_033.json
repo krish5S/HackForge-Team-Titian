@@ -1,0 +1,159 @@
+{
+  "receipt_id": "r_033",
+  "file_sha256": "eb7c533dbd4c7b393e367a628706e974ed10cd5e44ef535375696e98887e58b7",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Rite Aid",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2023-10-29",
+    "transaction_time": "02:35",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "8.25",
+    "tip": "",
+    "other_charges": "",
+    "total": "51.31",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Cereal Cheerios",
+        "amount": "7.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Milk 2% Gallon",
+        "amount": "12.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Eggs Large 12ct",
+        "amount": "3.29",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Soap Bar Dove",
+        "amount": "2.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9961775541305542,
+      "tax": 0.9978358149528503,
+      "total": 0.9999487996101379
+    },
+    "boxes": {
+      "transaction_date": [
+        246,
+        242,
+        507,
+        320
+      ],
+      "tax": [
+        119,
+        728,
+        324,
+        803
+      ],
+      "total": [
+        601,
+        772,
+        715,
+        830
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9961775541305542,
+          "tax": 0.9978358149528503,
+          "total": 0.9999487996101379
+        },
+        "boxes": {
+          "transaction_date": [
+            246,
+            242,
+            507,
+            320
+          ],
+          "tax": [
+            119,
+            728,
+            324,
+            803
+          ],
+          "total": [
+            601,
+            772,
+            715,
+            830
+          ]
+        },
+        "merchant_name": "Rite Aid",
+        "transaction_date": "2023-10-29",
+        "transaction_time": "02:35",
+        "currency": "USD",
+        "tax": "8.25",
+        "total": "51.31",
+        "line_items": [
+          {
+            "description": "Cereal Cheerios",
+            "amount": "7.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Milk 2% Gallon",
+            "amount": "12.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Eggs Large 12ct",
+            "amount": "3.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Soap Bar Dove",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "51.31",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2023-10-29",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "51.31"
+  },
+  "fingerprints": {
+    "phash": "d2057dac3b4a7a4a",
+    "merchant_norm": "rite aid"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

@@ -1,0 +1,4001 @@
+{
+  "schema_status": "provisional_d1_derived",
+  "scenarios": [
+    {
+      "scenario_id": "r_001",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "48.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000004",
+        "labeled_fields": [
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_002",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "48.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "exact_duplicate",
+      "planted_issue": "exact_duplicate",
+      "related_ids": [
+        "r_001"
+      ],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-01T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_001"
+      }
+    },
+    {
+      "scenario_id": "r_003",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000030",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_004",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "exact_duplicate",
+      "planted_issue": "exact_duplicate",
+      "related_ids": [
+        "r_003"
+      ],
+      "employee_id": "e_03",
+      "channel": "email",
+      "submitted_at": "2026-09-03T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_003"
+      }
+    },
+    {
+      "scenario_id": "r_005",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-05T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000070",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_006",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "exact_duplicate",
+      "planted_issue": "exact_duplicate",
+      "related_ids": [
+        "r_005"
+      ],
+      "employee_id": "e_05",
+      "channel": "mobile",
+      "submitted_at": "2026-09-05T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_005"
+      }
+    },
+    {
+      "scenario_id": "r_007",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-07T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000115",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_008",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "exact_duplicate",
+      "planted_issue": "exact_duplicate",
+      "related_ids": [
+        "r_007"
+      ],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-07T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_007"
+      }
+    },
+    {
+      "scenario_id": "r_009",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-09T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000120",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_010",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "exact_duplicate",
+      "planted_issue": "exact_duplicate",
+      "related_ids": [
+        "r_009"
+      ],
+      "employee_id": "e_03",
+      "channel": "email",
+      "submitted_at": "2026-09-09T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_009"
+      }
+    },
+    {
+      "scenario_id": "r_011",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-11T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000121",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_012",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "rephotographed_duplicate",
+      "planted_issue": "rephotographed_duplicate",
+      "related_ids": [
+        "r_011"
+      ],
+      "employee_id": "e_05",
+      "channel": "mobile",
+      "submitted_at": "2026-09-11T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_011"
+      }
+    },
+    {
+      "scenario_id": "r_013",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-13T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000124",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_014",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "rephotographed_duplicate",
+      "planted_issue": "rephotographed_duplicate",
+      "related_ids": [
+        "r_013"
+      ],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-13T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_013"
+      }
+    },
+    {
+      "scenario_id": "r_015",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-15T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000155",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_016",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "rephotographed_duplicate",
+      "planted_issue": "rephotographed_duplicate",
+      "related_ids": [
+        "r_015"
+      ],
+      "employee_id": "e_03",
+      "channel": "email",
+      "submitted_at": "2026-09-15T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_015"
+      }
+    },
+    {
+      "scenario_id": "r_017",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-17T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000172",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_018",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "pdf_photo_duplicate",
+      "planted_issue": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_017"
+      ],
+      "employee_id": "e_05",
+      "channel": "mobile",
+      "submitted_at": "2026-09-17T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_017"
+      }
+    },
+    {
+      "scenario_id": "r_019",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-19T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000197",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_020",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "pdf_photo_duplicate",
+      "planted_issue": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_019"
+      ],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-19T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_019"
+      }
+    },
+    {
+      "scenario_id": "r_021",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-21T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000001",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_022",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "pdf_photo_duplicate",
+      "planted_issue": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_021"
+      ],
+      "employee_id": "e_03",
+      "channel": "email",
+      "submitted_at": "2026-09-21T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "REJECT",
+        "reason_codes": [
+          "DUPLICATE"
+        ],
+        "duplicate_of": "r_021"
+      }
+    },
+    {
+      "scenario_id": "r_023",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-23T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000273",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_024",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "cross_employee_duplicate",
+      "planted_issue": "cross_employee_duplicate",
+      "related_ids": [
+        "r_023"
+      ],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-23T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "POSSIBLE_DUPLICATE"
+        ],
+        "duplicate_of": "r_023"
+      }
+    },
+    {
+      "scenario_id": "r_025",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-25T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000283",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_026",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "cross_employee_duplicate",
+      "planted_issue": "cross_employee_duplicate",
+      "related_ids": [
+        "r_025"
+      ],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-25T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "POSSIBLE_DUPLICATE"
+        ],
+        "duplicate_of": "r_025"
+      }
+    },
+    {
+      "scenario_id": "r_027",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-27T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "test/X51007846357.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_028",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-28T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "val/X51005711404.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_029",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-29T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "val/X51006393377.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_030",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-30T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "val/X51006414636.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_031",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "val/X51007135247.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_032",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "forged",
+      "planted_issue": "forged",
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "find_it_again",
+        "source_id": "train/X51005447850.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_033",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "ai_generated",
+      "planted_issue": "ai_generated",
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "gpt4o-receipt",
+        "source_id": "receipt_rite_aid_0138.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_034",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "ai_generated",
+      "planted_issue": "ai_generated",
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-04T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "gpt4o-receipt",
+        "source_id": "receipt_winco_foods_0670.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_035",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "ai_generated",
+      "planted_issue": "ai_generated",
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-05T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "gpt4o-receipt",
+        "source_id": "receipt_dairy_queen_0019.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_036",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "ai_generated",
+      "planted_issue": "ai_generated",
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-06T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SUSPICIOUS"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "gpt4o-receipt",
+        "source_id": "receipt_pet_supplies_plus_0616.png",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_037",
+      "merchant": "Merchant 37",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-07",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "20.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "unreadable",
+      "planted_issue": "unreadable",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-07T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "UNREADABLE"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_038",
+      "merchant": "Merchant 38",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-08",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "20.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "unreadable",
+      "planted_issue": "unreadable",
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-08T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "UNREADABLE"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_039",
+      "merchant": "Split shop 0",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-01",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "480.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "480.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "480.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "split_transaction",
+      "planted_issue": "split_transaction",
+      "related_ids": [
+        "r_040"
+      ],
+      "employee_id": "e_01",
+      "channel": "mobile",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SPLIT_TRANSACTION"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_040",
+      "merchant": "Split shop 0",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-01",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "480.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "480.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "480.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "split_transaction",
+      "planted_issue": "split_transaction",
+      "related_ids": [
+        "r_039"
+      ],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SPLIT_TRANSACTION"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_041",
+      "merchant": "Split shop 1",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-02",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "480.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "480.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "480.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "split_transaction",
+      "planted_issue": "split_transaction",
+      "related_ids": [
+        "r_042"
+      ],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SPLIT_TRANSACTION"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_042",
+      "merchant": "Split shop 1",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-02",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "480.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "480.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "480.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "TRAVEL",
+      "scenario_type": "split_transaction",
+      "planted_issue": "split_transaction",
+      "related_ids": [
+        "r_041"
+      ],
+      "employee_id": "e_02",
+      "channel": "mobile",
+      "submitted_at": "2026-09-02T19:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "SPLIT_TRANSACTION"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_043",
+      "merchant": "Merchant 43",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-11",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "100.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "100.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "100.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "trip_over_cap",
+      "planted_issue": "daily_cap",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-11T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_044",
+      "merchant": "Merchant 44",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-12",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "100.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "100.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "100.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "trip_over_cap",
+      "planted_issue": "daily_cap",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-12T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_045",
+      "merchant": "Merchant 45",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-13",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "100.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "100.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "100.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "trip_over_cap",
+      "planted_issue": "daily_cap",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "mobile",
+      "submitted_at": "2026-09-13T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_046",
+      "merchant": "Merchant 46",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-14",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "100.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "100.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "100.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "trip_over_cap",
+      "planted_issue": "daily_cap",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-14T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_047",
+      "merchant": "Merchant 47",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-01",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "150.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "150.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "150.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "ENTERTAINMENT",
+      "scenario_type": "monthly_cap",
+      "planted_issue": "monthly_cap",
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "upload",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_048",
+      "merchant": "Merchant 48",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-02",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "150.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "150.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "150.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "ENTERTAINMENT",
+      "scenario_type": "monthly_cap",
+      "planted_issue": "monthly_cap",
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_049",
+      "merchant": "Merchant 49",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-03",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "150.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "150.00",
+      "line_items": [
+        {
+          "description": "Business expense",
+          "amount": "150.00",
+          "item_class": "OTHER"
+        }
+      ],
+      "category": "ENTERTAINMENT",
+      "scenario_type": "monthly_cap",
+      "planted_issue": "monthly_cap",
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "email",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "MONTHLY_CAP"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_050",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "228.00",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "alcohol",
+      "planted_issue": "alcohol",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-15T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "EXCLUDED_ITEM"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000328",
+        "labeled_fields": [
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_051",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "22.00",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "alcohol",
+      "planted_issue": "alcohol",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "mobile",
+      "submitted_at": "2026-09-16T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "EXCLUDED_ITEM"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000394",
+        "labeled_fields": [
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_052",
+      "merchant": "Merchant 52",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-17",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Food",
+          "amount": "15.00",
+          "item_class": "FOOD"
+        },
+        {
+          "description": "Beer",
+          "amount": "5.00",
+          "item_class": "ALCOHOL"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "alcohol",
+      "planted_issue": "alcohol",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-17T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "EXCLUDED_ITEM"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_053",
+      "merchant": "Merchant 53",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-18",
+      "transaction_time": "12:00:00",
+      "currency": "USD",
+      "subtotal": "20.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "20.00",
+      "line_items": [
+        {
+          "description": "Food",
+          "amount": "15.00",
+          "item_class": "FOOD"
+        },
+        {
+          "description": "Beer",
+          "amount": "5.00",
+          "item_class": "ALCOHOL"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "alcohol",
+      "planted_issue": "alcohol",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-18T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "EXCLUDED_ITEM"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_054",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "75500.00",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "missing_client",
+      "planted_issue": "missing_client",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "mobile",
+      "submitted_at": "2026-09-20T18:00:00+05:30",
+      "client_meal": true,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "MISSING_CLIENT_NAME"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000476",
+        "labeled_fields": [
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_055",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "missing_client",
+      "planted_issue": "missing_client",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-21T18:00:00+05:30",
+      "client_meal": true,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "MISSING_CLIENT_NAME"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000533",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_056",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "missing_client",
+      "planted_issue": "missing_client",
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "upload",
+      "submitted_at": "2026-09-22T18:00:00+05:30",
+      "client_meal": true,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "NEEDS_REVIEW",
+        "reason_codes": [
+          "MISSING_CLIENT_NAME"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000542",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_057",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "34.00",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "late_original",
+      "planted_issue": null,
+      "related_ids": [
+        "r_058"
+      ],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-11T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000569",
+        "labeled_fields": [
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_058",
+      "merchant": "Late shop 0",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-10",
+      "transaction_time": "09:00:00",
+      "currency": "USD",
+      "subtotal": "50.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "50.00",
+      "line_items": [
+        {
+          "description": "Trip meal",
+          "amount": "50.00",
+          "item_class": "FOOD"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "late_arrival",
+      "planted_issue": "late_arrival",
+      "related_ids": [
+        "r_057"
+      ],
+      "employee_id": "e_03",
+      "channel": "email",
+      "submitted_at": "2026-09-25T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_059",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "MEALS",
+      "scenario_type": "late_original",
+      "planted_issue": null,
+      "related_ids": [
+        "r_060"
+      ],
+      "employee_id": "e_04",
+      "channel": "upload",
+      "submitted_at": "2026-09-11T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "CITY_DAILY_CAP"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "cord_v2",
+        "source_id": "000571",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_060",
+      "merchant": "Late shop 1",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2026-09-10",
+      "transaction_time": "09:00:00",
+      "currency": "USD",
+      "subtotal": "50.00",
+      "tax": "0.00",
+      "tip": "0.00",
+      "other_charges": "0.00",
+      "total": "50.00",
+      "line_items": [
+        {
+          "description": "Trip meal",
+          "amount": "50.00",
+          "item_class": "FOOD"
+        }
+      ],
+      "category": "MEALS",
+      "scenario_type": "late_arrival",
+      "planted_issue": "late_arrival",
+      "related_ids": [
+        "r_059"
+      ],
+      "employee_id": "e_04",
+      "channel": "mobile",
+      "submitted_at": "2026-09-25T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      }
+    },
+    {
+      "scenario_id": "r_061",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1022-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_062",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1028-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_063",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1044-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_064",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-04T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1047-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_065",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-05T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1073-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_066",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-06T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1078-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_067",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-07T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1086-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_068",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-08T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1090-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_069",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-09T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1093-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_070",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-10T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1099-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_071",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-11T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1101-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_072",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-12T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1102-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_073",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-13T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1110-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_074",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-14T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1112-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_075",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-15T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1118-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_076",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-16T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1134-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_077",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-17T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1149-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_078",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-18T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1174-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_079",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-19T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1177-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_080",
+      "merchant": "",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-20T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "express_expense",
+        "source_id": "1190-receipt.jpg",
+        "labeled_fields": []
+      }
+    },
+    {
+      "scenario_id": "r_081",
+      "merchant": "Sin Lianhap Son Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-02-05",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "7.30",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-21T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "test/images/X51005230621.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_082",
+      "merchant": "Mr. D.I.Y. (M) Son Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-03-18",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "6.60",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-22T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "test/images/X51005757292.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_083",
+      "merchant": "Maxincome Resources Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-04-10",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "5.80",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-23T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "test/images/X51006502534.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_084",
+      "merchant": "Becon Enterprise Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2017-11-13",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "270.10",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-24T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "test/images/X51006857540.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_085",
+      "merchant": "Korean Dine Sdn Bhd(1077469-V)",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-06-19",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "152.90",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-25T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "test/images/X51007846400.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_086",
+      "merchant": "Aeon Co. (M) Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-02-19",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "17.70",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-26T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51005447860.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_087",
+      "merchant": "L Two Florist & Handicraft",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-03-21",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "9.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-27T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51005712039.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_088",
+      "merchant": "Golden Scoop Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-02-16",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "21.50",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-28T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51005719856.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_089",
+      "merchant": "Advanco Company",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-01-17",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "29.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-29T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51005806685.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_090",
+      "merchant": "Tonymoly Viva City",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-03-29",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "100.60",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-30T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006311758.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_091",
+      "merchant": "Bemed (Sp) Sdn. Bhd.",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "635.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-01T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006387847.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_092",
+      "merchant": "Amano Malaysia Son Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2017-04-30",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "1.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-02T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006387953.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_093",
+      "merchant": "Ghee Hiang Gh Distributor & Marketing Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2018-04-13",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "25.00",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-03T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006466065.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_094",
+      "merchant": "Gardenia Bakertes (El) Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2017-08-30",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "53.14",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-04T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006555784.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_095",
+      "merchant": "Pinghwai Trading Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2017-09-30",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "616.60",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_05",
+      "channel": "upload",
+      "submitted_at": "2026-09-05T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006556831.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_096",
+      "merchant": "Gardenia Bakeries (Kl.) Sdn Bhd",
+      "city": "Chicago",
+      "country": "US",
+      "transaction_date": "2017-10-26",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "54.19",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_06",
+      "channel": "mobile",
+      "submitted_at": "2026-09-06T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006557508.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_097",
+      "merchant": "Chef Lee Sdn Bhd",
+      "city": "Jakarta",
+      "country": "ID",
+      "transaction_date": "2016-02-13",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_01",
+      "channel": "email",
+      "submitted_at": "2026-09-07T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "scenario_fx_rate": "0.000065",
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006619697.jpg",
+        "labeled_fields": [
+          "merchant",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_098",
+      "merchant": "Eden Impression Sdn Bhd",
+      "city": "Kuala Lumpur",
+      "country": "MY",
+      "transaction_date": "2016-10-20",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "9.75",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_02",
+      "channel": "upload",
+      "submitted_at": "2026-09-08T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "scenario_fx_rate": "0.23",
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006620414.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_099",
+      "merchant": "Mph Bookstores Sdn Bhd",
+      "city": "Jakarta",
+      "country": "ID",
+      "transaction_date": "2017-12-11",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "31.45",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_03",
+      "channel": "mobile",
+      "submitted_at": "2026-09-09T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "scenario_fx_rate": "0.000065",
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006857265.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    },
+    {
+      "scenario_id": "r_100",
+      "merchant": "Eco-Shop Marketing Sdn Bhd",
+      "city": "Kuala Lumpur",
+      "country": "MY",
+      "transaction_date": "2018-02-26",
+      "transaction_time": "",
+      "currency": "",
+      "subtotal": "",
+      "tax": "",
+      "tip": "",
+      "other_charges": "",
+      "total": "16.30",
+      "line_items": [],
+      "category": "TRAVEL",
+      "scenario_type": "clean",
+      "planted_issue": null,
+      "related_ids": [],
+      "employee_id": "e_04",
+      "channel": "email",
+      "submitted_at": "2026-09-10T18:00:00+05:30",
+      "client_meal": false,
+      "client_name": null,
+      "attendee_count": 1,
+      "attendee_names": [],
+      "approved": false,
+      "expected": {
+        "verdict": "APPROVE",
+        "reason_codes": [
+          "POLICY_COMPLIANT"
+        ],
+        "duplicate_of": null
+      },
+      "scenario_fx_rate": "0.23",
+      "derived_from_public": {
+        "source": "sroie",
+        "source_id": "train/images/X51006882603.jpg",
+        "labeled_fields": [
+          "merchant",
+          "total",
+          "transaction_date"
+        ]
+      }
+    }
+  ]
+}

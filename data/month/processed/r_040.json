@@ -1,0 +1,192 @@
+{
+  "receipt_id": "r_040",
+  "file_sha256": "81c70abed3be873bab4b615cf58119aea756586d5d8884fa8beb5eb30489bbbf",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "Split shop 0",
+    "receipt_number": "R_040",
+    "card_last4": "",
+    "transaction_date": "2026-09-01",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "480.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "480.00",
+    "itemization": "",
+    "category": "TRAVEL",
+    "line_items": [
+      {
+        "description": "Business expense",
+        "amount": "480.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9767383933067322,
+      "subtotal": 0.9971741437911987,
+      "tax": 0.9985694885253906,
+      "tip": 0.9988165497779846,
+      "other_charges": 0.9986588954925537,
+      "total": 0.9941890835762024
+    },
+    "boxes": {
+      "transaction_date": [
+        64,
+        287,
+        335,
+        311
+      ],
+      "subtotal": [
+        526,
+        546,
+        681,
+        575
+      ],
+      "tax": [
+        558,
+        609,
+        681,
+        634
+      ],
+      "tip": [
+        558,
+        669,
+        680,
+        695
+      ],
+      "other_charges": [
+        558,
+        729,
+        680,
+        754
+      ],
+      "total": [
+        620,
+        790,
+        803,
+        817
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9767383933067322,
+          "subtotal": 0.9971741437911987,
+          "tax": 0.9985694885253906,
+          "tip": 0.9988165497779846,
+          "other_charges": 0.9986588954925537,
+          "total": 0.9941890835762024
+        },
+        "boxes": {
+          "transaction_date": [
+            64,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            526,
+            546,
+            681,
+            575
+          ],
+          "tax": [
+            558,
+            609,
+            681,
+            634
+          ],
+          "tip": [
+            558,
+            669,
+            680,
+            695
+          ],
+          "other_charges": [
+            558,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            620,
+            790,
+            803,
+            817
+          ]
+        },
+        "merchant_name": "Split shop 0",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-01",
+        "transaction_time": "12:00",
+        "receipt_number": "R_040",
+        "subtotal": "480.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "480.00",
+        "category": "TRAVEL",
+        "line_items": [
+          {
+            "description": "Business expense",
+            "amount": "480.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "480.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "480.00",
+        "printed": "480.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "480.00",
+        "printed": "480.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-01",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "480.00"
+  },
+  "fingerprints": {
+    "phash": "8f3eb649e41a98b4",
+    "merchant_norm": "split shop 0"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "receipt_id": "r_029",
+  "file_sha256": "8941c3d0d872af60a28a510a442705d9e18fe6ef0b19093bb0388d47e4b7916c",
+  "is_receipt": true,
+  "extraction_status": "ok",
+  "extraction": {
+    "merchant_name": "31705509",
+    "receipt_number": "FOR",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "72.74",
+    "tip": "",
+    "other_charges": "",
+    "total": "72.74",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "RM",
+        "amount": "2.85",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2502 COKE ZERO",
+        "amount": "1.25",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "2.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "24.40",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "24.65",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "1.29",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "3.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "02 X RM",
+        "amount": "1.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "13.65",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "6.70",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "02 X RM",
+        "amount": "3.35",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "2.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "11.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "02 X RM",
+        "amount": "5.95",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding RN",
+        "amount": "72.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH RM",
+        "amount": "100.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CHANGE RM",
+        "amount": "27.25",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "z = 0%",
+        "amount": "24.40",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "tax": 0.9999635815620422,
+      "total": 0.9999635815620422
+    },
+    "boxes": {
+      "tax": [
+        429,
+        1050,
+        493,
+        1080
+      ],
+      "total": [
+        429,
+        1050,
+        493,
+        1080
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tax": 0.9999635815620422,
+          "total": 0.9999635815620422
+        },
+        "boxes": {
+          "tax": [
+            429,
+            1050,
+            493,
+            1080
+          ],
+          "total": [
+            429,
+            1050,
+            493,
+            1080
+          ]
+        },
+        "merchant_name": "31705509",
+        "tax": "72.74",
+        "total": "72.74",
+        "receipt_number": "FOR",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "2.85",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2502 COKE ZERO",
+            "amount": "1.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "2.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "24.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "24.65",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "1.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "1.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "13.65",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "6.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "3.35",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "2.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "11.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "02 X RM",
+            "amount": "5.95",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding RN",
+            "amount": "72.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE RM",
+            "amount": "27.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "z = 0%",
+            "amount": "24.40",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "72.74",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b53570561b4b48de",
+    "merchant_norm": "31705509"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

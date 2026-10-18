@@ -1,0 +1,59 @@
+{
+  "receipt_id": "r_038",
+  "file_sha256": "d3ba082341abb7c7f04e6e2080c0010131644059622fc0a1d8875172eefe65a6",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "Boue",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "Boue"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "8f1e9649e41e8cb5",
+    "merchant_norm": "boue"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

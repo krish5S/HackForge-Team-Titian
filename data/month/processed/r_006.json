@@ -1,0 +1,60 @@
+{
+  "receipt_id": "r_006",
+  "file_sha256": "361dfc42ecb6571e65f9a32e317dde3ffd364e43d63a47f1d1dc1e55a6c41902",
+  "is_receipt": true,
+  "extraction_status": "partial",
+  "extraction": {
+    "merchant_name": "1 CAPTAIN HOOK",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "1 CAPTAIN HOOK",
+        "category": "MEALS"
+      },
+      "reader_b": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "94d06b3c6a7f206b",
+    "merchant_norm": "1 captain hook"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}
