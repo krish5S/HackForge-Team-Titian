@@ -35,7 +35,7 @@ def owned(db, employee_id, submission_id):
     return row
 
 
-def serialize(db, submission):
+def serialize(db, submission, include_evidence=False):
     upload = db.scalar(select(SubmissionUpload).where(SubmissionUpload.submission_id == submission.id))
     receipt = db.scalar(select(Receipt).where(Receipt.submission_id == submission.id))
     decision = None
@@ -51,7 +51,7 @@ def serialize(db, submission):
             for key in ('claimed', 'proposed', 'reimbursable', 'amount_at_risk', 'currency')},
         'reasons': decision.reasons_json or [], 'counterfactuals': decision.counterfactuals_json or [],
     }
-    return {
+    payload = {
         'id': submission.id, 'submitted_at': submission.submitted_at,
         'fields': submission.employee_fields_json or {},
         'filename': upload.original_name if upload else Path(submission.file_path).name,
@@ -62,6 +62,17 @@ def serialize(db, submission):
         'processing_error': upload.processing_error if upload and processing == 'FAILED' else None,
         'receipt_id': receipt.id if receipt else None, 'decision': result,
     }
+    if include_evidence and receipt:
+        processed = receipt.processed_json or {}
+        extraction = processed.get('extraction') or {}
+        payload.update(extraction_status=processed.get('extraction_status'),
+            extraction={k: v for k, v in extraction.items() if k not in {'readers', 'boxes', 'confidence'}},
+            ocr_text=processed.get('ocr_text'),
+            extraction_checks=processed.get('validation', {}).get('checks', []),
+            processing_warnings=['Text model extraction failed; partial fallback fields are shown.']
+                if extraction.get('readers', {}).get('reader_b_error') else [])
+    return payload
+
 
 
 def validate_file(content, filename):
@@ -182,7 +193,7 @@ def history(user: AuthUser = Depends(require_employee), db: Session = Depends(ge
 
 @router.get('/{submission_id}')
 def detail(submission_id: str, user: AuthUser = Depends(require_employee), db: Session = Depends(get_db)):
-    return serialize(db, owned(db, user.employee_id, submission_id))
+    return serialize(db, owned(db, user.employee_id, submission_id), include_evidence=True)
 
 
 @router.get('/{submission_id}/file')

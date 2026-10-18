@@ -143,11 +143,17 @@ class EmployeeUploadTests(unittest.TestCase):
     def test_only_real_processed_and_evaluated_results(self):
         row = self.upload().json()
         with Session(self.engine) as db:
-            db.add(Receipt(id='real-processed', submission_id=row['id'], processed_json={}))
+            db.add(Receipt(id='real-processed', submission_id=row['id'], processed_json={'extraction_status': 'PARTIAL', 'ocr_text': 'Visible receipt text', 'extraction': {'total': '10.00', 'readers': {'reader_b_error': {'message': 'failure'}}}}))
             db.add(Policy(id='policy', source_text='Test policy'))
             db.commit()
         detail_url = f"/api/employee/submissions/{row['id']}"
-        self.assertEqual(self.client.get(detail_url).json()['status'], 'PROCESSED')
+        detail = self.client.get(detail_url).json()
+        self.assertEqual(detail['status'], 'PROCESSED')
+        self.assertEqual(detail['ocr_text'], 'Visible receipt text')
+        self.assertEqual(detail['extraction']['total'], '10.00')
+        self.assertNotIn('readers', detail['extraction'])
+        self.assertTrue(detail['processing_warnings'])
+        self.assertNotIn('ocr_text', self.client.get('/api/employee/submissions').json()[0])
         with Session(self.engine) as db:
             db.add(EvaluationRun(id='run', policy_id='policy', policy_version=1, period='test', status='COMPLETED'))
             db.commit()

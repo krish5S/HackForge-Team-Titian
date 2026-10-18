@@ -22,6 +22,10 @@ function SubmissionDetails({ id, onClose }: { id: string; onClose: () => void })
     {detail.isPending ? <Skeleton /> : detail.isError ? <ErrorState error={detail.error} retry={() => detail.refetch()} /> : <>
       <p className="muted">{detail.data.id}</p><p>{detail.data.decision && detail.data.processing_status === 'PROCESSED' ? 'Processed' : statusLabels[detail.data.processing_status]}</p>
       {detail.data.processing_status === 'FAILED' && <p role="status" className="employee-error">{detail.data.processing_error || 'Processing failed. Contact your organization for assistance.'}</p>}
+      {detail.data.processing_warnings?.map(warning => <p role="status" className="employee-error" key={warning}>{warning}</p>)}
+      {detail.data.extraction && <><p>Extraction: {detail.data.extraction_status}</p><EvidenceSection title="Extracted receipt fields" value={detail.data.extraction} open /></>}
+      {detail.data.extraction_checks && <EvidenceSection title="Extraction checks" value={detail.data.extraction_checks} />}
+      {detail.data.ocr_text && <details><summary>Recognized receipt text</summary><pre style={{ whiteSpace: 'pre-wrap' }}>{detail.data.ocr_text}</pre></details>}
       <EvidenceSection title="Expense information" value={detail.data.fields} open />
       {detail.data.decision && <><Badge verdict={detail.data.decision.verdict} /><div className="amount-grid">{['claimed', 'proposed', 'reimbursable', 'amount_at_risk'].map(key => <div key={key}><span className="eyebrow">{key.replaceAll('_', ' ')}</span><Money value={detail.data.decision?.amounts[key]} currency={detail.data.decision?.amounts.currency} /></div>)}</div><EvidenceSection title="Decision reasons" value={detail.data.decision.reasons} open /><EvidenceSection title="What would change this decision" value={detail.data.decision.counterfactuals} /></>}
     </>}

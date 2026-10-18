@@ -24,7 +24,7 @@ def parse_money(value: str | Decimal) -> Decimal:
 
 Money = Annotated[
     Decimal,
-    BeforeValidator(parse_money),
+    BeforeValidator(parse_money, json_schema_input_type=str),
     PlainSerializer(lambda v: format(v, ".2f"), return_type=str, when_used="json"),
 ]
 

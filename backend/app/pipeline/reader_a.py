@@ -9,7 +9,7 @@ MONEY = re.compile(r"(?<!\d)(?:[$€£₹]\s*)?(-?(?:\d{1,3}(?:,\d{3})+(?:\.\d{2
                    r"\d{1,3}(?:\.\d{3})+|\d+\.\d{2}|\d+,\d{2}))(?![\d.,])")
 DATE = re.compile(r"\b(\d{4}[-/]\d{1,2}[-/]\d{1,2}|\d{1,2}[-/]\d{1,2}[-/]\d{2,4})\b")
 TIME = re.compile(r"\b([01]?\d|2[0-3]):[0-5]\d(?::[0-5]\d)?\b")
-FIELD_LABELS = {"subtotal": ("subtotal", "sub total"), "tax": ("tax", "gst", "vat"),
+FIELD_LABELS = {"subtotal": ("subtotal", "sub total"), "tax": ("tax", "gst", "vat", "sgst", "cgst", "igst"),
                 "tip": ("tip", "gratuity"), "other_charges": ("service charge", "other charge", "other"),
                 "total": ("grand total", "amount due", "total", "balance due")}
 
@@ -29,6 +29,15 @@ def _amount(text: str) -> str | None:
     return value
 
 
+def _label_amount(text: str) -> str | None:
+    """Whole prices are allowed only in an already identified amount context."""
+    amount = _amount(text)
+    if amount is not None:
+        return amount
+    match = re.search(r"(?:^|[:\s])([0-9]+)\s*(?:USD|EUR|GBP|INR|IDR|MYR)?$", text, re.I)
+    return f"{int(match.group(1))}.00" if match else None
+
+
 def _box(value: Any) -> list[int] | None:
     try:
         if len(value) == 4 and all(isinstance(item, (int, float)) for item in value):
@@ -40,12 +49,35 @@ def _box(value: Any) -> list[int] | None:
         return None
 
 
+def reading_rows(lines):
+    """Join OCR boxes on the same printed row; preserve unboxed input order."""
+    if not lines or any(_box(line.get("box")) is None for line in lines):
+        return lines
+    rows = []
+    for line in sorted(lines, key=lambda x: (_box(x['box'])[1] + _box(x['box'])[3]) / 2):
+        box = _box(line['box']); center = (box[1] + box[3]) / 2
+        if rows and abs(center - rows[-1][0]) <= .45 * min(box[3] - box[1], rows[-1][1]):
+            rows[-1][2].append(line)
+        else:
+            rows.append((center, box[3] - box[1], [line]))
+    result = []
+    for _, _, row in rows:
+        row.sort(key=lambda line: _box(line['box'])[0])
+        boxes = [_box(line['box']) for line in row]
+        result.append({'text': ' '.join(str(line['text']) for line in row),
+                       'confidence': min(float(line.get('confidence', 0)) for line in row),
+                       'box': [min(b[0] for b in boxes), min(b[1] for b in boxes),
+                               max(b[2] for b in boxes), max(b[3] for b in boxes)]})
+    return result
+
+
 def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
-    lines = ocr.get("lines") or []
+    lines = reading_rows(ocr.get("lines") or [])
     result: dict[str, Any] = {"confidence": {}, "boxes": {}}
+    component_taxes = {}
     for index, line in enumerate(lines):
         text = str(line.get("text", "")).strip()
-        lower = text.lower()
+        lower = text.lower().replace("v.a.t.", "vat").replace("v.a.t", "vat")
         if not text:
             continue
         is_field_label = any(re.search(r"\b" + re.escape(label) + r"\b", lower)
@@ -56,18 +88,25 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
         for field, labels in FIELD_LABELS.items():
             if not any(re.search(r"\b" + re.escape(label) + r"\b", lower) for label in labels):
                 continue
-            if field == "total" and "subtotal" in lower:
+            if field == "total" and re.search(r"\bsub\s*total\b", lower):
+                continue
+            if field == "tax" and re.search(r"\b(?:tax\s+invoice|(?:gst|tax|vat)\s*(?:no|id|number|registration))\b", lower):
                 continue
             amount_line = line
-            amount = _amount(text)
+            amount = _label_amount(text)
             if amount is None and index + 1 < len(lines):
                 following = lines[index + 1]
                 following_text = str(following.get("text", "")).strip()
                 if re.fullmatch(r"(?:[$€£₹]\s*)?\d[\d,.]*\s*(?:USD|EUR|GBP|INR|IDR|MYR)?", following_text, re.I):
-                    amount = _amount(following_text)
+                    amount = _label_amount(following_text)
                     amount_line = following
             if amount is None:
                 continue
+            if field == "tax":
+                component = re.search(r"\b(sgst|cgst|igst|vat)\b", lower)
+                if component:
+                    component_taxes[(f'vat-{index}' if component.group(1) == 'vat' else component.group(1))] = Decimal(amount)
+                    amount = format(sum(component_taxes.values()), ".2f")
             result[field] = amount
             result["confidence"][field] = float(amount_line.get("confidence", 0.0))
             box = _box(amount_line.get("box"))
@@ -78,7 +117,7 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
             if match:
                 raw = match.group(1)
                 for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%m/%d/%Y", "%d/%m/%Y",
-                            "%m-%d-%Y", "%d-%m-%Y", "%m/%d/%y"):
+                            "%m-%d-%Y", "%d-%m-%Y", "%m/%d/%y", "%d/%m/%y"):
                     try:
                         result["transaction_date"] = datetime.strptime(raw, fmt).date().isoformat()
                         result["confidence"]["transaction_date"] = float(line.get("confidence", 0.0))
@@ -91,7 +130,16 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
         if "transaction_time" not in result:
             match = TIME.search(text)
             if match:
-                result["transaction_time"] = match.group(0)[:5]
+                raw_time = match.group(0)
+                meridiem = re.search(r"\b(AM|PM)\b", text, re.I)
+                if meridiem:
+                    try:
+                        result["transaction_time"] = datetime.strptime(raw_time + " " + meridiem.group(1).upper(),
+                            "%I:%M:%S %p" if raw_time.count(":") == 2 else "%I:%M %p").strftime("%H:%M")
+                    except ValueError:
+                        pass
+                else:
+                    result["transaction_time"] = raw_time[:5]
         if "card_last4" not in result:
             match = re.search(r"(?:card|visa|mastercard|amex|\*{4})\D{0,20}(\d{4})\b", lower)
             if match:
@@ -121,11 +169,11 @@ def read_fields(ocr: dict[str, Any]) -> dict[str, Any]:
     items = []
     for index, line in enumerate(lines):
         description = str(line.get("text", "")).strip()
-        lower = description.lower()
+        lower = description.lower().replace("v.a.t.", "vat").replace("v.a.t", "vat")
         if (not re.search(r"[a-zA-Z]", description) or
                 any(re.search(r"\b" + word + r"\b", lower) for word in
                     ("merchant", "receipt", "invoice", "date", "time", "subtotal",
-                     "tax", "tip", "total", "other", "balance", "card", "thank"))):
+                     "tax", "gst", "sgst", "cgst", "igst", "vat", "service", "tip", "total", "other", "balance", "card", "thank"))):
             continue
         amount_match = MONEY.search(description)
         if amount_match:

@@ -21,7 +21,7 @@ In another terminal:
 make frontend
 ```
 
-Open **http://localhost:5173**. API: **http://localhost:8001/api**. Restart an already-running backend to load the integrated routers. `VITE_API_BASE_URL` is already supported. For a local backend `.env`, pass `--env-file backend/.env` to uvicorn; shell-exported variables work too. Keep frontend/backend on `localhost` consistently for cookies. See `backend/.env.example` and `AUTHENTICATION.md` for cookie/origin settings.
+Open **http://localhost:5173**. API: **http://localhost:8001/api**. Restart an already-running backend to load the integrated routers. `VITE_API_BASE_URL` is already supported. `make backend` loads `backend/.env` when present; direct uvicorn commands need `--env-file backend/.env`. Shell-exported variables take precedence. Keep frontend/backend on `localhost` consistently for cookies. See `backend/.env.example` and `AUTHENTICATION.md` for cookie/origin settings.
 
 `make migrate` registers additive tables and runs the existing repeatable upload-column migration. New tables are `evaluation_artifacts`, `receipt_assets`, `policy_compilations`, and `processing_jobs`; no existing account, submission, receipt, or policy columns are dropped or replaced. Back up an existing DB before operational imports (`sqlite3.Connection.backup` is safe for a live SQLite database). This integration created an ignored, owner-readable backup in `data/backups/pre-integration-20261018T030215.db` before the real import.
 
@@ -67,9 +67,9 @@ Amounts are aggregated only when saved currencies agree with the run's authorita
 
 ## Policy compilation and historical replay
 
-Startup wires Dev 1's `compile_policy_text` callback into Dev 2's compiler. Set `RECEIPT_LLM_ENDPOINT` (and optional `RECEIPT_LLM_API_KEY`) to the actual text service described in `backend/app/llm/README.md`. The API does not introduce another model client.
+Startup wires Dev 1's `compile_policy_text` callback into Dev 2's compiler. Configure `backend/.env` as described in `backend/app/llm/README.md`: Gemini uses `RECEIPT_LLM_PROVIDER=gemini`, `RECEIPT_LLM_API_KEY`, and an explicitly verified `RECEIPT_LLM_MODEL`; existing custom services use `RECEIPT_LLM_PROVIDER=custom` and `RECEIPT_LLM_ENDPOINT`. The API does not introduce another model client.
 
-The Policy page shows source clauses, compiled rules, exact source quotes, actual Trust Report checks, and compiler flags. A returned, accepted policy is saved as a new version and reevaluated in the same activation transaction. Null/unaccepted compiler output never replaces the active policy. No endpoint is configured locally, so **live successful compilation/activation remains unverified**; its unavailable path is verified.
+The Policy page shows source clauses, compiled rules, exact source quotes, actual Trust Report checks, and compiler flags. A returned, accepted policy is saved as a new version and reevaluated in the same activation transaction. Null/unaccepted compiler output never replaces the active policy. The Gemini transport is now configured locally and has passed live receipt/policy translation checks; see `backend/app/llm/README.md`. Policy activation is deliberately not performed by transport verification.
 
 Replay calls Dev 2's `evaluate_month(frozen_input, as_of=...)`; it never filters final decisions to simulate history. The slider groups real arrival timestamps, the event list uses `build_timeline` flips, and meters come from actual snapshot ledger outputs. Receipt links open current details and are labelled accordingly.
 
@@ -93,7 +93,7 @@ python -m pip install -r backend/requirements/pipeline.txt
 python -m scripts.run_receipt_worker --directory /worker/path/to/bundle
 ```
 
-The runner calls `process_receipt` and `find_duplicates` unchanged, caches completed per-job results, and holds a directory lock against concurrent runs of the same bundle. Optional CNN/LayoutLM are governed by Dev 1's existing weight/report gates. Fresh OCR requires PaddleOCR/model resources; learned readers additionally require their worker environment and weights. These are **not installed or executed locally**.
+The runner calls `process_receipt` and `find_duplicates` unchanged, caches completed per-job results, and holds a directory lock against concurrent runs of the same bundle. Optional CNN/LayoutLM are governed by Dev 1's existing weight/report gates. Fresh OCR requires PaddleOCR/model resources; learned readers additionally require their worker environment and weights. The original integration did not execute these locally. The subsequent CPU worker setup below installs and runs Paddle OCR locally; optional trained CNN/LayoutLM weights remain unavailable.
 
 When the worker actually starts a known job, an operator may record its state on the laptop:
 
@@ -122,7 +122,7 @@ Checks cover the existing auth/upload suite, actual 100-receipt loading twice, i
 
 The real database now holds the supplied 100 receipts and a completed real-evaluator run: 15 APPROVE, 74 NEEDS_REVIEW, 11 REJECT. Existing auth account rows were compared before/after and are unchanged. This verifies **batch data → evaluator → persisted API results**, not fresh upload → OCR → decision.
 
-Not verified: live external compilation acceptance, fresh OCR/GPU inference, or real-account browser clicks/responsive visual rendering (no browser provider was available). No scores, Trust Reports, or model metrics were fabricated.
+Not verified: live external compilation acceptance, optional GPU/learned-model inference, or real-account browser clicks/responsive visual rendering (no browser provider was available). The subsequent CPU worker verification below covers a fresh upload through OCR, Gemini and evaluation. No scores, Trust Reports, or model metrics were fabricated.
 
 Demo checklist:
 
@@ -134,3 +134,71 @@ Demo checklist:
 6. After actual worker processing/import and reevaluation, refresh employee history and reviewer results.
 
 No branch has been pushed or merged into main automatically. See `OWNERSHIP.md` for preserved developer boundaries.
+
+## Automatic local processing
+
+A CPU-only coordinator now reuses the existing handoff and Dev 1 pipeline. It polls
+pending uploads every five seconds, runs OCR/Gemini outside HTTP requests, imports
+real results and invokes Dev 2 evaluation with the currently active policy.
+
+```sh
+make install-worker  # once, in the existing project virtual environment
+make worker          # keep running in a separate terminal alongside the backend
+```
+
+`make worker` loads backend/.env. No GPU training packages, CNN weights or LayoutLM
+weights are installed by the worker requirements. Optional learned models retain
+Dev 1's existing availability/quality gates. Official Paddle OCR inference models
+are downloaded on first use into ignored data/model-cache. The first receipt can
+therefore take longer. Use `.venv/bin/python scripts/local_worker.py --once` for a
+single pending receipt rather than continuous polling.
+
+A file lock prevents two local coordinators; the inference child inherits that lock.
+The active bundle and per-job result cache survive restart, so an interrupted import
+or evaluation resumes without repeating completed inference. Failed processing is
+shown honestly and requires explicit `receipt_handoff.py retry-failed --job-id <id>`;
+it is not repeatedly sent to Gemini. Evaluation failures retain the previous completed
+run and are retried while the receipt remains processed. Stop the worker with Ctrl+C;
+let any current child finish before starting another worker.
+
+Automatic evaluation uses a cumulative period extending the previous run's boundaries
+to include processed transaction and submission dates. Overview displays that scope.
+It never activates a newly compiled policy. The worker and manual handoff should not
+be used to operate the same queued job concurrently.
+
+The employee history polls every 30 seconds; refresh it to see a new result sooner.
+
+Verified locally: submission `b3a2375eadec415c9750f974004c7ea6` completed the real
+Paddle OCR → Gemini extraction → storage → Dev 2 evaluation flow. Its extraction
+status is OK and verdict NEEDS_REVIEW, from saved evaluation
+`5b1beedb8c7548d785f2a6d91585660b` (2014-03-14 through 2026-10-18).
+The original and account data were preserved; backup precedes this processing run.
+A continuous worker was started with logs at `data/local-worker/worker.log` and its
+PID at `data/local-worker/worker.pid`. It is a local process, not an OS login service;
+after a reboot, start `make worker` again. Do not start a second manual worker for
+the same jobs. To stop the background process, verify the recorded PID still belongs
+to `scripts/local_worker.py`, then send it SIGTERM. The file lock protects a child
+that is finishing a receipt; wait for it before restarting.
+
+### Receipt extraction audit and repair
+
+A visual comparison of the uploaded receipt against its OCR exposed a pattern-reader
+bug: `Sub Total` matched `Total`, and an unformatted whole-number grand total was
+missed. The reader now separates subtotal/total, accepts whole numbers in labeled
+amount contexts, aggregates SGST/CGST, excludes tax labels from merchandise lines,
+and handles two-digit day-first dates and AM/PM times. Tax invoice/registration
+numbers are not treated as tax amounts. Regression tests cover these cases.
+
+A fresh Paddle OCR + Gemini run on the unchanged upload produced subtotal 260.00,
+tax 13.00 and total 273.00. Every emitted arithmetic/date validation passed, the
+readers agreed, and the prior false forensic signals disappeared. The corrected
+extraction and real reevaluation replaced the current result only after checks;
+prior extraction is archived under data/reprocessing and a private database backup
+was taken. Previous completed evaluations retain their immutable inputs.
+
+Readability does not establish policy eligibility. This receipt still lacks an
+explicit currency and tip; the provided FX table lacks INR; travel context is not
+established; and its 2025-02-24 date is outside the submission deadline. No currency,
+FX rate, tip or approval was invented. Optional trained LayoutLM/CNN remain gated
+by their absent weights; the verified path is Paddle + pattern reader + Gemini +
+validation + rule-based forensics + Dev 2 evaluation.

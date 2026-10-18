@@ -11,7 +11,7 @@ load:
 evaluate:
 	$(PYTHON) scripts/evaluate_database.py
 backend:
-	$(PYTHON) -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8001
+	$(PYTHON) -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8001 $(if $(wildcard backend/.env),--env-file backend/.env,)
 frontend:
 	npm --prefix frontend run dev -- --host localhost --port 5173
 build:
@@ -24,3 +24,9 @@ test:
 	cd frontend && node tests/session.mjs && node tests/submission.mjs
 handoff:
 	$(PYTHON) scripts/receipt_handoff.py export
+
+.PHONY: install-worker worker
+install-worker:
+	$(PYTHON) -m pip install -r backend/requirements/worker.txt
+worker:
+	$(PYTHON) scripts/local_worker.py

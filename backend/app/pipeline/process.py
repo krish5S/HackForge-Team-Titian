@@ -14,7 +14,7 @@ from backend.app.pipeline.layoutlm_reader import read_fields as read_layoutlm
 from backend.app.pipeline.fx import convert_total, load_rates
 from backend.app.pipeline.normalize import save_normalized
 from backend.app.pipeline.ocr import extract_text
-from backend.app.pipeline.reader_a import read_fields as read_patterns
+from backend.app.pipeline.reader_a import read_fields as read_patterns, reading_rows
 from backend.app.pipeline.reader_b import read_fields as read_model
 from backend.app.pipeline.text_fallback import infer_fields
 from backend.app.pipeline.validate import validate_extraction
@@ -65,7 +65,7 @@ def process_receipt(
     model: dict[str, Any] = {}
     model_error = ""
     try:
-        model = read_model(ocr.get("full_text", ""), digest, target / "llm_cache")
+        model = read_model("\n".join(line["text"] for line in reading_rows(ocr.get("lines") or [])), digest, target / "llm_cache")
     except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
         model_error = str(exc)
         LOG.warning("Text model unavailable for %s: %s", source, exc)
@@ -109,10 +109,11 @@ def process_receipt(
     fx = convert_total(extraction["total"], extraction["currency"], rates)
     line_count = len(ocr.get("lines") or [])
     is_receipt = line_count > 0 and bool(extraction["merchant_name"] or extraction["total"])
-    status = "UNREADABLE" if not line_count else ("OK" if extraction["total"] else "PARTIAL")
+    status = "UNREADABLE" if not line_count else ("OK" if extraction["total"] and not model_error else "PARTIAL")
     result: ProcessedReceipt = {
         "receipt_id": str(submission.get("receipt_id") or submission.get("scenario_id") or source.stem),
         "file_sha256": digest,
+        "ocr_text": ocr.get("full_text", ""),
         "is_receipt": is_receipt,
         "extraction_status": status,
         "extraction": extraction,

@@ -10,7 +10,7 @@ def read_fields(ocr_text: str, file_sha256: str, cache_dir) -> dict[str, Any]:
     if not raw:
         return {}
     result: dict[str, Any] = {}
-    for field in ("category", "city", "country", "total", "transaction_date", "itemization"):
+    for field in ("merchant_name", "receipt_number", "currency", "subtotal", "tax", "tip", "other_charges", "category", "city", "country", "total", "transaction_date", "itemization"):
         value = raw.get(field)
         if value is not None and isinstance(value, (str, int, float)):
             result[field] = str(value).strip().upper() if field in ("category", "itemization") else str(value).strip()

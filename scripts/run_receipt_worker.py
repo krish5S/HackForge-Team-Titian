@@ -6,6 +6,7 @@ of the same bundle; completed job outputs are reused on retries.
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 
@@ -32,7 +33,8 @@ def run(directory):
                     normalized = directory / f"{source.stem}_{job['file_sha256'][:12]}_normalized.jpg"
                     result.update(status='COMPLETED', receipt=payload,
                                   clean_file=normalized.name if normalized.is_file() else None)
-                except Exception:
+                except Exception as exc:
+                    print(f"Receipt processing failed ({type(exc).__name__}).", file=sys.stderr)
                     result.update(status='FAILED')
                 temporary = cache.with_suffix('.tmp')
                 temporary.write_text(json.dumps(result))

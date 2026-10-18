@@ -13,11 +13,13 @@ from app.db.upload_migration import migrate_uploads
 from app.services.loader import save_processed
 
 
-def export_jobs(db, directory):
+def export_jobs(db, directory, submission_id=None):
     directory.mkdir(parents=True, exist_ok=True)
     baseline = [row.processed_json for row in db.scalars(select(Receipt))]
     jobs = []
     for upload, sub in db.execute(select(SubmissionUpload, Submission).join(Submission, SubmissionUpload.submission_id == Submission.id)):
+        if submission_id is not None and sub.id != submission_id:
+            continue
         if db.scalar(select(Receipt.id).where(Receipt.submission_id == sub.id)):
             continue
         job = db.scalar(select(ProcessingJob).where(ProcessingJob.submission_id == sub.id))

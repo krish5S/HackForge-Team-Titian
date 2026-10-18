@@ -10,6 +10,11 @@ export interface EmployeeSubmission {
   status: 'UPLOADED' | 'PROCESSING' | 'PROCESSED' | 'EVALUATED' | 'FAILED'
   processing_status: 'UPLOADED' | 'PROCESSING' | 'PROCESSED' | 'FAILED'
   processing_error: string | null
+  extraction_status?: string
+  extraction?: RecordData
+  ocr_text?: string | null
+  processing_warnings?: string[]
+  extraction_checks?: unknown
   receipt_id: string | null
   decision: { verdict: Verdict; amounts: RecordData; reasons: unknown; counterfactuals: unknown } | null
 }

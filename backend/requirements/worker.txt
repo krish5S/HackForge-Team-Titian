@@ -1,0 +1,8 @@
+# CPU inference only; no LayoutLM/CNN training stack.
+-r api.txt
+paddleocr>=3,<4
+paddlepaddle>=3,<4
+opencv-python
+imagehash
+rapidfuzz
+pypdfium2

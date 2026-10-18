@@ -46,7 +46,7 @@ class PolicyCallbackTests(unittest.TestCase):
         with patch.dict(os.environ, {}, clear=True):
             with self.assertRaises(RuntimeError):
                 compile_policy_text("1.1 Meals are capped.")
-        answer = {"sentences": [], "rules": []}
+        answer = {"sentences": [{"clause_id": "1.1", "text": "Meals are capped.", "kind": "rule"}], "rules": []}
         with patch.dict(os.environ, {"RECEIPT_LLM_ENDPOINT": "http://model.test"}, clear=True),                 patch("backend.app.llm.client.urlopen",
                       return_value=io.BytesIO(json.dumps(answer).encode())) as post:
             self.assertEqual(compile_policy_text("1.1 Meals are capped.", 0.7, 5), answer)
