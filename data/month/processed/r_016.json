@@ -1,0 +1,62 @@
+{
+  "receipt_id": "r_016",
+  "file_sha256": "cff717703d6cd0e615a5540ac51e82fb6740d6f5240ba11ee79db75d0c9a9f9c",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "UDG GR TLUR ASIN",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "UDG GR TLUR ASIN"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS"
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "cb8957c339c87d84",
+    "merchant_norm": "udg gr tlur asin"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

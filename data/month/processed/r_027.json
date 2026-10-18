@@ -1,0 +1,243 @@
+{
+  "receipt_id": "r_027",
+  "file_sha256": "1d679799da023990809e1b57cf34058356d6c2e99c50b396ae2b18b2adf52633",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "A06057",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-01-06",
+    "transaction_time": "6:31",
+    "city": "",
+    "country": "",
+    "currency": "MYR",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "RM",
+        "amount": "2.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "7.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "4x",
+        "amount": "2.20",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "8.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "1.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "2x",
+        "amount": "4.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "9.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "29.40",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "29.40",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9784561991691589
+    },
+    "boxes": {
+      "transaction_date": [
+        1934,
+        2026,
+        2664,
+        2133
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9784561991691589
+        },
+        "boxes": {
+          "transaction_date": [
+            1934,
+            2026,
+            2664,
+            2133
+          ]
+        },
+        "merchant_name": "A06057",
+        "transaction_date": "2018-01-06",
+        "transaction_time": "6:31",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "8.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2x",
+            "amount": "4.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "9.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "29.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "29.40",
+            "item_class": "OTHER"
+          }
+        ],
+        "currency": "MYR"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "4x",
+            "amount": "2.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "8.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "1.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "2x",
+            "amount": "4.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "9.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "29.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "29.40",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-01-06",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b333cccc9899c963",
+    "merchant_norm": "a06057"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

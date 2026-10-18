@@ -1,0 +1,167 @@
+{
+  "receipt_id": "r_091",
+  "file_sha256": "dab060ae8139a6fd841bba0aea092a5caade7dd5093abc285e5809bf4510117f",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "ADVANCO COMPANY",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-01-17",
+    "transaction_time": "08:53",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "29.00",
+    "tip": "",
+    "other_charges": "",
+    "total": "27.36",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Rounding Adj",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "50.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change",
+        "amount": "21.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9850294589996338,
+      "total": 0.9999961853027344,
+      "tax": 0.9999784231185913
+    },
+    "boxes": {
+      "transaction_date": [
+        390,
+        365,
+        631,
+        402
+      ],
+      "total": [
+        296,
+        966,
+        378,
+        1003
+      ],
+      "tax": [
+        556,
+        713,
+        631,
+        746
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9850294589996338,
+          "total": 0.9999961853027344,
+          "tax": 0.9999784231185913
+        },
+        "boxes": {
+          "transaction_date": [
+            390,
+            365,
+            631,
+            402
+          ],
+          "total": [
+            296,
+            966,
+            378,
+            1003
+          ],
+          "tax": [
+            556,
+            713,
+            631,
+            746
+          ]
+        },
+        "merchant_name": "ADVANCO COMPANY",
+        "transaction_date": "2018-01-17",
+        "transaction_time": "08:53",
+        "total": "27.36",
+        "tax": "29.00",
+        "line_items": [
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "21.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Rounding Adj",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "21.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "27.36",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-01-17",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "bab425dacc8d9b42",
+    "merchant_norm": "advanco company"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "receipt_id": "r_086",
+  "file_sha256": "7557f02eac30e0e115a65109cdc7f56c7b8c3dd91e745d5bb7d8f3804da1fe2f",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "ice",
+    "receipt_number": "0019894",
+    "card_last4": "",
+    "transaction_date": "2017-11-13",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "270.10",
+    "tax": "270.10",
+    "tip": "",
+    "other_charges": "",
+    "total": "270.10",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "SR",
+        "amount": "21.60",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR",
+        "amount": "5.70",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR",
+        "amount": "2.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR",
+        "amount": "240.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "(GST)",
+        "amount": "15.28",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "300.10",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change",
+        "amount": "30.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Customer Saving from RRP",
+        "amount": "3.40",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR@",
+        "amount": "6.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.999986469745636,
+      "subtotal": 0.9999880194664001,
+      "total": 0.9450209140777588,
+      "tax": 0.9450209140777588
+    },
+    "boxes": {
+      "transaction_date": [
+        279,
+        608,
+        480,
+        649
+      ],
+      "subtotal": [
+        719,
+        1264,
+        841,
+        1304
+      ],
+      "total": [
+        720,
+        1410,
+        842,
+        1449
+      ],
+      "tax": [
+        720,
+        1410,
+        842,
+        1449
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.999986469745636,
+          "subtotal": 0.9999880194664001,
+          "total": 0.9450209140777588,
+          "tax": 0.9450209140777588
+        },
+        "boxes": {
+          "transaction_date": [
+            279,
+            608,
+            480,
+            649
+          ],
+          "subtotal": [
+            719,
+            1264,
+            841,
+            1304
+          ],
+          "total": [
+            720,
+            1410,
+            842,
+            1449
+          ],
+          "tax": [
+            720,
+            1410,
+            842,
+            1449
+          ]
+        },
+        "merchant_name": "ice",
+        "receipt_number": "0019894",
+        "transaction_date": "2017-11-13",
+        "subtotal": "270.10",
+        "total": "270.10",
+        "tax": "270.10",
+        "line_items": [
+          {
+            "description": "SR",
+            "amount": "21.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "5.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "240.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(GST)",
+            "amount": "15.28",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "300.10",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Customer Saving from RRP",
+            "amount": "3.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR@",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "SR",
+            "amount": "21.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "5.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "2.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "240.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "(GST)",
+            "amount": "15.28",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "300.10",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Customer Saving from RRP",
+            "amount": "3.40",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR@",
+            "amount": "6.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "270.10",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "540.20",
+        "printed": "270.10",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "624.88",
+        "printed": "270.10",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-11-13",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "94755457505f505f",
+    "merchant_norm": "ice"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

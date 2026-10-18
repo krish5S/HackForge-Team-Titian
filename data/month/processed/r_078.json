@@ -1,0 +1,139 @@
+{
+  "receipt_id": "r_078",
+  "file_sha256": "8ea24c45c84d909c756b7b2ab8e9d4788b962be8e5125921e33d8e1cbe23dad0",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "R  ALAD",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2017-03-18",
+    "transaction_time": "8:48",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "4.99",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Small Fries",
+        "amount": "1.89",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Plain Potato",
+        "amount": "1.79",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9241769909858704,
+      "total": 0.9960988163948059
+    },
+    "boxes": {
+      "transaction_date": [
+        196,
+        127,
+        245,
+        139
+      ],
+      "total": [
+        226,
+        322,
+        256,
+        338
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9241769909858704,
+          "total": 0.9960988163948059
+        },
+        "boxes": {
+          "transaction_date": [
+            196,
+            127,
+            245,
+            139
+          ],
+          "total": [
+            226,
+            322,
+            256,
+            338
+          ]
+        },
+        "merchant_name": "R  ALAD",
+        "transaction_date": "2017-03-18",
+        "transaction_time": "8:48",
+        "total": "4.99",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Small Fries",
+            "amount": "1.89",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Plain Potato",
+            "amount": "1.79",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Small Fries",
+            "amount": "1.89",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Plain Potato",
+            "amount": "1.79",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "4.99",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-03-18",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "4.99"
+  },
+  "fingerprints": {
+    "phash": "d0c22f943ed16f94",
+    "merchant_norm": "r alad"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

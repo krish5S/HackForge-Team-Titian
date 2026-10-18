@@ -1,0 +1,113 @@
+{
+  "receipt_id": "r_007",
+  "file_sha256": "361dfc42ecb6571e65f9a32e317dde3ffd364e43d63a47f1d1dc1e55a6c41902",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "1 CAPTAIN HOOK",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "16200",
+    "tip": "",
+    "other_charges": "12000",
+    "total": "178200",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "other_charges": 0.9999940395355225,
+      "tax": 0.999995768070221,
+      "total": 0.9993947148323059
+    },
+    "boxes": {
+      "other_charges": [
+        1560,
+        2735,
+        1787,
+        2825
+      ],
+      "tax": [
+        1560,
+        2820,
+        1786,
+        2916
+      ],
+      "total": [
+        1282,
+        2992,
+        1780,
+        3082
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "other_charges": 0.9999940395355225,
+          "tax": 0.999995768070221,
+          "total": 0.9993947148323059
+        },
+        "boxes": {
+          "other_charges": [
+            1560,
+            2735,
+            1787,
+            2825
+          ],
+          "tax": [
+            1560,
+            2820,
+            1786,
+            2916
+          ],
+          "total": [
+            1282,
+            2992,
+            1780,
+            3082
+          ]
+        },
+        "merchant_name": "1 CAPTAIN HOOK",
+        "tax": "16200",
+        "other_charges": "12000",
+        "total": "178200"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS"
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "178200",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "94d06b3c6a7f206b",
+    "merchant_norm": "1 captain hook"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

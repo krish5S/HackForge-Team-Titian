@@ -1,0 +1,96 @@
+{
+  "receipt_id": "r_021",
+  "file_sha256": "a11f123c5ada5609e108e78baeb7d2324a5ca83d290217ca645042ab68dc97b1",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "CK.MANTAP A",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "67273",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "4000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.9999535083770752,
+      "total": 0.9999427795410156
+    },
+    "boxes": {
+      "subtotal": [
+        455,
+        550,
+        523,
+        578
+      ],
+      "total": [
+        467,
+        628,
+        528,
+        657
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.9999535083770752,
+          "total": 0.9999427795410156
+        },
+        "boxes": {
+          "subtotal": [
+            455,
+            550,
+            523,
+            578
+          ],
+          "total": [
+            467,
+            628,
+            528,
+            657
+          ]
+        },
+        "merchant_name": "CK.MANTAP A",
+        "subtotal": "67273",
+        "total": "4000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "4000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b5c24afd348147da",
+    "merchant_norm": "ck mantap a"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

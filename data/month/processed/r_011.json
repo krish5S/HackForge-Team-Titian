@@ -1,0 +1,81 @@
+{
+  "receipt_id": "r_011",
+  "file_sha256": "7260eb0086e52287a69f80e5f30345bed8c59b5e105a438d85646a805886be84",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "1 SAM DA SOD MINERAL WATER",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "34000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9999802708625793
+    },
+    "boxes": {
+      "total": [
+        522,
+        685,
+        721,
+        765
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9999802708625793
+        },
+        "boxes": {
+          "total": [
+            522,
+            685,
+            721,
+            765
+          ]
+        },
+        "merchant_name": "1 SAM DA SOD MINERAL WATER",
+        "total": "34000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "34000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b1c2e5ba1996cbc2",
+    "merchant_norm": "1 sam da sod mineral water"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

@@ -1,0 +1,730 @@
+[
+  {
+    "seq": 1,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_001",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 2,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_031",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 3,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_039",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 4,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_047",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 5,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_061",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 6,
+    "submitted_at": "2026-09-01T18:00:00+05:30",
+    "receipt_id": "r_091",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 7,
+    "submitted_at": "2026-09-01T19:00:00+05:30",
+    "receipt_id": "r_002",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 8,
+    "submitted_at": "2026-09-01T19:00:00+05:30",
+    "receipt_id": "r_040",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": [
+      {
+        "receipt_id": "r_039",
+        "from": "APPROVE",
+        "to": "NEEDS_REVIEW",
+        "reason": "SPLIT_TRANSACTION"
+      }
+    ]
+  },
+  {
+    "seq": 9,
+    "submitted_at": "2026-09-02T18:00:00+05:30",
+    "receipt_id": "r_032",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 10,
+    "submitted_at": "2026-09-02T18:00:00+05:30",
+    "receipt_id": "r_041",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 11,
+    "submitted_at": "2026-09-02T18:00:00+05:30",
+    "receipt_id": "r_048",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 12,
+    "submitted_at": "2026-09-02T18:00:00+05:30",
+    "receipt_id": "r_062",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 13,
+    "submitted_at": "2026-09-02T18:00:00+05:30",
+    "receipt_id": "r_092",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 14,
+    "submitted_at": "2026-09-02T19:00:00+05:30",
+    "receipt_id": "r_042",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": [
+      {
+        "receipt_id": "r_041",
+        "from": "APPROVE",
+        "to": "NEEDS_REVIEW",
+        "reason": "SPLIT_TRANSACTION"
+      }
+    ]
+  },
+  {
+    "seq": 15,
+    "submitted_at": "2026-09-03T18:00:00+05:30",
+    "receipt_id": "r_003",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 16,
+    "submitted_at": "2026-09-03T18:00:00+05:30",
+    "receipt_id": "r_033",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 17,
+    "submitted_at": "2026-09-03T18:00:00+05:30",
+    "receipt_id": "r_049",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 18,
+    "submitted_at": "2026-09-03T18:00:00+05:30",
+    "receipt_id": "r_063",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 19,
+    "submitted_at": "2026-09-03T18:00:00+05:30",
+    "receipt_id": "r_093",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 20,
+    "submitted_at": "2026-09-03T19:00:00+05:30",
+    "receipt_id": "r_004",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 21,
+    "submitted_at": "2026-09-04T18:00:00+05:30",
+    "receipt_id": "r_034",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 22,
+    "submitted_at": "2026-09-04T18:00:00+05:30",
+    "receipt_id": "r_064",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 23,
+    "submitted_at": "2026-09-04T18:00:00+05:30",
+    "receipt_id": "r_094",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 24,
+    "submitted_at": "2026-09-05T18:00:00+05:30",
+    "receipt_id": "r_005",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 25,
+    "submitted_at": "2026-09-05T18:00:00+05:30",
+    "receipt_id": "r_035",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 26,
+    "submitted_at": "2026-09-05T18:00:00+05:30",
+    "receipt_id": "r_065",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 27,
+    "submitted_at": "2026-09-05T18:00:00+05:30",
+    "receipt_id": "r_095",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 28,
+    "submitted_at": "2026-09-05T19:00:00+05:30",
+    "receipt_id": "r_006",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 29,
+    "submitted_at": "2026-09-06T18:00:00+05:30",
+    "receipt_id": "r_036",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 30,
+    "submitted_at": "2026-09-06T18:00:00+05:30",
+    "receipt_id": "r_066",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 31,
+    "submitted_at": "2026-09-06T18:00:00+05:30",
+    "receipt_id": "r_096",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 32,
+    "submitted_at": "2026-09-07T18:00:00+05:30",
+    "receipt_id": "r_007",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 33,
+    "submitted_at": "2026-09-07T18:00:00+05:30",
+    "receipt_id": "r_037",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 34,
+    "submitted_at": "2026-09-07T18:00:00+05:30",
+    "receipt_id": "r_067",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 35,
+    "submitted_at": "2026-09-07T18:00:00+05:30",
+    "receipt_id": "r_097",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 36,
+    "submitted_at": "2026-09-07T19:00:00+05:30",
+    "receipt_id": "r_008",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 37,
+    "submitted_at": "2026-09-08T18:00:00+05:30",
+    "receipt_id": "r_038",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 38,
+    "submitted_at": "2026-09-08T18:00:00+05:30",
+    "receipt_id": "r_068",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 39,
+    "submitted_at": "2026-09-08T18:00:00+05:30",
+    "receipt_id": "r_098",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 40,
+    "submitted_at": "2026-09-09T18:00:00+05:30",
+    "receipt_id": "r_009",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 41,
+    "submitted_at": "2026-09-09T18:00:00+05:30",
+    "receipt_id": "r_069",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 42,
+    "submitted_at": "2026-09-09T18:00:00+05:30",
+    "receipt_id": "r_099",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 43,
+    "submitted_at": "2026-09-09T19:00:00+05:30",
+    "receipt_id": "r_010",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 44,
+    "submitted_at": "2026-09-10T18:00:00+05:30",
+    "receipt_id": "r_070",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 45,
+    "submitted_at": "2026-09-10T18:00:00+05:30",
+    "receipt_id": "r_100",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 46,
+    "submitted_at": "2026-09-11T18:00:00+05:30",
+    "receipt_id": "r_011",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 47,
+    "submitted_at": "2026-09-11T18:00:00+05:30",
+    "receipt_id": "r_043",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 48,
+    "submitted_at": "2026-09-11T18:00:00+05:30",
+    "receipt_id": "r_057",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 49,
+    "submitted_at": "2026-09-11T18:00:00+05:30",
+    "receipt_id": "r_059",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 50,
+    "submitted_at": "2026-09-11T18:00:00+05:30",
+    "receipt_id": "r_071",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 51,
+    "submitted_at": "2026-09-11T19:00:00+05:30",
+    "receipt_id": "r_012",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 52,
+    "submitted_at": "2026-09-12T18:00:00+05:30",
+    "receipt_id": "r_044",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 53,
+    "submitted_at": "2026-09-12T18:00:00+05:30",
+    "receipt_id": "r_072",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 54,
+    "submitted_at": "2026-09-13T18:00:00+05:30",
+    "receipt_id": "r_013",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 55,
+    "submitted_at": "2026-09-13T18:00:00+05:30",
+    "receipt_id": "r_045",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 56,
+    "submitted_at": "2026-09-13T18:00:00+05:30",
+    "receipt_id": "r_073",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 57,
+    "submitted_at": "2026-09-13T19:00:00+05:30",
+    "receipt_id": "r_014",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 58,
+    "submitted_at": "2026-09-14T18:00:00+05:30",
+    "receipt_id": "r_046",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 59,
+    "submitted_at": "2026-09-14T18:00:00+05:30",
+    "receipt_id": "r_074",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 60,
+    "submitted_at": "2026-09-15T18:00:00+05:30",
+    "receipt_id": "r_015",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 61,
+    "submitted_at": "2026-09-15T18:00:00+05:30",
+    "receipt_id": "r_050",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 62,
+    "submitted_at": "2026-09-15T18:00:00+05:30",
+    "receipt_id": "r_075",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 63,
+    "submitted_at": "2026-09-15T19:00:00+05:30",
+    "receipt_id": "r_016",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 64,
+    "submitted_at": "2026-09-16T18:00:00+05:30",
+    "receipt_id": "r_051",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 65,
+    "submitted_at": "2026-09-16T18:00:00+05:30",
+    "receipt_id": "r_076",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 66,
+    "submitted_at": "2026-09-17T18:00:00+05:30",
+    "receipt_id": "r_017",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 67,
+    "submitted_at": "2026-09-17T18:00:00+05:30",
+    "receipt_id": "r_052",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 68,
+    "submitted_at": "2026-09-17T18:00:00+05:30",
+    "receipt_id": "r_077",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 69,
+    "submitted_at": "2026-09-17T19:00:00+05:30",
+    "receipt_id": "r_018",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 70,
+    "submitted_at": "2026-09-18T18:00:00+05:30",
+    "receipt_id": "r_053",
+    "verdict_at_arrival": "APPROVE",
+    "flips": []
+  },
+  {
+    "seq": 71,
+    "submitted_at": "2026-09-18T18:00:00+05:30",
+    "receipt_id": "r_078",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 72,
+    "submitted_at": "2026-09-19T18:00:00+05:30",
+    "receipt_id": "r_019",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 73,
+    "submitted_at": "2026-09-19T18:00:00+05:30",
+    "receipt_id": "r_079",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 74,
+    "submitted_at": "2026-09-19T19:00:00+05:30",
+    "receipt_id": "r_020",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 75,
+    "submitted_at": "2026-09-20T18:00:00+05:30",
+    "receipt_id": "r_054",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 76,
+    "submitted_at": "2026-09-20T18:00:00+05:30",
+    "receipt_id": "r_080",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 77,
+    "submitted_at": "2026-09-21T18:00:00+05:30",
+    "receipt_id": "r_021",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 78,
+    "submitted_at": "2026-09-21T18:00:00+05:30",
+    "receipt_id": "r_055",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 79,
+    "submitted_at": "2026-09-21T18:00:00+05:30",
+    "receipt_id": "r_081",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 80,
+    "submitted_at": "2026-09-21T19:00:00+05:30",
+    "receipt_id": "r_022",
+    "verdict_at_arrival": "REJECT",
+    "flips": []
+  },
+  {
+    "seq": 81,
+    "submitted_at": "2026-09-22T18:00:00+05:30",
+    "receipt_id": "r_056",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 82,
+    "submitted_at": "2026-09-22T18:00:00+05:30",
+    "receipt_id": "r_082",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 83,
+    "submitted_at": "2026-09-23T18:00:00+05:30",
+    "receipt_id": "r_023",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 84,
+    "submitted_at": "2026-09-23T18:00:00+05:30",
+    "receipt_id": "r_083",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 85,
+    "submitted_at": "2026-09-23T19:00:00+05:30",
+    "receipt_id": "r_024",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 86,
+    "submitted_at": "2026-09-24T18:00:00+05:30",
+    "receipt_id": "r_084",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 87,
+    "submitted_at": "2026-09-25T18:00:00+05:30",
+    "receipt_id": "r_025",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 88,
+    "submitted_at": "2026-09-25T18:00:00+05:30",
+    "receipt_id": "r_058",
+    "verdict_at_arrival": "APPROVE",
+    "flips": [
+      {
+        "receipt_id": "r_057",
+        "from": "APPROVE",
+        "to": "APPROVE",
+        "reason": "CITY_DAILY_CAP"
+      }
+    ]
+  },
+  {
+    "seq": 89,
+    "submitted_at": "2026-09-25T18:00:00+05:30",
+    "receipt_id": "r_060",
+    "verdict_at_arrival": "APPROVE",
+    "flips": [
+      {
+        "receipt_id": "r_059",
+        "from": "APPROVE",
+        "to": "APPROVE",
+        "reason": "CITY_DAILY_CAP"
+      }
+    ]
+  },
+  {
+    "seq": 90,
+    "submitted_at": "2026-09-25T18:00:00+05:30",
+    "receipt_id": "r_085",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 91,
+    "submitted_at": "2026-09-25T19:00:00+05:30",
+    "receipt_id": "r_026",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 92,
+    "submitted_at": "2026-09-26T18:00:00+05:30",
+    "receipt_id": "r_086",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 93,
+    "submitted_at": "2026-09-27T18:00:00+05:30",
+    "receipt_id": "r_027",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 94,
+    "submitted_at": "2026-09-27T18:00:00+05:30",
+    "receipt_id": "r_087",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 95,
+    "submitted_at": "2026-09-28T18:00:00+05:30",
+    "receipt_id": "r_028",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 96,
+    "submitted_at": "2026-09-28T18:00:00+05:30",
+    "receipt_id": "r_088",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 97,
+    "submitted_at": "2026-09-29T18:00:00+05:30",
+    "receipt_id": "r_029",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 98,
+    "submitted_at": "2026-09-29T18:00:00+05:30",
+    "receipt_id": "r_089",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 99,
+    "submitted_at": "2026-09-30T18:00:00+05:30",
+    "receipt_id": "r_030",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  },
+  {
+    "seq": 100,
+    "submitted_at": "2026-09-30T18:00:00+05:30",
+    "receipt_id": "r_090",
+    "verdict_at_arrival": "NEEDS_REVIEW",
+    "flips": []
+  }
+]

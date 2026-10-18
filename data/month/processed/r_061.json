@@ -1,0 +1,60 @@
+{
+  "receipt_id": "r_061",
+  "file_sha256": "7e3a4b2c1adb1afadb711c32f30bad963b60e6c44776cad072b197ab47658778",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "10100",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {},
+    "boxes": {},
+    "readers": {
+      "reader_a": {
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "10100"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "c1e5e4c319e533d8",
+    "merchant_norm": "10100"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "policy_id": "meridian-2026-09",
+  "base_currency": "USD",
+  "clauses": [
+    {
+      "clause_id": "1.1",
+      "text": "Entertainment reimbursements are capped at USD 300 per employee per calendar month.\nEligible claims awaiting review reserve budget; rejected claims do not. Allocate budget in\ntransaction date/time order, breaking ties by receipt ID. Recalculate when older expenses arrive."
+    },
+    {
+      "clause_id": "2.1",
+      "text": "Meals outside the employee's home city are business-trip meals. Eligible trip meals are capped\nper employee, transaction city and calendar day: Jakarta USD 40, Kuala Lumpur USD 45,\nChicago USD 75, New York USD 90, and all other cities USD 60. Unused daily limits do not roll over."
+    },
+    {
+      "clause_id": "3.1",
+      "text": "Meals in the employee's home city require review unless they are documented client meals.\nA missing home city or transaction city requires review; do not assume travel status."
+    },
+    {
+      "clause_id": "4.1",
+      "text": "Alcohol is not reimbursable. Remove its line-item amount and proportional shares of tax,\ntip and other charges. Divide the excluded item subtotal by the complete printed subtotal.\nMissing or inconsistent item amounts require review rather than guessing an exclusion."
+    },
+    {
+      "clause_id": "5.1",
+      "text": "Client meals require a client name and attendee count. Meals with more than one attendee\nrequire attendee names matching the count. Missing documentation requires review."
+    },
+    {
+      "clause_id": "6.1",
+      "text": "A claim strictly above USD 500 requires recorded approval; exactly USD 500 does not.\nClaims from the same employee, merchant and day, each below USD 500 but together above\nUSD 500, require review for split transactions. Three or more claims by the same employee\nin one category in a month at 90?100 percent of USD 500 require review for threshold hugging."
+    },
+    {
+      "clause_id": "7.1",
+      "text": "Claims strictly above USD 25 require a fully itemized receipt. Missing itemization requires review."
+    },
+    {
+      "clause_id": "8.1",
+      "text": "Reimbursable tip is capped at 20 percent of the eligible pretax subtotal. Apply item exclusions\nbefore the tip cap so excluded tips are never subtracted twice."
+    },
+    {
+      "clause_id": "9.1",
+      "text": "Submit within 30 calendar days of the transaction date. Later submissions require review.\nA submission earlier than its transaction date requires review for inconsistent dates."
+    },
+    {
+      "clause_id": "10.1",
+      "text": "Unreadable images, non-receipts, missing essential extraction or FX data, failed arithmetic\nchecks, and a forensic score of 60 or more require review. A score is evidence, not proof of fraud.\nConfirmed duplicate submissions are rejected, preserving the earliest submitted original.\nPossible duplicates and cross-employee duplicate claims require review. Break arrival ties by ID."
+    },
+    {
+      "clause_id": "11.1",
+      "text": "Unusually lavish expenses should generally be reasonable for the business occasion.\nThis deliberately vague clause must be flagged as ambiguous and must not become an automatic rule."
+    },
+    {
+      "clause_id": "12.1",
+      "text": "Every policy adjustment and review reason must cite its numbered clause. Approved claims receive\nthe eligible amount after caps; rejected claims receive zero; review claims have a proposed amount\nbut no confirmed reimbursement. Daily and monthly caps reduce payment rather than imply rejection."
+    }
+  ],
+  "rules": [
+    {
+      "rule_type": "MONTHLY_CAP",
+      "clause_id": "1.1",
+      "source_quote": "Entertainment reimbursements are capped at USD 300 per employee per calendar month.\nEligible claims awaiting review reserve budget; rejected claims do not. Allocate budget in\ntransaction date/time order, breaking ties by receipt ID. Recalculate when older expenses arrive.",
+      "summary": "Monthly Cap",
+      "category": "ENTERTAINMENT",
+      "parameters": {
+        "amount": "300.00"
+      }
+    },
+    {
+      "rule_type": "CITY_DAILY_CAP",
+      "clause_id": "2.1",
+      "source_quote": "Meals outside the employee's home city are business-trip meals. Eligible trip meals are capped\nper employee, transaction city and calendar day: Jakarta USD 40, Kuala Lumpur USD 45,\nChicago USD 75, New York USD 90, and all other cities USD 60. Unused daily limits do not roll over.",
+      "summary": "City Daily Cap",
+      "category": "MEALS",
+      "parameters": {
+        "cities": {
+          "Jakarta": "40.00",
+          "Kuala Lumpur": "45.00",
+          "Chicago": "75.00",
+          "New York": "90.00",
+          "DEFAULT": "60.00"
+        }
+      }
+    },
+    {
+      "rule_type": "LOCAL_MEAL",
+      "clause_id": "3.1",
+      "source_quote": "Meals in the employee's home city require review unless they are documented client meals.\nA missing home city or transaction city requires review; do not assume travel status.",
+      "summary": "Local Meal",
+      "category": "MEALS",
+      "parameters": {}
+    },
+    {
+      "rule_type": "EXCLUDE_ITEMS",
+      "clause_id": "4.1",
+      "source_quote": "Alcohol is not reimbursable. Remove its line-item amount and proportional shares of tax,\ntip and other charges. Divide the excluded item subtotal by the complete printed subtotal.\nMissing or inconsistent item amounts require review rather than guessing an exclusion.",
+      "summary": "Exclude Items",
+      "category": "ALL",
+      "parameters": {
+        "item_classes": [
+          "ALCOHOL"
+        ]
+      }
+    },
+    {
+      "rule_type": "CLIENT_DETAILS",
+      "clause_id": "5.1",
+      "source_quote": "Client meals require a client name and attendee count. Meals with more than one attendee\nrequire attendee names matching the count. Missing documentation requires review.",
+      "summary": "Client Details",
+      "category": "MEALS",
+      "parameters": {}
+    },
+    {
+      "rule_type": "APPROVAL_THRESHOLD",
+      "clause_id": "6.1",
+      "source_quote": "A claim strictly above USD 500 requires recorded approval; exactly USD 500 does not.\nClaims from the same employee, merchant and day, each below USD 500 but together above\nUSD 500, require review for split transactions. Three or more claims by the same employee\nin one category in a month at 90?100 percent of USD 500 require review for threshold hugging.",
+      "summary": "Approval Threshold",
+      "category": "ALL",
+      "parameters": {
+        "amount": "500.00"
+      }
+    },
+    {
+      "rule_type": "ITEMIZATION",
+      "clause_id": "7.1",
+      "source_quote": "Claims strictly above USD 25 require a fully itemized receipt. Missing itemization requires review.",
+      "summary": "Itemization",
+      "category": "ALL",
+      "parameters": {
+        "amount": "25.00"
+      }
+    },
+    {
+      "rule_type": "TIP_LIMIT",
+      "clause_id": "8.1",
+      "source_quote": "Reimbursable tip is capped at 20 percent of the eligible pretax subtotal. Apply item exclusions\nbefore the tip cap so excluded tips are never subtracted twice.",
+      "summary": "Tip Limit",
+      "category": "ALL",
+      "parameters": {
+        "fraction": "0.20"
+      }
+    },
+    {
+      "rule_type": "SUBMISSION_DEADLINE",
+      "clause_id": "9.1",
+      "source_quote": "Submit within 30 calendar days of the transaction date. Later submissions require review.\nA submission earlier than its transaction date requires review for inconsistent dates.",
+      "summary": "Submission Deadline",
+      "category": "ALL",
+      "parameters": {
+        "days": 30
+      }
+    },
+    {
+      "rule_type": "EVIDENCE_REVIEW",
+      "clause_id": "10.1",
+      "source_quote": "Unreadable images, non-receipts, missing essential extraction or FX data, failed arithmetic\nchecks, and a forensic score of 60 or more require review. A score is evidence, not proof of fraud.\nConfirmed duplicate submissions are rejected, preserving the earliest submitted original.\nPossible duplicates and cross-employee duplicate claims require review. Break arrival ties by ID.",
+      "summary": "Evidence Review",
+      "category": "ALL",
+      "parameters": {
+        "risk_threshold": 60
+      }
+    }
+  ]
+}

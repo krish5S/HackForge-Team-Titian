@@ -1,0 +1,198 @@
+{
+  "receipt_id": "r_068",
+  "file_sha256": "594d44f77af3cea4db44bd1223e0e3abe688cfbc506f05dd100073a16068689a",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2019-05-01",
+    "transaction_time": "2:25:",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "11.99",
+    "tax": "10.25",
+    "tip": "",
+    "other_charges": "",
+    "total": "13.22",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "#SMS",
+        "amount": "11.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Approval No: 051140",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Amount",
+        "amount": "13.22",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9717409610748291,
+      "subtotal": 0.9994478225708008,
+      "total": 0.9993953704833984,
+      "tax": 0.9875115156173706
+    },
+    "boxes": {
+      "transaction_date": [
+        92,
+        87,
+        244,
+        105
+      ],
+      "subtotal": [
+        222,
+        186,
+        250,
+        202
+      ],
+      "total": [
+        223,
+        208,
+        248,
+        221
+      ],
+      "tax": [
+        74,
+        199,
+        154,
+        211
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9717409610748291,
+          "subtotal": 0.9994478225708008,
+          "total": 0.9993953704833984,
+          "tax": 0.9875115156173706
+        },
+        "boxes": {
+          "transaction_date": [
+            92,
+            87,
+            244,
+            105
+          ],
+          "subtotal": [
+            222,
+            186,
+            250,
+            202
+          ],
+          "total": [
+            223,
+            208,
+            248,
+            221
+          ],
+          "tax": [
+            74,
+            199,
+            154,
+            211
+          ]
+        },
+        "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+        "transaction_date": "2019-05-01",
+        "transaction_time": "2:25:",
+        "currency": "USD",
+        "subtotal": "11.99",
+        "total": "13.22",
+        "tax": "10.25",
+        "line_items": [
+          {
+            "description": "#SMS",
+            "amount": "11.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Approval No: 051140",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount",
+            "amount": "13.22",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "#SMS",
+            "amount": "11.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Approval No: 051140",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount",
+            "amount": "13.22",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "13.22",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "22.24",
+        "printed": "13.22",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "25.21",
+        "printed": "11.99",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2019-05-01",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "13.22"
+  },
+  "fingerprints": {
+    "phash": "95ebf886d9e04718",
+    "merchant_norm": "subway 44969 0 phone 626 585 9999"
+  },
+  "forensics": {
+    "score": 50,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "receipt_id": "r_088",
+  "file_sha256": "21dfd16bfc3c7dd1da5c1432fe23dfd6bb07d56db092c913d8963b38b3295b76",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "AEON CO. (M) BHD (126926-H)",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-02-19",
+    "transaction_time": "16:45",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "17.70",
+    "tip": "",
+    "other_charges": "",
+    "total": "16.71",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "CASH",
+        "amount": "50.70",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change Amt",
+        "amount": "33.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR @ 6%",
+        "amount": "16.71",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9994759559631348,
+      "tax": 0.999977707862854,
+      "transaction_date": 0.9941928386688232
+    },
+    "boxes": {
+      "total": [
+        469,
+        1309,
+        560,
+        1359
+      ],
+      "tax": [
+        716,
+        1011,
+        811,
+        1061
+      ],
+      "transaction_date": [
+        100,
+        1357,
+        386,
+        1408
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9994759559631348,
+          "tax": 0.999977707862854,
+          "transaction_date": 0.9941928386688232
+        },
+        "boxes": {
+          "total": [
+            469,
+            1309,
+            560,
+            1359
+          ],
+          "tax": [
+            716,
+            1011,
+            811,
+            1061
+          ],
+          "transaction_date": [
+            100,
+            1357,
+            386,
+            1408
+          ]
+        },
+        "merchant_name": "AEON CO. (M) BHD (126926-H)",
+        "total": "16.71",
+        "tax": "17.70",
+        "transaction_date": "2018-02-19",
+        "transaction_time": "16:45",
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "50.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change Amt",
+            "amount": "33.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR @ 6%",
+            "amount": "16.71",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "CASH",
+            "amount": "50.70",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change Amt",
+            "amount": "33.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR @ 6%",
+            "amount": "16.71",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "16.71",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-02-19",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "a0f16def8078907e",
+    "merchant_norm": "aeon co m bhd 126926 h"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

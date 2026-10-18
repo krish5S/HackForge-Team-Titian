@@ -1,0 +1,137 @@
+{
+  "receipt_id": "r_030",
+  "file_sha256": "b81c9ed0115db9b62c4d09bd070ef75fc2fa4c8a31e38d2c57bdfecd9f632685",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "A04067",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-04-18",
+    "transaction_time": "19:34",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "3 slo 0",
+        "amount": "90.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "30.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Net.Amt",
+        "amount": "270.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9927566051483154
+    },
+    "boxes": {
+      "transaction_date": [
+        1582,
+        2589,
+        2339,
+        2711
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9927566051483154
+        },
+        "boxes": {
+          "transaction_date": [
+            1582,
+            2589,
+            2339,
+            2711
+          ]
+        },
+        "merchant_name": "A04067",
+        "transaction_date": "2018-04-18",
+        "transaction_time": "19:34",
+        "line_items": [
+          {
+            "description": "3 slo 0",
+            "amount": "90.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Net.Amt",
+            "amount": "270.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "3 slo 0",
+            "amount": "90.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Net.Amt",
+            "amount": "270.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-04-18",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "b332cecc9c983333",
+    "merchant_norm": "a04067"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

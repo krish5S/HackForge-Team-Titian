@@ -1,0 +1,190 @@
+{
+  "receipt_id": "r_095",
+  "file_sha256": "1cc15c54ef1edca697faa5bd786b4c58d89d1a81b2edd0d59cd19df45c99a877",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "3180404",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-04-13",
+    "transaction_time": "2:26",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "25.00",
+    "tax": "23.58",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "2 TAU SAR PNEAH (S) 24PCS @",
+        "amount": "12.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "C",
+        "amount": "50.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "GE",
+        "amount": "25.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR:inclusive of GST @6%",
+        "amount": "23.58",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9712688326835632,
+      "subtotal": 0.9981321096420288,
+      "tax": 0.9999936819076538
+    },
+    "boxes": {
+      "transaction_date": [
+        165,
+        447,
+        342,
+        480
+      ],
+      "subtotal": [
+        474,
+        716,
+        542,
+        750
+      ],
+      "tax": [
+        390,
+        954,
+        455,
+        984
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9712688326835632,
+          "subtotal": 0.9981321096420288,
+          "tax": 0.9999936819076538
+        },
+        "boxes": {
+          "transaction_date": [
+            165,
+            447,
+            342,
+            480
+          ],
+          "subtotal": [
+            474,
+            716,
+            542,
+            750
+          ],
+          "tax": [
+            390,
+            954,
+            455,
+            984
+          ]
+        },
+        "merchant_name": "3180404",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "2:26",
+        "subtotal": "25.00",
+        "tax": "23.58",
+        "line_items": [
+          {
+            "description": "2 TAU SAR PNEAH (S) 24PCS @",
+            "amount": "12.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "C",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "GE",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR:inclusive of GST @6%",
+            "amount": "23.58",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "2 TAU SAR PNEAH (S) 24PCS @",
+            "amount": "12.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "C",
+            "amount": "50.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "GE",
+            "amount": "25.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR:inclusive of GST @6%",
+            "amount": "23.58",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "111.08",
+        "printed": "25.00",
+        "passed": false
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-04-13",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "bb37a50f87038b26",
+    "merchant_norm": "3180404"
+  },
+  "forensics": {
+    "score": 25,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "items_vs_subtotal"
+    ]
+  }
+}

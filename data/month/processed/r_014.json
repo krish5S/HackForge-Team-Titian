@@ -1,0 +1,81 @@
+{
+  "receipt_id": "r_014",
+  "file_sha256": "6aa2cc19aa43b07e63240bbdfee94d26a77d755676450af49b6d94e4cfff7cd0",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "1001-Choco Bun",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "22000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9995698928833008
+    },
+    "boxes": {
+      "total": [
+        601,
+        945,
+        736,
+        1000
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9995698928833008
+        },
+        "boxes": {
+          "total": [
+            601,
+            945,
+            736,
+            1000
+          ]
+        },
+        "merchant_name": "1001-Choco Bun",
+        "total": "22000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "22000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d5d57454d45541d3",
+    "merchant_norm": "1001 choco bun"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

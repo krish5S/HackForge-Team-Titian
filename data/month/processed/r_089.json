@@ -1,0 +1,182 @@
+{
+  "receipt_id": "r_089",
+  "file_sha256": "688801015159991a14db5be2f261078fe20dfd881452d5d7d8f7b999c1308c30",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "L TWO FLORIST & HANDICRAFT",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2018-03-21",
+    "transaction_time": "11:01",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "0.00",
+    "tip": "",
+    "other_charges": "",
+    "total": "9.00",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "DISC",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ROUNDING",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CASH",
+        "amount": "20.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "CHANGE",
+        "amount": "11.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9999972581863403,
+      "total": 0.999996542930603,
+      "tax": 0.9999833106994629
+    },
+    "boxes": {
+      "transaction_date": [
+        454,
+        418,
+        584,
+        446
+      ],
+      "total": [
+        507,
+        908,
+        579,
+        946
+      ],
+      "tax": [
+        526,
+        831,
+        581,
+        858
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9999972581863403,
+          "total": 0.999996542930603,
+          "tax": 0.9999833106994629
+        },
+        "boxes": {
+          "transaction_date": [
+            454,
+            418,
+            584,
+            446
+          ],
+          "total": [
+            507,
+            908,
+            579,
+            946
+          ],
+          "tax": [
+            526,
+            831,
+            581,
+            858
+          ]
+        },
+        "merchant_name": "L TWO FLORIST & HANDICRAFT",
+        "transaction_date": "2018-03-21",
+        "transaction_time": "11:01",
+        "total": "9.00",
+        "tax": "0.00",
+        "line_items": [
+          {
+            "description": "DISC",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ROUNDING",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "11.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "DISC",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ROUNDING",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CASH",
+            "amount": "20.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "CHANGE",
+            "amount": "11.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "9.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-03-21",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d5a5fad2019ae19c",
+    "merchant_norm": "l two florist handicraft"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

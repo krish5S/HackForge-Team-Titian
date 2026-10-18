@@ -1,0 +1,186 @@
+{
+  "receipt_id": "r_093",
+  "file_sha256": "f1aa10deb8cf1ce5d851c35aa3194291c03fdf4238ac04c580ae11dd94d988d7",
+  "is_receipt": true,
+  "extraction_status": "PARTIAL",
+  "extraction": {
+    "merchant_name": "POSTED",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "04:56",
+    "city": "",
+    "country": "MY",
+    "currency": "MYR",
+    "subtotal": "035.00",
+    "tax": "635.00",
+    "tip": "",
+    "other_charges": "",
+    "total": "",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Rounding Adj :",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "al Inclusive GST:",
+        "amount": "635.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "MASTER",
+        "amount": "035.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SR",
+        "amount": "594.34",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ZRL",
+        "amount": "5.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.9890301823616028,
+      "tax": 0.9999471306800842
+    },
+    "boxes": {
+      "subtotal": [
+        524,
+        974,
+        624,
+        1010
+      ],
+      "tax": [
+        492,
+        1061,
+        633,
+        1107
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.9890301823616028,
+          "tax": 0.9999471306800842
+        },
+        "boxes": {
+          "subtotal": [
+            524,
+            974,
+            624,
+            1010
+          ],
+          "tax": [
+            492,
+            1061,
+            633,
+            1107
+          ]
+        },
+        "merchant_name": "POSTED",
+        "transaction_time": "04:56",
+        "subtotal": "035.00",
+        "tax": "635.00",
+        "currency": "MYR",
+        "line_items": [
+          {
+            "description": "Rounding Adj :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "al Inclusive GST:",
+            "amount": "635.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MASTER",
+            "amount": "035.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "594.34",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "Rounding Adj :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "al Inclusive GST:",
+            "amount": "635.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "MASTER",
+            "amount": "035.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR",
+            "amount": "594.34",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL",
+            "amount": "5.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "1269.34",
+        "printed": "35.00",
+        "passed": false
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "ae38f1cb8f4c0a93",
+    "merchant_norm": "posted"
+  },
+  "forensics": {
+    "score": 25,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "items_vs_subtotal"
+    ]
+  }
+}

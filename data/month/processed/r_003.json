@@ -1,0 +1,96 @@
+{
+  "receipt_id": "r_003",
+  "file_sha256": "6236b5dc4879ba05c3b14e2361641eb0f66ff54c4fad35ed2113c03825eca658",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "AFUNG",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "4364",
+    "tip": "",
+    "other_charges": "",
+    "total": "50000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "tax": 0.999925971031189,
+      "total": 0.9998602867126465
+    },
+    "boxes": {
+      "tax": [
+        653,
+        935,
+        749,
+        980
+      ],
+      "total": [
+        639,
+        1028,
+        753,
+        1080
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tax": 0.999925971031189,
+          "total": 0.9998602867126465
+        },
+        "boxes": {
+          "tax": [
+            653,
+            935,
+            749,
+            980
+          ],
+          "total": [
+            639,
+            1028,
+            753,
+            1080
+          ]
+        },
+        "merchant_name": "AFUNG",
+        "tax": "4364",
+        "total": "50000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "80d131ce7dfb03a6",
+    "merchant_norm": "afung"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

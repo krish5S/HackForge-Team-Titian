@@ -1,0 +1,96 @@
+{
+  "receipt_id": "r_009",
+  "file_sha256": "5a26bea121241e814c41d18006782ac49adb0d9be30f6fdc67e1b24212afc60e",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "Kupen 9",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "40455",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "44500",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "subtotal": 0.9996485710144043,
+      "total": 0.9998990893363953
+    },
+    "boxes": {
+      "subtotal": [
+        382,
+        540,
+        444,
+        566
+      ],
+      "total": [
+        388,
+        641,
+        453,
+        674
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "subtotal": 0.9996485710144043,
+          "total": 0.9998990893363953
+        },
+        "boxes": {
+          "subtotal": [
+            382,
+            540,
+            444,
+            566
+          ],
+          "total": [
+            388,
+            641,
+            453,
+            674
+          ]
+        },
+        "merchant_name": "Kupen 9",
+        "subtotal": "40455",
+        "total": "44500"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "44500",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "c08aabadada53595",
+    "merchant_norm": "kupen 9"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

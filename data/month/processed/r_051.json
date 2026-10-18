@@ -1,0 +1,219 @@
+{
+  "receipt_id": "r_051",
+  "file_sha256": "2f3a3116c1e1f2ea97748958e9573c4e35bec0d7c55a6d4dfcf490edd744c5b5",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "Merchant 51",
+    "receipt_number": "R_051",
+    "card_last4": "",
+    "transaction_date": "2026-09-16",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "20.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "20.00",
+    "itemization": "FULL",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Food",
+        "amount": "15.00",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "Beer",
+        "amount": "5.00",
+        "item_class": "ALCOHOL"
+      }
+    ],
+    "guest_count": 1,
+    "confidence": {
+      "transaction_date": 0.9850386381149292,
+      "subtotal": 0.9932153224945068,
+      "tax": 0.9991950988769531,
+      "tip": 0.9978330731391907,
+      "other_charges": 0.9975895881652832,
+      "total": 0.9983490705490112
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        336,
+        311
+      ],
+      "subtotal": [
+        543,
+        605,
+        680,
+        629
+      ],
+      "tax": [
+        558,
+        664,
+        680,
+        690
+      ],
+      "tip": [
+        558,
+        725,
+        681,
+        749
+      ],
+      "other_charges": [
+        558,
+        785,
+        680,
+        809
+      ],
+      "total": [
+        639,
+        844,
+        804,
+        872
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9850386381149292,
+          "subtotal": 0.9932153224945068,
+          "tax": 0.9991950988769531,
+          "tip": 0.9978330731391907,
+          "other_charges": 0.9975895881652832,
+          "total": 0.9983490705490112
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            543,
+            605,
+            680,
+            629
+          ],
+          "tax": [
+            558,
+            664,
+            680,
+            690
+          ],
+          "tip": [
+            558,
+            725,
+            681,
+            749
+          ],
+          "other_charges": [
+            558,
+            785,
+            680,
+            809
+          ],
+          "total": [
+            639,
+            844,
+            804,
+            872
+          ]
+        },
+        "merchant_name": "Merchant 51",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-16",
+        "transaction_time": "12:00",
+        "receipt_number": "R_051",
+        "subtotal": "20.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "20.00",
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-16",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "20.00"
+  },
+  "fingerprints": {
+    "phash": "8f1e964db01abc3c",
+    "merchant_norm": "merchant 51"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

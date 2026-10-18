@@ -1,0 +1,1180 @@
+{
+  "images": [
+    {
+      "image_id": "r_001",
+      "file": "r_001.png",
+      "source": "cord_v2",
+      "path": "images/r_001.png",
+      "source_id": "000001",
+      "scenario_id": "r_001",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_002",
+      "file": "r_002.jpg",
+      "source": "rendered",
+      "path": "images/r_002.jpg",
+      "scenario_id": "r_002",
+      "planted_problem": "exact_duplicate",
+      "related_ids": [
+        "r_001"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_003",
+      "file": "r_003.png",
+      "source": "cord_v2",
+      "path": "images/r_003.png",
+      "source_id": "000004",
+      "scenario_id": "r_003",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: total"
+    },
+    {
+      "image_id": "r_004",
+      "file": "r_004.jpg",
+      "source": "rendered",
+      "path": "images/r_004.jpg",
+      "scenario_id": "r_004",
+      "planted_problem": "exact_duplicate",
+      "related_ids": [
+        "r_003"
+      ],
+      "template": "hotel"
+    },
+    {
+      "image_id": "r_005",
+      "file": "r_005.png",
+      "source": "cord_v2",
+      "path": "images/r_005.png",
+      "source_id": "000030",
+      "scenario_id": "r_005",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_006",
+      "file": "r_006.jpg",
+      "source": "rendered",
+      "path": "images/r_006.jpg",
+      "scenario_id": "r_006",
+      "planted_problem": "exact_duplicate",
+      "related_ids": [
+        "r_005"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_007",
+      "file": "r_007.png",
+      "source": "cord_v2",
+      "path": "images/r_007.png",
+      "source_id": "000070",
+      "scenario_id": "r_007",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_008",
+      "file": "r_008.jpg",
+      "source": "rendered",
+      "path": "images/r_008.jpg",
+      "scenario_id": "r_008",
+      "planted_problem": "exact_duplicate",
+      "related_ids": [
+        "r_007"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_009",
+      "file": "r_009.png",
+      "source": "cord_v2",
+      "path": "images/r_009.png",
+      "source_id": "000115",
+      "scenario_id": "r_009",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_010",
+      "file": "r_010.jpg",
+      "source": "rendered",
+      "path": "images/r_010.jpg",
+      "scenario_id": "r_010",
+      "planted_problem": "exact_duplicate",
+      "related_ids": [
+        "r_009"
+      ],
+      "template": "hotel"
+    },
+    {
+      "image_id": "r_011",
+      "file": "r_011.png",
+      "source": "cord_v2",
+      "path": "images/r_011.png",
+      "source_id": "000120",
+      "scenario_id": "r_011",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_012",
+      "file": "r_012.jpg",
+      "source": "rendered",
+      "path": "images/r_012.jpg",
+      "scenario_id": "r_012",
+      "planted_problem": "rephotographed_duplicate",
+      "related_ids": [
+        "r_011"
+      ],
+      "template": "hotel"
+    },
+    {
+      "image_id": "r_013",
+      "file": "r_013.png",
+      "source": "cord_v2",
+      "path": "images/r_013.png",
+      "source_id": "000121",
+      "scenario_id": "r_013",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_014",
+      "file": "r_014.jpg",
+      "source": "rendered",
+      "path": "images/r_014.jpg",
+      "scenario_id": "r_014",
+      "planted_problem": "rephotographed_duplicate",
+      "related_ids": [
+        "r_013"
+      ],
+      "template": "hotel"
+    },
+    {
+      "image_id": "r_015",
+      "file": "r_015.png",
+      "source": "cord_v2",
+      "path": "images/r_015.png",
+      "source_id": "000124",
+      "scenario_id": "r_015",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_016",
+      "file": "r_016.jpg",
+      "source": "rendered",
+      "path": "images/r_016.jpg",
+      "scenario_id": "r_016",
+      "planted_problem": "rephotographed_duplicate",
+      "related_ids": [
+        "r_015"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_017",
+      "file": "r_017.png",
+      "source": "cord_v2",
+      "path": "images/r_017.png",
+      "source_id": "000155",
+      "scenario_id": "r_017",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_018",
+      "file": "r_018.pdf",
+      "source": "rendered",
+      "path": "images/r_018.pdf",
+      "scenario_id": "r_018",
+      "planted_problem": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_017"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_019",
+      "file": "r_019.png",
+      "source": "cord_v2",
+      "path": "images/r_019.png",
+      "source_id": "000172",
+      "scenario_id": "r_019",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_020",
+      "file": "r_020.pdf",
+      "source": "rendered",
+      "path": "images/r_020.pdf",
+      "scenario_id": "r_020",
+      "planted_problem": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_019"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_021",
+      "file": "r_021.png",
+      "source": "cord_v2",
+      "path": "images/r_021.png",
+      "source_id": "000197",
+      "scenario_id": "r_021",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_022",
+      "file": "r_022.pdf",
+      "source": "rendered",
+      "path": "images/r_022.pdf",
+      "scenario_id": "r_022",
+      "planted_problem": "pdf_photo_duplicate",
+      "related_ids": [
+        "r_021"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_023",
+      "file": "r_023.png",
+      "source": "cord_v2",
+      "path": "images/r_023.png",
+      "source_id": "000273",
+      "scenario_id": "r_023",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_024",
+      "file": "r_024.jpg",
+      "source": "rendered",
+      "path": "images/r_024.jpg",
+      "scenario_id": "r_024",
+      "planted_problem": "cross_employee_duplicate",
+      "related_ids": [
+        "r_023"
+      ],
+      "template": "hotel"
+    },
+    {
+      "image_id": "r_025",
+      "file": "r_025.png",
+      "source": "cord_v2",
+      "path": "images/r_025.png",
+      "source_id": "000283",
+      "scenario_id": "r_025",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_026",
+      "file": "r_026.jpg",
+      "source": "rendered",
+      "path": "images/r_026.jpg",
+      "scenario_id": "r_026",
+      "planted_problem": "cross_employee_duplicate",
+      "related_ids": [
+        "r_025"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_027",
+      "file": "r_027.png",
+      "source": "find_it_again",
+      "path": "images/r_027.png",
+      "source_id": "test/X51007846357.png",
+      "scenario_id": "r_027",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_028",
+      "file": "r_028.png",
+      "source": "find_it_again",
+      "path": "images/r_028.png",
+      "source_id": "val/X51005711404.png",
+      "scenario_id": "r_028",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_029",
+      "file": "r_029.png",
+      "source": "find_it_again",
+      "path": "images/r_029.png",
+      "source_id": "val/X51006393377.png",
+      "scenario_id": "r_029",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_030",
+      "file": "r_030.png",
+      "source": "find_it_again",
+      "path": "images/r_030.png",
+      "source_id": "val/X51006414636.png",
+      "scenario_id": "r_030",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_031",
+      "file": "r_031.png",
+      "source": "find_it_again",
+      "path": "images/r_031.png",
+      "source_id": "val/X51007135247.png",
+      "scenario_id": "r_031",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_032",
+      "file": "r_032.png",
+      "source": "find_it_again",
+      "path": "images/r_032.png",
+      "source_id": "train/X51005447850.png",
+      "scenario_id": "r_032",
+      "planted_problem": "forged",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_033",
+      "file": "r_033.png",
+      "source": "gpt4o-receipt",
+      "path": "images/r_033.png",
+      "source_id": "receipt_rite_aid_0138.png",
+      "scenario_id": "r_033",
+      "planted_problem": "ai_generated",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_034",
+      "file": "r_034.png",
+      "source": "gpt4o-receipt",
+      "path": "images/r_034.png",
+      "source_id": "receipt_winco_foods_0670.png",
+      "scenario_id": "r_034",
+      "planted_problem": "ai_generated",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_035",
+      "file": "r_035.png",
+      "source": "gpt4o-receipt",
+      "path": "images/r_035.png",
+      "source_id": "receipt_dairy_queen_0019.png",
+      "scenario_id": "r_035",
+      "planted_problem": "ai_generated",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_036",
+      "file": "r_036.png",
+      "source": "gpt4o-receipt",
+      "path": "images/r_036.png",
+      "source_id": "receipt_pet_supplies_plus_0616.png",
+      "scenario_id": "r_036",
+      "planted_problem": "ai_generated",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_037",
+      "file": "r_037.jpg",
+      "source": "rendered",
+      "path": "images/r_037.jpg",
+      "scenario_id": "r_037",
+      "planted_problem": "unreadable",
+      "related_ids": [],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_038",
+      "file": "r_038.jpg",
+      "source": "rendered",
+      "path": "images/r_038.jpg",
+      "scenario_id": "r_038",
+      "planted_problem": "unreadable",
+      "related_ids": [],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_039",
+      "file": "r_039.jpg",
+      "source": "rendered",
+      "path": "images/r_039.jpg",
+      "scenario_id": "r_039",
+      "planted_problem": "split_transaction",
+      "related_ids": [
+        "r_040"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_040",
+      "file": "r_040.jpg",
+      "source": "rendered",
+      "path": "images/r_040.jpg",
+      "scenario_id": "r_040",
+      "planted_problem": "split_transaction",
+      "related_ids": [
+        "r_039"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_041",
+      "file": "r_041.jpg",
+      "source": "rendered",
+      "path": "images/r_041.jpg",
+      "scenario_id": "r_041",
+      "planted_problem": "split_transaction",
+      "related_ids": [
+        "r_042"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_042",
+      "file": "r_042.jpg",
+      "source": "rendered",
+      "path": "images/r_042.jpg",
+      "scenario_id": "r_042",
+      "planted_problem": "split_transaction",
+      "related_ids": [
+        "r_041"
+      ],
+      "template": "taxi"
+    },
+    {
+      "image_id": "r_043",
+      "file": "r_043.jpg",
+      "source": "rendered",
+      "path": "images/r_043.jpg",
+      "scenario_id": "r_043",
+      "planted_problem": "daily_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_044",
+      "file": "r_044.jpg",
+      "source": "rendered",
+      "path": "images/r_044.jpg",
+      "scenario_id": "r_044",
+      "planted_problem": "daily_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_045",
+      "file": "r_045.jpg",
+      "source": "rendered",
+      "path": "images/r_045.jpg",
+      "scenario_id": "r_045",
+      "planted_problem": "daily_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_046",
+      "file": "r_046.jpg",
+      "source": "rendered",
+      "path": "images/r_046.jpg",
+      "scenario_id": "r_046",
+      "planted_problem": "daily_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_047",
+      "file": "r_047.jpg",
+      "source": "rendered",
+      "path": "images/r_047.jpg",
+      "scenario_id": "r_047",
+      "planted_problem": "monthly_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_048",
+      "file": "r_048.jpg",
+      "source": "rendered",
+      "path": "images/r_048.jpg",
+      "scenario_id": "r_048",
+      "planted_problem": "monthly_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_049",
+      "file": "r_049.jpg",
+      "source": "rendered",
+      "path": "images/r_049.jpg",
+      "scenario_id": "r_049",
+      "planted_problem": "monthly_cap",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_050",
+      "file": "r_050.jpg",
+      "source": "rendered",
+      "path": "images/r_050.jpg",
+      "scenario_id": "r_050",
+      "planted_problem": "alcohol",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_051",
+      "file": "r_051.jpg",
+      "source": "rendered",
+      "path": "images/r_051.jpg",
+      "scenario_id": "r_051",
+      "planted_problem": "alcohol",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_052",
+      "file": "r_052.jpg",
+      "source": "rendered",
+      "path": "images/r_052.jpg",
+      "scenario_id": "r_052",
+      "planted_problem": "alcohol",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_053",
+      "file": "r_053.jpg",
+      "source": "rendered",
+      "path": "images/r_053.jpg",
+      "scenario_id": "r_053",
+      "planted_problem": "alcohol",
+      "related_ids": [],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_054",
+      "file": "r_054.png",
+      "source": "cord_v2",
+      "path": "images/r_054.png",
+      "source_id": "000328",
+      "scenario_id": "r_054",
+      "planted_problem": "missing_client",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: total"
+    },
+    {
+      "image_id": "r_055",
+      "file": "r_055.png",
+      "source": "cord_v2",
+      "path": "images/r_055.png",
+      "source_id": "000394",
+      "scenario_id": "r_055",
+      "planted_problem": "missing_client",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: total"
+    },
+    {
+      "image_id": "r_056",
+      "file": "r_056.png",
+      "source": "cord_v2",
+      "path": "images/r_056.png",
+      "source_id": "000476",
+      "scenario_id": "r_056",
+      "planted_problem": "missing_client",
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: total"
+    },
+    {
+      "image_id": "r_057",
+      "file": "r_057.jpg",
+      "source": "rendered",
+      "path": "images/r_057.jpg",
+      "scenario_id": "r_057",
+      "planted_problem": null,
+      "related_ids": [
+        "r_058"
+      ],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_058",
+      "file": "r_058.jpg",
+      "source": "rendered",
+      "path": "images/r_058.jpg",
+      "scenario_id": "r_058",
+      "planted_problem": "late_arrival",
+      "related_ids": [
+        "r_057"
+      ],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_059",
+      "file": "r_059.jpg",
+      "source": "rendered",
+      "path": "images/r_059.jpg",
+      "scenario_id": "r_059",
+      "planted_problem": null,
+      "related_ids": [
+        "r_060"
+      ],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_060",
+      "file": "r_060.jpg",
+      "source": "rendered",
+      "path": "images/r_060.jpg",
+      "scenario_id": "r_060",
+      "planted_problem": "late_arrival",
+      "related_ids": [
+        "r_059"
+      ],
+      "template": "restaurant"
+    },
+    {
+      "image_id": "r_061",
+      "file": "r_061.png",
+      "source": "cord_v2",
+      "path": "images/r_061.png",
+      "source_id": "000533",
+      "scenario_id": "r_061",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_062",
+      "file": "r_062.png",
+      "source": "cord_v2",
+      "path": "images/r_062.png",
+      "source_id": "000542",
+      "scenario_id": "r_062",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_063",
+      "file": "r_063.png",
+      "source": "cord_v2",
+      "path": "images/r_063.png",
+      "source_id": "000569",
+      "scenario_id": "r_063",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: total"
+    },
+    {
+      "image_id": "r_064",
+      "file": "r_064.jpg",
+      "source": "express_expense",
+      "path": "images/r_064.jpg",
+      "source_id": "1022-receipt.jpg",
+      "scenario_id": "r_064",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_065",
+      "file": "r_065.jpg",
+      "source": "express_expense",
+      "path": "images/r_065.jpg",
+      "source_id": "1028-receipt.jpg",
+      "scenario_id": "r_065",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_066",
+      "file": "r_066.jpg",
+      "source": "express_expense",
+      "path": "images/r_066.jpg",
+      "source_id": "1044-receipt.jpg",
+      "scenario_id": "r_066",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_067",
+      "file": "r_067.jpg",
+      "source": "express_expense",
+      "path": "images/r_067.jpg",
+      "source_id": "1047-receipt.jpg",
+      "scenario_id": "r_067",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_068",
+      "file": "r_068.jpg",
+      "source": "express_expense",
+      "path": "images/r_068.jpg",
+      "source_id": "1073-receipt.jpg",
+      "scenario_id": "r_068",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_069",
+      "file": "r_069.jpg",
+      "source": "express_expense",
+      "path": "images/r_069.jpg",
+      "source_id": "1078-receipt.jpg",
+      "scenario_id": "r_069",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_070",
+      "file": "r_070.jpg",
+      "source": "express_expense",
+      "path": "images/r_070.jpg",
+      "source_id": "1086-receipt.jpg",
+      "scenario_id": "r_070",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_071",
+      "file": "r_071.jpg",
+      "source": "express_expense",
+      "path": "images/r_071.jpg",
+      "source_id": "1090-receipt.jpg",
+      "scenario_id": "r_071",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_072",
+      "file": "r_072.jpg",
+      "source": "express_expense",
+      "path": "images/r_072.jpg",
+      "source_id": "1093-receipt.jpg",
+      "scenario_id": "r_072",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_073",
+      "file": "r_073.jpg",
+      "source": "express_expense",
+      "path": "images/r_073.jpg",
+      "source_id": "1099-receipt.jpg",
+      "scenario_id": "r_073",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_074",
+      "file": "r_074.jpg",
+      "source": "express_expense",
+      "path": "images/r_074.jpg",
+      "source_id": "1101-receipt.jpg",
+      "scenario_id": "r_074",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_075",
+      "file": "r_075.jpg",
+      "source": "express_expense",
+      "path": "images/r_075.jpg",
+      "source_id": "1102-receipt.jpg",
+      "scenario_id": "r_075",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_076",
+      "file": "r_076.jpg",
+      "source": "express_expense",
+      "path": "images/r_076.jpg",
+      "source_id": "1110-receipt.jpg",
+      "scenario_id": "r_076",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_077",
+      "file": "r_077.jpg",
+      "source": "express_expense",
+      "path": "images/r_077.jpg",
+      "source_id": "1112-receipt.jpg",
+      "scenario_id": "r_077",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_078",
+      "file": "r_078.jpg",
+      "source": "express_expense",
+      "path": "images/r_078.jpg",
+      "source_id": "1118-receipt.jpg",
+      "scenario_id": "r_078",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_079",
+      "file": "r_079.jpg",
+      "source": "express_expense",
+      "path": "images/r_079.jpg",
+      "source_id": "1134-receipt.jpg",
+      "scenario_id": "r_079",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_080",
+      "file": "r_080.jpg",
+      "source": "express_expense",
+      "path": "images/r_080.jpg",
+      "source_id": "1149-receipt.jpg",
+      "scenario_id": "r_080",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_081",
+      "file": "r_081.jpg",
+      "source": "express_expense",
+      "path": "images/r_081.jpg",
+      "source_id": "1174-receipt.jpg",
+      "scenario_id": "r_081",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_082",
+      "file": "r_082.jpg",
+      "source": "express_expense",
+      "path": "images/r_082.jpg",
+      "source_id": "1177-receipt.jpg",
+      "scenario_id": "r_082",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "no field annotations in dataset; expected facts left blank"
+    },
+    {
+      "image_id": "r_083",
+      "file": "r_083.jpg",
+      "source": "sroie",
+      "path": "images/r_083.jpg",
+      "source_id": "test/images/X51005230621.jpg",
+      "scenario_id": "r_083",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_084",
+      "file": "r_084.jpg",
+      "source": "sroie",
+      "path": "images/r_084.jpg",
+      "source_id": "test/images/X51005757292.jpg",
+      "scenario_id": "r_084",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_085",
+      "file": "r_085.jpg",
+      "source": "sroie",
+      "path": "images/r_085.jpg",
+      "source_id": "test/images/X51006502534.jpg",
+      "scenario_id": "r_085",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_086",
+      "file": "r_086.jpg",
+      "source": "sroie",
+      "path": "images/r_086.jpg",
+      "source_id": "test/images/X51006857540.jpg",
+      "scenario_id": "r_086",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_087",
+      "file": "r_087.jpg",
+      "source": "sroie",
+      "path": "images/r_087.jpg",
+      "source_id": "test/images/X51007846400.jpg",
+      "scenario_id": "r_087",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_088",
+      "file": "r_088.jpg",
+      "source": "sroie",
+      "path": "images/r_088.jpg",
+      "source_id": "train/images/X51005447860.jpg",
+      "scenario_id": "r_088",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_089",
+      "file": "r_089.jpg",
+      "source": "sroie",
+      "path": "images/r_089.jpg",
+      "source_id": "train/images/X51005712039.jpg",
+      "scenario_id": "r_089",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_090",
+      "file": "r_090.jpg",
+      "source": "sroie",
+      "path": "images/r_090.jpg",
+      "source_id": "train/images/X51005719856.jpg",
+      "scenario_id": "r_090",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_091",
+      "file": "r_091.jpg",
+      "source": "sroie",
+      "path": "images/r_091.jpg",
+      "source_id": "train/images/X51005806685.jpg",
+      "scenario_id": "r_091",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_092",
+      "file": "r_092.jpg",
+      "source": "sroie",
+      "path": "images/r_092.jpg",
+      "source_id": "train/images/X51006311758.jpg",
+      "scenario_id": "r_092",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_093",
+      "file": "r_093.jpg",
+      "source": "sroie",
+      "path": "images/r_093.jpg",
+      "source_id": "train/images/X51006387847.jpg",
+      "scenario_id": "r_093",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total"
+    },
+    {
+      "image_id": "r_094",
+      "file": "r_094.jpg",
+      "source": "sroie",
+      "path": "images/r_094.jpg",
+      "source_id": "train/images/X51006387953.jpg",
+      "scenario_id": "r_094",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_095",
+      "file": "r_095.jpg",
+      "source": "sroie",
+      "path": "images/r_095.jpg",
+      "source_id": "train/images/X51006466065.jpg",
+      "scenario_id": "r_095",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_096",
+      "file": "r_096.jpg",
+      "source": "sroie",
+      "path": "images/r_096.jpg",
+      "source_id": "train/images/X51006555784.jpg",
+      "scenario_id": "r_096",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_097",
+      "file": "r_097.jpg",
+      "source": "sroie",
+      "path": "images/r_097.jpg",
+      "source_id": "train/images/X51006556831.jpg",
+      "scenario_id": "r_097",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_098",
+      "file": "r_098.jpg",
+      "source": "sroie",
+      "path": "images/r_098.jpg",
+      "source_id": "train/images/X51006557508.jpg",
+      "scenario_id": "r_098",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    },
+    {
+      "image_id": "r_099",
+      "file": "r_099.jpg",
+      "source": "sroie",
+      "path": "images/r_099.jpg",
+      "source_id": "train/images/X51006619697.jpg",
+      "scenario_id": "r_099",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, transaction_date"
+    },
+    {
+      "image_id": "r_100",
+      "file": "r_100.jpg",
+      "source": "sroie",
+      "path": "images/r_100.jpg",
+      "source_id": "train/images/X51006620414.jpg",
+      "scenario_id": "r_100",
+      "planted_problem": null,
+      "related_ids": [],
+      "verified_fields": true,
+      "label_basis": "dataset annotation: merchant, total, transaction_date"
+    }
+  ],
+  "pending_public_scenarios": [],
+  "status": "provisional_scenarios"
+}

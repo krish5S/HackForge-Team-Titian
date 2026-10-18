@@ -1,0 +1,229 @@
+{
+  "receipt_id": "r_036",
+  "file_sha256": "0601caab017a116eb85424d3f1e9a33f119ad9219bc0007e61a4e03a4b1d74de",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "PET SUPPLIES PLUS #1045",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2023-10-04",
+    "transaction_time": "14:32",
+    "city": "",
+    "country": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "8.25",
+    "tip": "",
+    "other_charges": "",
+    "total": "13.92",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Catnip",
+        "amount": "5.49",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Bird Seed, 10 Ib",
+        "amount": "7.98",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Goldfish Flakes",
+        "amount": "16.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Dog Collar",
+        "amount": "9.96",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pet Shampoo",
+        "amount": "19.98",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Dog Biscults",
+        "amount": "8.99",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Aquarium Filter",
+        "amount": "8.58",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9936062693595886,
+      "tax": 0.9929477572441101,
+      "total": 0.9900853633880615
+    },
+    "boxes": {
+      "transaction_date": [
+        269,
+        161,
+        525,
+        221
+      ],
+      "tax": [
+        226,
+        764,
+        404,
+        824
+      ],
+      "total": [
+        632,
+        807,
+        745,
+        858
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9936062693595886,
+          "tax": 0.9929477572441101,
+          "total": 0.9900853633880615
+        },
+        "boxes": {
+          "transaction_date": [
+            269,
+            161,
+            525,
+            221
+          ],
+          "tax": [
+            226,
+            764,
+            404,
+            824
+          ],
+          "total": [
+            632,
+            807,
+            745,
+            858
+          ]
+        },
+        "merchant_name": "PET SUPPLIES PLUS #1045",
+        "transaction_date": "2023-10-04",
+        "transaction_time": "14:32",
+        "currency": "USD",
+        "tax": "8.25",
+        "total": "13.92",
+        "line_items": [
+          {
+            "description": "Catnip",
+            "amount": "5.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bird Seed, 10 Ib",
+            "amount": "7.98",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Goldfish Flakes",
+            "amount": "16.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Dog Collar",
+            "amount": "9.96",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pet Shampoo",
+            "amount": "19.98",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Dog Biscults",
+            "amount": "8.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Aquarium Filter",
+            "amount": "8.58",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Catnip",
+            "amount": "5.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bird Seed, 10 Ib",
+            "amount": "7.98",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Goldfish Flakes",
+            "amount": "16.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Dog Collar",
+            "amount": "9.96",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pet Shampoo",
+            "amount": "19.98",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Dog Biscults",
+            "amount": "8.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Aquarium Filter",
+            "amount": "8.58",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "13.92",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2023-10-04",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "13.92"
+  },
+  "fingerprints": {
+    "phash": "d015bfa4aba8aba8",
+    "merchant_norm": "pet supplies plus 1045"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

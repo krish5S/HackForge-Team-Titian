@@ -1,0 +1,81 @@
+{
+  "receipt_id": "r_017",
+  "file_sha256": "8dd9e6d2bcb5149f9233f4ccbf8ec98af18d2c75007fd5d5dd60bc39ba4b27ee",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "BBQ Chicken",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "41000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9998372197151184
+    },
+    "boxes": {
+      "total": [
+        406,
+        394,
+        476,
+        416
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9998372197151184
+        },
+        "boxes": {
+          "total": [
+            406,
+            394,
+            476,
+            416
+          ]
+        },
+        "merchant_name": "BBQ Chicken",
+        "total": "41000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "41000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "85866b9f6a65c11b",
+    "merchant_norm": "bbq chicken"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

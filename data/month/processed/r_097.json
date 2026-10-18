@@ -1,0 +1,182 @@
+{
+  "receipt_id": "r_097",
+  "file_sha256": "c50c0abbd7ea893689b65b89d33f3ad43018871d77f30d14ca534c87ab6a42f4",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "PINGHWAI TRADING SDN BHD",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "2017-09-30",
+    "transaction_time": "13:04",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "616.60",
+    "tip": "",
+    "other_charges": "",
+    "total": "616.59",
+    "itemization": "",
+    "category": "",
+    "line_items": [
+      {
+        "description": "Discount",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Rounding",
+        "amount": "0.01",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "{4553 8800 9593 0119} VISA :",
+        "amount": "616.60",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change :",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "transaction_date": 0.9909801483154297,
+      "total": 0.9999963641166687,
+      "tax": 0.9999820590019226
+    },
+    "boxes": {
+      "transaction_date": [
+        405,
+        432,
+        590,
+        456
+      ],
+      "total": [
+        347,
+        1113,
+        423,
+        1140
+      ],
+      "tax": [
+        460,
+        878,
+        533,
+        900
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9909801483154297,
+          "total": 0.9999963641166687,
+          "tax": 0.9999820590019226
+        },
+        "boxes": {
+          "transaction_date": [
+            405,
+            432,
+            590,
+            456
+          ],
+          "total": [
+            347,
+            1113,
+            423,
+            1140
+          ],
+          "tax": [
+            460,
+            878,
+            533,
+            900
+          ]
+        },
+        "merchant_name": "PINGHWAI TRADING SDN BHD",
+        "transaction_date": "2017-09-30",
+        "transaction_time": "13:04",
+        "total": "616.59",
+        "tax": "616.60",
+        "line_items": [
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.01",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "{4553 8800 9593 0119} VISA :",
+            "amount": "616.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.01",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "{4553 8800 9593 0119} VISA :",
+            "amount": "616.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "616.59",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2017-09-30",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "eae184de815fc1d4",
+    "merchant_norm": "pinghwai trading sdn bhd"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

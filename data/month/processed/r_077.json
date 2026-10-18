@@ -1,0 +1,168 @@
+{
+  "receipt_id": "r_077",
+  "file_sha256": "ca8c7cdc94bb253af3bed6711106a66cfe993bfb950f5e73e9bd7d84cfe561dc",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "COLUMBUS RESTAURANT",
+    "receipt_number": "01029",
+    "card_last4": "",
+    "transaction_date": "2018-01-27",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "143.00",
+    "tip": "",
+    "other_charges": "",
+    "total": "184.47",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "2 FBD BLUE MARGARI",
+        "amount": "55.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RESORT TAX2%",
+        "amount": "2.86",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "SERUICE20%",
+        "amount": "28.60",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "tax": 0.9999776482582092,
+      "total": 0.9999451041221619,
+      "transaction_date": 0.9996649622917175
+    },
+    "boxes": {
+      "tax": [
+        367,
+        436,
+        444,
+        470
+      ],
+      "total": [
+        486,
+        577,
+        657,
+        634
+      ],
+      "transaction_date": [
+        173,
+        639,
+        499,
+        676
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "tax": 0.9999776482582092,
+          "total": 0.9999451041221619,
+          "transaction_date": 0.9996649622917175
+        },
+        "boxes": {
+          "tax": [
+            367,
+            436,
+            444,
+            470
+          ],
+          "total": [
+            486,
+            577,
+            657,
+            634
+          ],
+          "transaction_date": [
+            173,
+            639,
+            499,
+            676
+          ]
+        },
+        "merchant_name": "COLUMBUS RESTAURANT",
+        "tax": "143.00",
+        "total": "184.47",
+        "transaction_date": "2018-01-27",
+        "receipt_number": "01029",
+        "line_items": [
+          {
+            "description": "2 FBD BLUE MARGARI",
+            "amount": "55.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RESORT TAX2%",
+            "amount": "2.86",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SERUICE20%",
+            "amount": "28.60",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "2 FBD BLUE MARGARI",
+            "amount": "55.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RESORT TAX2%",
+            "amount": "2.86",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SERUICE20%",
+            "amount": "28.60",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "184.47",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2018-01-27",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "d9f167b247302cac",
+    "merchant_norm": "columbus restaurant"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

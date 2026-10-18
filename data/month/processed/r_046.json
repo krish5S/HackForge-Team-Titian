@@ -1,0 +1,203 @@
+{
+  "receipt_id": "r_046",
+  "file_sha256": "35ee7a4fb5b3a19cef3d97d6cd35fa00260a7ce1f4770581bbd9c928fe5dc0fd",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "Merchant 46",
+    "receipt_number": "R_046",
+    "card_last4": "",
+    "transaction_date": "2026-09-14",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "100.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "100.00",
+    "itemization": "FULL",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Dinner",
+        "amount": "100.00",
+        "item_class": "FOOD"
+      }
+    ],
+    "guest_count": 1,
+    "confidence": {
+      "transaction_date": 0.9866814613342285,
+      "subtotal": 0.9990819692611694,
+      "tax": 0.9991315007209778,
+      "tip": 0.9987704157829285,
+      "other_charges": 0.9986505508422852,
+      "total": 0.9985589981079102
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        336,
+        311
+      ],
+      "subtotal": [
+        527,
+        548,
+        681,
+        575
+      ],
+      "tax": [
+        557,
+        609,
+        681,
+        634
+      ],
+      "tip": [
+        558,
+        669,
+        680,
+        695
+      ],
+      "other_charges": [
+        558,
+        729,
+        680,
+        754
+      ],
+      "total": [
+        622,
+        790,
+        804,
+        817
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "transaction_date": 0.9866814613342285,
+          "subtotal": 0.9990819692611694,
+          "tax": 0.9991315007209778,
+          "tip": 0.9987704157829285,
+          "other_charges": 0.9986505508422852,
+          "total": 0.9985589981079102
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            336,
+            311
+          ],
+          "subtotal": [
+            527,
+            548,
+            681,
+            575
+          ],
+          "tax": [
+            557,
+            609,
+            681,
+            634
+          ],
+          "tip": [
+            558,
+            669,
+            680,
+            695
+          ],
+          "other_charges": [
+            558,
+            729,
+            680,
+            754
+          ],
+          "total": [
+            622,
+            790,
+            804,
+            817
+          ]
+        },
+        "merchant_name": "Merchant 46",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-14",
+        "transaction_time": "12:00",
+        "receipt_number": "R_046",
+        "subtotal": "100.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "100.00",
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "100.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "100.00",
+        "printed": "100.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "100.00",
+        "printed": "100.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-14",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "1.0",
+    "total_base": "100.00"
+  },
+  "fingerprints": {
+    "phash": "8f1e964de51a98b4",
+    "merchant_norm": "merchant 46"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

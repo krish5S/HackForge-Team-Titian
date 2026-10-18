@@ -1,0 +1,161 @@
+{
+  "receipt_id": "r_032",
+  "file_sha256": "2c5b4a7e49d34878eaa5c0de588da7b6cfc3987d3dbe4c14b87176edf4f66cff",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "PASARAYA BORONG PINTAR",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "3.20",
+    "tip": "",
+    "other_charges": "",
+    "total": "3.20",
+    "itemization": "",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "WALK",
+        "amount": "3.20",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Cash",
+        "amount": "5.20",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change",
+        "amount": "2.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ZRL = 0%",
+        "amount": "3.20",
+        "item_class": "OTHER"
+      }
+    ],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9999977350234985,
+      "tax": 0.9999977350234985
+    },
+    "boxes": {
+      "total": [
+        780,
+        1170,
+        871,
+        1217
+      ],
+      "tax": [
+        780,
+        1170,
+        871,
+        1217
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9999977350234985,
+          "tax": 0.9999977350234985
+        },
+        "boxes": {
+          "total": [
+            780,
+            1170,
+            871,
+            1217
+          ],
+          "tax": [
+            780,
+            1170,
+            871,
+            1217
+          ]
+        },
+        "merchant_name": "PASARAYA BORONG PINTAR",
+        "total": "3.20",
+        "tax": "3.20",
+        "line_items": [
+          {
+            "description": "WALK",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "5.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL = 0%",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          }
+        ]
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "WALK",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "5.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL = 0%",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "3.20",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "bee1e89ec88d91c8",
+    "merchant_norm": "pasaraya borong pintar"
+  },
+  "forensics": {
+    "score": 0,
+    "cnn_fake_probability": 0.0,
+    "signals": []
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "receipt_id": "r_063",
+  "file_sha256": "ef2037f04e744603039a5b3125679b7af75bfbcc144e93ab3d45cc09f0b34aec",
+  "is_receipt": true,
+  "extraction_status": "OK",
+  "extraction": {
+    "merchant_name": "shier:",
+    "receipt_number": "",
+    "card_last4": "",
+    "transaction_date": "",
+    "transaction_time": "",
+    "city": "",
+    "country": "",
+    "currency": "",
+    "subtotal": "",
+    "tax": "",
+    "tip": "",
+    "other_charges": "",
+    "total": "34000",
+    "itemization": "",
+    "category": "",
+    "line_items": [],
+    "guest_count": 0,
+    "confidence": {
+      "total": 0.9999173283576965
+    },
+    "boxes": {
+      "total": [
+        136,
+        350,
+        196,
+        379
+      ]
+    },
+    "readers": {
+      "reader_a": {
+        "confidence": {
+          "total": 0.9999173283576965
+        },
+        "boxes": {
+          "total": [
+            136,
+            350,
+            196,
+            379
+          ]
+        },
+        "merchant_name": "shier:",
+        "total": "34000"
+      },
+      "reader_b": {},
+      "text_rules": {}
+    }
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "34000",
+        "passed": true
+      }
+    ]
+  },
+  "fx": {
+    "base_currency": "USD",
+    "rate": "",
+    "total_base": ""
+  },
+  "fingerprints": {
+    "phash": "8281838be5ed53eb",
+    "merchant_norm": "shier"
+  },
+  "forensics": {
+    "score": 10,
+    "cnn_fake_probability": 0.0,
+    "signals": [
+      "round_total"
+    ]
+  }
+}

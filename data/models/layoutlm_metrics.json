@@ -1,0 +1,97 @@
+{
+  "entity_f1": 0.9354751619870411,
+  "per_field": {
+    "merchant_name": {
+      "f1": 0.8509532062391681,
+      "tp": 491,
+      "fp": 72,
+      "fn": 100
+    },
+    "transaction_date": {
+      "f1": 0.9829351535836177,
+      "tp": 432,
+      "fp": 6,
+      "fn": 9
+    },
+    "transaction_time": {
+      "f1": 0.9526123936816525,
+      "tp": 392,
+      "fp": 17,
+      "fn": 22
+    },
+    "line_item_description": {
+      "f1": 0.9592476489028213,
+      "tp": 2295,
+      "fp": 119,
+      "fn": 76
+    },
+    "line_item_amount": {
+      "f1": 0.9706013363028954,
+      "tp": 2179,
+      "fp": 77,
+      "fn": 55
+    },
+    "subtotal": {
+      "f1": 0.8579387186629527,
+      "tp": 308,
+      "fp": 41,
+      "fn": 61
+    },
+    "tax": {
+      "f1": 0.8913043478260869,
+      "tp": 328,
+      "fp": 44,
+      "fn": 36
+    },
+    "tip": {
+      "f1": 0.52,
+      "tp": 13,
+      "fp": 8,
+      "fn": 16
+    },
+    "total": {
+      "f1": 0.8331922099915327,
+      "tp": 492,
+      "fp": 115,
+      "fn": 82
+    }
+  },
+  "model_switch_enabled": false,
+  "model_switch_reason": "LayoutLM regresses on transaction_date; pattern reader kept",
+  "test_month_comparison": {
+    "counts": {
+      "pattern": {
+        "total": {
+          "correct": 25,
+          "total": 42
+        },
+        "transaction_date": {
+          "correct": 29,
+          "total": 36
+        }
+      },
+      "layoutlm": {
+        "total": {
+          "correct": 30,
+          "total": 42
+        },
+        "transaction_date": {
+          "correct": 12,
+          "total": 36
+        }
+      }
+    },
+    "accuracy": {
+      "pattern": {
+        "total": 0.5952380952380952,
+        "transaction_date": 0.8055555555555556
+      },
+      "layoutlm": {
+        "total": 0.7142857142857143,
+        "transaction_date": 0.3333333333333333
+      }
+    },
+    "model_switch_enabled": false,
+    "model_switch_reason": "LayoutLM regresses on transaction_date; pattern reader kept"
+  }
+}

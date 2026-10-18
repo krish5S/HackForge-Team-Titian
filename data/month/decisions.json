@@ -1,0 +1,4117 @@
+{
+  "decisions": [
+    {
+      "receipt_id": "r_001",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_031",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "8.61",
+      "proposed": "8.61",
+      "reimbursable": null,
+      "amount_at_risk": "8.61",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_039",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "480.00",
+      "proposed": "480.00",
+      "reimbursable": null,
+      "amount_at_risk": "480.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "SPLIT_TRANSACTION",
+          "effect": "REVIEW",
+          "clause_id": "6.1",
+          "message": "?6.1: Related claims: r_039, r_040."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_047",
+      "verdict": "APPROVE",
+      "claimed": "150.00",
+      "proposed": "150.00",
+      "reimbursable": "150.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "POLICY_COMPLIANT",
+          "effect": "INFO",
+          "clause_id": "12.1",
+          "message": "?12.1: Applicable policy checks passed."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "ENTERTAINMENT 2026-09",
+          "cap": "300.00",
+          "used_before": "0.00",
+          "used_after": "150.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_061",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_091",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3149 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_002",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_001."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_001"
+    },
+    {
+      "receipt_id": "r_040",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "480.00",
+      "proposed": "480.00",
+      "reimbursable": null,
+      "amount_at_risk": "480.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "SPLIT_TRANSACTION",
+          "effect": "REVIEW",
+          "clause_id": "6.1",
+          "message": "?6.1: Related claims: r_039, r_040."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_032",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_041",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "480.00",
+      "proposed": "480.00",
+      "reimbursable": null,
+      "amount_at_risk": "480.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "SPLIT_TRANSACTION",
+          "effect": "REVIEW",
+          "clause_id": "6.1",
+          "message": "?6.1: Related claims: r_041, r_042."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_048",
+      "verdict": "APPROVE",
+      "claimed": "150.00",
+      "proposed": "150.00",
+      "reimbursable": "150.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "POLICY_COMPLIANT",
+          "effect": "INFO",
+          "clause_id": "12.1",
+          "message": "?12.1: Applicable policy checks passed."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "ENTERTAINMENT 2026-09",
+          "cap": "300.00",
+          "used_before": "150.00",
+          "used_after": "300.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_062",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_092",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3079 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_042",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "480.00",
+      "proposed": "480.00",
+      "reimbursable": null,
+      "amount_at_risk": "480.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "SPLIT_TRANSACTION",
+          "effect": "REVIEW",
+          "clause_id": "6.1",
+          "message": "?6.1: Related claims: r_041, r_042."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_003",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_033",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "51.31",
+      "proposed": "51.31",
+      "reimbursable": null,
+      "amount_at_risk": "51.31",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 1040 days; allowed 0?30."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "51.31"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_049",
+      "verdict": "APPROVE",
+      "claimed": "150.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "150.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MONTHLY_CAP",
+          "effect": "CAP",
+          "clause_id": "1.1",
+          "message": "?1.1: Eligible 150.00; limit 300.00, already reserved 300.00; allows 0.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "ENTERTAINMENT 2026-09",
+          "cap": "300.00",
+          "used_before": "300.00",
+          "used_after": "300.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_063",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_093",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_004",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_003."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_003"
+    },
+    {
+      "receipt_id": "r_034",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "49.40",
+      "proposed": "49.40",
+      "reimbursable": null,
+      "amount_at_risk": "49.40",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 1065 days; allowed 0?30."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "49.40"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_064",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "37.37",
+      "proposed": "37.37",
+      "reimbursable": null,
+      "amount_at_risk": "37.37",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 2867 days; allowed 0?30."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "37.37"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_094",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3414 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_005",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_035",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 1039 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_065",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 2765 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_095",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3067 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_006",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_005."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_005"
+    },
+    {
+      "receipt_id": "r_036",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "13.92",
+      "proposed": "13.92",
+      "reimbursable": null,
+      "amount_at_risk": "13.92",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 1068 days; allowed 0?30."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_066",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_096",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3294 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_007",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_037",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_067",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "85.07",
+      "proposed": "85.07",
+      "reimbursable": null,
+      "amount_at_risk": "85.07",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3271 days; allowed 0?30."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "85.07"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_097",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3264 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_008",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_007."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_007"
+    },
+    {
+      "receipt_id": "r_038",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_068",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "13.22",
+      "proposed": "13.22",
+      "reimbursable": null,
+      "amount_at_risk": "13.22",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 2687 days; allowed 0?30."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_098",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3239 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_009",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_069",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "14.18",
+      "proposed": "14.18",
+      "reimbursable": null,
+      "amount_at_risk": "14.18",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 2759 days; allowed 0?30."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_099",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3861 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_010",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_009."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_009"
+    },
+    {
+      "receipt_id": "r_070",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "157.51",
+      "proposed": "157.51",
+      "reimbursable": null,
+      "amount_at_risk": "157.51",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3065 days; allowed 0?30."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "157.51"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_100",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3612 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_011",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_043",
+      "verdict": "APPROVE",
+      "claimed": "100.00",
+      "proposed": "75.00",
+      "reimbursable": "75.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 100.00; limit 75.00, already reserved 0.00; allows 75.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-11",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_057",
+      "verdict": "APPROVE",
+      "claimed": "50.00",
+      "proposed": "25.00",
+      "reimbursable": "25.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 50.00; limit 75.00, already reserved 50.00; allows 25.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-10",
+          "cap": "75.00",
+          "used_before": "50.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_059",
+      "verdict": "APPROVE",
+      "claimed": "50.00",
+      "proposed": "25.00",
+      "reimbursable": "25.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 50.00; limit 75.00, already reserved 50.00; allows 25.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-10",
+          "cap": "75.00",
+          "used_before": "50.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_071",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "2.35",
+      "proposed": "2.35",
+      "reimbursable": null,
+      "amount_at_risk": "2.35",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3396 days; allowed 0?30."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_012",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_011."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_011"
+    },
+    {
+      "receipt_id": "r_044",
+      "verdict": "APPROVE",
+      "claimed": "100.00",
+      "proposed": "75.00",
+      "reimbursable": "75.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 100.00; limit 75.00, already reserved 0.00; allows 75.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-12",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_072",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_013",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_045",
+      "verdict": "APPROVE",
+      "claimed": "100.00",
+      "proposed": "75.00",
+      "reimbursable": "75.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 100.00; limit 75.00, already reserved 0.00; allows 75.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-13",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_073",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3180 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_LIMIT",
+          "effect": "CAP",
+          "clause_id": "8.1",
+          "message": "?8.1: Tip exceeds the allowed share by 16.91."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_014",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_013."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_013"
+    },
+    {
+      "receipt_id": "r_046",
+      "verdict": "APPROVE",
+      "claimed": "100.00",
+      "proposed": "75.00",
+      "reimbursable": "75.00",
+      "amount_at_risk": "25.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "CITY_DAILY_CAP",
+          "effect": "CAP",
+          "clause_id": "2.1",
+          "message": "?2.1: Eligible 100.00; limit 75.00, already reserved 0.00; allows 75.00."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-14",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "75.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_074",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "14.06",
+      "proposed": "14.06",
+      "reimbursable": null,
+      "amount_at_risk": "14.06",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_015",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_050",
+      "verdict": "APPROVE",
+      "claimed": "20.00",
+      "proposed": "15.00",
+      "reimbursable": "15.00",
+      "amount_at_risk": "5.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "EXCLUDED_ITEM",
+          "effect": "EXCLUDE",
+          "clause_id": "4.1",
+          "message": "?4.1: Excluded items plus allocated tax/tip/charges: 5.00; share 0.250000."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-15",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "15.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_075",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "16.24",
+      "proposed": "16.24",
+      "reimbursable": null,
+      "amount_at_risk": "16.24",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3805 days; allowed 0?30."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_016",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_015."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_015"
+    },
+    {
+      "receipt_id": "r_051",
+      "verdict": "APPROVE",
+      "claimed": "20.00",
+      "proposed": "15.00",
+      "reimbursable": "15.00",
+      "amount_at_risk": "5.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "EXCLUDED_ITEM",
+          "effect": "EXCLUDE",
+          "clause_id": "4.1",
+          "message": "?4.1: Excluded items plus allocated tax/tip/charges: 5.00; share 0.250000."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-16",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "15.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_076",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "160.07",
+      "proposed": "160.07",
+      "reimbursable": null,
+      "amount_at_risk": "160.07",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "160.07"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_017",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_052",
+      "verdict": "APPROVE",
+      "claimed": "20.00",
+      "proposed": "15.00",
+      "reimbursable": "15.00",
+      "amount_at_risk": "5.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "EXCLUDED_ITEM",
+          "effect": "EXCLUDE",
+          "clause_id": "4.1",
+          "message": "?4.1: Excluded items plus allocated tax/tip/charges: 5.00; share 0.250000."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-17",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "15.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_077",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3155 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_018",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_017."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_017"
+    },
+    {
+      "receipt_id": "r_053",
+      "verdict": "APPROVE",
+      "claimed": "20.00",
+      "proposed": "15.00",
+      "reimbursable": "15.00",
+      "amount_at_risk": "5.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "EXCLUDED_ITEM",
+          "effect": "EXCLUDE",
+          "clause_id": "4.1",
+          "message": "?4.1: Excluded items plus allocated tax/tip/charges: 5.00; share 0.250000."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-18",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "15.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_078",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "4.99",
+      "proposed": "4.99",
+      "reimbursable": null,
+      "amount_at_risk": "4.99",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3471 days; allowed 0?30."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_019",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_079",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3725 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_020",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_019."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_019"
+    },
+    {
+      "receipt_id": "r_054",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_080",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 4039 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_LIMIT",
+          "effect": "CAP",
+          "clause_id": "8.1",
+          "message": "?8.1: Tip exceeds the allowed share by 0.20."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_021",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_055",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_081",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "55.38",
+      "proposed": "55.38",
+      "reimbursable": null,
+      "amount_at_risk": "55.38",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "MISSING_ITEMIZATION",
+          "effect": "REVIEW",
+          "clause_id": "7.1",
+          "message": "?7.1: Claims above 25.00 need full itemization."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3083 days; allowed 0?30."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [
+        {
+          "fix": "Provide missing itemization",
+          "verdict_if_fixed": "NEEDS_REVIEW",
+          "amount_if_fixed": "55.38"
+        }
+      ],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_022",
+      "verdict": "REJECT",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": "0.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "DUPLICATE",
+          "effect": "REJECT",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_021."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_021"
+    },
+    {
+      "receipt_id": "r_056",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 35,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_082",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 25,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3012 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_023",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_083",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3066 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_024",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_023."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_023"
+    },
+    {
+      "receipt_id": "r_084",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_025",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_058",
+      "verdict": "APPROVE",
+      "claimed": "50.00",
+      "proposed": "50.00",
+      "reimbursable": "50.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "POLICY_COMPLIANT",
+          "effect": "INFO",
+          "clause_id": "12.1",
+          "message": "?12.1: Applicable policy checks passed."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-10",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "50.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_060",
+      "verdict": "APPROVE",
+      "claimed": "50.00",
+      "proposed": "50.00",
+      "reimbursable": "50.00",
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "POLICY_COMPLIANT",
+          "effect": "INFO",
+          "clause_id": "12.1",
+          "message": "?12.1: Applicable policy checks passed."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [
+        {
+          "label": "Chicago trip meals, 2026-09-10",
+          "cap": "75.00",
+          "used_before": "0.00",
+          "used_after": "50.00"
+        }
+      ],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_085",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 2913 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_026",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Matches earlier submission r_025."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": "r_025"
+    },
+    {
+      "receipt_id": "r_086",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3239 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_027",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3186 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_087",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 10,
+      "reasons": [
+        {
+          "code": "LOCAL_MEAL_REVIEW",
+          "effect": "REVIEW",
+          "clause_id": "3.1",
+          "message": "?3.1: Local meal or unknown travel context requires review."
+        },
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3022 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_028",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 4581 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_088",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3143 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_029",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "16.73",
+      "proposed": "16.73",
+      "reimbursable": null,
+      "amount_at_risk": "16.73",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_089",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3114 days; allowed 0?30."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_030",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "0.00",
+      "proposed": "0.00",
+      "reimbursable": null,
+      "amount_at_risk": "0.00",
+      "risk_score": 0,
+      "reasons": [
+        {
+          "code": "SUBMISSION_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Submission interval 3087 days; allowed 0?30."
+        },
+        {
+          "code": "UNREADABLE",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A readable receipt is required."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    },
+    {
+      "receipt_id": "r_090",
+      "verdict": "NEEDS_REVIEW",
+      "claimed": "4.94",
+      "proposed": "4.94",
+      "reimbursable": null,
+      "amount_at_risk": "4.94",
+      "risk_score": 50,
+      "reasons": [
+        {
+          "code": "MISSING_DATE",
+          "effect": "REVIEW",
+          "clause_id": "9.1",
+          "message": "?9.1: Transaction date is missing or invalid."
+        },
+        {
+          "code": "MISSING_AMOUNT_OR_FX",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A valid total and matching FX conversion are required."
+        },
+        {
+          "code": "UNKNOWN_CATEGORY",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: A known expense category is required."
+        },
+        {
+          "code": "SUSPICIOUS",
+          "effect": "REVIEW",
+          "clause_id": "10.1",
+          "message": "?10.1: Receipt arithmetic or forensic evidence needs review."
+        },
+        {
+          "code": "TIP_AMOUNTS",
+          "effect": "REVIEW",
+          "clause_id": "8.1",
+          "message": "?8.1: Subtotal and tip are needed to verify the tip limit."
+        }
+      ],
+      "counterfactuals": [],
+      "ledger_refs": [],
+      "duplicate_of": null
+    }
+  ],
+  "ledger_meters": [
+    {
+      "label": "Chicago trip meals, 2026-09-11",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "75.00",
+      "employee_id": "e_01",
+      "remaining": "0.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-12",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "75.00",
+      "employee_id": "e_01",
+      "remaining": "0.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-13",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "75.00",
+      "employee_id": "e_01",
+      "remaining": "0.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-14",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "75.00",
+      "employee_id": "e_01",
+      "remaining": "0.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-15",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "15.00",
+      "employee_id": "e_01",
+      "remaining": "60.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-16",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "15.00",
+      "employee_id": "e_01",
+      "remaining": "60.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-17",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "15.00",
+      "employee_id": "e_01",
+      "remaining": "60.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-18",
+      "cap": "75.00",
+      "used_before": "0.00",
+      "used_after": "15.00",
+      "employee_id": "e_01",
+      "remaining": "60.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-10",
+      "cap": "75.00",
+      "used_before": "50.00",
+      "used_after": "75.00",
+      "employee_id": "e_03",
+      "remaining": "0.00"
+    },
+    {
+      "label": "Chicago trip meals, 2026-09-10",
+      "cap": "75.00",
+      "used_before": "50.00",
+      "used_after": "75.00",
+      "employee_id": "e_04",
+      "remaining": "0.00"
+    },
+    {
+      "label": "ENTERTAINMENT 2026-09",
+      "cap": "300.00",
+      "used_before": "300.00",
+      "used_after": "300.00",
+      "employee_id": "e_06",
+      "remaining": "0.00"
+    }
+  ],
+  "patterns": [
+    {
+      "code": "SPLIT_TRANSACTION",
+      "receipt_ids": [
+        "r_039",
+        "r_040"
+      ],
+      "clause_id": "6.1"
+    },
+    {
+      "code": "SPLIT_TRANSACTION",
+      "receipt_ids": [
+        "r_041",
+        "r_042"
+      ],
+      "clause_id": "6.1"
+    }
+  ],
+  "verdict_counts": {
+    "APPROVE": 15,
+    "NEEDS_REVIEW": 74,
+    "REJECT": 11
+  },
+  "amounts": {
+    "claimed": "3755.35",
+    "reimbursable": "810.00",
+    "amount_at_risk": "2945.35"
+  }
+}
