@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_041",
-  "file_sha256": "674dc37819d46823266505efafc8e839c7216be85a1104e3997c9f259d67d342",
+  "file_sha256": "9744a8c4545ac03c925b1d808cbacc3ec5bd16699bbb633c4b2df9854f02d06d",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Split shop 1",
     "receipt_number": "R_041",
@@ -17,11 +17,11 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "480.00",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "TRAVEL",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Trip fare",
         "amount": "480.00",
         "item_class": "OTHER"
       }
@@ -133,16 +133,26 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "480.00",
-        "category": "TRAVEL",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Trip fare",
             "amount": "480.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "TRAVEL",
+        "line_items": [
+          {
+            "description": "Trip fare",
+            "amount": "480.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +189,7 @@
     "total_base": "480.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41e9cb4",
+    "phash": "8f1e9649e51a9cb4",
     "merchant_norm": "split shop 1"
   },
   "forensics": {

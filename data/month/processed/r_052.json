@@ -2,7 +2,7 @@
   "receipt_id": "r_052",
   "file_sha256": "2c472f92df2e4703f1b5dbd391cd11e60ebc2f852cfd7237d1ab6d5870b7101f",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Merchant 52",
     "receipt_number": "R_052",
@@ -31,7 +31,7 @@
         "item_class": "ALCOHOL"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9849514365196228,
       "subtotal": 0.9932153224945068,
@@ -138,7 +138,6 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "20.00",
-        "category": "MEALS",
         "line_items": [
           {
             "description": "Food",
@@ -153,7 +152,24 @@
         ],
         "itemization": "FULL"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {

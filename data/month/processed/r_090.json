@@ -1,148 +1,124 @@
 {
   "receipt_id": "r_090",
-  "file_sha256": "aa4500975fef2e512361eae9e45be40d2736dd96c754ab30a5b327ac90838221",
+  "file_sha256": "61f16c80f93a2777c8b3e519fc23b2a6813ec606541bbdc52aa2162e8afdcd7b",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "TONYMOLY VIVA CITY",
+    "merchant_name": "baskinBRrobbins",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-03-29",
-    "transaction_time": "20:37",
+    "transaction_date": "",
+    "transaction_time": "04:58",
     "city": "",
-    "country": "",
-    "currency": "",
-    "subtotal": "",
-    "tax": "100.62",
+    "country": "MY",
+    "currency": "MYR",
+    "subtotal": "21.50",
+    "tax": "21.50",
     "tip": "",
     "other_charges": "",
-    "total": "100.60",
+    "total": "21.50",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "Disc",
-        "amount": "10.00",
+        "description": "Cash (MYR)",
+        "amount": "22.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Disc",
-        "amount": "10.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "VISA",
-        "amount": "100.60",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "SR = 6%",
-        "amount": "94.92",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "ZR = 0%",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "lotal promotional saving",
-        "amount": "11.18",
+        "description": "Cash Change:",
+        "amount": "0.50",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9865253567695618,
-      "tax": 0.999994695186615,
-      "total": 0.999987781047821
+      "subtotal": 0.9999300241470337,
+      "total": 0.9998559951782227,
+      "tax": 0.9998559951782227
     },
     "boxes": {
-      "transaction_date": [
-        339,
-        644,
-        640,
-        678
-      ],
-      "tax": [
-        577,
-        1235,
-        670,
-        1272
+      "subtotal": [
+        793,
+        1346,
+        908,
+        1394
       ],
       "total": [
-        576,
-        1309,
-        671,
-        1347
+        787,
+        1450,
+        907,
+        1494
+      ],
+      "tax": [
+        787,
+        1450,
+        907,
+        1494
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9865253567695618,
-          "tax": 0.999994695186615,
-          "total": 0.999987781047821
+          "subtotal": 0.9999300241470337,
+          "total": 0.9998559951782227,
+          "tax": 0.9998559951782227
         },
         "boxes": {
-          "transaction_date": [
-            339,
-            644,
-            640,
-            678
-          ],
-          "tax": [
-            577,
-            1235,
-            670,
-            1272
+          "subtotal": [
+            793,
+            1346,
+            908,
+            1394
           ],
           "total": [
-            576,
-            1309,
-            671,
-            1347
+            787,
+            1450,
+            907,
+            1494
+          ],
+          "tax": [
+            787,
+            1450,
+            907,
+            1494
           ]
         },
-        "merchant_name": "TONYMOLY VIVA CITY",
-        "transaction_date": "2018-03-29",
-        "transaction_time": "20:37",
-        "tax": "100.62",
-        "total": "100.60",
+        "merchant_name": "baskinBRrobbins",
+        "transaction_time": "04:58",
+        "subtotal": "21.50",
+        "total": "21.50",
+        "tax": "21.50",
+        "currency": "MYR",
         "line_items": [
           {
-            "description": "Disc",
-            "amount": "10.00",
+            "description": "Cash (MYR)",
+            "amount": "22.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Disc",
-            "amount": "10.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "VISA",
-            "amount": "100.60",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "SR = 6%",
-            "amount": "94.92",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "ZR = 0%",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "lotal promotional saving",
-            "amount": "11.18",
+            "description": "Cash Change:",
+            "amount": "0.50",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "country": "MY",
+        "line_items": [
+          {
+            "description": "Cash (MYR)",
+            "amount": "22.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash Change:",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -150,29 +126,38 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "100.60",
+        "printed": "21.50",
         "passed": true
       },
       {
-        "name": "date_format",
-        "expected": "YYYY-MM-DD",
-        "printed": "2018-03-29",
-        "passed": true
+        "name": "components_vs_total",
+        "expected": "43.00",
+        "printed": "21.50",
+        "passed": false
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "22.50",
+        "printed": "21.50",
+        "passed": false
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "0.23",
+    "total_base": "4.94"
   },
   "fingerprints": {
-    "phash": "d0d02bcc2f872b97",
-    "merchant_norm": "tonymoly viva city"
+    "phash": "80ff00ff00ff00fe",
+    "merchant_norm": "baskinbrrobbins"
   },
   "forensics": {
-    "score": 0,
+    "score": 50,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "components_vs_total",
+      "items_vs_subtotal"
+    ]
   }
 }

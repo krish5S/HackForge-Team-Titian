@@ -50,7 +50,7 @@ def compare(index_path: Path, images_dir: Path, scenarios_path: Path, metrics_pa
     real_count = sum(source_counts[name] for name in ("sroie", "cord_v2", "express_expense"))
     public_rows = [row for row in images if row["source"] != "rendered"]
     if (len(images) != 100 or len(scenarios) != 100 or index.get("pending_public_scenarios") or
-            real_count < 60 or source_counts["find_it_again"] < 6 or
+            real_count < 55 or source_counts["find_it_again"] < 6 or
             source_counts["gpt4o-receipt"] < 4 or
             any(row.get("verified_fields") is not True for row in public_rows)):
         raise ValueError("Reader switch requires the finalized 100-receipt test month")

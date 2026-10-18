@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_047",
-  "file_sha256": "9515e8aed4a67d527c04506385918d683ba9d2c57fcc56e3adf94d6d4bcbd89c",
+  "file_sha256": "d99a31937b0ba387d40394d364f98caa81c36dbdd691d837f062c9be10c01729",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Merchant 47",
     "receipt_number": "R_047",
@@ -17,16 +17,16 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "150.00",
-    "itemization": "",
-    "category": "MEALS",
+    "itemization": "FULL",
+    "category": "ENTERTAINMENT",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Show tickets",
         "amount": "150.00",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9867557883262634,
       "subtotal": 0.9990771412849426,
@@ -133,16 +133,27 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "150.00",
-        "category": "MEALS",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Show tickets",
             "amount": "150.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "ENTERTAINMENT",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Show tickets",
+            "amount": "150.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +190,7 @@
     "total_base": "150.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41ad8b5",
+    "phash": "8f1e9649e51ad8b4",
     "merchant_norm": "merchant 47"
   },
   "forensics": {

@@ -2,7 +2,7 @@
   "receipt_id": "r_035",
   "file_sha256": "d3600936c79265be4e40a361e3498ea3dc50583394408804ca81154fe9a6e263",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
     "merchant_name": "Dairy Queen",
     "receipt_number": "",
@@ -18,7 +18,7 @@
     "other_charges": "",
     "total": "",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
         "description": "Unit",
@@ -153,7 +153,47 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Unit",
+            "amount": "9.98",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Description",
+            "amount": "4.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "0ty",
+            "amount": "2.49",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cheeseburger",
+            "amount": "3.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Small Fries",
+            "amount": "7.18",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Mediun Sundae",
+            "amount": "3.58",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Hot Fudge Sundae",
+            "amount": "7.49",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {

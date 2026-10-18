@@ -2,7 +2,7 @@
   "receipt_id": "r_025",
   "file_sha256": "de1e616f2b2d2d1dfb9ee4a079f742dfe25e6ab1ebc7aacd600ae92217b33625",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "ELEPHANT READ BEAN",
     "receipt_number": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "22000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999921917915344
+    },
+    "boxes": {
+      "total": [
+        459,
+        638,
+        624,
+        700
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "ELEPHANT READ BEAN"
+        "confidence": {
+          "total": 0.9999921917915344
+        },
+        "boxes": {
+          "total": [
+            459,
+            638,
+            624,
+            700
+          ]
+        },
+        "merchant_name": "ELEPHANT READ BEAN",
+        "total": "22000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "22000",
+        "passed": true
       }
     ]
   },
@@ -52,8 +72,10 @@
     "merchant_norm": "elephant read bean"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

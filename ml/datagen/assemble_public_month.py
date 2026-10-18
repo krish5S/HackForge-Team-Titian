@@ -10,6 +10,7 @@ Dev 2's provisional file and written separately; the source file is untouched.
 
 import argparse
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 import re
@@ -19,9 +20,10 @@ from ml.datagen.render import DUPLICATE_VARIANTS, load_scenarios, render_month
 
 DUPLICATE_TYPES = set(DUPLICATE_VARIANTS)
 
-# Scenario types that take a real receipt, in assignment order. The first 60
-# eligible scenarios (clean first) become real public receipts.
-REAL_ORDER = ["clean", "missing_client", "late_original", "alcohol"]
+# Scenario types that take a real receipt, in assignment order. Only scenarios
+# whose verdict does not depend on printed line items stand in for real photos:
+# late_original (replay anchor) and alcohol (item-level exclusion) stay rendered.
+REAL_ORDER = ["clean", "missing_client"]
 FACT_FIELDS = ("merchant", "transaction_date", "transaction_time", "total",
                "subtotal", "tax", "tip", "other_charges", "currency")
 
@@ -85,6 +87,19 @@ def _signature(image):
     return (pixels - pixels.mean()) / (pixels.std() + 1e-6)
 
 
+def balanced_take(rows: list[dict], count: int) -> list[dict]:
+    """Take `count` rows, rotating through sources so none dominates."""
+    queues: dict[str, list[dict]] = {}
+    for row in rows:
+        queues.setdefault(row["source"], []).append(row)
+    taken: list[dict] = []
+    while len(taken) < count and any(queues.values()):
+        for queue in queues.values():
+            if queue and len(taken) < count:
+                taken.append(queue.pop(0))
+    return sorted(taken, key=lambda r: (r["source"], r["record_id"]))
+
+
 def drop_lookalikes(real: list[dict], spare: list[dict], datasets: Path, cord) -> list[dict]:
     """Replace real receipts that are visually identical to an earlier pick.
 
@@ -121,9 +136,10 @@ def assemble(scenarios_path: Path, manifest_path: Path, datasets: Path,
     real_ids = []
     for kind in REAL_ORDER:
         real_ids += [s["scenario_id"] for s in scenarios if s["scenario_type"] == kind]
-    real_ids = sorted(real_ids[:len(pools["real"])])
-    if len(real_ids) != len(pools["real"]) or len(forged_ids) != len(pools["forged"]) \
-            or len(ai_ids) != len(pools["fake"]):
+    real_ids = sorted(real_ids)
+    if len(real_ids) > len(pools["real"]):
+        raise ValueError("Not enough held-out real receipts for the stand-in scenarios")
+    if len(forged_ids) != len(pools["forged"]) or len(ai_ids) != len(pools["fake"]):
         raise ValueError("Scenario counts do not match public pool sizes")
     # Interleave sources so every source spreads over the month.
     pools["real"].sort(key=lambda r: (r["source"], r["record_id"]))
@@ -134,6 +150,7 @@ def assemble(scenarios_path: Path, manifest_path: Path, datasets: Path,
                     if r["split"] in {"test", "unseen_real"} and r["record_id"] not in chosen),
                    key=lambda r: (r["source"], r["record_id"]))
     pools["real"] = drop_lookalikes(pools["real"], spare, datasets, cord)
+    pools["real"] = balanced_take(pools["real"], len(real_ids))
     assignment = list(zip(real_ids, pools["real"])) + list(zip(forged_ids, pools["forged"])) \
         + list(zip(ai_ids, pools["fake"]))
     assigned = {sid for sid, _ in assignment}
@@ -193,6 +210,7 @@ def assemble(scenarios_path: Path, manifest_path: Path, datasets: Path,
         scenario = by_id[scenario_id]
         index["images"].append({
             "image_id": scenario_id, "file": target.name, "source": record["source"],
+            "path": os.path.relpath(target, index_path.parent).replace(os.sep, "/"),
             "source_id": record["source_id"], "scenario_id": scenario_id,
             "planted_problem": scenario.get("planted_issue"),
             "related_ids": scenario.get("related_ids", []),

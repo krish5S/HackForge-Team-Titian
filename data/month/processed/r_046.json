@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_046",
-  "file_sha256": "45be2304a7621a9f5dbb7accbcd554c0c355ea235dce4dcf0f661a7cce413061",
+  "file_sha256": "35ee7a4fb5b3a19cef3d97d6cd35fa00260a7ce1f4770581bbd9c928fe5dc0fd",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Merchant 46",
     "receipt_number": "R_046",
@@ -17,20 +17,20 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "100.00",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Dinner",
         "amount": "100.00",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9866814613342285,
       "subtotal": 0.9990819692611694,
-      "tax": 0.9985705614089966,
+      "tax": 0.9991315007209778,
       "tip": 0.9987704157829285,
       "other_charges": 0.9986505508422852,
       "total": 0.9985589981079102
@@ -49,7 +49,7 @@
         575
       ],
       "tax": [
-        558,
+        557,
         609,
         681,
         634
@@ -78,7 +78,7 @@
         "confidence": {
           "transaction_date": 0.9866814613342285,
           "subtotal": 0.9990819692611694,
-          "tax": 0.9985705614089966,
+          "tax": 0.9991315007209778,
           "tip": 0.9987704157829285,
           "other_charges": 0.9986505508422852,
           "total": 0.9985589981079102
@@ -97,7 +97,7 @@
             575
           ],
           "tax": [
-            558,
+            557,
             609,
             681,
             634
@@ -133,16 +133,27 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "100.00",
-        "category": "MEALS",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Dinner",
             "amount": "100.00",
-            "item_class": "OTHER"
+            "item_class": "FOOD"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +190,7 @@
     "total_base": "100.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41af8b4",
+    "phash": "8f1e964de51a98b4",
     "merchant_norm": "merchant 46"
   },
   "forensics": {

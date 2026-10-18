@@ -1,0 +1,178 @@
+{
+  "scored_receipts": 44,
+  "unscored_receipts": 56,
+  "unscored_reason": "real public receipt used as a stand-in; only the labeled facts are known, so no independent expected verdict exists",
+  "score": {
+    "expected_count": 44,
+    "evaluated_count": 44,
+    "correct_verdict_count": 44,
+    "verdict_accuracy": 1.0,
+    "correct_reason_sets": 19,
+    "reason_accuracy": 0.4318181818181818,
+    "confirmed_duplicate_count": 11,
+    "correct_duplicate_count": 11,
+    "duplicate_recall": 1.0,
+    "duplicate_precision": 1.0,
+    "confirmed_duplicates_approved": 0,
+    "failures": [
+      {
+        "receipt_id": "r_002",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_004",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_006",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_008",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_010",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_012",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_014",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_016",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_018",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_020",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_022",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_024",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_026",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_027",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_028",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_029",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_030",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_031",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_032",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_033",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_034",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_035",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_036",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_037",
+        "mismatches": [
+          "reason_codes"
+        ]
+      },
+      {
+        "receipt_id": "r_038",
+        "mismatches": [
+          "reason_codes"
+        ]
+      }
+    ],
+    "extra_predictions": []
+  },
+  "all_receipt_verdicts": {
+    "NEEDS_REVIEW": 74,
+    "APPROVE": 15,
+    "REJECT": 11
+  },
+  "flips": 4,
+  "scenario_status": "provisional"
+}

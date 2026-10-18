@@ -1,206 +1,78 @@
 {
   "receipt_id": "r_062",
-  "file_sha256": "0a46baab3fa5f88f22848fea2b61659d55635c40fbe8c380a03b7a5dafe6aeda",
+  "file_sha256": "21657a3281a0a5d9cd4b764472641f82c9d6a14191f71eb6a31801d90fed7013",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "DOUGLAS BURGERS #15",
+    "merchant_name": "3 SI EKO",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2019-02-09",
+    "transaction_date": "",
     "transaction_time": "",
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
-    "tax": "2.97",
+    "subtotal": "60000",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "66000",
     "itemization": "",
     "category": "",
-    "line_items": [
-      {
-        "description": "T BURGER COMBO",
-        "amount": "9.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "*american ch*",
-        "amount": "0.70",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "1 **add bacon**",
-        "amount": "1.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "*gril onions*",
-        "amount": "2.49",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Raspberry Ice Te",
-        "amount": "5.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "1**add bacon**",
-        "amount": "1.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "**add avocado**",
-        "amount": "1.99",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "* onions rings *",
-        "amount": "2.49",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "* lemonade *",
-        "amount": "0.61",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Sub/Tt1",
-        "amount": "31.24",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "THRU",
-        "amount": "34.21",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Cash",
-        "amount": "34.21",
-        "item_class": "OTHER"
-      }
-    ],
+    "line_items": [],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9998165965080261,
-      "tax": 0.9994910359382629
+      "subtotal": 0.9999774098396301,
+      "total": 0.9999752640724182
     },
     "boxes": {
-      "transaction_date": [
-        123,
-        111,
-        159,
-        123
+      "subtotal": [
+        795,
+        725,
+        924,
+        776
       ],
-      "tax": [
-        192,
-        343,
-        220,
-        358
+      "total": [
+        762,
+        829,
+        921,
+        883
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9998165965080261,
-          "tax": 0.9994910359382629
+          "subtotal": 0.9999774098396301,
+          "total": 0.9999752640724182
         },
         "boxes": {
-          "transaction_date": [
-            123,
-            111,
-            159,
-            123
+          "subtotal": [
+            795,
+            725,
+            924,
+            776
           ],
-          "tax": [
-            192,
-            343,
-            220,
-            358
+          "total": [
+            762,
+            829,
+            921,
+            883
           ]
         },
-        "merchant_name": "DOUGLAS BURGERS #15",
-        "transaction_date": "2019-02-09",
-        "tax": "2.97",
-        "line_items": [
-          {
-            "description": "T BURGER COMBO",
-            "amount": "9.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "*american ch*",
-            "amount": "0.70",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "1 **add bacon**",
-            "amount": "1.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "*gril onions*",
-            "amount": "2.49",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Raspberry Ice Te",
-            "amount": "5.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "1**add bacon**",
-            "amount": "1.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "**add avocado**",
-            "amount": "1.99",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "* onions rings *",
-            "amount": "2.49",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "* lemonade *",
-            "amount": "0.61",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Sub/Tt1",
-            "amount": "31.24",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "THRU",
-            "amount": "34.21",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Cash",
-            "amount": "34.21",
-            "item_class": "OTHER"
-          }
-        ]
+        "merchant_name": "3 SI EKO",
+        "subtotal": "60000",
+        "total": "66000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
-      },
-      {
-        "name": "date_format",
-        "expected": "YYYY-MM-DD",
-        "printed": "2019-02-09",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "66000",
         "passed": true
       }
     ]
@@ -211,12 +83,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "d08367986e9d692b",
-    "merchant_norm": "douglas burgers 15"
+    "phash": "a0cd34e34e9c3be2",
+    "merchant_norm": "3 si eko"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

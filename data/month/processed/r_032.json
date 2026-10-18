@@ -2,7 +2,7 @@
   "receipt_id": "r_032",
   "file_sha256": "2c5b4a7e49d34878eaa5c0de588da7b6cfc3987d3dbe4c14b87176edf4f66cff",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "PASARAYA BORONG PINTAR",
     "receipt_number": "",
@@ -18,7 +18,7 @@
     "other_charges": "",
     "total": "3.20",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
         "description": "WALK",
@@ -106,7 +106,32 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "WALK",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "5.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "2.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZRL = 0%",
+            "amount": "3.20",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {

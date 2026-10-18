@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_056",
-  "file_sha256": "21657a3281a0a5d9cd4b764472641f82c9d6a14191f71eb6a31801d90fed7013",
+  "file_sha256": "072b18c41e752d8888d9c4e1efd0dd044fd47d5c6a341205b603f90c67d2b995",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "3 SI EKO",
+    "merchant_name": "Receipt",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,32 +12,169 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "",
+    "subtotal": "75500.00",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "75500.00",
     "itemization": "",
     "category": "",
-    "line_items": [],
+    "line_items": [
+      {
+        "description": "PLASTIC BAG",
+        "amount": "500.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Pink Panther (P)",
+        "amount": "37500.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Red dragon (P)",
+        "amount": "37500.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Discount",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Payment",
+        "amount": "75500.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Change",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      }
+    ],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "subtotal": 0.9999886751174927,
+      "total": 0.9999815821647644
+    },
+    "boxes": {
+      "subtotal": [
+        573,
+        929,
+        706,
+        967
+      ],
+      "total": [
+        541,
+        1102,
+        707,
+        1142
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "3 SI EKO"
+        "confidence": {
+          "subtotal": 0.9999886751174927,
+          "total": 0.9999815821647644
+        },
+        "boxes": {
+          "subtotal": [
+            573,
+            929,
+            706,
+            967
+          ],
+          "total": [
+            541,
+            1102,
+            707,
+            1142
+          ]
+        },
+        "merchant_name": "Receipt",
+        "subtotal": "75500.00",
+        "total": "75500.00",
+        "line_items": [
+          {
+            "description": "PLASTIC BAG",
+            "amount": "500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pink Panther (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Red dragon (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Payment",
+            "amount": "75500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "PLASTIC BAG",
+            "amount": "500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Pink Panther (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Red dragon (P)",
+            "amount": "37500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Payment",
+            "amount": "75500.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "75500.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "151000.00",
+        "printed": "75500.00",
         "passed": false
       }
     ]
@@ -48,12 +185,15 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "a0cd34e34e9c3be2",
-    "merchant_norm": "3 si eko"
+    "phash": "d28b336c6d0c6d6c",
+    "merchant_norm": "receipt"
   },
   "forensics": {
-    "score": 0,
+    "score": 35,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "items_vs_subtotal",
+      "round_total"
+    ]
   }
 }

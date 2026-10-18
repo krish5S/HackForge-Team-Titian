@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_004",
-  "file_sha256": "be4bc47d48f896325cc637a6db0f4fbe91dbad30f837e24be7bfcbd409872db6",
+  "file_sha256": "6236b5dc4879ba05c3b14e2361641eb0f66ff54c4fad35ed2113c03825eca658",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "VANBOOLEN",
+    "merchant_name": "AFUNG",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -13,32 +13,67 @@
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "",
+    "tax": "4364",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "50000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "tax": 0.999925971031189,
+      "total": 0.9998602867126465
+    },
+    "boxes": {
+      "tax": [
+        653,
+        935,
+        749,
+        980
+      ],
+      "total": [
+        639,
+        1028,
+        753,
+        1080
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "VANBOOLEN"
+        "confidence": {
+          "tax": 0.999925971031189,
+          "total": 0.9998602867126465
+        },
+        "boxes": {
+          "tax": [
+            653,
+            935,
+            749,
+            980
+          ],
+          "total": [
+            639,
+            1028,
+            753,
+            1080
+          ]
+        },
+        "merchant_name": "AFUNG",
+        "tax": "4364",
+        "total": "50000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "50000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +83,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "aff012d4853d0fc3",
-    "merchant_norm": "vanboolen"
+    "phash": "80d131ce7dfb03a6",
+    "merchant_norm": "afung"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

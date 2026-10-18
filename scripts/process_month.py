@@ -16,6 +16,7 @@ def process_month(index_path: Path, images_dir: Path, output_dir: Path,
         raise ValueError("Repeated scenario IDs in images index")
     output_dir.mkdir(parents=True, exist_ok=True)
     receipts = []
+    ocr_texts = {}
     for row in rows[:limit]:
         receipt_id = row["scenario_id"]
         destination = output_dir / f"{receipt_id}.json"
@@ -28,7 +29,10 @@ def process_month(index_path: Path, images_dir: Path, output_dir: Path,
             receipt = process_receipt(source, {"receipt_id": receipt_id}, output_dir / "work")
             destination.write_text(json.dumps(receipt, ensure_ascii=False, indent=2), encoding="utf-8")
         receipts.append(receipt)
-    duplicates = find_duplicates(receipts)
+        cache = output_dir / "work" / "ocr_cache" / f"{receipt['file_sha256']}.json"
+        if cache.is_file():
+            ocr_texts[receipt_id] = json.loads(cache.read_text(encoding="utf-8")).get("full_text", "")
+    duplicates = find_duplicates(receipts, ocr_texts)
     (output_dir / "duplicate_candidates.json").write_text(
         json.dumps(duplicates, ensure_ascii=False, indent=2), encoding="utf-8")
     return receipts

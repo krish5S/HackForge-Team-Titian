@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_038",
-  "file_sha256": "d3ba082341abb7c7f04e6e2080c0010131644059622fc0a1d8875172eefe65a6",
-  "is_receipt": true,
-  "extraction_status": "partial",
+  "file_sha256": "75043756b22d368167e4a2ed6697fa3d0eb4ac7df460cf871e3de915fa57909a",
+  "is_receipt": false,
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "Boue",
+    "merchant_name": "",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -26,10 +26,10 @@
     "readers": {
       "reader_a": {
         "confidence": {},
-        "boxes": {},
-        "merchant_name": "Boue"
+        "boxes": {}
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
@@ -48,8 +48,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "8f1e9649e41e8cb5",
-    "merchant_norm": "boue"
+    "phash": "8f1e9649e51a9cb4",
+    "merchant_norm": ""
   },
   "forensics": {
     "score": 0,

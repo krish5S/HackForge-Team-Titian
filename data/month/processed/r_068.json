@@ -1,240 +1,153 @@
 {
   "receipt_id": "r_068",
-  "file_sha256": "5f6f454ca153e917635b3e6833219199c8e7c05a45e66b500bae885b5e63310d",
+  "file_sha256": "594d44f77af3cea4db44bd1223e0e3abe688cfbc506f05dd100073a16068689a",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "FIVE GUYS",
-    "receipt_number": "DATE",
+    "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+    "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2017-05-25",
-    "transaction_time": "1:00:",
+    "transaction_date": "2019-05-01",
+    "transaction_time": "2:25:",
     "city": "",
     "country": "",
     "currency": "USD",
-    "subtotal": "30.31",
-    "tax": "",
+    "subtotal": "11.99",
+    "tax": "10.25",
     "tip": "",
     "other_charges": "",
-    "total": "2.35",
+    "total": "13.22",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "1 Little Hamburger",
-        "amount": "5.19",
+        "description": "#SMS",
+        "amount": "11.99",
         "item_class": "OTHER"
       },
       {
-        "description": "Lettuce",
+        "description": "Approval No: 051140",
         "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "Pickles",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Tomatoes",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Grilled Onions",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Grilled Mushrooms",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Mustard",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Ketchup",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Jalapeno Peppers",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "2 Large Fry (@",
-        "amount": "5.79",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Mayo",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Lettuce",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "BBQ Sauce",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "1 Regular Soda",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "MasterCard",
-        "amount": "32.66",
+        "description": "Amount",
+        "amount": "13.22",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9999921321868896,
-      "subtotal": 0.9998500943183899,
-      "total": 0.999838650226593
+      "transaction_date": 0.9717409610748291,
+      "subtotal": 0.9994478225708008,
+      "total": 0.9993953704833984,
+      "tax": 0.9875115156173706
     },
     "boxes": {
       "transaction_date": [
-        268,
-        119,
-        320,
-        133
+        92,
+        87,
+        244,
+        105
       ],
       "subtotal": [
-        459,
-        465,
-        500,
-        486
+        222,
+        186,
+        250,
+        202
       ],
       "total": [
-        467,
-        496,
-        500,
-        511
+        223,
+        208,
+        248,
+        221
+      ],
+      "tax": [
+        74,
+        199,
+        154,
+        211
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9999921321868896,
-          "subtotal": 0.9998500943183899,
-          "total": 0.999838650226593
+          "transaction_date": 0.9717409610748291,
+          "subtotal": 0.9994478225708008,
+          "total": 0.9993953704833984,
+          "tax": 0.9875115156173706
         },
         "boxes": {
           "transaction_date": [
-            268,
-            119,
-            320,
-            133
+            92,
+            87,
+            244,
+            105
           ],
           "subtotal": [
-            459,
-            465,
-            500,
-            486
+            222,
+            186,
+            250,
+            202
           ],
           "total": [
-            467,
-            496,
-            500,
-            511
+            223,
+            208,
+            248,
+            221
+          ],
+          "tax": [
+            74,
+            199,
+            154,
+            211
           ]
         },
-        "merchant_name": "FIVE GUYS",
-        "transaction_date": "2017-05-25",
-        "transaction_time": "1:00:",
+        "merchant_name": "Subway#44969-0 Phone 626-585-9999",
+        "transaction_date": "2019-05-01",
+        "transaction_time": "2:25:",
         "currency": "USD",
-        "subtotal": "30.31",
-        "total": "2.35",
-        "receipt_number": "DATE",
+        "subtotal": "11.99",
+        "total": "13.22",
+        "tax": "10.25",
         "line_items": [
           {
-            "description": "1 Little Hamburger",
-            "amount": "5.19",
+            "description": "#SMS",
+            "amount": "11.99",
             "item_class": "OTHER"
           },
           {
-            "description": "Lettuce",
+            "description": "Approval No: 051140",
             "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "Pickles",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Tomatoes",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Grilled Onions",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Grilled Mushrooms",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Mustard",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Ketchup",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Jalapeno Peppers",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "2 Large Fry (@",
-            "amount": "5.79",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Mayo",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Lettuce",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "BBQ Sauce",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "1 Regular Soda",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "MasterCard",
-            "amount": "32.66",
+            "description": "Amount",
+            "amount": "13.22",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "#SMS",
+            "amount": "11.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Approval No: 051140",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Amount",
+            "amount": "13.22",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -242,19 +155,25 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "2.35",
+        "printed": "13.22",
         "passed": true
       },
       {
+        "name": "components_vs_total",
+        "expected": "22.24",
+        "printed": "13.22",
+        "passed": false
+      },
+      {
         "name": "items_vs_subtotal",
-        "expected": "43.64",
-        "printed": "30.31",
+        "expected": "25.21",
+        "printed": "11.99",
         "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-05-25",
+        "printed": "2019-05-01",
         "passed": true
       }
     ]
@@ -262,16 +181,17 @@
   "fx": {
     "base_currency": "USD",
     "rate": "1.0",
-    "total_base": "2.35"
+    "total_base": "13.22"
   },
   "fingerprints": {
-    "phash": "9acc4a3ec13fe017",
-    "merchant_norm": "five guys"
+    "phash": "95ebf886d9e04718",
+    "merchant_norm": "subway 44969 0 phone 626 585 9999"
   },
   "forensics": {
-    "score": 25,
+    "score": 50,
     "cnn_fake_probability": 0.0,
     "signals": [
+      "components_vs_total",
       "items_vs_subtotal"
     ]
   }

@@ -1,162 +1,140 @@
 {
   "receipt_id": "r_081",
-  "file_sha256": "237c48627388c41df835814b64b95134819deae3bb8c055ba6c69ba44dca375e",
+  "file_sha256": "6e96567e151dd684f8efb92d9ac6fc70d8626daf429387233fafb1de17e6bfe9",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "SIN LIANHAP SDN BHD",
+    "merchant_name": "ipanema",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-05-02",
-    "transaction_time": "",
+    "transaction_date": "2018-04-13",
+    "transaction_time": "09:16",
     "city": "",
     "country": "",
-    "currency": "",
-    "subtotal": "7.30",
-    "tax": "7.30",
-    "tip": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "2.94",
+    "tip": "10.49",
     "other_charges": "",
-    "total": "7.30",
+    "total": "55.38",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
-        "description": "1.000 PC",
-        "amount": "2.00",
-        "item_class": "OTHER"
+        "description": "DINNER RODIZIO",
+        "amount": "41.95",
+        "item_class": "FOOD"
       },
       {
-        "description": "X",
-        "amount": "5.30",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "tounding Adjustment:",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Payment:",
-        "amount": "7.30",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Change Due :",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "SR @6",
-        "amount": "6.89",
+        "description": "Gratuity:",
+        "amount": "10.49",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
-      "transaction_date": 0.9611621499061584,
-      "subtotal": 0.9999865293502808,
-      "tax": 0.9999702572822571,
-      "total": 0.9999702572822571
+      "transaction_date": 0.9863929152488708,
+      "total": 0.999945342540741,
+      "tip": 0.9999063611030579,
+      "tax": 0.9999747276306152
     },
     "boxes": {
       "transaction_date": [
-        214,
-        776,
-        341,
-        803
+        187,
+        320,
+        342,
+        355
       ],
-      "subtotal": [
-        458,
-        1138,
-        506,
-        1165
+      "total": [
+        453,
+        690,
+        520,
+        716
+      ],
+      "tip": [
+        454,
+        641,
+        521,
+        667
       ],
       "tax": [
         464,
-        1217,
-        512,
-        1243
-      ],
-      "total": [
-        464,
-        1217,
-        512,
-        1243
+        665,
+        520,
+        691
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9611621499061584,
-          "subtotal": 0.9999865293502808,
-          "tax": 0.9999702572822571,
-          "total": 0.9999702572822571
+          "transaction_date": 0.9863929152488708,
+          "total": 0.999945342540741,
+          "tip": 0.9999063611030579,
+          "tax": 0.9999747276306152
         },
         "boxes": {
           "transaction_date": [
-            214,
-            776,
-            341,
-            803
+            187,
+            320,
+            342,
+            355
           ],
-          "subtotal": [
-            458,
-            1138,
-            506,
-            1165
+          "total": [
+            453,
+            690,
+            520,
+            716
+          ],
+          "tip": [
+            454,
+            641,
+            521,
+            667
           ],
           "tax": [
             464,
-            1217,
-            512,
-            1243
-          ],
-          "total": [
-            464,
-            1217,
-            512,
-            1243
+            665,
+            520,
+            691
           ]
         },
-        "merchant_name": "SIN LIANHAP SDN BHD",
-        "transaction_date": "2018-05-02",
-        "subtotal": "7.30",
-        "tax": "7.30",
-        "total": "7.30",
+        "merchant_name": "ipanema",
+        "transaction_date": "2018-04-13",
+        "transaction_time": "09:16",
+        "currency": "USD",
+        "total": "55.38",
+        "tip": "10.49",
+        "tax": "2.94",
         "line_items": [
           {
-            "description": "1.000 PC",
-            "amount": "2.00",
-            "item_class": "OTHER"
+            "description": "DINNER RODIZIO",
+            "amount": "41.95",
+            "item_class": "FOOD"
           },
           {
-            "description": "X",
-            "amount": "5.30",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "tounding Adjustment:",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Payment:",
-            "amount": "7.30",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Change Due :",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "SR @6",
-            "amount": "6.89",
+            "description": "Gratuity:",
+            "amount": "10.49",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "DINNER RODIZIO",
+            "amount": "41.95",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Gratuity:",
+            "amount": "10.49",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
@@ -164,44 +142,29 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "7.30",
+        "printed": "55.38",
         "passed": true
-      },
-      {
-        "name": "components_vs_total",
-        "expected": "14.60",
-        "printed": "7.30",
-        "passed": false
-      },
-      {
-        "name": "items_vs_subtotal",
-        "expected": "21.49",
-        "printed": "7.30",
-        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2018-05-02",
+        "printed": "2018-04-13",
         "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "55.38"
   },
   "fingerprints": {
-    "phash": "b080e49a5f9779ac",
-    "merchant_norm": "sin lianhap sdn bhd"
+    "phash": "87ad55d5579ac484",
+    "merchant_norm": "ipanema"
   },
   "forensics": {
-    "score": 50,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "components_vs_total",
-      "items_vs_subtotal"
-    ]
+    "signals": []
   }
 }

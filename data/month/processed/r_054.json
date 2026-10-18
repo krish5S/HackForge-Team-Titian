@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_054",
-  "file_sha256": "072b18c41e752d8888d9c4e1efd0dd044fd47d5c6a341205b603f90c67d2b995",
+  "file_sha256": "9c2728853ff8750479fc7ea6ec7464a8b31ba9011f3f88c0e7e6ed6b94a7ee48",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "Receipt",
+    "merchant_name": "Coke (L)",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -12,135 +12,33 @@
     "city": "",
     "country": "",
     "currency": "",
-    "subtotal": "75500.00",
+    "subtotal": "",
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "75500.00",
+    "total": "",
     "itemization": "",
     "category": "",
-    "line_items": [
-      {
-        "description": "PLASTIC BAG",
-        "amount": "500.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Pink Panther (P)",
-        "amount": "37500.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Red dragon (P)",
-        "amount": "37500.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Discount",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Payment",
-        "amount": "75500.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "Change",
-        "amount": "0.00",
-        "item_class": "OTHER"
-      }
-    ],
+    "line_items": [],
     "guest_count": 0,
-    "confidence": {
-      "subtotal": 0.9999886751174927,
-      "total": 0.9999815821647644
-    },
-    "boxes": {
-      "subtotal": [
-        573,
-        929,
-        706,
-        967
-      ],
-      "total": [
-        541,
-        1102,
-        707,
-        1142
-      ]
-    },
+    "confidence": {},
+    "boxes": {},
     "readers": {
       "reader_a": {
-        "confidence": {
-          "subtotal": 0.9999886751174927,
-          "total": 0.9999815821647644
-        },
-        "boxes": {
-          "subtotal": [
-            573,
-            929,
-            706,
-            967
-          ],
-          "total": [
-            541,
-            1102,
-            707,
-            1142
-          ]
-        },
-        "merchant_name": "Receipt",
-        "subtotal": "75500.00",
-        "total": "75500.00",
-        "line_items": [
-          {
-            "description": "PLASTIC BAG",
-            "amount": "500.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Pink Panther (P)",
-            "amount": "37500.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Red dragon (P)",
-            "amount": "37500.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Discount",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Payment",
-            "amount": "75500.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "Change",
-            "amount": "0.00",
-            "item_class": "OTHER"
-          }
-        ]
+        "confidence": {},
+        "boxes": {},
+        "merchant_name": "Coke (L)"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "nonnegative_total",
-        "expected": ">= 0",
-        "printed": "75500.00",
-        "passed": true
-      },
-      {
-        "name": "items_vs_subtotal",
-        "expected": "151000.00",
-        "printed": "75500.00",
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
         "passed": false
       }
     ]
@@ -151,15 +49,12 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "d28b336c6d0c6d6c",
-    "merchant_norm": "receipt"
+    "phash": "80f566a67f9d8891",
+    "merchant_norm": "coke l"
   },
   "forensics": {
-    "score": 35,
+    "score": 0,
     "cnn_fake_probability": 0.0,
-    "signals": [
-      "items_vs_subtotal",
-      "round_total"
-    ]
+    "signals": []
   }
 }

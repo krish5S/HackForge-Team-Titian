@@ -1,152 +1,288 @@
 {
   "receipt_id": "r_099",
-  "file_sha256": "b8d4193f9f2d132da39f2c8e1356bcb11dd3ce9240840921999ebe0c396f8b47",
+  "file_sha256": "e978332d016259b6ee88cda163e81dd3f89edeede30a0f3a1fc75e3f66eaade5",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "PARTIAL",
   "extraction": {
-    "merchant_name": "MPH BOOKSTORES",
+    "merchant_name": "OLD ASIA",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2017-11-12",
-    "transaction_time": "21:42",
+    "transaction_date": "2016-02-13",
+    "transaction_time": "02:29",
     "city": "",
     "country": "",
-    "currency": "",
+    "currency": "MYR",
     "subtotal": "",
-    "tax": "29.69",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "31.45",
+    "total": "",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
-        "description": "3x",
-        "amount": "10.49",
+        "description": "RM",
+        "amount": "13.50",
         "item_class": "OTHER"
       },
       {
-        "description": "CASH",
-        "amount": "50.00",
+        "description": "RM",
+        "amount": "11.50",
         "item_class": "OTHER"
       },
       {
-        "description": "CHANGE",
-        "amount": "18.55",
+        "description": "RM",
+        "amount": "7.90",
         "item_class": "OTHER"
       },
       {
-        "description": "Z - 0% GST",
-        "amount": "0.00",
+        "description": "RM",
+        "amount": "15.90",
         "item_class": "OTHER"
       },
       {
-        "description": "S- 6% GST",
-        "amount": "29.69",
+        "description": "RM",
+        "amount": "16.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "7.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "5.90",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "3.80",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "8.25",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "90.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "5.45",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "96.20",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "100.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "RM",
+        "amount": "3.80",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "tax": 0.9999825358390808,
-      "total": 0.9763749837875366,
-      "transaction_date": 0.9885784983634949
+      "transaction_date": 0.9783010482788086
     },
     "boxes": {
-      "tax": [
-        500,
-        1353,
-        604,
-        1401
-      ],
-      "total": [
-        700,
-        1057,
-        817,
-        1144
-      ],
       "transaction_date": [
-        49,
-        1551,
-        807,
-        1598
+        184,
+        765,
+        885,
+        812
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999825358390808,
-          "total": 0.9763749837875366,
-          "transaction_date": 0.9885784983634949
+          "transaction_date": 0.9783010482788086
         },
         "boxes": {
-          "tax": [
-            500,
-            1353,
-            604,
-            1401
-          ],
-          "total": [
-            700,
-            1057,
-            817,
-            1144
-          ],
           "transaction_date": [
-            49,
-            1551,
-            807,
-            1598
+            184,
+            765,
+            885,
+            812
           ]
         },
-        "merchant_name": "MPH BOOKSTORES",
-        "tax": "29.69",
-        "total": "31.45",
-        "transaction_date": "2017-11-12",
-        "transaction_time": "21:42",
+        "merchant_name": "OLD ASIA",
+        "transaction_date": "2016-02-13",
+        "transaction_time": "02:29",
         "line_items": [
           {
-            "description": "3x",
-            "amount": "10.49",
+            "description": "RM",
+            "amount": "13.50",
             "item_class": "OTHER"
           },
           {
-            "description": "CASH",
-            "amount": "50.00",
+            "description": "RM",
+            "amount": "11.50",
             "item_class": "OTHER"
           },
           {
-            "description": "CHANGE",
-            "amount": "18.55",
+            "description": "RM",
+            "amount": "7.90",
             "item_class": "OTHER"
           },
           {
-            "description": "Z - 0% GST",
-            "amount": "0.00",
+            "description": "RM",
+            "amount": "15.90",
             "item_class": "OTHER"
           },
           {
-            "description": "S- 6% GST",
-            "amount": "29.69",
+            "description": "RM",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "8.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "90.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "96.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          }
+        ],
+        "currency": "MYR"
+      },
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "RM",
+            "amount": "13.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "11.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "15.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "16.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "7.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.90",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "8.25",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "90.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "5.45",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "96.20",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "100.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "RM",
+            "amount": "3.80",
             "item_class": "OTHER"
           }
         ]
-      },
-      "reader_b": {}
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "nonnegative_total",
-        "expected": ">= 0",
-        "printed": "31.45",
-        "passed": true
+        "name": "total_present",
+        "expected": "amount",
+        "printed": "",
+        "passed": false
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-11-12",
+        "printed": "2016-02-13",
         "passed": true
       }
     ]
@@ -157,8 +293,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "a492b1cfc61b8be4",
-    "merchant_norm": "mph bookstores"
+    "phash": "f1e72508d708d5f2",
+    "merchant_norm": "old asia"
   },
   "forensics": {
     "score": 0,

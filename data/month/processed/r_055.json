@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_055",
-  "file_sha256": "7e3a4b2c1adb1afadb711c32f30bad963b60e6c44776cad072b197ab47658778",
+  "file_sha256": "54a7ffe4ebca5eacbcb343c9b630c08b44690b7436c8b0e6d539c1ac31b4878e",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "10100",
+    "merchant_name": "1001-Choco Bun",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "22000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999898076057434
+    },
+    "boxes": {
+      "total": [
+        602,
+        920,
+        687,
+        954
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "10100"
+        "confidence": {
+          "total": 0.9999898076057434
+        },
+        "boxes": {
+          "total": [
+            602,
+            920,
+            687,
+            954
+          ]
+        },
+        "merchant_name": "1001-Choco Bun",
+        "total": "22000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "22000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "c1e5e4c319e533d8",
-    "merchant_norm": "10100"
+    "phash": "95977a852a686f62",
+    "merchant_norm": "1001 choco bun"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

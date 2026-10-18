@@ -9,10 +9,14 @@
   "extra_pairs": [],
   "by_reason": {
     "exact_file": 7,
-    "similar_image": 6
+    "similar_text_image": 4,
+    "similar_image": 2
   },
   "thresholds": {
     "phash_max_distance": 12,
+    "text_image_phash_max_distance": 16,
+    "ocr_text_ratio_min": 92,
+    "ocr_text_min_length": 75,
     "unreadable_merchant_phash_max_distance": 2,
     "merchant_ratio_min": 90,
     "total_tolerance": "1%",

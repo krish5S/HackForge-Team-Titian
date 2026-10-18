@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_012",
-  "file_sha256": "9e9e069081ece7bbddddd82a8c989ce398f53b8df40e9b2517f3159445baaaab",
+  "file_sha256": "9464742985608e8acb80c67b984527068df0e4e8b73eddd52a945d3aeb6996ef",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "1001-Choco Bun",
+    "merchant_name": "HnI",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "34000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999917149543762
+    },
+    "boxes": {
+      "total": [
+        530,
+        681,
+        738,
+        758
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "1001-Choco Bun"
+        "confidence": {
+          "total": 0.9999917149543762
+        },
+        "boxes": {
+          "total": [
+            530,
+            681,
+            738,
+            758
+          ]
+        },
+        "merchant_name": "HnI",
+        "total": "34000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "34000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "95d57554d45545d1",
-    "merchant_norm": "1001 choco bun"
+    "phash": "b9d2e5ba1996c8c2",
+    "merchant_norm": "hni"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

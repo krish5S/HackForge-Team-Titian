@@ -1,112 +1,196 @@
 {
   "receipt_id": "r_092",
-  "file_sha256": "59998508759b1f9872a3df114553af328e3b20d0eb7630c7f1caebbf23ebb1a5",
+  "file_sha256": "aa4500975fef2e512361eae9e45be40d2736dd96c754ab30a5b327ac90838221",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
+    "merchant_name": "TONYMOLY VIVA CITY",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2017-04-30",
-    "transaction_time": "20:22",
+    "transaction_date": "2018-03-29",
+    "transaction_time": "20:37",
     "city": "",
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "",
+    "tax": "100.62",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "100.60",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "RM",
-        "amount": "1.00",
+        "description": "Disc",
+        "amount": "10.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "0.06",
+        "description": "Disc",
+        "amount": "10.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "1.00",
+        "description": "VISA",
+        "amount": "100.60",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "1.00",
+        "description": "SR = 6%",
+        "amount": "94.92",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "ZR = 0%",
+        "amount": "0.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "lotal promotional saving",
+        "amount": "11.18",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9272434115409851
+      "transaction_date": 0.9865253567695618,
+      "tax": 0.999994695186615,
+      "total": 0.999987781047821
     },
     "boxes": {
       "transaction_date": [
-        173,
-        602,
-        495,
-        640
+        339,
+        644,
+        640,
+        678
+      ],
+      "tax": [
+        577,
+        1235,
+        670,
+        1272
+      ],
+      "total": [
+        576,
+        1309,
+        671,
+        1347
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9272434115409851
+          "transaction_date": 0.9865253567695618,
+          "tax": 0.999994695186615,
+          "total": 0.999987781047821
         },
         "boxes": {
           "transaction_date": [
-            173,
-            602,
-            495,
-            640
+            339,
+            644,
+            640,
+            678
+          ],
+          "tax": [
+            577,
+            1235,
+            670,
+            1272
+          ],
+          "total": [
+            576,
+            1309,
+            671,
+            1347
           ]
         },
-        "merchant_name": "AMANO MALAYSIA SDN BHD (682288-V)",
-        "transaction_date": "2017-04-30",
-        "transaction_time": "20:22",
+        "merchant_name": "TONYMOLY VIVA CITY",
+        "transaction_date": "2018-03-29",
+        "transaction_time": "20:37",
+        "tax": "100.62",
+        "total": "100.60",
         "line_items": [
           {
-            "description": "RM",
-            "amount": "1.00",
+            "description": "Disc",
+            "amount": "10.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "0.06",
+            "description": "Disc",
+            "amount": "10.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "1.00",
+            "description": "VISA",
+            "amount": "100.60",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "1.00",
+            "description": "SR = 6%",
+            "amount": "94.92",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZR = 0%",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "lotal promotional saving",
+            "amount": "11.18",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Disc",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Disc",
+            "amount": "10.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "VISA",
+            "amount": "100.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "SR = 6%",
+            "amount": "94.92",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "ZR = 0%",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "lotal promotional saving",
+            "amount": "11.18",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "100.60",
+        "passed": true
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2017-04-30",
+        "printed": "2018-03-29",
         "passed": true
       }
     ]
@@ -117,8 +201,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "a775717060373723",
-    "merchant_norm": "amano malaysia sdn bhd 682288 v"
+    "phash": "d0d02bcc2f872b97",
+    "merchant_norm": "tonymoly viva city"
   },
   "forensics": {
     "score": 0,

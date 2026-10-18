@@ -1,212 +1,166 @@
 {
   "receipt_id": "r_097",
-  "file_sha256": "e978332d016259b6ee88cda163e81dd3f89edeede30a0f3a1fc75e3f66eaade5",
+  "file_sha256": "c50c0abbd7ea893689b65b89d33f3ad43018871d77f30d14ca534c87ab6a42f4",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "OLD ASIA",
+    "merchant_name": "PINGHWAI TRADING SDN BHD",
     "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2016-02-13",
-    "transaction_time": "02:29",
+    "transaction_date": "2017-09-30",
+    "transaction_time": "13:04",
     "city": "",
     "country": "",
     "currency": "",
     "subtotal": "",
-    "tax": "",
+    "tax": "616.60",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "616.59",
     "itemization": "",
     "category": "",
     "line_items": [
       {
-        "description": "RM",
-        "amount": "13.50",
+        "description": "Discount",
+        "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "11.50",
+        "description": "Rounding",
+        "amount": "0.01",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "7.90",
+        "description": "{4553 8800 9593 0119} VISA :",
+        "amount": "616.60",
         "item_class": "OTHER"
       },
       {
-        "description": "RM",
-        "amount": "15.90",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "16.50",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "7.50",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "5.90",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "3.80",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "8.25",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "90.75",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "5.45",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "96.20",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "100.00",
-        "item_class": "OTHER"
-      },
-      {
-        "description": "RM",
-        "amount": "3.80",
+        "description": "Change :",
+        "amount": "0.00",
         "item_class": "OTHER"
       }
     ],
     "guest_count": 0,
     "confidence": {
-      "transaction_date": 0.9783010482788086
+      "transaction_date": 0.9909801483154297,
+      "total": 0.9999963641166687,
+      "tax": 0.9999820590019226
     },
     "boxes": {
       "transaction_date": [
-        184,
-        765,
-        885,
-        812
+        405,
+        432,
+        590,
+        456
+      ],
+      "total": [
+        347,
+        1113,
+        423,
+        1140
+      ],
+      "tax": [
+        460,
+        878,
+        533,
+        900
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "transaction_date": 0.9783010482788086
+          "transaction_date": 0.9909801483154297,
+          "total": 0.9999963641166687,
+          "tax": 0.9999820590019226
         },
         "boxes": {
           "transaction_date": [
-            184,
-            765,
-            885,
-            812
+            405,
+            432,
+            590,
+            456
+          ],
+          "total": [
+            347,
+            1113,
+            423,
+            1140
+          ],
+          "tax": [
+            460,
+            878,
+            533,
+            900
           ]
         },
-        "merchant_name": "OLD ASIA",
-        "transaction_date": "2016-02-13",
-        "transaction_time": "02:29",
+        "merchant_name": "PINGHWAI TRADING SDN BHD",
+        "transaction_date": "2017-09-30",
+        "transaction_time": "13:04",
+        "total": "616.59",
+        "tax": "616.60",
         "line_items": [
           {
-            "description": "RM",
-            "amount": "13.50",
+            "description": "Discount",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "11.50",
+            "description": "Rounding",
+            "amount": "0.01",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "7.90",
+            "description": "{4553 8800 9593 0119} VISA :",
+            "amount": "616.60",
             "item_class": "OTHER"
           },
           {
-            "description": "RM",
-            "amount": "15.90",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "16.50",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "7.50",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "5.90",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "3.80",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "8.25",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "90.75",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "5.45",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "96.20",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "100.00",
-            "item_class": "OTHER"
-          },
-          {
-            "description": "RM",
-            "amount": "3.80",
+            "description": "Change :",
+            "amount": "0.00",
             "item_class": "OTHER"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "Discount",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Rounding",
+            "amount": "0.01",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "{4553 8800 9593 0119} VISA :",
+            "amount": "616.60",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Change :",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "616.59",
+        "passed": true
       },
       {
         "name": "date_format",
         "expected": "YYYY-MM-DD",
-        "printed": "2016-02-13",
+        "printed": "2017-09-30",
         "passed": true
       }
     ]
@@ -217,8 +171,8 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "f1e72508d708d5f2",
-    "merchant_norm": "old asia"
+    "phash": "eae184de815fc1d4",
+    "merchant_norm": "pinghwai trading sdn bhd"
   },
   "forensics": {
     "score": 0,

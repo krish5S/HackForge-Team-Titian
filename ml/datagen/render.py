@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -50,6 +51,18 @@ def choose_template(scenario: dict) -> str:
     return "taxi"
 
 
+GENERIC_ITEM = {"restaurant": "Dinner", "hotel": "Room charge", "taxi": "Trip fare"}
+
+
+def item_description(description: str, template: str, category: str | None) -> str:
+    """Give the placeholder item a line that fits the receipt type."""
+    if description.strip().lower() != "business expense":
+        return description
+    if category == "ENTERTAINMENT":
+        return "Show tickets"
+    return GENERIC_ITEM[template]
+
+
 def _font(size: int, bold: bool = False):
     candidates = (["C:/Windows/Fonts/consolab.ttf"] if bold else ["C:/Windows/Fonts/consola.ttf"])
     candidates += ["DejaVuSansMono-Bold.ttf" if bold else "DejaVuSansMono.ttf"]
@@ -70,6 +83,8 @@ def render_receipt(scenario: dict, output: Path) -> Path:
     draw = ImageDraw.Draw(image)
     headline = {"restaurant": "RESTAURANT RECEIPT", "hotel": "HOTEL FOLIO",
                 "taxi": "TAXI TRIP RECEIPT"}[template]
+    if template == "restaurant" and scenario.get("category") == "ENTERTAINMENT":
+        headline = "SHOW & ENTERTAINMENT"
     y = 45
 
     def line(text: str, size: int = 30, bold: bool = False, gap: int = 52) -> None:
@@ -94,7 +109,8 @@ def render_receipt(scenario: dict, output: Path) -> Path:
     draw.line((65, y, WIDTH - 65, y), fill="black", width=2)
     y += 30
     for item in items:
-        description = str(item.get("description", ""))[:34]
+        description = item_description(str(item.get("description", "")), template,
+                                       scenario.get("category"))[:34]
         amount = str(item.get("amount", ""))
         line(f"{description:<34} {amount:>12}", 27, gap=55)
     draw.line((65, y, WIDTH - 65, y), fill="black", width=2)
@@ -165,6 +181,7 @@ def render_month(scenarios: list[dict], images_dir: Path, index_path: Path,
                 template = choose_template(row)
             paths[scenario_id] = path
             entries.append({"image_id": scenario_id, "file": path.name, "source": "rendered",
+                            "path": os.path.relpath(path, index_path.parent).replace(os.sep, "/"),
                             "scenario_id": scenario_id, "planted_problem": row.get("planted_issue"),
                             "related_ids": row.get("related_ids", []), "template": template})
             progressed = True

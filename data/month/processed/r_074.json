@@ -1,119 +1,186 @@
 {
   "receipt_id": "r_074",
-  "file_sha256": "ca8c7cdc94bb253af3bed6711106a66cfe993bfb950f5e73e9bd7d84cfe561dc",
+  "file_sha256": "d71119c1fe21cbcb755cdd08e50ea61dbde66530b8cac8a1a814a74a1468425b",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "COLUMBUS RESTAURANT",
-    "receipt_number": "01029",
+    "merchant_name": "KAZ RAMEN",
+    "receipt_number": "",
     "card_last4": "",
-    "transaction_date": "2018-01-27",
-    "transaction_time": "",
+    "transaction_date": "",
+    "transaction_time": "9:07",
     "city": "",
     "country": "",
-    "currency": "",
-    "subtotal": "",
-    "tax": "143.00",
+    "currency": "USD",
+    "subtotal": "13.05",
+    "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "184.47",
-    "itemization": "",
-    "category": "MEALS",
+    "total": "14.06",
+    "itemization": "FULL",
+    "category": "",
     "line_items": [
       {
-        "description": "2 FBD BLUE MARGARI",
-        "amount": "55.00",
+        "description": "Guest 1",
+        "amount": "9.50",
         "item_class": "OTHER"
       },
       {
-        "description": "RESORT TAX2%",
-        "amount": "2.86",
+        "description": "Tofu",
+        "amount": "0.00",
         "item_class": "OTHER"
       },
       {
-        "description": "SERUICE20%",
-        "amount": "28.60",
+        "description": "Egg",
+        "amount": "1.30",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Corn",
+        "amount": "0.50",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Bamboo shoots",
+        "amount": "1.00",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Naruto",
+        "amount": "0.75",
+        "item_class": "OTHER"
+      },
+      {
+        "description": "Spicy",
+        "amount": "0.00",
         "item_class": "OTHER"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
-      "tax": 0.9999776482582092,
-      "total": 0.9999451041221619,
-      "transaction_date": 0.9996649622917175
+      "subtotal": 0.999975860118866,
+      "total": 0.9999887943267822
     },
     "boxes": {
-      "tax": [
-        367,
-        436,
-        444,
-        470
+      "subtotal": [
+        504,
+        691,
+        577,
+        720
       ],
       "total": [
-        486,
-        577,
-        657,
-        634
-      ],
-      "transaction_date": [
-        173,
-        639,
-        499,
-        676
+        511,
+        768,
+        582,
+        794
       ]
     },
     "readers": {
       "reader_a": {
         "confidence": {
-          "tax": 0.9999776482582092,
-          "total": 0.9999451041221619,
-          "transaction_date": 0.9996649622917175
+          "subtotal": 0.999975860118866,
+          "total": 0.9999887943267822
         },
         "boxes": {
-          "tax": [
-            367,
-            436,
-            444,
-            470
+          "subtotal": [
+            504,
+            691,
+            577,
+            720
           ],
           "total": [
-            486,
-            577,
-            657,
-            634
-          ],
-          "transaction_date": [
-            173,
-            639,
-            499,
-            676
+            511,
+            768,
+            582,
+            794
           ]
         },
-        "merchant_name": "COLUMBUS RESTAURANT",
-        "tax": "143.00",
-        "total": "184.47",
-        "transaction_date": "2018-01-27",
-        "receipt_number": "01029",
-        "category": "MEALS",
+        "merchant_name": "KAZ RAMEN",
+        "transaction_time": "9:07",
+        "currency": "USD",
+        "subtotal": "13.05",
+        "total": "14.06",
         "line_items": [
           {
-            "description": "2 FBD BLUE MARGARI",
-            "amount": "55.00",
+            "description": "Guest 1",
+            "amount": "9.50",
             "item_class": "OTHER"
           },
           {
-            "description": "RESORT TAX2%",
-            "amount": "2.86",
+            "description": "Tofu",
+            "amount": "0.00",
             "item_class": "OTHER"
           },
           {
-            "description": "SERUICE20%",
-            "amount": "28.60",
+            "description": "Egg",
+            "amount": "1.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Corn",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bamboo shoots",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Naruto",
+            "amount": "0.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spicy",
+            "amount": "0.00",
             "item_class": "OTHER"
           }
-        ]
+        ],
+        "itemization": "FULL"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Guest 1",
+            "amount": "9.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Tofu",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Egg",
+            "amount": "1.30",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Corn",
+            "amount": "0.50",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bamboo shoots",
+            "amount": "1.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Naruto",
+            "amount": "0.75",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spicy",
+            "amount": "0.00",
+            "item_class": "OTHER"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -121,25 +188,25 @@
       {
         "name": "nonnegative_total",
         "expected": ">= 0",
-        "printed": "184.47",
+        "printed": "14.06",
         "passed": true
       },
       {
-        "name": "date_format",
-        "expected": "YYYY-MM-DD",
-        "printed": "2018-01-27",
+        "name": "items_vs_subtotal",
+        "expected": "13.05",
+        "printed": "13.05",
         "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "14.06"
   },
   "fingerprints": {
-    "phash": "d9f167b247302cac",
-    "merchant_norm": "columbus restaurant"
+    "phash": "d3292d8c7883f2c7",
+    "merchant_norm": "kaz ramen"
   },
   "forensics": {
     "score": 0,

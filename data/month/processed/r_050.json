@@ -1,59 +1,219 @@
 {
   "receipt_id": "r_050",
-  "file_sha256": "9c2728853ff8750479fc7ea6ec7464a8b31ba9011f3f88c0e7e6ed6b94a7ee48",
+  "file_sha256": "ae682c06911c71198ec7d1c5c56aa281642bd96041c564f85bcceadbb28802e2",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "Coke (L)",
-    "receipt_number": "",
+    "merchant_name": "Merchant 50",
+    "receipt_number": "R_050",
     "card_last4": "",
-    "transaction_date": "",
-    "transaction_time": "",
-    "city": "",
-    "country": "",
-    "currency": "",
-    "subtotal": "",
-    "tax": "",
-    "tip": "",
-    "other_charges": "",
-    "total": "",
-    "itemization": "",
-    "category": "",
-    "line_items": [],
-    "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "transaction_date": "2026-09-15",
+    "transaction_time": "12:00",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "subtotal": "20.00",
+    "tax": "0.00",
+    "tip": "0.00",
+    "other_charges": "0.00",
+    "total": "20.00",
+    "itemization": "FULL",
+    "category": "MEALS",
+    "line_items": [
+      {
+        "description": "Food",
+        "amount": "15.00",
+        "item_class": "FOOD"
+      },
+      {
+        "description": "Beer",
+        "amount": "5.00",
+        "item_class": "ALCOHOL"
+      }
+    ],
+    "guest_count": 1,
+    "confidence": {
+      "transaction_date": 0.9819352626800537,
+      "subtotal": 0.9932153224945068,
+      "tax": 0.9987986087799072,
+      "tip": 0.9978330731391907,
+      "other_charges": 0.9975895881652832,
+      "total": 0.9983490705490112
+    },
+    "boxes": {
+      "transaction_date": [
+        63,
+        287,
+        335,
+        311
+      ],
+      "subtotal": [
+        543,
+        605,
+        680,
+        629
+      ],
+      "tax": [
+        558,
+        664,
+        680,
+        689
+      ],
+      "tip": [
+        558,
+        725,
+        681,
+        749
+      ],
+      "other_charges": [
+        558,
+        785,
+        680,
+        809
+      ],
+      "total": [
+        639,
+        844,
+        804,
+        872
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "Coke (L)"
+        "confidence": {
+          "transaction_date": 0.9819352626800537,
+          "subtotal": 0.9932153224945068,
+          "tax": 0.9987986087799072,
+          "tip": 0.9978330731391907,
+          "other_charges": 0.9975895881652832,
+          "total": 0.9983490705490112
+        },
+        "boxes": {
+          "transaction_date": [
+            63,
+            287,
+            335,
+            311
+          ],
+          "subtotal": [
+            543,
+            605,
+            680,
+            629
+          ],
+          "tax": [
+            558,
+            664,
+            680,
+            689
+          ],
+          "tip": [
+            558,
+            725,
+            681,
+            749
+          ],
+          "other_charges": [
+            558,
+            785,
+            680,
+            809
+          ],
+          "total": [
+            639,
+            844,
+            804,
+            872
+          ]
+        },
+        "merchant_name": "Merchant 50",
+        "city": "Chicago",
+        "country": "US",
+        "transaction_date": "2026-09-15",
+        "transaction_time": "12:00",
+        "receipt_number": "R_050",
+        "subtotal": "20.00",
+        "currency": "USD",
+        "tax": "0.00",
+        "tip": "0.00",
+        "other_charges": "0.00",
+        "total": "20.00",
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Food",
+            "amount": "15.00",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Beer",
+            "amount": "5.00",
+            "item_class": "ALCOHOL"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "components_vs_total",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "items_vs_subtotal",
+        "expected": "20.00",
+        "printed": "20.00",
+        "passed": true
+      },
+      {
+        "name": "date_format",
+        "expected": "YYYY-MM-DD",
+        "printed": "2026-09-15",
+        "passed": true
       }
     ]
   },
   "fx": {
     "base_currency": "USD",
-    "rate": "",
-    "total_base": ""
+    "rate": "1.0",
+    "total_base": "20.00"
   },
   "fingerprints": {
-    "phash": "80f566a67f9d8891",
-    "merchant_norm": "coke l"
+    "phash": "8f1e964db01abc3c",
+    "merchant_norm": "merchant 50"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }

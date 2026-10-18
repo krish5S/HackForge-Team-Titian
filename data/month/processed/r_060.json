@@ -2,7 +2,7 @@
   "receipt_id": "r_060",
   "file_sha256": "ec1c0fc23f701e7887356ab397a2b8e4eb13b06bb31563679981e0f2f4c7461f",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Late shop 1",
     "receipt_number": "R_060",
@@ -17,7 +17,7 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "50.00",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "MEALS",
     "line_items": [
       {
@@ -26,7 +26,7 @@
         "item_class": "FOOD"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9809495210647583,
       "subtotal": 0.9996171593666077,
@@ -133,7 +133,6 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "50.00",
-        "category": "MEALS",
         "line_items": [
           {
             "description": "Trip meal",
@@ -142,7 +141,19 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Trip meal",
+            "amount": "50.00",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {

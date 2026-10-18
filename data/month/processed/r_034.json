@@ -2,7 +2,7 @@
   "receipt_id": "r_034",
   "file_sha256": "60dc623b1f026985ca88177b8929537cc497c94081fb555bfc56bddfd439add4",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "WinCo Foods #54",
     "receipt_number": "",
@@ -18,7 +18,7 @@
     "other_charges": "",
     "total": "49.40",
     "itemization": "",
-    "category": "",
+    "category": "MEALS",
     "line_items": [
       {
         "description": "Whole Milk (gal)",
@@ -33,7 +33,7 @@
       {
         "description": "Spaghetti Noodles",
         "amount": "1.79",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       },
       {
         "description": "Ground Beef (lb)",
@@ -178,7 +178,52 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "line_items": [
+          {
+            "description": "Whole Milk (gal)",
+            "amount": "1.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Eggs. Dozen",
+            "amount": "2.79",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Spaghetti Noodles",
+            "amount": "1.79",
+            "item_class": "FOOD"
+          },
+          {
+            "description": "Ground Beef (lb)",
+            "amount": "0.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Canned Tomatoes",
+            "amount": "0.69",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Orange Juice (0.5gal)",
+            "amount": "5.29",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Wheat Bread",
+            "amount": "1.99",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Bottled Water (each)",
+            "amount": "5.94",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {

@@ -1,8 +1,8 @@
 {
   "receipt_id": "r_043",
-  "file_sha256": "5a3942ec19112de5e99300ff7ca0e5dc29dc78e53d3741ab278f99f5e7886c49",
+  "file_sha256": "d6b09cff0b1c02c52df8ecb70df4b4943e526a3ae4196fdf06987fe3136e505f",
   "is_receipt": true,
-  "extraction_status": "ok",
+  "extraction_status": "OK",
   "extraction": {
     "merchant_name": "Merchant 43",
     "receipt_number": "R_043",
@@ -17,20 +17,20 @@
     "tip": "0.00",
     "other_charges": "0.00",
     "total": "100.00",
-    "itemization": "",
+    "itemization": "FULL",
     "category": "MEALS",
     "line_items": [
       {
-        "description": "Business expense",
+        "description": "Dinner",
         "amount": "100.00",
-        "item_class": "OTHER"
+        "item_class": "FOOD"
       }
     ],
-    "guest_count": 0,
+    "guest_count": 1,
     "confidence": {
       "transaction_date": 0.9844162464141846,
-      "subtotal": 0.998744010925293,
-      "tax": 0.9985705614089966,
+      "subtotal": 0.9990819692611694,
+      "tax": 0.9991315007209778,
       "tip": 0.9987704157829285,
       "other_charges": 0.9986505508422852,
       "total": 0.9985589981079102
@@ -44,12 +44,12 @@
       ],
       "subtotal": [
         527,
-        547,
-        680,
-        574
+        548,
+        681,
+        575
       ],
       "tax": [
-        558,
+        557,
         609,
         681,
         634
@@ -77,8 +77,8 @@
       "reader_a": {
         "confidence": {
           "transaction_date": 0.9844162464141846,
-          "subtotal": 0.998744010925293,
-          "tax": 0.9985705614089966,
+          "subtotal": 0.9990819692611694,
+          "tax": 0.9991315007209778,
           "tip": 0.9987704157829285,
           "other_charges": 0.9986505508422852,
           "total": 0.9985589981079102
@@ -92,12 +92,12 @@
           ],
           "subtotal": [
             527,
-            547,
-            680,
-            574
+            548,
+            681,
+            575
           ],
           "tax": [
-            558,
+            557,
             609,
             681,
             634
@@ -133,16 +133,27 @@
         "tip": "0.00",
         "other_charges": "0.00",
         "total": "100.00",
-        "category": "MEALS",
         "line_items": [
           {
-            "description": "Business expense",
+            "description": "Dinner",
             "amount": "100.00",
-            "item_class": "OTHER"
+            "item_class": "FOOD"
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "category": "MEALS",
+        "guest_count": 1,
+        "line_items": [
+          {
+            "description": "Dinner",
+            "amount": "100.00",
+            "item_class": "FOOD"
+          }
+        ],
+        "itemization": "FULL"
+      }
     }
   },
   "validation": {
@@ -179,7 +190,7 @@
     "total_base": "100.00"
   },
   "fingerprints": {
-    "phash": "8f1e9649e41af8b4",
+    "phash": "8f1e964de51a98b4",
     "merchant_norm": "merchant 43"
   },
   "forensics": {

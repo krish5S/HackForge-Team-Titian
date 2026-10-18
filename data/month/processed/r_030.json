@@ -2,7 +2,7 @@
   "receipt_id": "r_030",
   "file_sha256": "b81c9ed0115db9b62c4d09bd070ef75fc2fa4c8a31e38d2c57bdfecd9f632685",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "PARTIAL",
   "extraction": {
     "merchant_name": "A04067",
     "receipt_number": "",
@@ -82,7 +82,26 @@
           }
         ]
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {
+        "line_items": [
+          {
+            "description": "3 slo 0",
+            "amount": "90.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Cash",
+            "amount": "30.00",
+            "item_class": "OTHER"
+          },
+          {
+            "description": "Net.Amt",
+            "amount": "270.00",
+            "item_class": "OTHER"
+          }
+        ]
+      }
     }
   },
   "validation": {

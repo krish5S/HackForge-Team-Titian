@@ -1,10 +1,10 @@
 {
   "receipt_id": "r_011",
-  "file_sha256": "eb6fa8f84d15bcd7b9188f8aff686d66a96137d5e0cd410039c945348a449fdd",
+  "file_sha256": "7260eb0086e52287a69f80e5f30345bed8c59b5e105a438d85646a805886be84",
   "is_receipt": true,
-  "extraction_status": "partial",
+  "extraction_status": "OK",
   "extraction": {
-    "merchant_name": "1001-Choco Bun",
+    "merchant_name": "1 SAM DA SOD MINERAL WATER",
     "receipt_number": "",
     "card_last4": "",
     "transaction_date": "",
@@ -16,29 +16,49 @@
     "tax": "",
     "tip": "",
     "other_charges": "",
-    "total": "",
+    "total": "34000",
     "itemization": "",
     "category": "",
     "line_items": [],
     "guest_count": 0,
-    "confidence": {},
-    "boxes": {},
+    "confidence": {
+      "total": 0.9999802708625793
+    },
+    "boxes": {
+      "total": [
+        522,
+        685,
+        721,
+        765
+      ]
+    },
     "readers": {
       "reader_a": {
-        "confidence": {},
-        "boxes": {},
-        "merchant_name": "1001-Choco Bun"
+        "confidence": {
+          "total": 0.9999802708625793
+        },
+        "boxes": {
+          "total": [
+            522,
+            685,
+            721,
+            765
+          ]
+        },
+        "merchant_name": "1 SAM DA SOD MINERAL WATER",
+        "total": "34000"
       },
-      "reader_b": {}
+      "reader_b": {},
+      "text_rules": {}
     }
   },
   "validation": {
     "checks": [
       {
-        "name": "total_present",
-        "expected": "amount",
-        "printed": "",
-        "passed": false
+        "name": "nonnegative_total",
+        "expected": ">= 0",
+        "printed": "34000",
+        "passed": true
       }
     ]
   },
@@ -48,12 +68,14 @@
     "total_base": ""
   },
   "fingerprints": {
-    "phash": "90d57754d45755c2",
-    "merchant_norm": "1001 choco bun"
+    "phash": "b1c2e5ba1996cbc2",
+    "merchant_norm": "1 sam da sod mineral water"
   },
   "forensics": {
-    "score": 0,
+    "score": 10,
     "cnn_fake_probability": 0.0,
-    "signals": []
+    "signals": [
+      "round_total"
+    ]
   }
 }
