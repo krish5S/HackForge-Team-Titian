@@ -5,6 +5,7 @@ from sqlalchemy import (
     JSON,
     Boolean,
     Column,
+    CheckConstraint,
     ForeignKey,
     Integer,
     String,
@@ -118,3 +119,46 @@ class Decision(Base):
         String, ForeignKey("receipts.id"), nullable=True
     )
     risk_score = Column(Integer, nullable=True)
+
+class AuthUser(Base):
+    __tablename__ = "auth_users"
+
+    id = Column(String, primary_key=True, default=lambda: uuid4().hex)
+    email = Column(String(254), nullable=False, unique=True)
+    display_name = Column(String, nullable=False)
+    password_hash = Column(String, nullable=False)
+    role = Column(String, nullable=False)
+    employee_id = Column(String, ForeignKey("employees.id"), nullable=True)
+
+    __table_args__ = (
+        CheckConstraint("role IN ('EMPLOYEE', 'REVIEWER')", name="auth_user_role"),
+        CheckConstraint("role != 'EMPLOYEE' OR employee_id IS NOT NULL", name="employee_link_required"),
+    )
+
+
+class AuthSession(Base):
+    __tablename__ = "auth_sessions"
+
+    token_hash = Column(String(64), primary_key=True)
+    user_id = Column(String, ForeignKey("auth_users.id"), nullable=False, index=True)
+    expires_at = Column(Integer, nullable=False, index=True)
+
+
+class SubmissionUpload(Base):
+    """Upload metadata and an employee-scoped idempotency reservation.
+
+    Separate table keeps imported Submission rows and their schema unchanged.
+    """
+    __tablename__ = "submission_uploads"
+    employee_id = Column(String, ForeignKey("employees.id"), primary_key=True)
+    idempotency_key = Column(String(128), primary_key=True)
+    submission_id = Column(String, ForeignKey("submissions.id"), nullable=False, unique=True)
+    request_hash = Column(String(64), nullable=False)
+    original_name = Column(String, nullable=False)
+    media_type = Column(String, nullable=False)
+    size_bytes = Column(Integer, nullable=False)
+
+    user_id = Column(String, ForeignKey("auth_users.id"), nullable=True)
+    file_sha256 = Column(String(64), nullable=True)
+    processing_status = Column(String, nullable=False, default="UPLOADED", server_default="UPLOADED")
+    processing_error = Column(Text, nullable=True)
